@@ -1,0 +1,292 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   OEM 询价/定制流程页 —— 共享正文层（2026-09-20）
+   规则：
+   - 版心只认 --z02-canvas；字号/行高/字距/字重/文字色全部走 --z02-* token。
+   - band 结构：.<p>-band.full-bleed（100% 通栏，承接 has-inner-banner 的
+     canvas 吸附）> .<p>-wrap（一层版心，禁止再嵌 canvas）。
+   - 这里只放「多页共用」的原语：band / 区头 / 按钮 / 药丸 / 卡片 / 键值行 /
+     网关卡。单页专属组件写在各自页面 CSS 里。
+   - class 前缀沿用 osp-（OEM service page）—— 02 页当初定的前缀，现已作为
+     这一族页面的公共前缀；别名不改，避免动已验证页面。
+   当前使用者：oem/branding-packaging.html、oem/technical-customization.html、
+              oem/process.html、oem/start-project.html。
+              ⚠️ oem/product-customization.html（04-02）**不引本文件**，
+              它是自成一体的 ocx- 一套（但字号要对齐下面这张表）。
+
+   ═══ OEM 族「角色 → 档位」表 ═══════════════════════════════════════════
+   2026-09-20 包子拍板：正文提到 17px，改动范围只限 OEM 这 6 页（不动 site-shell.css）。
+   改任何 OEM 页面的字号前先对这张表；**不在表里的档位不要新造**。
+
+      10px   --z02-fs-glyph（本文件 :root）  符号字形（提示图标 i、状态对勾/圆点）—— 无文本
+      12px   --z02-fs-label                  标签层：眉题 / 药丸 / 徽标 / 字段标签 /
+                                             表头 / kv 键 / 步骤号 / 状态标签 /
+                                             脚注·提示条 / 表格单元格基文
+                                             （表格里的标题走 15，见下）
+      15px   --z02-fs-action                 控件层（非正文）：按钮 / 链接 / 表单控件 /
+                                             kv 值 / 卡内 strong / 表格内 strong
+      17px   --z02-fs-copy             ★     正文档：正文段落 / 段导语 / 区头副标 /
+                                             成句说明 / 列表
+      20px   --z02-fs-card-title             卡题 / 段内小标题（20/26/不加字距/600）
+      24px   --z02-fs-panel-title            面板题 / 分组头（24/30/-0.02em/600）
+    28-40px  --z02-fs-feature-title          区头大题（31.7/39.6/-0.02em/600）
+    60.5px   （banner h1，由 inner-banner.css 管，不在这一层）
+
+   ⚠️ 两处「同角色必须同值」的收口（2026-09-20 二次核对后定的）：
+     · 眉题（.osp-kicker / .opx-current-label）= 12 / --z02-ls-wider(1.92)。
+       序号（.ose-num / .ose-step-dot / .opx-step-dot / .ocx-step-index）**一律不加字距**。
+       不要把 --z02-ls-kicker(0.72) 再往这两处撒 —— 它正是改造前 3 种眉题字距之一。
+     · 行高要显式写，别指望继承：卡题 → --z02-lh-card-title(26)，面板题 → --z02-lh-panel-title(30)，
+       正文档 → --z02-lh-copy(27.2)，区头副标 → --z02-lh-subhead(22.1)。漏写会退回 normal。
+
+   ⚠️ 刻意退掉的档，不要再引回来：
+     · --z02-fs-meta(13.6) —— 与 12 只差 1.6px，肉眼分不出，属于"无意义档位"（体检时
+       12 与 13.6 并存的元素占了全族文本量的大头）。要中间档就用 15。
+     · --z02-fs-supporting(12) —— 值与 label 完全相同，只是名字不同，全族统一叫 label。
+     · --z02-fs-lead(18) —— 与正文 17 只差 1px。区头副标并进 17（靠位置和 1.3 行高区分）。
+     · --z02-fs-h4(23) —— 与 --z02-fs-panel-title(24) 同角色差 1px，面板题一律用 panel-title。
+     · --z02-fs-action(15) 只作"控件层"，**不要拿它当卡题**（那正是改造前的毛病）。
+     · --z02-ls-kicker(0.72) / --z02-ls-tight(-0.12) 在本族无使用者，见上面「两处收口」。
+   ═══════════════════════════════════════════════════════════════════════ */
+:root {
+  /* 符号字形专用档：全族只有"提示图标 i / 状态圆点"这类占位字形用它。 */
+  --z02-fs-glyph: 10px;
+  /* 「无字距」显式档：用在需要**盖掉父级字距**的地方（例：药丸嵌在 .osp-kicker /
+     .ose-kicker 里会继承 0.16em）。字距一律走 token，不写裸 normal。 */
+  --z02-ls-none: normal;
+}
+
+/* ── band / 版心 / 区头 ─────────────────────────────────────────── */
+.osp-band { padding: 34px 0 44px; }
+.osp-band--alt { background: var(--z02-surface-page); }
+.osp-wrap {
+  box-sizing: border-box;
+  width: var(--z02-canvas);
+  margin-inline: auto;
+}
+.osp-head { margin-bottom: 22px; }
+.osp-kicker {
+  margin: 0 0 8px;
+  color: var(--z02-accent);
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-semibold);
+  /* 2026-09-20：原为 --z02-ls-kicker(0.06em=0.72px)，与页头 banner 的 .eyebrow
+     (0.32em=3.84px)、导航下拉的 mega-kicker(0.16em) 三套并存，最大差 5.3 倍。
+     统一到 --z02-ls-wider(0.16em) —— 与导航下拉一致，也比 0.06em 更像"眉题"。 */
+  letter-spacing: var(--z02-ls-wider);
+  line-height: var(--z02-lh-tight);
+  text-transform: uppercase;
+}
+.osp-title {
+  margin: 0;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-panel-title);
+  line-height: var(--z02-lh-panel-title);
+  letter-spacing: var(--z02-ls-component-title);
+  font-weight: var(--z02-fw-semibold);
+}
+.osp-title--xl { font-size: var(--z02-fs-feature-title); line-height: var(--z02-lh-panel-title); }
+.osp-subtitle {
+  margin: 8px 0 0;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-copy);
+  line-height: var(--z02-lh-subhead);
+}
+.osp-lead {
+  margin: 14px 0 0;
+  color: var(--z02-text-muted);
+  /* 2026-09-20：原为 --z02-fs-meta(13.6)，与 05/06 的 .lead(17) 同角色不同号。
+     统一到正文档 --z02-fs-copy(17)。 */
+  font-size: var(--z02-fs-copy);
+  line-height: var(--z02-lh-copy);
+}
+.osp-subhead {
+  margin: 16px 0 4px;
+  color: var(--z02-text);
+  /* 段内小标题：原为 12px。正文提到 17 后 12px 会低于正文、层级倒挂，
+     归到卡题档 --z02-fs-card-title(clamp 18-20)。 */
+  font-size: var(--z02-fs-card-title);
+  line-height: var(--z02-lh-subhead);
+  font-weight: var(--z02-fw-semibold);
+}
+/* ⚠️ b/strong 的 UA 默认是 `font-weight:bolder`（相对字重）。父级为 600 时按 CSS
+   相对字重表会解析成 **900**，而整站 token 上限只有 600 —— 可变字体轴 300–900
+   所以真的渲染出来了（03 页 "Living Room" 命中过一处）。这里把 OEM 族内的
+   b/strong 钉到 600。放在本条之后的显式规则（.osp-kv strong=500 等）仍可覆盖。 */
+.osp-band :is(b, strong) { font-weight: var(--z02-fw-semibold); }
+
+/* ── 按钮 / 药丸 / 链接 ─────────────────────────────────────────── */
+.osp-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+.osp-actions--tight { margin-top: 12px; }
+.osp-actions--stack { flex-direction: column; align-items: stretch; }
+.osp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 18px;
+  border: 1px solid var(--z02-accent);
+  border-radius: 5px;
+  background: var(--z02-accent);
+  color: #fff;
+  font-family: var(--font);
+  /* 常规按钮：12 → 13.6（元信息/控件档）。正文提到 17 后 12px 的按钮文字明显偏小。 */
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-medium);
+  text-decoration: none;
+  cursor: pointer;
+}
+.osp-btn:hover { background: var(--z02-accent-hover); border-color: var(--z02-accent-hover); }
+.osp-btn--ghost { background: transparent; color: var(--z02-text); border-color: var(--z02-border-line); }
+.osp-btn--ghost:hover { background: var(--z02-surface-product); color: var(--z02-text); border-color: var(--z02-border-line); }
+.osp-btn--dark { background: var(--z02-ink); border-color: var(--z02-ink); }
+.osp-btn--dark:hover { background: #11161c; border-color: #11161c; }
+.osp-btn--sm { height: 33px; padding: 0 13px; font-size: var(--z02-fs-label); }
+.osp-btn--wide { width: 100%; }
+
+.osp-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 22px;
+  padding: 0 9px;
+  border-radius: 999px;
+  font-size: var(--z02-fs-label);
+  line-height: 1;
+  font-weight: var(--z02-fw-medium);
+  white-space: nowrap;
+}
+.osp-pill--sm { height: 20px; padding: 0 8px; }
+.osp-pill--ok { background: var(--z02-surface-selected); color: var(--z02-accent); }
+.osp-pill--warn { background: #fdf3e2; color: #a96a12; }
+.osp-pill--muted { background: var(--z02-surface-product); color: var(--z02-text-muted); }
+.osp-pill--info { background: var(--z02-surface-selected); color: var(--z02-accent); }
+
+.osp-link { color: var(--z02-accent); font-size: var(--z02-fs-action); font-weight: var(--z02-fw-medium); }
+.osp-link:hover { text-decoration: underline; }
+
+/* ── 卡片 / 键值行 / band 注脚 ──────────────────────────────────── */
+.osp-card {
+  box-sizing: border-box;
+  padding: 20px 18px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 7px;
+  background: var(--z02-surface);
+  min-width: 0;
+}
+.osp-card-title {
+  margin: 0 0 14px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid var(--z02-border-line);
+  color: var(--z02-text);
+  /* 卡题：原为 --z02-fs-action(15)（首页操作档，借用）。15 低于正文档 17，
+     卡题反而不如正文显眼 → 归到卡题档 --z02-fs-card-title(clamp 18-20)。 */
+  font-size: var(--z02-fs-card-title);
+  line-height: var(--z02-lh-subhead);
+  font-weight: var(--z02-fw-semibold);
+}
+.osp-card-title--gap { margin-top: 20px; }
+.osp-card-hint { margin: -6px 0 12px; color: var(--z02-text-faint); font-size: var(--z02-fs-action); line-height: var(--z02-lh-card-title); }
+.osp-kv {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 14px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--z02-border-line);
+}
+.osp-kv:last-child { border-bottom: 0; }
+/* ⚠️ .osp-kv 自带 display:flex，会盖掉 UA 的 [hidden]{display:none}
+   （同为 0-1-0 权重，作者样式优先）→ 显式补一条，否则用 hidden 隐藏的行会全露出来。 */
+.osp-kv[hidden] { display: none; }
+.osp-kv--tall { padding: 9px 0; }
+.osp-kv > span:first-child { color: var(--z02-text-muted); font-size: var(--z02-fs-label); flex: 0 0 auto; }
+.osp-kv strong { color: var(--z02-text); font-size: var(--z02-fs-action); font-weight: var(--z02-fw-medium); text-align: right; }
+.osp-kv-docs { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+/* 值不缩水：容器变窄时宁可让药丸换行，也不要让文字被压扁后溢出（溢出会顶出卡片被裁掉） */
+.osp-kv-docs > * { flex: 0 0 auto; }
+.osp-band-note {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 16px 0 0;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-card-title);
+}
+
+/* ── 两栏 / 产品快照 / 带栏注脚的横条 ───────────────────────────── */
+.osp-two-col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+.osp-snap { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 14px; align-items: start; }
+.osp-snap-media {
+  height: 132px;
+  padding: 8px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  background: var(--z02-surface-page);
+  overflow: hidden;
+}
+.osp-snap-media img { width: 100%; height: 100%; object-fit: contain; }
+.osp-snap-body h4 {
+  margin: 0 0 4px;
+  color: var(--z02-text);
+  /* 产品名：是内容不是标签 → 正文档 17。 */
+  font-size: var(--z02-fs-copy);
+  line-height: var(--z02-lh-subhead);
+  font-weight: var(--z02-fw-semibold);
+}
+.osp-band-bar {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 7px;
+  background: var(--z02-surface-product);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.osp-band-bar .osp-band-note { margin: 0; flex: 1 1 320px; }
+.osp-band-bar .osp-actions { margin: 0; }
+
+/* ── 网关卡（图标 + 标题 + 说明 + 药丸） ───────────────────────── */
+.osp-gate-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.osp-gate-row--2col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.osp-gate {
+  box-sizing: border-box;
+  display: grid;
+  gap: 6px;
+  justify-items: start;
+  align-content: start;
+  padding: 15px 14px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 7px;
+  background: var(--z02-surface);
+}
+.osp-gate-icon { width: 34px; height: 34px; border-radius: 6px; display: grid; place-items: center; background: var(--z02-surface-selected); }
+.osp-gate-icon img { width: 19px; height: 19px; object-fit: contain; }
+/* 2026-09-20：补 line-height。分组成员头是 17px 半粗，属段内小标题 → 走 --z02-lh-subhead；
+   此前只给了字号 → 行高退回 normal，与 .osp-snap-body h4 同角色不同行高。 */
+.osp-gate strong { color: var(--z02-text); font-size: var(--z02-fs-copy); line-height: var(--z02-lh-subhead); font-weight: var(--z02-fw-semibold); }
+.osp-gate > span { color: var(--z02-text-muted); font-size: var(--z02-fs-action); line-height: var(--z02-lh-card-title); }
+.osp-gate .osp-pill { margin-top: 5px; }
+
+/* ── 断点：只做 PC（≤1679），窄屏保底不破版 ────────────────────── */
+@media (max-width: 1280px) {
+  .osp-two-col { grid-template-columns: 1fr; }
+  .osp-gate-row { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 900px) {
+  .osp-gate-row, .osp-gate-row--2col { grid-template-columns: 1fr; }
+  .osp-snap { grid-template-columns: 96px minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .001ms !important; animation-duration: .001ms !important; }
+}

@@ -1,0 +1,338 @@
+{
+  "hero": {
+    "kicker": "OEM & ODM PROCESS",
+    "title": "OEM & ODM Process",
+    "subtitle": "How OEM and ODM projects move from requirement review to confirmed production.",
+    "image": "assets/images/hero-smart-switches-s02.webp",
+    "image_width": 2172,
+    "image_height": 724,
+    "breadcrumb": ["Home", "OEM & ODM", "OEM & ODM Process"]
+  },
+  "lifecycle": {
+    "kicker": "01 · OEM & ODM PROCESS",
+    "title": "From Requirements to a Confirmed Product Project",
+    "copy": "A structured OEM/ODM process that moves your product, technical, branding and commercial requirements through review, evaluation and confirmation before production.",
+    "card_title": "OEM Project Lifecycle",
+    "current_label": "Current Stage",
+    "current_icon": "assets/icons/oem-pen.png",
+    "steps": [
+      {
+        "key": "requirements",
+        "n": "01",
+        "label": "Requirements Definition",
+        "stage": "Requirement Definition",
+        "copy": "Start with the information you already have. We will review your requirements and confirm the next steps."
+      },
+      {
+        "key": "product",
+        "n": "02",
+        "label": "Product Review",
+        "stage": "Product Review",
+        "copy": "We review the requested product and configuration against our existing product platform and identify what is standard, what can be changed and what needs engineering review."
+      },
+      {
+        "key": "technical",
+        "n": "03",
+        "label": "Technical Review",
+        "stage": "Technical Review",
+        "copy": "Hardware, firmware, interface and system integration requirements are reviewed with our engineering team before anything is committed."
+      },
+      {
+        "key": "sample",
+        "n": "04",
+        "label": "Sample / Evaluation",
+        "stage": "Sample / Evaluation",
+        "copy": "Where applicable, a sample or evaluation unit is prepared so the configuration, appearance, function, branding and packaging can be checked before confirmation."
+      },
+      {
+        "key": "spec",
+        "n": "05",
+        "label": "Specification Confirmation",
+        "stage": "Specification Confirmation",
+        "copy": "Product, customization, branding, packaging and documentation details are confirmed before production."
+      },
+      {
+        "key": "handoff",
+        "n": "06",
+        "label": "Production Handoff",
+        "stage": "Production Handoff",
+        "copy": "Confirmed requirements are compiled into the project package and moved into the manufacturing process."
+      }
+    ],
+    "actions": [
+      { "label": "Start an OEM Project", "href": "start-project.html", "style": "primary" },
+      { "label": "Review Customization Options", "href": "product-customization.html", "style": "ghost" }
+    ]
+  },
+  "intake": {
+    "kicker": "02 · PROJECT INTAKE",
+    "title": "Start with the Information You Already Have",
+    "subtitle": "You can begin an OEM/ODM project from different starting points. Choose the option that best fits your situation.",
+    "options": [
+      {
+        "icon": "assets/icons/oem-cube.png",
+        "title": "Start with a Product",
+        "copy": "Choose from our existing products and tell us what you would like to customize.",
+        "link": "Select a Product",
+        "href": "product-customization.html"
+      },
+      {
+        "icon": "assets/icons/support-document.png",
+        "title": "Start with Requirements",
+        "copy": "Share your product, technical, branding or other requirements directly.",
+        "link": "Prepare Requirements",
+        "href": "start-project.html"
+      },
+      {
+        "icon": "assets/icons/oem-lightbulb.png",
+        "title": "Start with a Product Concept",
+        "copy": "If you have a product concept or idea, we can help evaluate it and find a suitable solution.",
+        "link": "Discuss Your Concept",
+        "href": "../contact.html"
+      },
+      {
+        "icon": "assets/icons/support-list.png",
+        "title": "Continue Draft (Optional)",
+        "copy": "Continue a previously saved project draft or quote request.",
+        "link": "Go to Quote List",
+        "href": "../quote-list.html"
+      }
+    ],
+    "checklist_title": "Project Intake Checklist",
+    "checklist": [
+      { "label": "Base Product", "state": "ok", "pill": "Provided" },
+      { "label": "Product Requirement", "state": "warn", "pill": "Pending" },
+      { "label": "Customization Scope", "state": "info", "pill": "To Review" },
+      { "label": "Target Market", "state": "warn", "pill": "Pending" },
+      { "label": "Quantity Context", "state": "info", "pill": "To Review" },
+      { "label": "Reference Files", "state": "warn", "pill": "Pending" },
+      { "label": "Technical Documents", "state": "info", "pill": "To Review" }
+    ]
+  },
+  "review": {
+    "kicker": "03 · REQUIREMENT REVIEW",
+    "title": "Bring the Requirements into One Project Brief",
+    "subtitle": "We will combine your product, technical, branding and commercial requirements into one OEM Project Brief for review.",
+    "cards": [
+      {
+        "icon": "assets/icons/oem-cube.png",
+        "title": "Product",
+        "items": ["Base product and variant", "Key features and use case", "Current configuration"],
+        "link": "View Details",
+        "href": "product-customization.html"
+      },
+      {
+        "icon": "assets/icons/oem-sliders.png",
+        "title": "Product Customization",
+        "items": ["Appearance and finish", "Hardware configuration", "Firmware / software", "Functions and integration"],
+        "link": "View Details",
+        "href": "product-customization.html"
+      },
+      {
+        "icon": "assets/icons/oem-chip.png",
+        "title": "Technical",
+        "items": ["Technical requirements", "Interface and protocol", "Integration with other systems", "Constraints and preferences"],
+        "link": "View Details",
+        "href": "technical-customization.html"
+      },
+      {
+        "icon": "assets/icons/oem-pen.png",
+        "title": "Brand & Delivery",
+        "items": ["Logo and brand elements", "Packaging requirements", "Documentation and language", "Target market and application"],
+        "link": "View Details",
+        "href": "branding-packaging.html"
+      }
+    ],
+    "status_title": "Requirement Review Status",
+    "status": [
+      { "label": "Product Requirements", "state": "ok", "pill": "Defined" },
+      { "label": "Customization Requirements", "state": "warn", "pill": "Partially Complete" },
+      { "label": "Technical Requirements", "state": "warn", "pill": "Review Required" },
+      { "label": "Brand & Packaging Requirements", "state": "muted", "pill": "Pending" },
+      { "label": "Commercial / Delivery Context", "state": "muted", "pill": "Pending" }
+    ],
+    "note": "All requirement types will be consolidated into one OEM Project Brief for review."
+  },
+  "platform": {
+    "kicker": "04 · TECHNICAL & PRODUCT REVIEW",
+    "title": "Review the Request Against the Product Platform",
+    "subtitle": "We will review your requirements against our existing product platform to assess feasibility and identify what is needed.",
+    "existing": {
+      "title": "Existing Product",
+      "image": "assets/images/home/featured-switch-4-gang-render-v2.webp",
+      "items": ["Current model / variant", "Existing configuration", "Standard functions", "Platform capability"]
+    },
+    "change": {
+      "title": "Requested Change",
+      "items": ["Appearance / finish", "Hardware configuration", "Firmware / software", "New functions", "Integration requirement"]
+    },
+    "review": {
+      "title": "Review",
+      "copy": "Engineering and product teams review the request against the product platform."
+    },
+    "outcomes": [
+      { "glyph": "✓", "state": "ok", "title": "Compatible", "copy": "Based on current capability" },
+      { "glyph": "!", "state": "warn", "title": "Modification Required", "copy": "Engineering review required" },
+      { "glyph": "↻", "state": "muted", "title": "Further Review", "copy": "More information required" }
+    ],
+    "tabs": [
+      {
+        "key": "product",
+        "label": "Product Review",
+        "rows": [
+          { "label": "Base Product", "state": "ok", "pill": "Existing capability verified" },
+          { "label": "Current Variant", "state": "ok", "pill": "Existing capability verified" }
+        ]
+      },
+      {
+        "key": "technical",
+        "label": "Technical Review",
+        "rows": [
+          { "label": "Requested Function", "state": "warn", "pill": "Engineering review required" },
+          { "label": "Hardware Impact", "state": "info", "pill": "Further information required" },
+          { "label": "Firmware Impact", "state": "warn", "pill": "Engineering review required" },
+          { "label": "Integration Requirement", "state": "info", "pill": "Further information required" },
+          { "label": "UI / App Requirement", "state": "info", "pill": "Further information required" }
+        ]
+      }
+    ]
+  },
+  "sample": {
+    "kicker": "05 · SAMPLE / EVALUATION STAGE",
+    "title": "Review the Product Before Final Confirmation",
+    "subtitle": "When applicable, samples or evaluation units may be used to review the product configuration, appearance, function, branding, packaging and documentation.",
+    "cards": [
+      { "icon": "assets/icons/factory-check.png", "title": "Appearance Review", "copy": "Check product appearance, color, materials and finish." },
+      { "icon": "assets/icons/oem-gear.png", "title": "Function Test", "copy": "Verify key functions and feature behavior." },
+      { "icon": "assets/icons/oem-pen.png", "title": "Branding Review", "copy": "Check logo, label and customized elements." },
+      { "icon": "assets/icons/company-package.png", "title": "Packaging Review", "copy": "Evaluate gift box, inner box and materials." },
+      { "icon": "assets/icons/support-document.png", "title": "Documentation Review", "copy": "Review user manual, quick start guide and other documents." }
+    ],
+    "checklist_title": "Evaluation Checklist",
+    "checklist": [
+      { "label": "Sample Unit", "state": "warn", "pill": "To Review" },
+      { "label": "Appearance", "state": "warn", "pill": "To Review" },
+      { "label": "Function", "state": "warn", "pill": "To Review" },
+      { "label": "Branding / Label", "state": "muted", "pill": "Optional" },
+      { "label": "Packaging", "state": "warn", "pill": "To Review" },
+      { "label": "Documentation", "state": "muted", "pill": "Optional" }
+    ],
+    "note": "Sample or evaluation requirements depend on the product, customization scope and project stage."
+  },
+  "confirm": {
+    "kicker": "06 · TECHNICAL & PRODUCT REVIEW",
+    "title": "Confirm What Will Actually Be Produced",
+    "subtitle": "All product, technical, branding, packaging and documentation details must be confirmed before moving to production.",
+    "cards": [
+      {
+        "icon": "assets/icons/oem-cube.png",
+        "title": "Product",
+        "items": ["Current model / variant", "Key features and functions", "Use case and market"]
+      },
+      {
+        "icon": "assets/icons/oem-gear.png",
+        "title": "Configuration",
+        "items": ["Hardware configuration", "Firmware / software", "Functions and settings", "Interface and integration"]
+      },
+      {
+        "icon": "assets/icons/oem-sliders.png",
+        "title": "Customization",
+        "items": ["Appearance and finish", "Logo and label", "Pre-installed content", "Other custom requirements"]
+      },
+      {
+        "icon": "assets/icons/oem-pen.png",
+        "title": "Brand",
+        "items": ["Brand name and logo", "UI / app branding", "Language and region", "Regulatory marking (if required)"]
+      },
+      {
+        "icon": "assets/icons/company-package.png",
+        "title": "Packaging",
+        "items": ["Product box design", "Inner box and materials", "Label and sticker", "Packing information"]
+      },
+      {
+        "icon": "assets/icons/support-document.png",
+        "title": "Documentation",
+        "items": ["User manual", "Quick start guide", "Specification sheet", "Other documents"]
+      }
+    ],
+    "status_title": "Confirmation Status",
+    "status": [
+      { "label": "Product Specification", "state": "ok", "pill": "Confirmed" },
+      { "label": "Configuration Details", "state": "ok", "pill": "Confirmed" },
+      { "label": "Customization Details", "state": "warn", "pill": "Pending" },
+      { "label": "Branding Details", "state": "warn", "pill": "Pending" },
+      { "label": "Packaging Details", "state": "warn", "pill": "Pending" },
+      { "label": "Documentation Details", "state": "warn", "pill": "Pending" }
+    ],
+    "note": "All items must be confirmed before production handoff."
+  },
+  "handoff": {
+    "kicker": "07 · PRODUCTION HANDOFF",
+    "title": "Move Confirmed Requirements into Production",
+    "subtitle": "After confirmation, we will prepare all required materials and move the project into the manufacturing process.",
+    "inputs_title": "Confirmed Inputs",
+    "inputs": [
+      "Product Specification",
+      "Customization Specification",
+      "Approved Artwork",
+      "Packaging Requirements",
+      "Documentation Requirements",
+      "Project Quantity",
+      "Commercial Confirmation"
+    ],
+    "flow_title": "Production Handoff Process",
+    "flow": [
+      { "icon": "assets/icons/company-package.png", "title": "Project Package", "copy": "Compile confirmed requirements" },
+      { "icon": "assets/icons/factory-document.png", "title": "Manufacturing Preparation", "copy": "Prepare materials and production plan" },
+      { "icon": "assets/icons/factory-microscope.png", "title": "Quality / Inspection Requirements", "copy": "Define inspection criteria and methods" },
+      { "icon": "assets/icons/factory-factory.png", "title": "Production", "copy": "Move to manufacturing" }
+    ],
+    "areas_title": "Related Areas",
+    "areas": [
+      { "icon": "assets/icons/factory-factory.png", "title": "Manufacturing", "copy": "Production planning and execution", "href": "../factory/manufacturing.html" },
+      { "icon": "assets/icons/factory-shield.png", "title": "Quality Control", "copy": "Quality management system", "href": "../factory/quality-control.html" },
+      { "icon": "assets/icons/factory-microscope.png", "title": "Testing & Inspection", "copy": "Product testing and inspection", "href": "../factory/testing-traceability.html" },
+      { "icon": "assets/icons/oem-chart.png", "title": "Traceability", "copy": "Product records and traceability", "href": "../factory/production-process.html" }
+    ]
+  },
+  "support": {
+    "kicker": "08 · DELIVERY & ONGOING SUPPORT",
+    "title": "Continue Beyond Production",
+    "subtitle": "Our support continues after production, with information and services to help you bring the product to market and beyond.",
+    "cards": [
+      {
+        "icon": "assets/icons/support-truck.png",
+        "title": "Ordering & Shipping",
+        "copy": "Information about ordering, shipping arrangements and related processes.",
+        "link": "Review Ordering & Shipping",
+        "href": "../ordering/shipping-delivery.html"
+      },
+      {
+        "icon": "assets/icons/support-document.png",
+        "title": "Product Documentation",
+        "copy": "Access product documents, compliance information and other resources.",
+        "link": "Review Documentation",
+        "href": "../ordering/packaging-documentation.html"
+      },
+      {
+        "icon": "assets/icons/support-headset.png",
+        "title": "After-Sales / Project Support",
+        "copy": "Ongoing support for product-related questions and follow-up needs.",
+        "link": "Review After-Sales Support",
+        "href": "../ordering/after-sales-support.html"
+      }
+    ]
+  },
+  "next": {
+    "kicker": "09 · START / CONTINUE YOUR PROJECT",
+    "title": "Start at the Stage That Fits Your Project",
+    "subtitle": "Choose the most relevant starting point and move forward with your OEM/ODM project.",
+    "cards": [
+      { "icon": "assets/icons/oem-cube.png", "title": "I Already Chose a Product", "link": "Customize a Product", "href": "product-customization.html" },
+      { "icon": "assets/icons/oem-chip.png", "title": "I Have Technical Requirements", "link": "Build a Technical Brief", "href": "technical-customization.html" },
+      { "icon": "assets/icons/oem-pen.png", "title": "I Need Branding / Packaging", "link": "Prepare Brand Requirements", "href": "branding-packaging.html" },
+      { "icon": "assets/icons/support-list.png", "title": "I'm Ready to Submit the Project", "link": "Start OEM Project", "href": "start-project.html" },
+      { "icon": "assets/icons/support-invoice.png", "title": "Or Continue a Previous Project", "copy": "Continue from your quote list and pick up where you left off.", "link": "Go to Quote List", "href": "../quote-list.html" }
+    ]
+  }
+}

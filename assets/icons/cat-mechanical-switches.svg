@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144" role="img" aria-label="Mechanical switches">
+  <g fill="none" stroke="#0b2946" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="5" y="5" width="134" height="134" rx="12"/>
+    <rect x="24" y="22" width="42" height="100" rx="7"/>
+    <rect x="78" y="22" width="42" height="100" rx="7"/>
+    <path d="M33 62h24M87 62h24"/>
+    <path d="M36 58l-3 8M90 58l-3 8"/>
+    <circle cx="45" cy="96" r="3"/>
+    <circle cx="99" cy="96" r="3"/>
+  </g>
+</svg>

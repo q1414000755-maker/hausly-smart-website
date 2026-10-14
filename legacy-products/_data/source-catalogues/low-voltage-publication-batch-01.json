@@ -1,0 +1,611 @@
+{
+  "schema_version": 1,
+  "catalogue_id": "low-voltage-data-panels",
+  "stage": "09-04",
+  "batch_id": "low-voltage-data-panels-batch-01",
+  "status": "selected_for_source_review_not_published",
+  "selection_rule": "Select 8–12 records covering both interface types, multiple mixed source families and information-only families. Exclude source-code anomalies.",
+  "counts": {
+    "readiness_candidates": 233,
+    "selected": 12,
+    "excluded_from_batch": 221,
+    "publication_routes": 0
+  },
+  "coverage": {
+    "selected_records": 12,
+    "unique_families": [
+      "T12",
+      "A15",
+      "A16",
+      "T20",
+      "Y10",
+      "S2",
+      "S8"
+    ],
+    "interface_types": [
+      "information-socket",
+      "weak-current"
+    ],
+    "mixed_family_samples": 10,
+    "information_only_family_samples": 2
+  },
+  "records": [
+    {
+      "batch_order": 1,
+      "product_id": "lv-src03-t12-023",
+      "family": "T12",
+      "model": "T12-023",
+      "interface_type": "information-socket",
+      "selection_reason": "Information Socket baseline from a mixed source collection",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 3,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_image": "assets/images/source-products/src03-t12-low-voltage.jpg",
+      "evidence_gate": {
+        "identity": true,
+        "interface_type": true,
+        "source_page": true,
+        "primary_image": false,
+        "model_specific_image": false,
+        "module": false,
+        "port": false,
+        "signal": false,
+        "function": false,
+        "standard": false,
+        "power": false,
+        "mounting": false,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "sku": true,
+        "reference_price": false,
+        "moq": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "review_status": "review_pending",
+      "publication_status": "hold",
+      "route": null,
+      "open_items": [
+        "Verify the family-preview image is acceptable for controlled review.",
+        "Resolve all pending interface/technical fields from model-level source material.",
+        "Keep test-only commercial values out of production publication."
+      ]
+    },
+    {
+      "batch_order": 2,
+      "product_id": "lv-src03-t12-028",
+      "family": "T12",
+      "model": "T12-028",
+      "interface_type": "weak-current",
+      "selection_reason": "Weak-Current baseline from the same source family; verifies interface split",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 3,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_image": "assets/images/source-products/src03-t12-low-voltage.jpg",
+      "evidence_gate": {
+        "identity": true,
+        "interface_type": true,
+        "source_page": true,
+        "primary_image": false,
+        "model_specific_image": false,
+        "module": false,
+        "port": false,
+        "signal": false,
+        "function": false,
+        "standard": false,
+        "power": false,
+        "mounting": false,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "sku": true,
+        "reference_price": false,
+        "moq": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "review_status": "review_pending",
+      "publication_status": "hold",
+      "route": null,
+      "open_items": [
+        "Verify the family-preview image is acceptable for controlled review.",
+        "Resolve all pending interface/technical fields from model-level source material.",
+        "Keep test-only commercial values out of production publication."
+      ]
+    },
+    {
+      "batch_order": 3,
+      "product_id": "lv-src03-a15-020",
+      "family": "A15",
+      "model": "A15-020",
+      "interface_type": "information-socket",
+      "selection_reason": "Information Socket from a second mixed family",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 6,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_image": "assets/images/source-products/src03-a15-low-voltage.jpg",
+      "evidence_gate": {
+        "identity": true,
+        "interface_type": true,
+        "source_page": true,
+        "primary_image": false,
+        "model_specific_image": false,
+        "module": false,
+        "port": false,
+        "signal": false,
+        "function": false,
+        "standard": false,
+        "power": false,
+        "mounting": false,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "sku": true,
+        "reference_price": false,
+        "moq": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "review_status": "review_pending",
+      "publication_status": "hold",
+      "route": null,
+      "open_items": [
+        "Verify the family-preview image is acceptable for controlled review.",
+        "Resolve all pending interface/technical fields from model-level source material.",
+        "Keep test-only commercial values out of production publication."
+      ]
+    },
+    {
+      "batch_order": 4,
+      "product_id": "lv-src03-a15-025",
+      "family": "A15",
+      "model": "A15-025",
+      "interface_type": "weak-current",
+      "selection_reason": "Weak-Current from a second mixed family",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 6,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_image": "assets/images/source-products/src03-a15-low-voltage.jpg",
+      "evidence_gate": {
+        "identity": true,
+        "interface_type": true,
+        "source_page": true,
+        "primary_image": false,
+        "model_specific_image": false,
+        "module": false,
+        "port": false,
+        "signal": false,
+        "function": false,
+        "standard": false,
+        "power": false,
+        "mounting": false,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "sku": true,
+        "reference_price": false,
+        "moq": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "review_status": "review_pending",
+      "publication_status": "hold",
+      "route": null,
+      "open_items": [
+        "Verify the family-preview image is acceptable for controlled review.",
+        "Resolve all pending interface/technical fields from model-level source material.",
+        "Keep test-only commercial values out of production publication."
+      ]
+    },
+    {
+      "batch_order": 5,
+      "product_id": "lv-src03-a16-020",
+      "family": "A16",
+      "model": "A16-020",
+      "interface_type": "information-socket",
+      "selection_reason": "Information Socket from a third mixed family",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 9,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_image": "assets/images/source-products/src03-a16-low-voltage.jpg",
+      "evidence_gate": {
+        "identity": true,
+        "interface_type": true,
+        "source_page": true,
+        "primary_image": false,
+        "model_specific_image": false,
+        "module": false,
+        "port": false,
+        "signal": false,
+        "function": false,
+        "standard": false,
+        "power": false,
+        "mounting": false,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "sku": true,
+        "reference_price": false,
+        "moq": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "review_status": "review_pending",
+      "publication_status": "hold",
+      "route": null,
+      "open_items": [
+        "Verify the family-preview image is acceptable for controlled review.",
+        "Resolve all pending interface/technical fields from model-level source material.",
+        "Keep test-only commercial values out of production publication."
+      ]
+    },
+    {
+      "batch_order": 6,
+      "product_id": "lv-src03-a16-025",
+      "family": "A16",
+      "model": "A16-025",
+      "interface_type": "weak-current",
+      "selection_reason": "Weak-Current from a third mixed family",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 9,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_image": "assets/images/source-products/src03-a16-low-voltage.jpg",
+      "evidence_gate": {
+        "identity": true,
+        "interface_type": true,
+        "source_page": true,
+        "primary_image": false,
+        "model_specific_image": false,
+        "module": false,
+        "port": false,
+        "signal": false,
+        "function": false,
+        "standard": false,
+        "power": false,
+        "mounting": false,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "sku": true,
+        "reference_price": false,
+        "moq": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "review_status": "review_pending",
+      "publication_status": "hold",
+      "route": null,
+      "open_items": [
+        "Verify the family-preview image is acceptable for controlled review.",
+        "Resolve all pending interface/technical fields from model-level source material.",
+        "Keep test-only commercial values out of production publication."
+      ]
+    },
+    {
+      "batch_order": 7,
+      "product_id": "lv-src03-t20-014",
+      "family": "T20",
+      "model": "T20-014",
+      "interface_type": "information-socket",
+      "selection_reason": "Information Socket from a fourth mixed family",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 12,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_image": "assets/images/source-products/src03-t20-low-voltage.jpg",
+      "evidence_gate": {
+        "identity": true,
+        "interface_type": true,
+        "source_page": true,
+        "primary_image": false,
+        "model_specific_image": false,
+        "module": false,
+        "port": false,
+        "signal": false,
+        "function": false,
+        "standard": false,
+        "power": false,
+        "mounting": false,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "sku": true,
+        "reference_price": false,
+        "moq": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "review_status": "review_pending",
+      "publication_status": "hold",
+      "route": null,
+      "open_items": [
+        "Verify the family-preview image is acceptable for controlled review.",
+        "Resolve all pending interface/technical fields from model-level source material.",
+        "Keep test-only commercial values out of production publication."
+      ]
+    },
+    {
+      "batch_order": 8,
+      "product_id": "lv-src03-t20-021",
+      "family": "T20",
+      "model": "T20-021",
+      "interface_type": "weak-current",
+      "selection_reason": "Weak-Current from a fourth mixed family",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 12,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_image": "assets/images/source-products/src03-t20-low-voltage.jpg",
+      "evidence_gate": {
+        "identity": true,
+        "interface_type": true,
+        "source_page": true,
+        "primary_image": false,
+        "model_specific_image": false,
+        "module": false,
+        "port": false,
+        "signal": false,
+        "function": false,
+        "standard": false,
+        "power": false,
+        "mounting": false,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "sku": true,
+        "reference_price": false,
+        "moq": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "review_status": "review_pending",
+      "publication_status": "hold",
+      "route": null,
+      "open_items": [
+        "Verify the family-preview image is acceptable for controlled review.",
+        "Resolve all pending interface/technical fields from model-level source material.",
+        "Keep test-only commercial values out of production publication."
+      ]
+    },
+    {
+      "batch_order": 9,
+      "product_id": "lv-src03-y10-014",
+      "family": "Y10",
+      "model": "Y10-014",
+      "interface_type": "information-socket",
+      "selection_reason": "Information Socket from a fifth mixed family",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 16,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_image": "assets/images/source-products/src03-y10-mechanical-low-voltage.jpg",
+      "evidence_gate": {
+        "identity": true,
+        "interface_type": true,
+        "source_page": true,
+        "primary_image": false,
+        "model_specific_image": false,
+        "module": false,
+        "port": false,
+        "signal": false,
+        "function": false,
+        "standard": false,
+        "power": false,
+        "mounting": false,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "sku": true,
+        "reference_price": false,
+        "moq": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "review_status": "review_pending",
+      "publication_status": "hold",
+      "route": null,
+      "open_items": [
+        "Verify the family-preview image is acceptable for controlled review.",
+        "Resolve all pending interface/technical fields from model-level source material.",
+        "Keep test-only commercial values out of production publication."
+      ]
+    },
+    {
+      "batch_order": 10,
+      "product_id": "lv-src03-y10-021",
+      "family": "Y10",
+      "model": "Y10-021",
+      "interface_type": "weak-current",
+      "selection_reason": "Weak-Current from a fifth mixed family",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 16,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_image": "assets/images/source-products/src03-y10-mechanical-low-voltage.jpg",
+      "evidence_gate": {
+        "identity": true,
+        "interface_type": true,
+        "source_page": true,
+        "primary_image": false,
+        "model_specific_image": false,
+        "module": false,
+        "port": false,
+        "signal": false,
+        "function": false,
+        "standard": false,
+        "power": false,
+        "mounting": false,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "sku": true,
+        "reference_price": false,
+        "moq": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "review_status": "review_pending",
+      "publication_status": "hold",
+      "route": null,
+      "open_items": [
+        "Verify the family-preview image is acceptable for controlled review.",
+        "Resolve all pending interface/technical fields from model-level source material.",
+        "Keep test-only commercial values out of production publication."
+      ]
+    },
+    {
+      "batch_order": 11,
+      "product_id": "lv-src03-s2-lv-017",
+      "family": "S2",
+      "model": "S2-017",
+      "interface_type": "information-socket",
+      "selection_reason": "Information Socket from an information-only family",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 45,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_image": "assets/images/source-products/src03-s2-low-voltage.jpg",
+      "evidence_gate": {
+        "identity": true,
+        "interface_type": true,
+        "source_page": true,
+        "primary_image": false,
+        "model_specific_image": false,
+        "module": false,
+        "port": false,
+        "signal": false,
+        "function": false,
+        "standard": false,
+        "power": false,
+        "mounting": false,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "sku": true,
+        "reference_price": false,
+        "moq": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "review_status": "review_pending",
+      "publication_status": "hold",
+      "route": null,
+      "open_items": [
+        "Verify the family-preview image is acceptable for controlled review.",
+        "Resolve all pending interface/technical fields from model-level source material.",
+        "Keep test-only commercial values out of production publication."
+      ]
+    },
+    {
+      "batch_order": 12,
+      "product_id": "lv-src03-s8-lv-017",
+      "family": "S8",
+      "model": "S8-017",
+      "interface_type": "information-socket",
+      "selection_reason": "Information Socket from a second information-only family",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 63,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_image": "assets/images/source-products/src03-s8-low-voltage.jpg",
+      "evidence_gate": {
+        "identity": true,
+        "interface_type": true,
+        "source_page": true,
+        "primary_image": false,
+        "model_specific_image": false,
+        "module": false,
+        "port": false,
+        "signal": false,
+        "function": false,
+        "standard": false,
+        "power": false,
+        "mounting": false,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "sku": true,
+        "reference_price": false,
+        "moq": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "review_status": "review_pending",
+      "publication_status": "hold",
+      "route": null,
+      "open_items": [
+        "Verify the family-preview image is acceptable for controlled review.",
+        "Resolve all pending interface/technical fields from model-level source material.",
+        "Keep test-only commercial values out of production publication."
+      ]
+    }
+  ],
+  "publication_rule": "This is a source-review batch only. Every selected record remains review_pending, publication_status hold, route null, excluded from sitemap/Quote, and not published to OSS."
+}

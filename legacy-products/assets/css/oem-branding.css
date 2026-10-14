@@ -1,0 +1,358 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   OEM「Branding, Packaging & Documentation」页 —— 本页专属组件
+   （设计稿 04.png，2026-09-20）
+   通用原语（band / 区头 / 按钮 / 药丸 / 卡片 / 键值行 / 网关卡 / snap）
+   在 assets/css/oem-flow.css —— 本文件只放 obx- 前缀的部件。
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── 01 intro / 工作台 ────────────────────────────────────────── */
+.obx-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  gap: 28px;
+  align-items: start;
+}
+.obx-intro-copy .osp-actions { margin-top: 24px; }
+.obx-ws-head {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--z02-border-line);
+}
+.obx-ws-head img { width: 64px; height: 64px; object-fit: contain; border-radius: 6px; background: var(--z02-surface-page); padding: 6px; }
+.obx-ws-meta strong { display: block; color: var(--z02-text); font-size: var(--z02-fs-action); font-weight: var(--z02-fw-semibold); }
+.obx-ws-meta span { display: block; margin-top: 3px; color: var(--z02-text-muted); font-size: var(--z02-fs-label); }
+
+/* ── 通用：主区 + 右栏 / 网格 ─────────────────────────────────── */
+.obx-side {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 356px);
+  gap: 18px;
+  align-items: start;
+}
+.obx-flow { display: grid; gap: 12px; align-items: start; }
+.obx-flow--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.obx-flow--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+/* 07 复核卡：窄列时让药丸换到下一行。
+   review 行是「标签 + 药丸」，标签 flex:0 0 auto 不缩、药丸也不缩，
+   4 列下每卡只有 ~268px 而行的最小内容宽 ~277px → 药丸会顶出卡外被裁。 */
+#obx-review .obx-flow .osp-kv { flex-wrap: wrap; row-gap: 4px; }
+#obx-review .obx-flow .osp-kv > span:last-child { margin-left: auto; }
+
+/* 05 文档卡：下拉占位更大一点，否则 "Provided by customer" 这类长选项会被原生控件截断 */
+#obx-documentation .obx-field--row { grid-template-columns: minmax(0, 1fr) minmax(120px, 54%); }
+
+/* ── 表单件 ───────────────────────────────────────────────────── */
+.obx-fields { display: grid; gap: 10px; }
+.obx-fields--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.obx-field { display: grid; gap: 6px; min-width: 0; }
+.obx-field > span { color: var(--z02-text-muted); font-size: var(--z02-fs-label); }
+.obx-field--row { grid-template-columns: minmax(0, 1fr) minmax(120px, 46%); align-items: center; }
+.obx-input,
+.obx-select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 5px;
+  background: var(--z02-surface);
+  color: var(--z02-text);
+  font-family: var(--font);
+  font-size: var(--z02-fs-action);
+}
+.obx-textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 5px;
+  background: var(--z02-surface);
+  color: var(--z02-text);
+  font-family: var(--font);
+  font-size: var(--z02-fs-action);
+  line-height: var(--z02-lh-copy);
+  resize: vertical;
+}
+.obx-textarea::placeholder { color: var(--z02-text-faint); }
+.obx-file {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 36px;
+  padding: 0 11px;
+  border: 1px dashed var(--z02-border-line);
+  border-radius: 5px;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.obx-file:hover { border-color: var(--z02-accent); color: var(--z02-accent); }
+.obx-file em { font-style: normal; color: var(--z02-accent); }
+
+/* ── 02 品牌呈现：三个选项卡 ─────────────────────────────────── */
+.obx-options { display: grid; gap: 10px; }
+.obx-option {
+  border: 1px solid var(--z02-border-line);
+  border-radius: 7px;
+  background: var(--z02-surface);
+  padding: 13px 13px 12px;
+}
+.obx-option.is-on { border-color: var(--z02-accent); box-shadow: inset 0 0 0 1px var(--z02-accent); background: var(--z02-surface-selected); }
+.obx-option-head {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 9px;
+  align-items: start;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  font-family: var(--font);
+  cursor: pointer;
+  width: 100%;
+}
+.obx-radio {
+  width: 17px;
+  height: 17px;
+  margin-top: 1px;
+  border: 1.5px solid var(--z02-border-line);
+  border-radius: 50%;
+  background: var(--z02-surface);
+}
+.obx-option.is-on .obx-radio { border: 5px solid var(--z02-accent); }
+.obx-option-copy strong { display: block; color: var(--z02-text); font-size: var(--z02-fs-action); font-weight: var(--z02-fw-semibold); }
+.obx-option-copy span { display: block; margin-top: 2px; color: var(--z02-text-muted); font-size: var(--z02-fs-label); }
+.obx-option .obx-fields { margin-top: 11px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.obx-hint { margin: 10px 0 0; color: var(--z02-text-faint); font-size: var(--z02-fs-label); }
+.obx-hint--center { text-align: center; line-height: var(--z02-lh-card-title); }
+.obx-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 11px;
+  border-radius: 5px;
+  background: var(--z02-surface-selected);
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-card-title);
+}
+
+/* ── 03 开关行 + 标签预览 ────────────────────────────────────── */
+.obx-switchrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--z02-border-line);
+}
+.obx-switchrow:last-child { border-bottom: 0; }
+.obx-switchrow > span { color: var(--z02-text-muted); font-size: var(--z02-fs-label); }
+.obx-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: var(--font);
+  font-size: var(--z02-fs-label);
+  color: var(--z02-text-muted);
+  cursor: pointer;
+}
+.obx-switch-track {
+  position: relative;
+  width: 30px;
+  height: 16px;
+  border-radius: 999px;
+  background: var(--z02-border-line);
+  flex: 0 0 auto;
+  transition: background .16s ease;
+}
+.obx-switch-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--z02-surface);
+  transition: left .16s ease;
+}
+.obx-switch.is-on { color: var(--z02-accent); font-weight: var(--z02-fw-medium); }
+.obx-switch.is-on .obx-switch-track { background: var(--z02-accent); }
+.obx-switch.is-on .obx-switch-knob { left: 16px; }
+
+.obx-label {
+  border: 1px solid var(--z02-border-line);
+  border-radius: 7px;
+  background: var(--z02-surface-page);
+  padding: 13px;
+}
+.obx-label-head { margin-bottom: 10px; padding-bottom: 9px; border-bottom: 1px solid var(--z02-border-line); }
+.obx-label-head strong { display: block; color: var(--z02-text); font-size: var(--z02-fs-panel-title); line-height: var(--z02-lh-panel-title); font-weight: var(--z02-fw-semibold); letter-spacing: var(--z02-ls-component-title); }
+.obx-label-head span { display: block; margin-top: 3px; color: var(--z02-text-faint); font-size: var(--z02-fs-label); }
+.obx-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-action);
+}
+.obx-label-row strong { color: var(--z02-text); font-weight: var(--z02-fw-medium); text-align: right; }
+.obx-label-row--wrap { align-items: flex-start; }
+.obx-label-row--wrap > span:last-child { text-align: right; line-height: var(--z02-lh-card-title); }
+.obx-barcode {
+  width: 96px;
+  height: 26px;
+  border-radius: 2px;
+  background: repeating-linear-gradient(90deg, var(--z02-text) 0 2px, transparent 2px 4px, var(--z02-text) 4px 7px, transparent 7px 9px);
+  opacity: .75;
+}
+
+/* ── 04 包装基准图 ───────────────────────────────────────────── */
+.obx-baseline {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 6px;
+  background: var(--z02-surface-page);
+  display: grid;
+  place-items: center;
+  height: 116px;
+  overflow: hidden;
+}
+.obx-baseline img { width: 100%; height: 100%; object-fit: contain; }
+
+/* ── 06 素材卡 ───────────────────────────────────────────────── */
+.obx-asset-row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+.obx-asset {
+  box-sizing: border-box;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  padding: 13px 12px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 7px;
+  background: var(--z02-surface);
+  min-width: 0;
+}
+.obx-asset > strong { color: var(--z02-text); font-size: var(--z02-fs-action); font-weight: var(--z02-fw-semibold); }
+.obx-files { display: flex; flex-wrap: wrap; gap: 6px; min-height: 20px; }
+.obx-file-chip {
+  padding: 4px 8px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 5px;
+  background: var(--z02-surface-page);
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  overflow-wrap: anywhere;
+}
+.obx-asset-hint { color: var(--z02-text-faint); font-size: var(--z02-fs-label); }
+.obx-upload {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 5px;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-label);
+  cursor: pointer;
+  justify-self: start;
+}
+.obx-upload:hover { border-color: var(--z02-accent); color: var(--z02-accent); }
+
+/* ── 08 简报 ─────────────────────────────────────────────────── */
+.obx-brief-product { margin-bottom: 14px; }
+.obx-brief-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 356px);
+  gap: 18px;
+  align-items: start;
+}
+.obx-brief-cols { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+.obx-brief-col { padding: 14px 12px; }
+.obx-brief-col .osp-card-title { margin-bottom: 10px; padding-bottom: 9px; }
+.obx-brief-status { position: sticky; top: 84px; }
+.obx-copy-note {
+  margin: 10px 0 0;
+  padding: 9px 11px;
+  border-radius: 5px;
+  background: var(--z02-surface-selected);
+  color: var(--z02-accent);
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-card-title);
+}
+.obx-note { margin: 10px 0 0; color: var(--z02-text-faint); font-size: var(--z02-fs-label); line-height: var(--z02-lh-card-title); }
+
+/* ── 09 下一步 ───────────────────────────────────────────────── */
+.obx-next-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 300px);
+  gap: 18px;
+  align-items: start;
+}
+.obx-next-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.obx-next-card {
+  display: grid;
+  gap: 7px;
+  justify-items: start;
+  align-content: start;
+  padding: 18px 16px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 7px;
+  background: var(--z02-surface);
+  text-decoration: none;
+}
+.obx-next-card:hover { border-color: var(--z02-accent); box-shadow: 0 8px 22px rgba(23,53,101,.08); }
+.obx-next-icon { width: 36px; height: 36px; border-radius: 6px; display: grid; place-items: center; background: var(--z02-surface-selected); }
+.obx-next-icon img { width: 20px; height: 20px; object-fit: contain; }
+.obx-next-card strong { color: var(--z02-text); font-size: var(--z02-fs-action); font-weight: var(--z02-fw-semibold); }
+.obx-next-card > span { color: var(--z02-text-muted); font-size: var(--z02-fs-label); line-height: var(--z02-lh-card-title); }
+.obx-next-card b { margin-top: 6px; color: var(--z02-accent); font-size: var(--z02-fs-label); font-weight: var(--z02-fw-medium); }
+.obx-link-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--z02-border-line);
+  color: var(--z02-text);
+  font-size: var(--z02-fs-action);
+  text-decoration: none;
+}
+.obx-link-row:last-child { border-bottom: 0; }
+.obx-link-row:hover { color: var(--z02-accent); }
+.obx-link-row b { color: var(--z02-accent); font-weight: var(--z02-fw-regular); }
+
+/* ── 断点：只做 PC（≤1679），窄屏保底不破版 ────────────────────── */
+/* 1440 这一档：版心 1224 → 侧栏切走 356 后左列只剩 850。
+   4 列各 204px、5 列各 160px 都会挤到换行/裁字，所以在 1600 以下先降列数。 */
+@media (max-width: 1599px) {
+  .obx-flow--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .obx-brief-cols { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 1280px) {
+  .obx-intro-grid { grid-template-columns: 1fr; }
+  .obx-side { grid-template-columns: 1fr; }
+  .obx-flow--4 { grid-template-columns: repeat(2, 1fr); }
+  .obx-flow--3 { grid-template-columns: repeat(2, 1fr); }
+  .obx-asset-row { grid-template-columns: repeat(3, 1fr); }
+  .obx-brief-cols { grid-template-columns: repeat(3, 1fr); }
+  .obx-brief-grid { grid-template-columns: 1fr; }
+  .obx-next-grid { grid-template-columns: 1fr; }
+  .obx-brief-status { position: static; }
+}
+@media (max-width: 900px) {
+  .obx-flow--3, .obx-flow--4, .obx-asset-row, .obx-brief-cols, .obx-next-row, .obx-fields--2 { grid-template-columns: 1fr; }
+  .obx-option .obx-fields { grid-template-columns: 1fr; }
+}

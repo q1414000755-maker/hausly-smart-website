@@ -1,0 +1,2673 @@
+{
+  "schema_version": 1,
+  "page": "cat-hotel-switches",
+  "locale": "en",
+  "_placeholder": {
+    "active": true,
+    "render_banner": false,
+    "summary": "本文件全部为占位数据，用于把页面结构与交互跑通。替换真实数据时只改本文件的值，代码不需要改。",
+    "why_no_banner": "与 smart-switches.json 同一口径：包子 2026-09-17 指示「标记写在代码里，页面渲染看不到」，所以 render_banner = false。对外演示或上线前改成 true 即可渲染出原型横幅。",
+    "replace": [
+      {
+        "what": "产品图",
+        "where": "model_groups[*].variants[*].image.src",
+        "with": "真实产品摄影。当前全部指向 assets/images/placeholders/product-*.svg。"
+      },
+      {
+        "what": "参考价",
+        "where": "model_groups[*].variants[*].price.amount",
+        "with": "真实参考价。换价时把 price.status 从 placeholder 改成 confirmed，并更新 checked_on。"
+      },
+      {
+        "what": "型号与 SKU",
+        "where": "model_groups[*].model_id 与 variants[*].sku",
+        "with": "真实型号编码与 SKU。当前 GSL-HKC1 这类是行业通用写法，不是真实编码。"
+      },
+      {
+        "what": "客房场景角色",
+        "where": "variants[*].attributes.function",
+        "with": "真实产品在该酒店系统里的角色。8 个取值是按客房控制链路拟的，不是目录。"
+      }
+    ]
+  },
+  "eyebrow": "PRODUCT CATALOGUE",
+  "title": "Hotel Controls",
+  "intro": "Guest-room control from the door plate to the bedside: key-card power, scene panels, service requests and curtain control. Reference prices are per unit and move with protocol, finish and order quantity.",
+  "price_note": "Reference price per unit, EXW. Hotel projects are usually quoted per room set — send the room count and the panel schedule for a project price.",
+  "dimensions": [
+    {
+      "key": "function",
+      "label": "Room Role",
+      "primary": true
+    },
+    {
+      "key": "protocol",
+      "label": "Connectivity",
+      "primary": true
+    },
+    {
+      "key": "keys",
+      "label": "Keys & Channels",
+      "primary": true
+    },
+    {
+      "key": "card_type",
+      "label": "Card Type",
+      "primary": true
+    },
+    {
+      "key": "finish",
+      "label": "Color & Finish",
+      "primary": true
+    },
+    {
+      "key": "integration",
+      "label": "System Integration",
+      "primary": false
+    },
+    {
+      "key": "voltage",
+      "label": "Voltage",
+      "primary": false
+    },
+    {
+      "key": "load",
+      "label": "Rated Load",
+      "primary": false
+    },
+    {
+      "key": "mounting",
+      "label": "Wall Box",
+      "primary": false
+    }
+  ],
+  "labels": {
+    "function": {
+      "key-card": "Key card power",
+      "scene": "Scene panel",
+      "bedside": "Bedside master",
+      "service": "Service request",
+      "curtain": "Curtain control",
+      "thermostat": "Thermostat",
+      "door": "Door plate",
+      "dimmer": "Reading dimmer"
+    },
+    "protocol": {
+      "wifi": "Wi-Fi",
+      "zigbee": "Zigbee",
+      "rs485": "RS485 bus",
+      "source-pending": "Source confirmation pending"
+    },
+    "keys": {
+      "1": "1 key",
+      "2": "2 keys",
+      "4": "4 keys",
+      "6": "6 keys",
+      "source-pending": "Source confirmation pending"
+    },
+    "card_type": {
+      "insert": "Insert card",
+      "rfid": "RFID card",
+      "n-a": "Not applicable"
+    },
+    "finish": {
+      "white": "White",
+      "black": "Black",
+      "gold": "Gold",
+      "glass-white": "Glass white",
+      "source-pending": "Source confirmation pending"
+    },
+    "integration": {
+      "gsl": "Hauslysmart App",
+      "tuya": "Tuya Smart",
+      "pms": "Hotel PMS",
+      "rs485-bus": "RS485 host bus",
+      "source-pending": "Source confirmation pending"
+    },
+    "voltage": {
+      "universal": "100–240 V",
+      "220-240": "220–240 V",
+      "110-120": "110–120 V",
+      "source-pending": "Source confirmation pending"
+    },
+    "load": {
+      "10a": "10 A",
+      "16a": "16 A",
+      "30a": "30 A",
+      "source-pending": "Source confirmation pending"
+    },
+    "mounting": {
+      "eu86": "EU 86 box",
+      "uk86": "UK 86 box",
+      "us1": "US 1-gang",
+      "source-pending": "Source confirmation pending"
+    }
+  },
+  "value_order": {
+    "function": [
+      "key-card",
+      "scene",
+      "bedside",
+      "service",
+      "curtain",
+      "thermostat",
+      "door",
+      "dimmer"
+    ],
+    "protocol": [
+      "wifi",
+      "zigbee",
+      "rs485",
+      "source-pending"
+    ],
+    "keys": [
+      "1",
+      "2",
+      "4",
+      "6",
+      "source-pending"
+    ],
+    "card_type": [
+      "insert",
+      "rfid",
+      "n-a"
+    ],
+    "finish": [
+      "white",
+      "black",
+      "gold",
+      "glass-white",
+      "source-pending"
+    ],
+    "integration": [
+      "gsl",
+      "tuya",
+      "pms",
+      "rs485-bus",
+      "source-pending"
+    ],
+    "voltage": [
+      "universal",
+      "220-240",
+      "110-120",
+      "source-pending"
+    ],
+    "load": [
+      "10a",
+      "16a",
+      "30a",
+      "source-pending"
+    ],
+    "mounting": [
+      "eu86",
+      "uk86",
+      "us1",
+      "source-pending"
+    ]
+  },
+  "sorts": [
+    {
+      "key": "featured",
+      "label": "Featured"
+    },
+    {
+      "key": "model-asc",
+      "label": "Model A–Z"
+    },
+    {
+      "key": "price-asc",
+      "label": "Price, low to high"
+    },
+    {
+      "key": "price-desc",
+      "label": "Price, high to low"
+    }
+  ],
+  "batch_size": 8,
+  "card": {
+    "spec_keys": [
+      "keys",
+      "load",
+      "mounting"
+    ],
+    "badge_keys": [
+      "protocol"
+    ],
+    "compare_limit": {
+      "min": 2,
+      "max": 4
+    },
+    "quote": {
+      "add_label": "Add to Quote",
+      "added_label": "In Quote List"
+    },
+    "detail_label": "View Product",
+    "detail_route": "product-detail-v3.html"
+  },
+  "model_groups": [
+    {
+      "model_id": "src01-hotel-door-signage",
+      "source_name": "Hotel custom door signage",
+      "name": "Hotel Custom Door Signage Collection",
+      "slug": "src01-hotel-door-signage",
+      "editorial_order": 5,
+      "summary": "Source-backed hotel door-signage visual collection with 12 style references; model-specific specifications remain pending.",
+      "data_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC01",
+          "source_page": 13,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_fields": {
+        "styles": {
+          "value": "001–012 visual styles",
+          "status": "visual_source_only",
+          "source_id": "SRC01",
+          "source_page": 13
+        },
+        "commercial_terms": {
+          "value": "USD 8.8 per unit; MOQ 1 pcs",
+          "status": "confirmed",
+          "source_id": "USER-CONFIRMATION",
+          "source_page": null
+        }
+      },
+      "variants": [
+        {
+          "variant_id": "src01-signage-001",
+          "sku": "Hotel door signage style 001 — code pending",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "keys": [
+              "source-pending"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "integration": [
+              "source-pending"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-signage.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-signage-002",
+          "sku": "Hotel door signage style 002 — code pending",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "keys": [
+              "source-pending"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "integration": [
+              "source-pending"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-signage.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-signage-003",
+          "sku": "Hotel door signage style 003 — code pending",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "keys": [
+              "source-pending"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "integration": [
+              "source-pending"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-signage.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-signage-004",
+          "sku": "Hotel door signage style 004 — code pending",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "keys": [
+              "source-pending"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "integration": [
+              "source-pending"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-signage.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-signage-005",
+          "sku": "Hotel door signage style 005 — code pending",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "keys": [
+              "source-pending"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "integration": [
+              "source-pending"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-signage.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-signage-006",
+          "sku": "Hotel door signage style 006 — code pending",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "keys": [
+              "source-pending"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "integration": [
+              "source-pending"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-signage.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-signage-007",
+          "sku": "Hotel door signage style 007 — code pending",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "keys": [
+              "source-pending"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "integration": [
+              "source-pending"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-signage.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-signage-008",
+          "sku": "Hotel door signage style 008 — code pending",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "keys": [
+              "source-pending"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "integration": [
+              "source-pending"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-signage.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-signage-009",
+          "sku": "Hotel door signage style 009 — code pending",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "keys": [
+              "source-pending"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "integration": [
+              "source-pending"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-signage.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-signage-010",
+          "sku": "Hotel door signage style 010 — code pending",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "keys": [
+              "source-pending"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "integration": [
+              "source-pending"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-signage.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-signage-011",
+          "sku": "Hotel door signage style 011 — code pending",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "keys": [
+              "source-pending"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "integration": [
+              "source-pending"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-signage.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-signage-012",
+          "sku": "Hotel door signage style 012 — code pending",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "keys": [
+              "source-pending"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "integration": [
+              "source-pending"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-signage.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        }
+      ],
+      "source_image": {
+        "status": "source_preview",
+        "path": "assets/images/source-products/src01-hotel-door-signage.jpg",
+        "source_refs": [
+          {
+            "source_id": "SRC01",
+            "source_page": 13,
+            "status": "visual_source_only"
+          }
+        ]
+      }
+    },
+    {
+      "model_id": "gsl-hkc1",
+      "name": "Insert Card Power Switch",
+      "slug": "gsl-hkc1",
+      "editorial_order": 10,
+      "summary": "Insert-card power switch that drops the room load when the guest takes the card.",
+      "variants": [
+        {
+          "variant_id": "gsl-hkc1-w-wh",
+          "sku": "GSL-HKC1-W-WH",
+          "attributes": {
+            "function": [
+              "key-card"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "insert"
+            ],
+            "load": [
+              "30a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hkc1-w-bk",
+          "sku": "GSL-HKC1-W-BK",
+          "attributes": {
+            "function": [
+              "key-card"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "insert"
+            ],
+            "load": [
+              "30a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "black"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hkc1-r-wh",
+          "sku": "GSL-HKC1-R-WH",
+          "attributes": {
+            "function": [
+              "key-card"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "insert"
+            ],
+            "load": [
+              "30a"
+            ],
+            "integration": [
+              "rs485-bus",
+              "pms"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hkc1-w-wh-us",
+          "sku": "GSL-HKC1-W-WH-US",
+          "attributes": {
+            "function": [
+              "key-card"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "insert"
+            ],
+            "load": [
+              "30a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "110-120"
+            ],
+            "mounting": [
+              "us1"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-hkc2",
+      "name": "RFID Card Power Switch",
+      "slug": "gsl-hkc2",
+      "editorial_order": 20,
+      "summary": "Contactless card power switch for hotels that issue RFID room keys.",
+      "variants": [
+        {
+          "variant_id": "gsl-hkc2-w-wh",
+          "sku": "GSL-HKC2-W-WH",
+          "attributes": {
+            "function": [
+              "key-card"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "rfid"
+            ],
+            "load": [
+              "30a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hkc2-w-bk",
+          "sku": "GSL-HKC2-W-BK",
+          "attributes": {
+            "function": [
+              "key-card"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "rfid"
+            ],
+            "load": [
+              "30a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "black"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hkc2-w-gw",
+          "sku": "GSL-HKC2-W-GW",
+          "attributes": {
+            "function": [
+              "key-card"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "rfid"
+            ],
+            "load": [
+              "30a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "glass-white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hkc2-r-wh",
+          "sku": "GSL-HKC2-R-WH",
+          "attributes": {
+            "function": [
+              "key-card"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "rfid"
+            ],
+            "load": [
+              "30a"
+            ],
+            "integration": [
+              "rs485-bus",
+              "pms"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-hsc4",
+      "name": "4-Key Guest Room Scene Panel",
+      "slug": "gsl-hsc4",
+      "editorial_order": 30,
+      "summary": "Four engraved scene keys for entrance, reading, relax and all-off in a guest room.",
+      "variants": [
+        {
+          "variant_id": "gsl-hsc4-w-wh",
+          "sku": "GSL-HSC4-W-WH",
+          "attributes": {
+            "function": [
+              "scene"
+            ],
+            "keys": [
+              "4"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "tuya"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hsc4-w-bk",
+          "sku": "GSL-HSC4-W-BK",
+          "attributes": {
+            "function": [
+              "scene"
+            ],
+            "keys": [
+              "4"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "tuya"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "black"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hsc4-z-wh",
+          "sku": "GSL-HSC4-Z-WH",
+          "attributes": {
+            "function": [
+              "scene"
+            ],
+            "keys": [
+              "4"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "tuya"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hsc4-r-wh",
+          "sku": "GSL-HSC4-R-WH",
+          "attributes": {
+            "function": [
+              "scene"
+            ],
+            "keys": [
+              "4"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "rs485-bus",
+              "pms"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-hsc6",
+      "name": "6-Key Suite Scene Panel",
+      "slug": "gsl-hsc6",
+      "editorial_order": 40,
+      "summary": "Six-key panel for suites where lighting, curtains and scenes run from one plate.",
+      "variants": [
+        {
+          "variant_id": "gsl-hsc6-w-wh",
+          "sku": "GSL-HSC6-W-WH",
+          "attributes": {
+            "function": [
+              "scene"
+            ],
+            "keys": [
+              "6"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "tuya"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hsc6-w-gd",
+          "sku": "GSL-HSC6-W-GD",
+          "attributes": {
+            "function": [
+              "scene"
+            ],
+            "keys": [
+              "6"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "tuya"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "gold"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hsc6-z-bk",
+          "sku": "GSL-HSC6-Z-BK",
+          "attributes": {
+            "function": [
+              "scene"
+            ],
+            "keys": [
+              "6"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "tuya"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "finish": [
+              "black"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hsc6-r-wh-uk",
+          "sku": "GSL-HSC6-R-WH-UK",
+          "attributes": {
+            "function": [
+              "scene"
+            ],
+            "keys": [
+              "6"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "rs485-bus",
+              "pms"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "mounting": [
+              "uk86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-hbs1",
+      "name": "Bedside Master Control Panel",
+      "slug": "gsl-hbs1",
+      "editorial_order": 50,
+      "summary": "Bedside plate combining lighting, scenes, curtains and service requests in one panel.",
+      "variants": [
+        {
+          "variant_id": "gsl-hbs1-w-wh",
+          "sku": "GSL-HBS1-W-WH",
+          "attributes": {
+            "function": [
+              "bedside"
+            ],
+            "keys": [
+              "4"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hbs1-w-bk",
+          "sku": "GSL-HBS1-W-BK",
+          "attributes": {
+            "function": [
+              "bedside"
+            ],
+            "keys": [
+              "4"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "black"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hbs1-z-wh",
+          "sku": "GSL-HBS1-Z-WH",
+          "attributes": {
+            "function": [
+              "bedside"
+            ],
+            "keys": [
+              "4"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hbs1-r-gw",
+          "sku": "GSL-HBS1-R-GW",
+          "attributes": {
+            "function": [
+              "bedside"
+            ],
+            "keys": [
+              "4"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "rs485-bus",
+              "pms"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "finish": [
+              "glass-white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-hsp1",
+      "name": "Service Request Panel",
+      "slug": "gsl-hsp1",
+      "editorial_order": 60,
+      "summary": "Do-not-disturb, make-up-room and cleaning keys that report status to housekeeping.",
+      "variants": [
+        {
+          "variant_id": "gsl-hsp1-w-wh",
+          "sku": "GSL-HSP1-W-WH",
+          "attributes": {
+            "function": [
+              "service"
+            ],
+            "keys": [
+              "2"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hsp1-w-bk",
+          "sku": "GSL-HSP1-W-BK",
+          "attributes": {
+            "function": [
+              "service"
+            ],
+            "keys": [
+              "2"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "black"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hsp1-r-wh",
+          "sku": "GSL-HSP1-R-WH",
+          "attributes": {
+            "function": [
+              "service"
+            ],
+            "keys": [
+              "2"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "rs485-bus",
+              "pms"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-hct1",
+      "name": "Guest Room Curtain Panel",
+      "slug": "gsl-hct1",
+      "editorial_order": 70,
+      "summary": "Open, close and stop control for motorised curtains with position feedback.",
+      "variants": [
+        {
+          "variant_id": "gsl-hct1-w-wh",
+          "sku": "GSL-HCT1-W-WH",
+          "attributes": {
+            "function": [
+              "curtain"
+            ],
+            "keys": [
+              "2"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "tuya"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hct1-z-wh",
+          "sku": "GSL-HCT1-Z-WH",
+          "attributes": {
+            "function": [
+              "curtain"
+            ],
+            "keys": [
+              "2"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "tuya"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hct1-r-bk-uk",
+          "sku": "GSL-HCT1-R-BK-UK",
+          "attributes": {
+            "function": [
+              "curtain"
+            ],
+            "keys": [
+              "2"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "rs485-bus",
+              "pms"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "finish": [
+              "black"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "mounting": [
+              "uk86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-hth1",
+      "name": "In-Room Thermostat Panel",
+      "slug": "gsl-hth1",
+      "editorial_order": 80,
+      "summary": "Fan-coil thermostat with occupancy hold-back driven by the key card switch.",
+      "variants": [
+        {
+          "variant_id": "gsl-hth1-w-wh",
+          "sku": "GSL-HTH1-W-WH",
+          "attributes": {
+            "function": [
+              "thermostat"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "16a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hth1-w-gw",
+          "sku": "GSL-HTH1-W-GW",
+          "attributes": {
+            "function": [
+              "thermostat"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "16a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "glass-white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hth1-r-wh",
+          "sku": "GSL-HTH1-R-WH",
+          "attributes": {
+            "function": [
+              "thermostat"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "16a"
+            ],
+            "integration": [
+              "rs485-bus",
+              "pms"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-hdp1",
+      "name": "Door Plate with Bell and DND",
+      "slug": "gsl-hdp1",
+      "editorial_order": 90,
+      "summary": "Corridor-side room number plate with doorbell and illuminated do-not-disturb.",
+      "variants": [
+        {
+          "variant_id": "gsl-hdp1-w-wh",
+          "sku": "GSL-HDP1-W-WH",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hdp1-w-bk",
+          "sku": "GSL-HDP1-W-BK",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "pms"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "black"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hdp1-r-wh",
+          "sku": "GSL-HDP1-R-WH",
+          "attributes": {
+            "function": [
+              "door"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "rs485-bus",
+              "pms"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-hdm1",
+      "name": "Bedside Reading Dimmer",
+      "slug": "gsl-hdm1",
+      "editorial_order": 100,
+      "summary": "Trailing-edge dimmer for bedside reading lights, no neutral wire required.",
+      "variants": [
+        {
+          "variant_id": "gsl-hdm1-w-wh",
+          "sku": "GSL-HDM1-W-WH",
+          "attributes": {
+            "function": [
+              "dimmer"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "tuya"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hdm1-z-bk",
+          "sku": "GSL-HDM1-Z-BK",
+          "attributes": {
+            "function": [
+              "dimmer"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "tuya"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "finish": [
+              "black"
+            ],
+            "voltage": [
+              "universal"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-hdm1-w-gw-us",
+          "sku": "GSL-HDM1-W-GW-US",
+          "attributes": {
+            "function": [
+              "dimmer"
+            ],
+            "keys": [
+              "1"
+            ],
+            "card_type": [
+              "n-a"
+            ],
+            "load": [
+              "10a"
+            ],
+            "integration": [
+              "gsl",
+              "tuya"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "glass-white"
+            ],
+            "voltage": [
+              "110-120"
+            ],
+            "mounting": [
+              "us1"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "_note": "联系页（contact.html）的内容。registry 里本页的 purpose 是「把问题路由到对的团队，而不是全部塞进同一个收件箱」，所以 routes 块是主角。公司地址 / 邮箱 / 电话 / 响应时间一条真实数据都没有 —— facts 块里 value 留空会渲染成「Not published yet」，不要编。真实资料到位后只填 value，不用动代码。",
+  "description": "Where each kind of question goes: quotes, technical support, documents, samples and partnership — plus what is not published yet.",
+  "lead": "One page that sends your question to the right route instead of one general inbox.",
+  "blocks": [
+    {
+      "kind": "routes",
+      "heading": "Where your question goes",
+      "note": "Each route has its own form and its own fields. Picking the right one is the difference between one round trip and four.",
+      "items": [
+        {
+          "label": "Product quote or pricing",
+          "note": "Reference prices, quantity breaks, lead time and freight.",
+          "route": "request-a-quote.html"
+        },
+        {
+          "label": "Technical support",
+          "note": "Wiring, pairing, firmware and published documents.",
+          "route": "support.html"
+        },
+        {
+          "label": "Documents and downloads",
+          "note": "Datasheets, manuals, wiring diagrams and certificates.",
+          "route": "resources/datasheets.html"
+        },
+        {
+          "label": "Samples",
+          "note": "Evaluation units before a first order.",
+          "route": "support/samples.html"
+        },
+        {
+          "label": "Distribution or partnership",
+          "note": "Channel, territory and application review.",
+          "route": "partners/apply.html"
+        },
+        {
+          "label": "Factory and quality",
+          "note": "Manufacturing capability and inspection process.",
+          "route": "factory-quality.html"
+        }
+      ]
+    },
+    {
+      "kind": "facts",
+      "heading": "Company and response details",
+      "note": "These are published only when they are confirmed. Nothing here is filled in with a placeholder number or a plausible-looking address.",
+      "rows": [
+        { "label": "Registered company", "value": "" },
+        { "label": "Address", "value": "" },
+        { "label": "Email", "value": "" },
+        { "label": "Phone", "value": "" },
+        { "label": "Response time", "value": "" },
+        { "label": "Working hours", "value": "" }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Until the direct details are published",
+      "paragraphs": [
+        "The enquiry form is the route that works today. It builds a summary you can send on, and it carries the model, configuration and quantity a quote actually needs.",
+        "If your question is technical rather than commercial, use the support route instead — it does not ask you for purchase quantities."
+      ]
+    },
+    {
+      "kind": "slots",
+      "heading": "Still to be written",
+      "items": [
+        {
+          "label": "Factory visit arrangements",
+          "note": "How to book a visit, what a visit covers, and which sites can host one."
+        },
+        {
+          "label": "Regional contacts",
+          "note": "Whether there are regional offices or representatives, and which markets they cover."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "stage": "09-03",
+  "status": "pass_enrichment_hold_publication",
+  "catalogue": "Low-Voltage & Data Panels",
+  "counts": {
+    "source_collections": 15,
+    "mixed_interface_collections": 9,
+    "information_socket_only_collections": 6,
+    "candidate_products": 233,
+    "candidate_boundary_supported": 231,
+    "source_code_anomalies": 2,
+    "information_socket": 91,
+    "weak_current": 142,
+    "model_specific_images": 0,
+    "model_specific_documents": 0,
+    "public_routes": 0
+  },
+  "boundary_rule": "Keep each explicit source code as an independent hold candidate; split mixed source collections by interface_type; never infer a public product from a family image.",
+  "option_evidence_status": "source_pending",
+  "commercial_status": "test_only",
+  "anomalies_retained": ["A15-0363", "A16-0363"],
+  "publication": {
+    "status": "hold",
+    "routes": 0,
+    "oss_published": false,
+    "sitemap_included": false,
+    "quote_exposed": false
+  },
+  "next_stage": "09-04 Low-Voltage readiness gate and first-batch selection"
+}

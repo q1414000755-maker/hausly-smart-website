@@ -1,0 +1,6 @@
+<!-- PLACEHOLDER PDP MEDIA - replace when verified dimension drawing is supplied. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Dimension drawing pending">
+  <rect width="1200" height="800" fill="#eff1f3"/><rect x="34" y="34" width="1132" height="732" rx="10" fill="none" stroke="#ccd2d8" stroke-width="3" stroke-dasharray="16 12"/>
+  <rect x="170" y="190" width="220" height="300" fill="#fff" stroke="#c7ced6" stroke-width="4"/><rect x="490" y="190" width="80" height="300" fill="#dfe4e9" stroke="#c7ced6" stroke-width="4"/><rect x="700" y="190" width="330" height="300" rx="12" fill="#fff" stroke="#c7ced6" stroke-width="4"/><path d="M120 170h300M120 510h300M450 170h160M450 510h160M660 170h410M660 510h410" stroke="#8d98a3" stroke-width="3" stroke-dasharray="10 8"/>
+  <text x="600" y="635" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="600" letter-spacing="5" fill="#747d87">DIMENSION DRAWING</text><text x="600" y="680" text-anchor="middle" font-family="sans-serif" font-size="21" letter-spacing="2" fill="#a0a8b0">DIMENSIONS PENDING CONFIRMATION</text>
+</svg>

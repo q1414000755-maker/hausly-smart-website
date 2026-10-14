@@ -1,0 +1,550 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   OEM 定制入口页（Product Customization）—— 正文组件
+   2026-09-20 按设计稿重建。规则：
+   - 版心只认 --z02-canvas；字号/行高/字距/字重/文字色全部走 --z02-* token。
+   - 页头页尾由 site shell 注入，本文件只管 hero → stepbar → main → values。
+   - 前缀 ocx-（oem customization experience），不与其它页共用 class。
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Hero 说明 ───────────────────────────────────────────────────────
+   ⚠️ 这一页的 hero 不是自造的：整块用版型现成的 .inner-banner
+   （620 高、深色洗色、banner 图走 INNER_BANNER 那张、面包屑在右下角、
+   页头透明压在深色图上 —— 与占位页/内容页完全一致，不做第二套）。
+   这里只补充设计稿要的「三个特性 badge」在深底上的配色，其余一律不动。 */
+.ocx-banner-copy {
+  margin: 12px 0 0;
+  color: var(--z02-on-dark-muted, rgba(255,255,255,.78));
+  font-size: var(--z02-fs-action);
+  line-height: var(--z02-lh-copy);
+}
+.ocx-badges--on-dark { margin-top: 30px; }
+.ocx-badges--on-dark .ocx-badge-icon { background: rgba(255,255,255,.16); }
+.ocx-badges--on-dark .ocx-badge-icon img { filter: brightness(0) invert(1); }
+.ocx-badges--on-dark .ocx-badge strong { color: var(--z02-on-dark, #fff); }
+.ocx-badges--on-dark .ocx-badge span { color: rgba(255,255,255,.72); }
+.ocx-badges {
+  display: flex;
+  gap: 34px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+.ocx-badge {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+.ocx-badge-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--z02-surface-selected);
+}
+.ocx-badge-icon img { width: 19px; height: 19px; object-fit: contain; }
+.ocx-badge strong {
+  display: block;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-action);
+  line-height: var(--z02-lh-subhead);
+  font-weight: var(--z02-fw-semibold);
+}
+.ocx-badge span {
+  display: block;
+  margin-top: 2px;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-subhead);
+}
+
+/* ── 步骤条 ─────────────────────────────────────────────────────── */
+.ocx-stepbar {
+  background: var(--z02-surface);
+  border-bottom: 1px solid var(--z02-border-line);
+}
+.ocx-steps {
+  box-sizing: border-box;
+  width: var(--z02-canvas);
+  margin-inline: auto;
+  min-height: 100px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: start;
+  padding: 18px 0 14px;
+  position: relative;
+}
+.ocx-steps::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 6%;
+  right: 6%;
+  height: 1px;
+  background: var(--z02-border-line);
+}
+.ocx-step {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-card-title);
+}
+.ocx-step-index {
+  width: 26px;
+  height: 26px;
+  margin: 0 auto 8px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--z02-surface-product);
+  color: var(--z02-text);
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-medium);
+}
+.ocx-step.is-active { color: var(--z02-text); font-weight: var(--z02-fw-semibold); }
+.ocx-step.is-active .ocx-step-index {
+  background: var(--z02-accent);
+  color: #fff;
+  box-shadow: 0 3px 7px rgba(16,44,97,.16);
+}
+
+/* ── 主区两栏 ───────────────────────────────────────────────────── */
+.ocx-main { padding: 0 0 28px; }
+.ocx-grid {
+  box-sizing: border-box;
+  width: var(--z02-canvas);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 72.5%) minmax(240px, 27.5%);
+  gap: 24px;
+  align-items: start;
+}
+.ocx-left { min-width: 0; padding-top: 26px; }
+.ocx-title {
+  margin: 0 0 6px;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-panel-title);
+  line-height: var(--z02-lh-panel-title);
+  letter-spacing: var(--z02-ls-component-title);
+  font-weight: var(--z02-fw-semibold);
+}
+.ocx-subtitle {
+  margin: 0 0 16px;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-copy);
+  line-height: var(--z02-lh-subhead);
+  font-weight: var(--z02-fw-regular);
+}
+.ocx-tabs { display: flex; height: 36px; overflow-x: auto; }
+.ocx-tab {
+  min-width: 158px;
+  flex: 0 0 auto;
+  border: 1px solid var(--z02-border-line);
+  border-bottom: 0;
+  border-radius: 7px 7px 0 0;
+  background: var(--z02-surface-product);
+  color: var(--z02-text-muted);
+  font-family: var(--font);
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-medium);
+}
+.ocx-tab + .ocx-tab { margin-left: 1px; }
+.ocx-tab.is-active {
+  background: var(--z02-surface);
+  color: var(--z02-text);
+  font-weight: var(--z02-fw-semibold);
+  position: relative;
+}
+.ocx-tab.is-active::after {
+  content: "";
+  position: absolute;
+  left: 34px;
+  right: 34px;
+  bottom: -1px;
+  height: 1px;
+  background: var(--z02-text);
+}
+.ocx-search-row {
+  height: 56px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 8px 0 16px;
+  background: var(--z02-surface);
+}
+.ocx-search-row svg { width: 17px; height: 17px; flex: 0 0 auto; color: var(--z02-text-muted); }
+.ocx-search-row input {
+  border: 0;
+  outline: 0;
+  flex: 1;
+  min-width: 0;
+  color: var(--z02-text);
+  font-family: var(--font);
+  font-size: var(--z02-fs-action);
+  background: transparent;
+}
+.ocx-search-row input::placeholder { color: var(--z02-text-faint); }
+.ocx-search-btn {
+  min-width: 100px;
+  height: 37px;
+  border: 0;
+  border-radius: 4px;
+  background: var(--z02-accent);
+  color: #fff;
+  font-family: var(--font);
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-medium);
+}
+.ocx-search-btn:hover { background: var(--z02-accent-hover); }
+.ocx-subhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 0 12px;
+}
+.ocx-subhead h3 {
+  margin: 0;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-card-title);
+  line-height: var(--z02-lh-subhead);
+  font-weight: var(--z02-fw-semibold);
+}
+.ocx-link { color: var(--z02-accent); font-size: var(--z02-fs-action); font-weight: var(--z02-fw-medium); }
+.ocx-link:hover { text-decoration: underline; }
+
+/* 品类卡 */
+.ocx-category-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+.ocx-category {
+  min-width: 0;
+  height: 112px;
+  padding: 12px 6px 8px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 7px;
+  background: var(--z02-surface);
+  color: var(--z02-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-family: var(--font);
+}
+.ocx-category:hover,
+.ocx-category.is-active {
+  border-color: var(--z02-accent);
+  box-shadow: inset 0 0 0 1px var(--z02-accent);
+  background: var(--z02-surface-selected);
+}
+.ocx-category img { width: 55px; height: 55px; object-fit: contain; }
+.ocx-category span {
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-card-title);
+}
+.ocx-category-more { color: var(--z02-text-muted); font-size: var(--z02-fs-panel-title); line-height: var(--z02-lh-panel-title); letter-spacing: var(--z02-ls-component-title); }
+
+/* 产品卡 */
+.ocx-product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 9px;
+}
+.ocx-product {
+  min-width: 0;
+  padding: 12px 9px 10px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 7px;
+  background: var(--z02-surface);
+  display: flex;
+  flex-direction: column;
+}
+.ocx-product:hover {
+  border-color: var(--z02-accent);
+  box-shadow: 0 6px 18px rgba(23,53,101,.08);
+}
+.ocx-product.is-hidden { display: none; }
+.ocx-product-media {
+  height: 92px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 8px;
+}
+.ocx-product-media img { width: 100%; height: 100%; object-fit: contain; }
+.ocx-product h4 {
+  margin: 0;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-copy);
+  line-height: var(--z02-lh-card-title);
+  font-weight: var(--z02-fw-semibold);
+}
+.ocx-product p {
+  margin: 3px 0 0;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-card-title);
+}
+.ocx-select {
+  margin-top: auto;
+  border: 0;
+  background: transparent;
+  padding: 9px 0 0;
+  color: var(--z02-accent);
+  text-align: left;
+  font-family: var(--font);
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-medium);
+}
+.ocx-select:hover { text-decoration: underline; }
+
+/* 推荐横幅 */
+.ocx-recommend {
+  margin-top: 24px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--z02-surface-product);
+  display: grid;
+  grid-template-columns: 56% 44%;
+  min-height: 112px;
+}
+.ocx-recommend-media { background-size: cover; background-position: center; }
+.ocx-recommend-copy { padding: 22px 18px; }
+.ocx-recommend-copy h3 {
+  margin: 0 0 5px;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-card-title);
+  line-height: var(--z02-lh-subhead);
+  font-weight: var(--z02-fw-semibold);
+}
+.ocx-recommend-copy p {
+  margin: 0;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-copy);
+}
+.ocx-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 33px;
+  margin-top: 10px;
+  padding: 0 15px;
+  border: 0;
+  border-radius: 4px;
+  background: var(--z02-accent);
+  color: #fff;
+  font-family: var(--font);
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-medium);
+  text-decoration: none;
+}
+.ocx-primary:hover { background: var(--z02-accent-hover); }
+
+/* ── 右栏 ───────────────────────────────────────────────────────── */
+.ocx-sidebar { padding-top: 26px; }
+.ocx-panel {
+  padding: 19px 12px 13px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 6px;
+  background: var(--z02-surface);
+}
+.ocx-panel + .ocx-panel { margin-top: 10px; }
+.ocx-panel h3 {
+  margin: 0 0 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--z02-border-line);
+  color: var(--z02-text);
+  font-size: var(--z02-fs-card-title);
+  line-height: var(--z02-lh-subhead);
+  font-weight: var(--z02-fw-semibold);
+}
+.ocx-empty {
+  min-height: 168px;
+  padding: 19px 18px;
+  border-radius: 5px;
+  background: var(--z02-surface-page);
+  text-align: center;
+  color: var(--z02-text-muted);
+}
+.ocx-empty-mark { color: var(--z02-text-faint); font-size: var(--z02-fs-feature-title); line-height: var(--z02-lh-tight); }
+.ocx-empty strong {
+  display: block;
+  margin-top: 9px;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-semibold);
+}
+.ocx-empty p {
+  margin: 8px 0 0;
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-copy);
+}
+.ocx-info {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 11px;
+  border-radius: 5px;
+  background: var(--z02-surface-selected);
+  color: var(--z02-text-muted);
+}
+.ocx-info-icon {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--z02-accent);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--z02-accent);
+  font-size: var(--z02-fs-label);
+  font-style: normal;
+}
+.ocx-info strong {
+  display: block;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-semibold);
+}
+.ocx-info p { margin: 3px 0 0; font-size: var(--z02-fs-label); line-height: var(--z02-lh-card-title); }
+.ocx-action {
+  display: grid;
+  grid-template-columns: 30px 1fr 12px;
+  gap: 8px;
+  align-items: center;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--z02-border-line);
+  text-decoration: none;
+}
+.ocx-action:last-of-type { border-bottom: 0; }
+.ocx-action-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  background: var(--z02-surface-selected);
+}
+.ocx-action-icon img { width: 17px; height: 17px; object-fit: contain; }
+.ocx-action strong {
+  display: block;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-semibold);
+}
+.ocx-action span {
+  display: block;
+  margin-top: 2px;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+}
+.ocx-action > b { color: var(--z02-accent); font-size: var(--z02-fs-copy); font-weight: var(--z02-fw-regular); }
+.ocx-action:hover strong { color: var(--z02-accent); }
+.ocx-help { display: grid; gap: 10px; }
+.ocx-help a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-action);
+  text-decoration: none;
+}
+.ocx-help a:hover { color: var(--z02-accent); }
+.ocx-help img { width: 16px; height: 16px; object-fit: contain; }
+.ocx-continue {
+  width: 100%;
+  height: 43px;
+  margin-top: 18px;
+  border: 0;
+  border-radius: 5px;
+  background: var(--z02-accent);
+  color: #fff;
+  font-family: var(--font);
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-medium);
+}
+.ocx-continue:hover { background: var(--z02-accent-hover); }
+.ocx-next-note {
+  margin: 8px 0 0;
+  color: var(--z02-text-muted);
+  text-align: center;
+  font-size: var(--z02-fs-label);
+}
+
+/* ── 底部四特性条 ───────────────────────────────────────────────── */
+.ocx-values {
+  background: var(--z02-surface-page);
+  border-top: 1px solid var(--z02-border-line);
+  border-bottom: 1px solid var(--z02-border-line);
+}
+.ocx-values-inner {
+  box-sizing: border-box;
+  width: var(--z02-canvas);
+  margin-inline: auto;
+  min-height: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+.ocx-value {
+  min-height: 46px;
+  padding: 0 22px;
+  border-right: 1px solid var(--z02-border-line);
+  display: grid;
+  grid-template-columns: 31px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+.ocx-value:first-child { padding-left: 8px; }
+.ocx-value:last-child { border-right: 0; }
+.ocx-value-icon img { width: 27px; height: 27px; object-fit: contain; }
+.ocx-value strong {
+  display: block;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-semibold);
+}
+.ocx-value span {
+  display: block;
+  margin-top: 2px;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+}
+
+/* ── 断点：只做 PC（≤1679），窄屏保底不破版 ────────────────────── */
+@media (max-width: 1280px) {
+  .ocx-grid { grid-template-columns: minmax(0, 1fr); }
+  .ocx-sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-top: 0;
+  }
+  .ocx-sidebar .ocx-panel, .ocx-sidebar .ocx-continue, .ocx-sidebar .ocx-next-note { margin-top: 0; }
+  .ocx-category-grid { grid-template-columns: repeat(4, 1fr); }
+  .ocx-product-grid { grid-template-columns: repeat(3, 1fr); }
+  .ocx-hero-inner { max-width: 76%; }
+  .ocx-hero-media { inset: 0 0 0 55%; }
+}
+@media (max-width: 900px) {
+  .ocx-hero-media { opacity: .3; }
+  .ocx-hero-inner { max-width: var(--z02-canvas); }
+  .ocx-handnote { display: none; }
+  .ocx-stepbar { overflow-x: auto; }
+  .ocx-steps { min-width: 760px; }
+  .ocx-sidebar { grid-template-columns: 1fr; }
+  .ocx-values-inner { grid-template-columns: 1fr 1fr; padding: 12px 0; }
+  .ocx-value { padding: 9px 10px; }
+  .ocx-value:nth-child(even) { border-right: 0; }
+  .ocx-value:nth-child(-n + 2) { border-bottom: 1px solid var(--z02-border-line); }
+  .ocx-product-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .001ms !important; animation-duration: .001ms !important; }
+}

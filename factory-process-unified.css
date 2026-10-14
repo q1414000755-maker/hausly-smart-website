@@ -1,0 +1,10 @@
+.fq-process-migrated .fq-wrap{width:var(--z02-canvas);max-width:none;padding-top:32px}
+body.fq-process-migrated:is(.is-scrolled,.mobile-nav-open) [data-site-shell] .z02-brand.z02-brand{background:#182430!important}
+.fq-process-migrated:is(.is-scrolled,.mobile-nav-open) [data-site-shell] .z02-brand img{filter:none!important}
+.fq-process-migrated .fq-button{min-height:44px;border-radius:8px}
+.fq-process-migrated .fq-subnav{display:flex;flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+.fq-process-migrated .fq-subnav a{flex:none;min-height:44px}
+.fq-process-migrated .fq-steps span{display:block;line-height:1.5}
+.fq-process-migrated .fq-cta h2{color:white}
+.fq-process-migrated .fq-outline{color:white}
+@media(max-width:760px){.fq-process-migrated .fq-wrap{width:calc(100% - 32px);padding-top:24px}.fq-process-migrated .fq-table-wrap{max-width:100%}.fq-process-migrated .fq-panel{padding:18px}.fq-process-migrated .fq-split{min-width:0}.fq-process-migrated .fq-heading h2{font-size:26px}}

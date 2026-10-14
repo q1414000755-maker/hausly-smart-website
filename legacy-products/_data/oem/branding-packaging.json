@@ -1,0 +1,399 @@
+{
+  "hero": {
+    "kicker": "BRANDING & PACKAGING",
+    "title": "Branding, Packaging & Documentation",
+    "subtitle": "Prepare the product, packaging, labels and documents for your brand.",
+    "image": "assets/images/hero-smart-switches-s02.webp",
+    "image_width": 2172,
+    "image_height": 724,
+    "breadcrumb": ["Home", "OEM & ODM", "Branding & Packaging"]
+  },
+  "intro": {
+    "kicker": "01 · BRAND & PACKAGING",
+    "title": "Prepare the Product for Your Brand",
+    "copy": "Define how the product, packaging, labels and supporting documents should be prepared for your brand. This is where you organise your brand assets and required levels before moving on to the OEM project.",
+    "actions": [
+      { "label": "Build a Brand Package Brief", "href": "#obx-presentation", "style": "primary" },
+      { "label": "Choose a Product", "href": "product-customization.html", "style": "ghost" }
+    ],
+    "workspace": {
+      "title": "Brand Package Workspace",
+      "image": "assets/images/home/featured-scene-switch-render-v1.webp",
+      "name": "Smart Wall Switch (3 Gang)",
+      "meta": "3 Gang, Wi-Fi",
+      "change": { "label": "Change Product", "href": "product-customization.html" },
+      "rows": [
+        ["Branding", "Not defined", "muted"],
+        ["Packaging", "Not defined", "muted"],
+        ["Documentation", "Not defined", "muted"],
+        ["Label", "Not defined", "muted"]
+      ],
+      "cta": { "label": "Start Preparing", "href": "#obx-presentation" }
+    }
+  },
+  "presentation": {
+    "kicker": "02 · DEFINE THE BRAND PRESENTATION",
+    "title": "How Should the Product Be Presented?",
+    "subtitle": "Choose how your brand should appear on the product and packaging, and provide basic brand information.",
+    "defined_pill": "Defined",
+    "undefined_pill": "Not defined",
+    "not_required_pill": "Not required",
+    "options": [
+      {
+        "key": "my-brand",
+        "title": "Use My Brand",
+        "copy": "Apply your company brand",
+        "selected": true,
+        "fields": [
+          { "key": "brand_name", "label": "Brand Name", "type": "text", "value": "GSL Living" },
+          { "key": "logo", "label": "Logo", "type": "file", "value": "" }
+        ]
+      },
+      {
+        "key": "product-id",
+        "title": "Product-Specific Identification",
+        "copy": "Use a product name or identifier",
+        "selected": false,
+        "fields": [
+          { "key": "brand_code", "label": "Brand Code", "type": "text", "value": "GSL-LIV-01" },
+          { "key": "sku", "label": "SKU / Model", "type": "text", "value": "T12-003" },
+          { "key": "id_file", "label": "File", "type": "file", "value": "" }
+        ]
+      },
+      {
+        "key": "neutral",
+        "title": "Neutral / Unbranded Presentation",
+        "copy": "No brand marks, generic appearance",
+        "selected": false,
+        "fields": []
+      }
+    ],
+    "upload_tip": "Upload tip: 180 × 180, RGB, SVG or PNG.",
+    "context_rows": [
+      ["Market / Region", "Global"],
+      ["Language", "English"]
+    ],
+    "status_title": "Brand Asset Status",
+    "status_rows": [
+      { "key": "brand_name", "label": "Brand name", "value": "GSL Living", "state": "ok", "pill": "Added" },
+      { "key": "logo", "label": "Logo", "value": "Smart_Logo.svg", "state": "ok", "pill": "Added", "dynamic": "logo" },
+      { "key": "brand_guide", "label": "Brand guide", "value": "Not uploaded", "state": "pending", "pill": "Pending", "dynamic": "brand_guide" },
+      { "key": "language", "label": "Language", "value": "English", "state": "ok", "pill": "Added" },
+      { "key": "compatibility", "label": "Product compatibility", "value": "T12 series", "state": "ok", "pill": "Verified" }
+    ],
+    "ok_pill": "Added",
+    "pending_pill": "Pending",
+    "note": "Ensure your brand assets are compatible with product structures, colour use and typography."
+  },
+  "marking": {
+    "kicker": "03 · DEFINE PRODUCT MARKING",
+    "title": "Define Product Marking and Label Requirements",
+    "subtitle": "Define branding and labelling requirements, based on your product and brand requirements.",
+    "on_text": "Yes",
+    "off_text": "No",
+    "groups": [
+      {
+        "key": "product_marking",
+        "title": "Product Marking",
+        "rows": [
+          { "key": "logo", "label": "Logo", "on": true, "select": false },
+          { "key": "brand_name", "label": "Brand Name", "on": true, "select": false },
+          { "key": "product_id", "label": "Product Identifier", "on": true, "select": false },
+          { "key": "placement", "label": "Placement Requirement", "on": true, "values": ["Front side", "Back side", "Both sides"] },
+          { "key": "text", "label": "Text / Standard", "on": true, "values": ["Standard", "Custom text"] }
+        ]
+      },
+      {
+        "key": "product_label",
+        "title": "Product Label",
+        "rows": [
+          { "key": "logo", "label": "Logo", "on": false, "select": false },
+          { "key": "content", "label": "Brand & Model & Barcode", "on": false, "select": false },
+          { "key": "batch", "label": "Batch / Production", "on": true, "select": false },
+          { "key": "size", "label": "Size", "on": true, "values": ["20 × 25 mm", "30 × 40 mm", "Custom size"] }
+        ]
+      },
+      {
+        "key": "packaging_label",
+        "title": "Packaging Label",
+        "rows": [
+          { "key": "brand", "label": "Brand", "on": true, "select": false },
+          { "key": "batch", "label": "Batch / Production", "on": false, "select": false },
+          { "key": "placement", "label": "Placement Requirement", "on": false, "values": ["Box side", "Box back", "Carton"] }
+        ]
+      }
+    ],
+    "preview_title": "Label Requirement Preview",
+    "preview": {
+      "brand": "GSL Living",
+      "product": "Smart Wall Switch",
+      "version": "3 Gang",
+      "model": "T12-003",
+      "address": "Batch / production code printed in production",
+      "barcode_caption": "Barcode area",
+      "note": "This is a simple generic sample. The actual label may be finalised based on product and regional requirements."
+    },
+    "note": "Manufacturer technical or regulatory markings (e.g. safety, compliance) must be reviewed separately by our engineering and compliance team."
+  },
+  "packaging": {
+    "kicker": "04 · PACKAGING REQUIREMENTS",
+    "title": "Define How the Product Should Be Packaged",
+    "subtitle": "Specify your packaging materials, insertion and what should be included.",
+    "fields": [
+      { "key": "purpose", "label": "Packaging Purpose", "options": ["Retail Sales", "Project Distribution", "Sample Only"] },
+      { "key": "requirement", "label": "Packaging Requirement", "options": ["Colour Box", "Blank Box", "White Box"] },
+      { "key": "included", "label": "What Should Be Included?", "options": ["Product, Manual, Accessory", "Product and Manual", "Product Only"] },
+      { "key": "carton", "label": "Other Carton / Shipping Information", "options": ["Standard Export Carton", "Custom Carton", "Not defined"] }
+    ],
+    "special_title": "Special Requirements",
+    "special_placeholder": "Add specific packaging, retail or shipping instructions.",
+    "brief_title": "Packaging Brief",
+    "brief_rows": [
+      { "key": "primary", "label": "Primary", "value": "Colour Box", "state": "warn" },
+      { "key": "secondary", "label": "Secondary", "value": "Blank Box", "state": "muted" },
+      { "key": "manual", "label": "Manual", "value": "Not defined", "state": "muted" },
+      { "key": "labeling", "label": "Labelling", "value": "Label on box", "state": "ok" },
+      { "key": "shipping", "label": "Shipping", "value": "Standard export carton", "state": "muted" }
+    ],
+    "confirm_pill": "To confirm",
+    "ok_pill": "Defined",
+    "muted_pill": "Not required",
+    "baseline_caption": "Product Box Baseline",
+    "baseline_image": "assets/images/home/featured-usb-socket-render-v1.webp"
+  },
+  "documentation": {
+    "kicker": "05 · DOCUMENTATION & LANGUAGE",
+    "title": "Define the Documents That Need to Travel with the Product",
+    "subtitle": "Select and define the customer-facing documents, project documents and language requirements.",
+    "groups": [
+      {
+        "key": "customer",
+        "title": "Customer-Facing Documents",
+        "rows": [
+          { "key": "manual", "label": "User Manual", "options": ["Default", "Custom", "Not included"] },
+          { "key": "quick_start", "label": "Quick Start Guide", "options": ["Default", "Custom", "Not included"] },
+          { "key": "install", "label": "Installation Guide", "options": ["Default", "Custom", "Not included"] }
+        ]
+      },
+      {
+        "key": "project",
+        "title": "Project Documents",
+        "rows": [
+          { "key": "product_info", "label": "Product Information Sheet", "options": ["Default", "Custom", "Not included"] },
+          { "key": "config_ref", "label": "Configuration Reference", "options": ["Default", "Custom", "Not included"] },
+          { "key": "certificate", "label": "Certificate", "options": ["Default", "Custom", "Not included"] }
+        ]
+      },
+      {
+        "key": "brand",
+        "title": "Brand Presentation",
+        "rows": [
+          { "key": "include_brand", "label": "Include Brand Name", "options": ["Yes", "No"] },
+          { "key": "include_logo", "label": "Include Logo", "options": ["Yes", "No"] },
+          { "key": "custom_design", "label": "Custom Design", "options": ["Yes", "No"] }
+        ]
+      },
+      {
+        "key": "language",
+        "title": "Language Requirements",
+        "rows": [
+          { "key": "language", "label": "Language", "options": ["English", "Chinese", "German", "French", "Spanish", "Custom"] },
+          { "key": "translation", "label": "Translation", "options": ["Provided by customer", "Provided by Hauslysmart", "Not provided"] }
+        ]
+      }
+    ],
+    "status_title": "Documentation Status",
+    "status_rows": [
+      { "key": "manual", "label": "User Manual", "value": "English", "state": "ok", "pill": "Default" },
+      { "key": "quick_start", "label": "Quick Start Guide", "value": "English", "state": "ok", "pill": "Default" },
+      { "key": "brand", "label": "Brand Presentation", "value": "English", "state": "ok", "pill": "Default" },
+      { "key": "language", "label": "Language", "value": "English", "state": "pending", "pill": "Pending", "dynamic": "language", "pill_follow": "pending" },
+      { "key": "manual_link", "label": "Manual File", "value": "User_Manual_PDF.pdf", "state": "ok", "pill": "Uploaded", "dynamic": "documentation" },
+      { "key": "translation", "label": "Translation File", "value": "Provided by customer", "state": "pending", "pill": "Pending", "dynamic": "translation", "pill_follow": "pending" }
+    ],
+    "default_pill": "Default",
+    "pending_pill": "Pending",
+    "muted_pill": "Not provided",
+    "note": "Documentation language and translation files are confirmed before production."
+  },
+  "assets": {
+    "kicker": "06 · ARTWORK & ASSET WORKSPACE",
+    "title": "Collect the Files Needed for Brand Preparation",
+    "subtitle": "Upload or link the files needed for brand preparation.",
+    "upload_label": "Upload File",
+    "items": [
+      { "key": "logo", "title": "Logo", "files": ["Smart_Logo.svg · 1.2 MB"], "hint": "SVG, PNG, 180 × 180 or larger" },
+      { "key": "brand_guide", "title": "Brand Guidelines", "files": ["brand_guidelines.pdf"], "hint": "PDF or link" },
+      { "key": "packaging_artwork", "title": "Packaging Artwork", "files": ["Packaging_Brief_v2.ai"], "hint": "AI, PDF, PNG" },
+      { "key": "documentation", "title": "Documentation Files", "files": ["User_Manual_PDF.pdf"], "hint": "PDF, DOCX" },
+      { "key": "reference", "title": "Reference Images", "files": [], "hint": "PNG, JPG" }
+    ],
+    "checklist_title": "Asset Checklist / Versions",
+    "checklist_rows": [
+      { "key": "logo", "label": "Logo", "value": "Logo_01.svg", "state": "ok" },
+      { "key": "brand_guide", "label": "Brand Guide", "value": "brand_guidelines.pdf", "state": "ok" },
+      { "key": "packaging_artwork", "label": "Packaging Artwork", "value": "Packaging_Brief_v2.ai", "state": "pending" },
+      { "key": "documentation", "label": "Documentation Files", "value": "User_Manual_PDF.pdf", "state": "ok" },
+      { "key": "reference", "label": "Reference Images", "value": "Not provided", "state": "muted" }
+    ],
+    "uploaded_pill": "Uploaded",
+    "pending_pill": "Pending",
+    "muted_pill": "Not provided",
+    "note": "Files are kept locally in this preview — nothing is uploaded to a server."
+  },
+  "review": {
+    "kicker": "07 · PRE-PRODUCTION REVIEW",
+    "title": "Review What Must Be Confirmed Before Production",
+    "subtitle": "Confirm all brand, packaging and documentation requirements before production.",
+    "confirmed_pill": "Confirmed",
+    "pending_pill": "To confirm",
+    "attention_pill": "Needs confirmation",
+    "groups": [
+      {
+        "key": "identity",
+        "title": "Product Identity",
+        "rows": [
+          { "key": "brand_name", "label": "Brand name", "state": "ok" },
+          { "key": "brand_name_ref", "label": "Brand name reference", "state": "ok" },
+          { "key": "model_name", "label": "Model name / SKU", "state": "ok" },
+          { "key": "appearance", "label": "Product appearance", "state": "attention" }
+        ]
+      },
+      {
+        "key": "artwork",
+        "title": "Artwork",
+        "rows": [
+          { "key": "logo", "label": "Logo file uploaded", "state": "pending" },
+          { "key": "brand_guide", "label": "Brand guide received", "state": "pending" },
+          { "key": "packaging_artwork", "label": "Packaging artwork", "state": "pending" },
+          { "key": "label_content", "label": "Label content", "state": "attention" }
+        ]
+      },
+      {
+        "key": "packaging",
+        "title": "Packaging",
+        "rows": [
+          { "key": "packaging_type", "label": "Packaging type confirmed", "state": "pending" },
+          { "key": "packaging_approved", "label": "Packaging artwork approved", "state": "pending" },
+          { "key": "label_requirements", "label": "Label requirements confirmed", "state": "attention" },
+          { "key": "carton_info", "label": "Carton information confirmed", "state": "attention" }
+        ]
+      },
+      {
+        "key": "documents",
+        "title": "Documentation",
+        "rows": [
+          { "key": "language", "label": "Language version confirmed", "state": "pending" },
+          { "key": "logo_applied", "label": "Logo applied", "state": "pending" },
+          { "key": "legal", "label": "Legal / compliance review", "state": "attention" }
+        ]
+      }
+    ],
+    "status_title": "Review Status",
+    "status_rows": [
+      { "key": "brand_name", "label": "Brand Name", "state": "ok" },
+      { "key": "brand_name_ref", "label": "Brand Name Reference", "state": "ok" },
+      { "key": "logo", "label": "Logo Applied", "state": "pending" },
+      { "key": "brand_guide", "label": "Brand Guide", "state": "pending" },
+      { "key": "packaging", "label": "Packaging Reference", "state": "pending" },
+      { "key": "packaging_artwork", "label": "Packaging Artwork", "state": "pending" },
+      { "key": "language", "label": "Language Version", "state": "pending" },
+      { "key": "legal", "label": "Legal Review", "state": "attention" },
+      { "key": "final_approval", "label": "Final Approval", "state": "muted" }
+    ],
+    "muted_pill": "Not started",
+    "note": "Items marked “Needs confirmation” are reviewed by our engineering and compliance team before production."
+  },
+  "brief": {
+    "kicker": "08 · BRAND PACKAGE BRIEF",
+    "title": "Review Your Brand Package Brief",
+    "subtitle": "Here is a summary of your brand package requirements. Please review and confirm before adding to your OEM project.",
+    "product_name": "Smart Wall Switch (3 Gang)",
+    "product_image": "assets/images/home/featured-scene-switch-render-v1.webp",
+    "product_rows": [
+      ["Product Identifier", "T12-003, 3 Gang, Wi-Fi"],
+      ["Configuration", "Touch control, Wi-Fi"]
+    ],
+    "view_label": "View Product Details",
+    "view_href": "../products.html",
+    "columns": [
+      {
+        "key": "brand_identity",
+        "title": "Brand Identity",
+        "rows": [
+          { "key": "brand_name", "label": "Brand Name", "value": "Not defined" },
+          { "key": "logo", "label": "Logo", "value": "Not provided" },
+          { "key": "branding", "label": "Branding", "value": "Not defined" }
+        ]
+      },
+      {
+        "key": "product_branding",
+        "title": "Product Branding",
+        "rows": [
+          { "key": "brand_name", "label": "Brand Name", "value": "Not defined" },
+          { "key": "product_id", "label": "Product Identifier", "value": "Not defined" },
+          { "key": "marking", "label": "Product Marking", "value": "Not defined" }
+        ]
+      },
+      {
+        "key": "packaging",
+        "title": "Packaging",
+        "rows": [
+          { "key": "type", "label": "Packaging Type", "value": "Not defined" },
+          { "key": "labeling", "label": "Labelling", "value": "Not defined" },
+          { "key": "included", "label": "Included", "value": "Not defined" }
+        ]
+      },
+      {
+        "key": "documentation",
+        "title": "Documentation",
+        "rows": [
+          { "key": "manual", "label": "User Manual", "value": "Not defined" },
+          { "key": "quick_start", "label": "Quick Start", "value": "Not defined" },
+          { "key": "language", "label": "Language", "value": "English" }
+        ]
+      },
+      {
+        "key": "assets",
+        "title": "Assets",
+        "rows": [
+          { "key": "logo", "label": "Logo", "value": "Not provided" },
+          { "key": "brand_guide", "label": "Brand Guide", "value": "Not provided" },
+          { "key": "packaging_artwork", "label": "Packaging Artwork", "value": "Not provided" }
+        ]
+      }
+    ],
+    "status_title": "Brief Status",
+    "status_rows": [
+      { "key": "branding", "label": "Branding", "state": "muted" },
+      { "key": "packaging", "label": "Packaging", "state": "muted" },
+      { "key": "documentation", "label": "Documentation", "state": "muted" },
+      { "key": "labeling", "label": "Labelling", "state": "muted" },
+      { "key": "artwork", "label": "Artwork", "state": "muted" },
+      { "key": "language", "label": "Language", "value": "English", "state": "ok" }
+    ],
+    "added_pill": "Added",
+    "uploaded_pill": "Uploaded",
+    "muted_pill": "Not defined",
+    "add_label": "Add to OEM Project",
+    "edit_label": "Edit Requirements",
+    "edit_href": "#obx-presentation",
+    "copy_note": "Brand package brief copied. Paste it into your inquiry to our team — online submission is not connected yet.",
+    "note": "The brand package brief is not a production commitment. Final artwork and label proofs are approved before tooling."
+  },
+  "next": {
+    "kicker": "09 · CONTINUE THE NEXT STEP",
+    "title": "Continue with the Next Step",
+    "subtitle": "Your brand package can be attached to an existing project, used to start a new one, or prepared for another product.",
+    "cards": [
+      { "icon": "assets/icons/company-package.png", "title": "Add to Existing OEM Project", "copy": "Attach this brand package to an existing OEM project.", "link": "Add to OEM Project", "href": "start-project.html" },
+      { "icon": "assets/icons/oem-cube.png", "title": "Start a New OEM Project", "copy": "Start an OEM project with this brand package.", "link": "Continue to OEM Project", "href": "../contact.html" },
+      { "icon": "assets/icons/oem-sliders.png", "title": "Prepare Another Product", "copy": "Prepare a brand package for another product in the same brand.", "link": "Prepare Another Product", "href": "product-customization.html" }
+    ],
+    "links_title": "Other Useful Links",
+    "links": [
+      { "label": "Review Product Customization", "href": "product-customization.html" },
+      { "label": "Review Technical Customization", "href": "technical-customization.html" }
+    ]
+  }
+}

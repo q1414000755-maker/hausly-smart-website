@@ -1,0 +1,1465 @@
+{
+  "schema_version": 1,
+  "page": "cat-smart-door-locks",
+  "locale": "en",
+  "_placeholder": {
+    "active": true,
+    "render_banner": false,
+    "summary": "本文件全部为占位数据，用于把页面结构与交互跑通。替换真实数据时只改本文件的值，代码不需要改。",
+    "why_no_banner": "与 smart-switches.json 同一口径：包子 2026-09-17 指示「标记写在代码里，页面渲染看不到」，所以 render_banner = false。对外演示或上线前改成 true 即可渲染出原型横幅。",
+    "replace": [
+      {
+        "what": "产品图",
+        "where": "model_groups[*].variants[*].image.src",
+        "with": "真实产品摄影。当前全部指向 assets/images/placeholders/product-*.svg。"
+      },
+      {
+        "what": "参考价",
+        "where": "model_groups[*].variants[*].price.amount",
+        "with": "真实参考价。换价时把 price.status 从 placeholder 改成 confirmed，并更新 checked_on。"
+      },
+      {
+        "what": "型号与 SKU",
+        "where": "model_groups[*].model_id 与 variants[*].sku",
+        "with": "真实型号编码与 SKU。当前 GSL-* 这类是行业通用写法，不是真实编码。"
+      }
+    ]
+  },
+  "eyebrow": "PRODUCT CATALOGUE",
+  "title": "Smart Door Locks",
+  "intro": "Locks by mortise standard and door thickness, with the access methods, credential capacity and hotel integration stated per model.",
+  "price_note": "Reference price per lock, excluding the cylinder where a separate one is specified.",
+  "dimensions": [
+    {
+      "key": "lock",
+      "label": "Lock Type",
+      "primary": true
+    },
+    {
+      "key": "unlock",
+      "label": "Main Access",
+      "primary": true
+    },
+    {
+      "key": "protocol",
+      "label": "Connectivity",
+      "primary": true
+    },
+    {
+      "key": "cylinder",
+      "label": "Cylinder Standard",
+      "primary": true
+    },
+    {
+      "key": "finish",
+      "label": "Color & Finish",
+      "primary": true
+    },
+    {
+      "key": "power",
+      "label": "Power Source",
+      "primary": false
+    },
+    {
+      "key": "credentials",
+      "label": "Credential Capacity",
+      "primary": false
+    },
+    {
+      "key": "door",
+      "label": "Door Type",
+      "primary": false
+    },
+    {
+      "key": "ip",
+      "label": "IP Rating",
+      "primary": false
+    }
+  ],
+  "labels": {
+    "lock": {
+      "mortise": "Mortise",
+      "deadbolt": "Deadbolt",
+      "rim": "Rim latch",
+      "handle": "Handle set"
+    },
+    "unlock": {
+      "fingerprint": "Fingerprint",
+      "password": "PIN code",
+      "card": "Card",
+      "face": "Face recognition"
+    },
+    "protocol": {
+      "wifi": "Wi-Fi",
+      "zigbee": "Zigbee",
+      "ble": "Bluetooth",
+      "matter": "Matter",
+      "source-pending": "Source confirmation pending"
+    },
+    "cylinder": {
+      "euro": "Euro profile",
+      "us": "US cylindrical",
+      "n-a": "Supplied separately",
+      "source-pending": "Source confirmation pending"
+    },
+    "finish": {
+      "black": "Matte black",
+      "silver": "Silver",
+      "gold": "Gold",
+      "bronze": "Bronze",
+      "source-pending": "Source confirmation pending"
+    },
+    "power": {
+      "battery": "Battery",
+      "rechargeable": "Rechargeable",
+      "hardwired": "Hardwired",
+      "source-pending": "Source confirmation pending"
+    },
+    "credentials": {
+      "50": "50 credentials",
+      "100": "100 credentials",
+      "300": "300 credentials",
+      "source-pending": "Source confirmation pending"
+    },
+    "door": {
+      "wood": "Wood",
+      "metal": "Metal",
+      "glass": "Glass",
+      "source-pending": "Source confirmation pending"
+    },
+    "ip": {
+      "ip54": "IP54",
+      "ip65": "IP65",
+      "source-pending": "Source confirmation pending"
+    }
+  },
+  "value_order": {
+    "lock": [
+      "mortise",
+      "deadbolt",
+      "rim",
+      "handle"
+    ],
+    "unlock": [
+      "fingerprint",
+      "password",
+      "card",
+      "face"
+    ],
+    "protocol": [
+      "wifi",
+      "zigbee",
+      "ble",
+      "matter",
+      "source-pending"
+    ],
+    "cylinder": [
+      "euro",
+      "us",
+      "n-a",
+      "source-pending"
+    ],
+    "finish": [
+      "black",
+      "silver",
+      "gold",
+      "bronze",
+      "source-pending"
+    ],
+    "power": [
+      "battery",
+      "rechargeable",
+      "hardwired",
+      "source-pending"
+    ],
+    "credentials": [
+      "50",
+      "100",
+      "300",
+      "source-pending"
+    ],
+    "door": [
+      "wood",
+      "metal",
+      "glass",
+      "source-pending"
+    ],
+    "ip": [
+      "ip54",
+      "ip65",
+      "source-pending"
+    ]
+  },
+  "sorts": [
+    {
+      "key": "featured",
+      "label": "Featured"
+    },
+    {
+      "key": "model-asc",
+      "label": "Model A–Z"
+    },
+    {
+      "key": "price-asc",
+      "label": "Price, low to high"
+    },
+    {
+      "key": "price-desc",
+      "label": "Price, high to low"
+    }
+  ],
+  "batch_size": 8,
+  "card": {
+    "spec_keys": [
+      "lock",
+      "cylinder",
+      "door"
+    ],
+    "badge_keys": [
+      "protocol"
+    ],
+    "compare_limit": {
+      "min": 2,
+      "max": 4
+    },
+    "quote": {
+      "add_label": "Add to Quote",
+      "added_label": "In Quote List"
+    },
+    "detail_label": "View Product",
+    "detail_route": "product-detail-v3.html"
+  },
+  "model_groups": [
+    {
+      "model_id": "src01-hotel-door-locks",
+      "source_name": "Hotel custom door locks",
+      "name": "Hotel Custom Door Lock Collection",
+      "slug": "src01-hotel-door-locks",
+      "editorial_order": 5,
+      "summary": "Source-backed hotel lock collection with card, fingerprint and password access methods; individual lock models remain pending.",
+      "data_status": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC01",
+          "source_page": 14,
+          "status": "source_extracted"
+        }
+      ],
+      "source_fields": {
+        "unlock_methods": {
+          "value": "Card, fingerprint, password, dummy password and unlock records",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 14
+        },
+        "materials": {
+          "value": "Aluminium alloy, zinc alloy and 304 stainless steel",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 14
+        },
+        "door_handing": {
+          "value": "Outward/inward, left/right opening reference",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 14
+        },
+        "commercial_terms": {
+          "value": "USD 8.8 per unit; MOQ 1 pcs",
+          "status": "confirmed",
+          "source_id": "USER-CONFIRMATION",
+          "source_page": null
+        }
+      },
+      "variants": [
+        {
+          "variant_id": "src01-hotel-lock-card",
+          "sku": "Hotel card lock — code pending",
+          "attributes": {
+            "lock": [
+              "mortise"
+            ],
+            "unlock": [
+              "card"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "cylinder": [
+              "source-pending"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "power": [
+              "source-pending"
+            ],
+            "credentials": [
+              "source-pending"
+            ],
+            "door": [
+              "source-pending"
+            ],
+            "ip": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-locks.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-hotel-lock-fingerprint",
+          "sku": "Hotel fingerprint lock — code pending",
+          "attributes": {
+            "lock": [
+              "mortise"
+            ],
+            "unlock": [
+              "fingerprint"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "cylinder": [
+              "source-pending"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "power": [
+              "source-pending"
+            ],
+            "credentials": [
+              "source-pending"
+            ],
+            "door": [
+              "source-pending"
+            ],
+            "ip": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-locks.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-hotel-lock-password",
+          "sku": "Hotel password lock — code pending",
+          "attributes": {
+            "lock": [
+              "mortise"
+            ],
+            "unlock": [
+              "password"
+            ],
+            "protocol": [
+              "source-pending"
+            ],
+            "cylinder": [
+              "source-pending"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "power": [
+              "source-pending"
+            ],
+            "credentials": [
+              "source-pending"
+            ],
+            "door": [
+              "source-pending"
+            ],
+            "ip": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-hotel-door-locks.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        }
+      ],
+      "source_image": {
+        "status": "source_preview",
+        "path": "assets/images/source-products/src01-hotel-door-locks.jpg",
+        "source_refs": [
+          {
+            "source_id": "SRC01",
+            "source_page": 14,
+            "status": "source_extracted"
+          }
+        ]
+      }
+    },
+    {
+      "model_id": "gsl-lk1",
+      "name": "Fingerprint Mortise Lock",
+      "slug": "gsl-lk1",
+      "editorial_order": 10,
+      "summary": "Euro-profile mortise lock with fingerprint, PIN, card and mechanical key override.",
+      "variants": [
+        {
+          "variant_id": "gsl-lk1-fingerprint-zigbee-black",
+          "sku": "GSL-LK1-FINGERPRINT-ZIGBEE-BLACK",
+          "attributes": {
+            "lock": [
+              "mortise"
+            ],
+            "cylinder": [
+              "euro"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "100"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "fingerprint"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "finish": [
+              "black"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lk1-fingerprint-wifi-silver",
+          "sku": "GSL-LK1-FINGERPRINT-WIFI-SILVER",
+          "attributes": {
+            "lock": [
+              "mortise"
+            ],
+            "cylinder": [
+              "euro"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "100"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "fingerprint"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "silver"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lk1-fingerprint-matter-black",
+          "sku": "GSL-LK1-FINGERPRINT-MATTER-BLACK",
+          "attributes": {
+            "lock": [
+              "mortise"
+            ],
+            "cylinder": [
+              "euro"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "100"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "fingerprint"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "finish": [
+              "black"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-lk2",
+      "name": "PIN Code Mortise Lock",
+      "slug": "gsl-lk2",
+      "editorial_order": 20,
+      "summary": "Keypad mortise lock for serviced apartments and short-stay units.",
+      "variants": [
+        {
+          "variant_id": "gsl-lk2-password-zigbee-black",
+          "sku": "GSL-LK2-PASSWORD-ZIGBEE-BLACK",
+          "attributes": {
+            "lock": [
+              "mortise"
+            ],
+            "cylinder": [
+              "euro"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "100"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "password"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "finish": [
+              "black"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lk2-password-wifi-silver",
+          "sku": "GSL-LK2-PASSWORD-WIFI-SILVER",
+          "attributes": {
+            "lock": [
+              "mortise"
+            ],
+            "cylinder": [
+              "euro"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "100"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "password"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "silver"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lk2-password-ble-bronze",
+          "sku": "GSL-LK2-PASSWORD-BLE-BRONZE",
+          "attributes": {
+            "lock": [
+              "mortise"
+            ],
+            "cylinder": [
+              "euro"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "100"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "password"
+            ],
+            "protocol": [
+              "ble"
+            ],
+            "finish": [
+              "bronze"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-lk3",
+      "name": "Hotel Card Lock",
+      "slug": "gsl-lk3",
+      "editorial_order": 30,
+      "summary": "RFID card lock with PMS-issued credentials and an audit trail per door.",
+      "variants": [
+        {
+          "variant_id": "gsl-lk3-card-zigbee-silver",
+          "sku": "GSL-LK3-CARD-ZIGBEE-SILVER",
+          "attributes": {
+            "lock": [
+              "mortise"
+            ],
+            "cylinder": [
+              "euro"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "300"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "card"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "finish": [
+              "silver"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lk3-card-ble-gold",
+          "sku": "GSL-LK3-CARD-BLE-GOLD",
+          "attributes": {
+            "lock": [
+              "mortise"
+            ],
+            "cylinder": [
+              "euro"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "300"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "card"
+            ],
+            "protocol": [
+              "ble"
+            ],
+            "finish": [
+              "gold"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lk3-card-wifi-black",
+          "sku": "GSL-LK3-CARD-WIFI-BLACK",
+          "attributes": {
+            "lock": [
+              "mortise"
+            ],
+            "cylinder": [
+              "euro"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "300"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "card"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "black"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-lk4",
+      "name": "Face Recognition Lock",
+      "slug": "gsl-lk4",
+      "editorial_order": 40,
+      "summary": "3D face recognition with liveness check, plus fingerprint and PIN fallback.",
+      "variants": [
+        {
+          "variant_id": "gsl-lk4-face-wifi-black",
+          "sku": "GSL-LK4-FACE-WIFI-BLACK",
+          "attributes": {
+            "lock": [
+              "mortise"
+            ],
+            "cylinder": [
+              "euro"
+            ],
+            "power": [
+              "rechargeable"
+            ],
+            "credentials": [
+              "100"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "face"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "black"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lk4-face-matter-silver",
+          "sku": "GSL-LK4-FACE-MATTER-SILVER",
+          "attributes": {
+            "lock": [
+              "mortise"
+            ],
+            "cylinder": [
+              "euro"
+            ],
+            "power": [
+              "rechargeable"
+            ],
+            "credentials": [
+              "100"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "face"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "finish": [
+              "silver"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-lk5",
+      "name": "US Deadbolt Lock",
+      "slug": "gsl-lk5",
+      "editorial_order": 50,
+      "summary": "ANSI Grade 2 deadbolt for North American cylindrical preparation.",
+      "variants": [
+        {
+          "variant_id": "gsl-lk5-fingerprint-wifi-silver",
+          "sku": "GSL-LK5-FINGERPRINT-WIFI-SILVER",
+          "attributes": {
+            "lock": [
+              "deadbolt"
+            ],
+            "cylinder": [
+              "us"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "50"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "fingerprint"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "silver"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lk5-password-zigbee-black",
+          "sku": "GSL-LK5-PASSWORD-ZIGBEE-BLACK",
+          "attributes": {
+            "lock": [
+              "deadbolt"
+            ],
+            "cylinder": [
+              "us"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "50"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "password"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "finish": [
+              "black"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lk5-fingerprint-matter-bronze",
+          "sku": "GSL-LK5-FINGERPRINT-MATTER-BRONZE",
+          "attributes": {
+            "lock": [
+              "deadbolt"
+            ],
+            "cylinder": [
+              "us"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "50"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "fingerprint"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "finish": [
+              "bronze"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-lk6",
+      "name": "Rim Latch Lock",
+      "slug": "gsl-lk6",
+      "editorial_order": 60,
+      "summary": "Surface rim latch for apartments and interior doors without a mortise pocket.",
+      "variants": [
+        {
+          "variant_id": "gsl-lk6-password-ble-black",
+          "sku": "GSL-LK6-PASSWORD-BLE-BLACK",
+          "attributes": {
+            "lock": [
+              "rim"
+            ],
+            "cylinder": [
+              "n-a"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "50"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "password"
+            ],
+            "protocol": [
+              "ble"
+            ],
+            "finish": [
+              "black"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lk6-fingerprint-zigbee-silver",
+          "sku": "GSL-LK6-FINGERPRINT-ZIGBEE-SILVER",
+          "attributes": {
+            "lock": [
+              "rim"
+            ],
+            "cylinder": [
+              "n-a"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "50"
+            ],
+            "door": [
+              "wood"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "fingerprint"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "finish": [
+              "silver"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-lk7",
+      "name": "Glass Door Lock",
+      "slug": "gsl-lk7",
+      "editorial_order": 70,
+      "summary": "Clamp-on lock for frameless glass doors in offices and meeting rooms.",
+      "variants": [
+        {
+          "variant_id": "gsl-lk7-fingerprint-ble-silver",
+          "sku": "GSL-LK7-FINGERPRINT-BLE-SILVER",
+          "attributes": {
+            "lock": [
+              "handle"
+            ],
+            "cylinder": [
+              "n-a"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "50"
+            ],
+            "door": [
+              "glass"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "fingerprint"
+            ],
+            "protocol": [
+              "ble"
+            ],
+            "finish": [
+              "silver"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lk7-password-wifi-black",
+          "sku": "GSL-LK7-PASSWORD-WIFI-BLACK",
+          "attributes": {
+            "lock": [
+              "handle"
+            ],
+            "cylinder": [
+              "n-a"
+            ],
+            "power": [
+              "battery"
+            ],
+            "credentials": [
+              "50"
+            ],
+            "door": [
+              "glass"
+            ],
+            "ip": [
+              "ip54"
+            ],
+            "unlock": [
+              "password"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "black"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-lk8",
+      "name": "Outdoor Gate Lock",
+      "slug": "gsl-lk8",
+      "editorial_order": 80,
+      "summary": "IP65 lock for metal gates and exterior doors with hardwired option.",
+      "variants": [
+        {
+          "variant_id": "gsl-lk8-fingerprint-wifi-black",
+          "sku": "GSL-LK8-FINGERPRINT-WIFI-BLACK",
+          "attributes": {
+            "lock": [
+              "rim"
+            ],
+            "cylinder": [
+              "n-a"
+            ],
+            "power": [
+              "hardwired"
+            ],
+            "credentials": [
+              "100"
+            ],
+            "door": [
+              "metal"
+            ],
+            "ip": [
+              "ip65"
+            ],
+            "unlock": [
+              "fingerprint"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "black"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lk8-card-zigbee-bronze",
+          "sku": "GSL-LK8-CARD-ZIGBEE-BRONZE",
+          "attributes": {
+            "lock": [
+              "rim"
+            ],
+            "cylinder": [
+              "n-a"
+            ],
+            "power": [
+              "hardwired"
+            ],
+            "credentials": [
+              "100"
+            ],
+            "door": [
+              "metal"
+            ],
+            "ip": [
+              "ip65"
+            ],
+            "unlock": [
+              "card"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "finish": [
+              "bronze"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    }
+  ]
+}

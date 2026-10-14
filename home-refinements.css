@@ -1,0 +1,111 @@
+/* Homepage audit repairs, 2026-10-13. Load after the section styles. */
+
+/* Use the shared spacing and typography scale for the added sections. */
+body.home-page :is(.hc-config,.ha-apps,.ho-oem,.hp-partners,.hf-factory,.hs-support,.hq-quote){
+  padding-block:var(--z02-space-section-y,64px);
+}
+body.home-page :is(.hc-config__head h2,.ha-apps__head h2,.ho-oem__title,.hp-partners__title,.hf-factory__title,.hs-support__title,.hq-quote__title){
+  font-size:var(--z02-fs-section-title,36px);
+}
+body.home-page :is(.hc-config__head .eyebrow,.ha-apps__eyebrow,.ho-oem__eyebrow,.hp-partners__eyebrow,.hf-factory__eyebrow,.hs-support__eyebrow,.hq-quote__eyebrow){
+  font-size:var(--z02-fs-section-kicker,12px);
+  font-weight:var(--z02-fw-semibold,600);
+  line-height:1.6;
+  letter-spacing:.09em;
+}
+body.home-page :is(.hc-config__head p:last-child,.ha-apps__intro,.ho-oem__intro,.hp-partners__intro,.hf-factory__intro,.hs-support__intro,.hq-quote__intro){
+  margin-top:14px;
+  font-size:16px;
+  line-height:var(--z02-lh-copy,1.6);
+}
+
+/* Alternate full-section surfaces so the next theme has a clear boundary. */
+body.home-page :is(.ha-apps,.hs-support){background:#f7f9fc}
+body.home-page :is(.ho-oem,.hq-quote){background:#fff}
+
+/* Make series explanations and scene actions readable at their actual size. */
+body.home-page .hc-config__series{min-height:64px}
+body.home-page .hc-config__series strong{font-size:13px;line-height:1.3}
+body.home-page .hc-config__series small{font-size:12px;line-height:1.35;white-space:normal}
+body.home-page :is(.ha-apps__scene-kicker,.ha-apps__panel-kicker){font-size:12px;line-height:1.4;letter-spacing:.09em}
+body.home-page .ha-apps__scene--small .ha-apps__scene-description{font-size:13px;line-height:1.45}
+body.home-page .ha-apps__scene-link{min-height:44px;font-size:13px}
+body.home-page .ha-apps__scene--small .ha-apps__scene-link{min-height:44px;padding-block:9px;font-size:13px;gap:10px}
+body.home-page .ha-apps__scene--small .ha-apps__scene-link span{max-width:none}
+body.home-page .ha-apps__tab{min-height:44px;font-size:13px}
+body.home-page .ha-apps__panel-description{font-size:14px;line-height:1.5}
+body.home-page .ha-apps__product-label{min-height:44px;font-size:12px;line-height:1.35}
+body.home-page .ha-apps__panel-note{font-size:12px;line-height:1.5}
+body.home-page .ha-apps__view{min-height:44px;font-size:13px}
+
+/* Keep the existing featured carousel, with the site's established blue. */
+#home-enquiry-form{scroll-margin-top:90px}
+.home-products-arrow{color:var(--z02-accent)}
+.home-products-arrow:hover:not(:disabled){background:var(--z02-accent)}
+.home-products-dots button[aria-current=true]{background:var(--z02-accent)}
+.home-products-carousel button:focus-visible{outline-color:var(--z02-accent)}
+
+@media(max-width:1360px){
+  /* The home overlay rules outranked the existing menu-open rules. */
+  body.home-page.shell-header-overlay.mobile-nav-open .z02-site-header.mobile-menu-open{
+    position:fixed;
+    top:0;
+    background:#fff;
+    color:var(--z02-text,#17212b);
+    --z02-shell-header-bg:#fff;
+    --z02-shell-header-text:var(--z02-text,#17212b);
+    --z02-shell-header-foreground:var(--z02-text,#17212b);
+    --z02-shell-shadow-logo:none;
+    --z02-shell-shadow-nav:none;
+    --z02-shell-shadow-control:none;
+  }
+  body.home-page.mobile-nav-open .mobile-menu-open .site-menu-toggle{
+    color:var(--z02-text,#17212b);
+    border-color:currentColor;
+    text-shadow:none;
+    box-shadow:none;
+  }
+}
+
+@media(min-width:761px) and (max-width:1180px){
+  /* Two stacked scene cards need room for the larger action text. */
+  body.home-page .ha-apps__scene--small{min-height:230px}
+  body.home-page .ha-apps__scene--main{min-height:476px}
+}
+
+@media(max-width:760px){
+  body.home-page :is(.hc-config,.ha-apps,.ho-oem,.hp-partners,.hf-factory,.hs-support,.hq-quote){
+    --z02-space-section-y:48px;
+    padding-block:var(--z02-space-section-y);
+  }
+  body.home-page :is(.hc-config__head h2,.ha-apps__head h2,.ho-oem__title,.hp-partners__title,.hf-factory__title,.hs-support__title,.hq-quote__title){font-size:28px}
+  body.home-page :is(.hc-config__head p:last-child,.ha-apps__intro,.ho-oem__intro,.hp-partners__intro,.hf-factory__intro,.hs-support__intro,.hq-quote__intro){font-size:15px}
+  body.home-page .ha-apps__scene--small{min-height:270px}
+  body.home-page .ha-apps__scene--small .ha-apps__scene-title{font-size:22px}
+  body.home-page .ha-apps__scene--small .ha-apps__scene-copy{left:20px;right:20px;bottom:20px}
+  body.home-page .ha-apps__scene--small .ha-apps__scene-kicker{margin-bottom:7px}
+  body.home-page .ha-apps__scene--small .ha-apps__scene-description{margin:8px 0 8px}
+}
+
+@media(max-width:600px){
+  /* Preserve the hero copy and media; keep both calls to action in view. */
+  body.home-page .home-hero-intro{top:50%}
+  body.home-page .home-hero-actions{
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin-top:24px;
+  }
+  body.home-page .home-hero-actions .button{
+    width:min(100%,260px);
+    min-width:0;
+    min-height:46px;
+    padding:12px 18px;
+  }
+}
+
+@media(max-width:520px){
+  /* Avoid narrow two-column scene captions and tiny mobile actions. */
+  body.home-page .ha-apps__secondary{grid-template-columns:1fr;grid-template-rows:auto;gap:14px}
+  body.home-page .ha-apps__scene--small{min-height:270px}
+}

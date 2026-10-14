@@ -1,0 +1,9 @@
+<!-- PLACEHOLDER PDP VIEW - replace when verified angle photography is supplied. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Angle view image pending">
+  <rect width="800" height="600" fill="#eff1f3"/>
+  <rect x="28" y="28" width="744" height="544" rx="8" fill="none" stroke="#ccd2d8" stroke-width="2" stroke-dasharray="12 9"/>
+  <path d="M280 390 360 180l180 38-78 215z" fill="#fff" stroke="#c7ced6" stroke-width="3"/>
+  <path d="m540 218 55 30-78 215-55-30z" fill="#dfe4e9" stroke="#c7ced6" stroke-width="3"/>
+  <text x="400" y="495" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="600" letter-spacing="4" fill="#747d87">ANGLE VIEW</text>
+  <text x="400" y="530" text-anchor="middle" font-family="sans-serif" font-size="17" letter-spacing="1" fill="#a0a8b0">IMAGE PENDING</text>
+</svg>

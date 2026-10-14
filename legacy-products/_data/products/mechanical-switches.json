@@ -1,0 +1,1114 @@
+{
+  "schema_version": 1,
+  "page": "cat-mechanical-switches",
+  "option_matrix_file": "source-catalogues/mechanical-switch-option-matrix.json",
+  "locale": "en",
+  "_placeholder": {
+    "active": false,
+    "render_banner": false
+  },
+  "eyebrow": "PRODUCT CATALOGUE",
+  "title": "Mechanical Switches",
+  "intro": "Non-connected switching options for projects that need straightforward operation, familiar installation and a defined finish range.",
+  "price_note": "USD 8.80 per unit; MOQ 1 for the controlled test batch. Unresolved configuration fields remain pending confirmation.",
+  "dimensions": [
+    {
+      "key": "function",
+      "label": "Function",
+      "primary": true
+    },
+    {
+      "key": "mechanism",
+      "label": "Mechanism",
+      "primary": true
+    },
+    {
+      "key": "gang",
+      "label": "Gang",
+      "primary": true
+    },
+    {
+      "key": "finish",
+      "label": "Color & Finish",
+      "primary": true
+    },
+    {
+      "key": "series",
+      "label": "Series",
+      "primary": true
+    },
+    {
+      "key": "voltage",
+      "label": "Voltage",
+      "primary": false
+    },
+    {
+      "key": "load",
+      "label": "Load",
+      "primary": false
+    },
+    {
+      "key": "mounting",
+      "label": "Mounting",
+      "primary": false
+    },
+    {
+      "key": "material",
+      "label": "Material",
+      "primary": false
+    }
+  ],
+  "labels": {
+    "function": {
+      "switch": "Mechanical switch",
+      "doorbell": "Doorbell",
+      "door-lock": "Door lock switch",
+      "curtain": "Curtain switch",
+      "emergency-call": "Emergency call switch"
+    },
+    "mechanism": {
+      "single-control": "Single control",
+      "source-pending": "Source confirmation pending"
+    },
+    "gang": {
+      "1": "1 gang",
+      "2": "2 gang",
+      "3": "3 gang",
+      "4": "4 gang"
+    },
+    "finish": {
+      "champagne-gold": "Champagne gold",
+      "source-pending": "Source confirmation pending"
+    },
+    "series": {
+      "f1": "F1 series",
+      "a15": "A15 series",
+      "a16": "A16 series",
+      "y10": "Y10 series",
+      "t10": "T10 series",
+      "t50": "T50 series",
+      "t70": "T70 series",
+      "s2": "S2 series",
+      "s3": "S3 series",
+      "s5": "S5 series",
+      "a8": "A8 series",
+      "a6": "A6 series",
+      "s8": "S8 series"
+    },
+    "voltage": {
+      "source-pending": "Source confirmation pending"
+    },
+    "load": {
+      "source-pending": "Source confirmation pending"
+    },
+    "mounting": {
+      "86-box": "86 mm wall box",
+      "source-pending": "Source confirmation pending"
+    },
+    "material": {
+      "source-pending": "Source confirmation pending"
+    }
+  },
+  "value_order": {
+    "function": [
+      "switch",
+      "doorbell",
+      "door-lock",
+      "curtain",
+      "emergency-call"
+    ],
+    "mechanism": [
+      "single-control",
+      "source-pending"
+    ],
+    "gang": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "finish": [
+      "champagne-gold",
+      "source-pending"
+    ],
+    "series": [
+      "f1",
+      "a15",
+      "a16",
+      "y10",
+      "t10",
+      "t50",
+      "t70",
+      "s2",
+      "s3",
+      "s5",
+      "a8",
+      "a6",
+      "s8"
+    ],
+    "voltage": [
+      "source-pending"
+    ],
+    "load": [
+      "source-pending"
+    ],
+    "mounting": [
+      "86-box",
+      "source-pending"
+    ],
+    "material": [
+      "source-pending"
+    ]
+  },
+  "sorts": [
+    {
+      "key": "featured",
+      "label": "Featured"
+    },
+    {
+      "key": "model-asc",
+      "label": "Model A–Z"
+    },
+    {
+      "key": "price-asc",
+      "label": "Price, low to high"
+    },
+    {
+      "key": "price-desc",
+      "label": "Price, high to low"
+    }
+  ],
+  "batch_size": 8,
+  "card": {
+    "spec_keys": [
+      "function",
+      "gang",
+      "mounting"
+    ],
+    "badge_keys": [
+      "series"
+    ],
+    "compare_limit": {
+      "min": 2,
+      "max": 4
+    },
+    "quote": {
+      "add_label": "Add to Quote",
+      "added_label": "In Quote List"
+    },
+    "detail_label": "View Product",
+    "detail_route": "product-detail-v3.html"
+  },
+  "model_groups": [
+    {
+      "model_id": "mech-s3-005",
+      "source_name": "S3 Mechanical Switch",
+      "name": "S3 Mechanical Switch",
+      "slug": "s3-005-mechanical-switch",
+      "editorial_order": 1,
+      "series": "S3",
+      "summary": "Source-backed S3 mechanical switch S3-005; switch function, 1 Gang. Material, finish, color and technical documents remain pending confirmation.",
+      "data_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 48,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_fields": {
+        "identity": {
+          "value": "S3 / S3-005",
+          "status": "source_extracted"
+        },
+        "commercial_terms": {
+          "value": "USD 8.80 per unit; MOQ 1",
+          "status": "confirmed"
+        },
+        "media": {
+          "value": "assets/images/source-products/src03-s3-mechanical.jpg",
+          "status": "visual_source_only"
+        }
+      },
+      "option_matrix": {
+        "catalogue_id": "mechanical-switches",
+        "group_id": "src03-s3-mechanical",
+        "axes": {}
+      },
+      "variants": [
+        {
+          "variant_id": "src03-s3-005",
+          "sku": "S3-005",
+          "attributes": {
+            "function": [
+              "switch"
+            ],
+            "mechanism": [
+              "source-pending"
+            ],
+            "gang": [
+              "1"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "series": [
+              "s3"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "material": [
+              "source-pending"
+            ],
+            "color": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-s3-mechanical.jpg",
+            "view": "source-preview",
+            "verification": "source_preview"
+          },
+          "views": [],
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed"
+          },
+          "spec_overrides": {},
+          "asset_overrides": {},
+          "publication_status": "published"
+        }
+      ]
+    },
+    {
+      "model_id": "mech-s2-006",
+      "source_name": "S2 Mechanical Switch",
+      "name": "S2 Mechanical Switch",
+      "slug": "s2-006-mechanical-switch",
+      "editorial_order": 2,
+      "series": "S2",
+      "summary": "Source-backed S2 mechanical switch S2-006; switch function, 2 Gang. Material, finish, color and technical documents remain pending confirmation.",
+      "data_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 45,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_fields": {
+        "identity": {
+          "value": "S2 / S2-006",
+          "status": "source_extracted"
+        },
+        "commercial_terms": {
+          "value": "USD 8.80 per unit; MOQ 1",
+          "status": "confirmed"
+        },
+        "media": {
+          "value": "assets/images/source-products/src03-s2-mechanical.jpg",
+          "status": "visual_source_only"
+        }
+      },
+      "option_matrix": {
+        "catalogue_id": "mechanical-switches",
+        "group_id": "src03-s2-mechanical",
+        "axes": {}
+      },
+      "variants": [
+        {
+          "variant_id": "src03-s2-006",
+          "sku": "S2-006",
+          "attributes": {
+            "function": [
+              "switch"
+            ],
+            "mechanism": [
+              "source-pending"
+            ],
+            "gang": [
+              "2"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "series": [
+              "s2"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "material": [
+              "source-pending"
+            ],
+            "color": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-s2-mechanical.jpg",
+            "view": "source-preview",
+            "verification": "source_preview"
+          },
+          "views": [],
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed"
+          },
+          "spec_overrides": {},
+          "asset_overrides": {},
+          "publication_status": "published"
+        }
+      ]
+    },
+    {
+      "model_id": "mech-s5-007",
+      "source_name": "S5 Mechanical Switch",
+      "name": "S5 Mechanical Switch",
+      "slug": "s5-007-mechanical-switch",
+      "editorial_order": 3,
+      "series": "S5",
+      "summary": "Source-backed S5 mechanical switch S5-007; switch function, 3 Gang. Material, finish, color and technical documents remain pending confirmation.",
+      "data_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 52,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_fields": {
+        "identity": {
+          "value": "S5 / S5-007",
+          "status": "source_extracted"
+        },
+        "commercial_terms": {
+          "value": "USD 8.80 per unit; MOQ 1",
+          "status": "confirmed"
+        },
+        "media": {
+          "value": "assets/images/source-products/src03-s5-mechanical.jpg",
+          "status": "visual_source_only"
+        }
+      },
+      "option_matrix": {
+        "catalogue_id": "mechanical-switches",
+        "group_id": "src03-s5-mechanical",
+        "axes": {}
+      },
+      "variants": [
+        {
+          "variant_id": "src03-s5-007",
+          "sku": "S5-007",
+          "attributes": {
+            "function": [
+              "switch"
+            ],
+            "mechanism": [
+              "source-pending"
+            ],
+            "gang": [
+              "3"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "series": [
+              "s5"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "material": [
+              "source-pending"
+            ],
+            "color": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-s5-mechanical.jpg",
+            "view": "source-preview",
+            "verification": "source_preview"
+          },
+          "views": [],
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed"
+          },
+          "spec_overrides": {},
+          "asset_overrides": {},
+          "publication_status": "published"
+        }
+      ]
+    },
+    {
+      "model_id": "mech-a8-008",
+      "source_name": "A8 Mechanical Switch",
+      "name": "A8 Mechanical Switch",
+      "slug": "a8-008-mechanical-switch",
+      "editorial_order": 4,
+      "series": "A8",
+      "summary": "Source-backed A8 mechanical switch A8-008; switch function, 4 Gang. Material, finish, color and technical documents remain pending confirmation.",
+      "data_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 55,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_fields": {
+        "identity": {
+          "value": "A8 / A8-008",
+          "status": "source_extracted"
+        },
+        "commercial_terms": {
+          "value": "USD 8.80 per unit; MOQ 1",
+          "status": "confirmed"
+        },
+        "media": {
+          "value": "assets/images/source-products/src03-a8-mechanical.jpg",
+          "status": "visual_source_only"
+        }
+      },
+      "option_matrix": {
+        "catalogue_id": "mechanical-switches",
+        "group_id": "src03-a8-mechanical",
+        "axes": {}
+      },
+      "variants": [
+        {
+          "variant_id": "src03-a8-008",
+          "sku": "A8-008",
+          "attributes": {
+            "function": [
+              "switch"
+            ],
+            "mechanism": [
+              "source-pending"
+            ],
+            "gang": [
+              "4"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "series": [
+              "a8"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "material": [
+              "source-pending"
+            ],
+            "color": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-a8-mechanical.jpg",
+            "view": "source-preview",
+            "verification": "source_preview"
+          },
+          "views": [],
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed"
+          },
+          "spec_overrides": {},
+          "asset_overrides": {},
+          "publication_status": "published"
+        }
+      ]
+    },
+    {
+      "model_id": "mech-a6-009",
+      "source_name": "A6 Mechanical Switch",
+      "name": "A6 Emergency Call Switch",
+      "slug": "a6-009-mechanical-switch",
+      "editorial_order": 5,
+      "series": "A6",
+      "summary": "Source-backed A6 mechanical switch A6-009; emergency-call function, 1 Gang. Material, finish, color and technical documents remain pending confirmation.",
+      "data_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 58,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_fields": {
+        "identity": {
+          "value": "A6 / A6-009",
+          "status": "source_extracted"
+        },
+        "commercial_terms": {
+          "value": "USD 8.80 per unit; MOQ 1",
+          "status": "confirmed"
+        },
+        "media": {
+          "value": "assets/images/source-products/src03-a6-mechanical.jpg",
+          "status": "visual_source_only"
+        }
+      },
+      "option_matrix": {
+        "catalogue_id": "mechanical-switches",
+        "group_id": "src03-a6-mechanical",
+        "axes": {}
+      },
+      "variants": [
+        {
+          "variant_id": "src03-a6-009",
+          "sku": "A6-009",
+          "attributes": {
+            "function": [
+              "emergency-call"
+            ],
+            "mechanism": [
+              "source-pending"
+            ],
+            "gang": [
+              "1"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "series": [
+              "a6"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "86-box"
+            ],
+            "material": [
+              "source-pending"
+            ],
+            "color": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-a6-mechanical.jpg",
+            "view": "source-preview",
+            "verification": "source_preview"
+          },
+          "views": [],
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed"
+          },
+          "spec_overrides": {},
+          "asset_overrides": {},
+          "publication_status": "published"
+        }
+      ]
+    },
+    {
+      "model_id": "mech-s8-005",
+      "source_name": "S8 Mechanical Switch",
+      "name": "S8 Mechanical Switch",
+      "slug": "s8-005-mechanical-switch",
+      "editorial_order": 6,
+      "series": "S8",
+      "summary": "Source-backed S8 mechanical switch S8-005; switch function, 1 Gang. Material, finish, color and technical documents remain pending confirmation.",
+      "data_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 63,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_fields": {
+        "identity": {
+          "value": "S8 / S8-005",
+          "status": "source_extracted"
+        },
+        "commercial_terms": {
+          "value": "USD 8.80 per unit; MOQ 1",
+          "status": "confirmed"
+        },
+        "media": {
+          "value": "assets/images/source-products/src03-s8-mechanical.jpg",
+          "status": "visual_source_only"
+        }
+      },
+      "option_matrix": {
+        "catalogue_id": "mechanical-switches",
+        "group_id": "src03-s8-mechanical",
+        "axes": {}
+      },
+      "variants": [
+        {
+          "variant_id": "src03-s8-005",
+          "sku": "S8-005",
+          "attributes": {
+            "function": [
+              "switch"
+            ],
+            "mechanism": [
+              "source-pending"
+            ],
+            "gang": [
+              "1"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "series": [
+              "s8"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "material": [
+              "source-pending"
+            ],
+            "color": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-s8-mechanical.jpg",
+            "view": "source-preview",
+            "verification": "source_preview"
+          },
+          "views": [],
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed"
+          },
+          "spec_overrides": {},
+          "asset_overrides": {},
+          "publication_status": "published"
+        }
+      ]
+    },
+    {
+      "model_id": "mech-a15-006",
+      "source_name": "A15 Mechanical Switch",
+      "name": "A15 Mechanical Switch",
+      "slug": "a15-006-mechanical-switch",
+      "editorial_order": 7,
+      "series": "A15",
+      "summary": "Source-backed A15 mechanical switch A15-006; switch function, 2 Gang. Material, finish, color and technical documents remain pending confirmation.",
+      "data_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 6,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_fields": {
+        "identity": {
+          "value": "A15 / A15-006",
+          "status": "source_extracted"
+        },
+        "commercial_terms": {
+          "value": "USD 8.80 per unit; MOQ 1",
+          "status": "confirmed"
+        },
+        "media": {
+          "value": "assets/images/source-products/src03-a15-mechanical.jpg",
+          "status": "visual_source_only"
+        }
+      },
+      "option_matrix": {
+        "catalogue_id": "mechanical-switches",
+        "group_id": "src03-a15-mechanical",
+        "axes": {}
+      },
+      "variants": [
+        {
+          "variant_id": "src03-a15-006",
+          "sku": "A15-006",
+          "attributes": {
+            "function": [
+              "switch"
+            ],
+            "mechanism": [
+              "source-pending"
+            ],
+            "gang": [
+              "2"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "series": [
+              "a15"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "material": [
+              "source-pending"
+            ],
+            "color": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-a15-mechanical.jpg",
+            "view": "source-preview",
+            "verification": "source_preview"
+          },
+          "views": [],
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed"
+          },
+          "spec_overrides": {},
+          "asset_overrides": {},
+          "publication_status": "published"
+        }
+      ]
+    },
+    {
+      "model_id": "mech-a16-007",
+      "source_name": "A16 Mechanical Switch",
+      "name": "A16 Mechanical Switch",
+      "slug": "a16-007-mechanical-switch",
+      "editorial_order": 8,
+      "series": "A16",
+      "summary": "Source-backed A16 mechanical switch A16-007; switch function, 3 Gang. Material, finish, color and technical documents remain pending confirmation.",
+      "data_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 9,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_fields": {
+        "identity": {
+          "value": "A16 / A16-007",
+          "status": "source_extracted"
+        },
+        "commercial_terms": {
+          "value": "USD 8.80 per unit; MOQ 1",
+          "status": "confirmed"
+        },
+        "media": {
+          "value": "assets/images/source-products/src03-a16-mechanical.jpg",
+          "status": "visual_source_only"
+        }
+      },
+      "option_matrix": {
+        "catalogue_id": "mechanical-switches",
+        "group_id": "src03-a16-mechanical",
+        "axes": {}
+      },
+      "variants": [
+        {
+          "variant_id": "src03-a16-007",
+          "sku": "A16-007",
+          "attributes": {
+            "function": [
+              "switch"
+            ],
+            "mechanism": [
+              "source-pending"
+            ],
+            "gang": [
+              "3"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "series": [
+              "a16"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "material": [
+              "source-pending"
+            ],
+            "color": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-a16-mechanical.jpg",
+            "view": "source-preview",
+            "verification": "source_preview"
+          },
+          "views": [],
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed"
+          },
+          "spec_overrides": {},
+          "asset_overrides": {},
+          "publication_status": "published"
+        }
+      ]
+    },
+    {
+      "model_id": "mech-y10-013",
+      "source_name": "Y10 Mechanical Switch",
+      "name": "Mechanical Switch",
+      "slug": "y10-013-mechanical-switch",
+      "editorial_order": 9,
+      "series": "Y10",
+      "summary": "Source-backed Y10 mechanical switch Y10-013; emergency-call function, 3 Gang. Material, finish, color and technical documents remain pending confirmation.",
+      "data_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 16,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_fields": {
+        "identity": {
+          "value": "Y10 / Y10-013",
+          "status": "source_extracted"
+        },
+        "commercial_terms": {
+          "value": "USD 8.80 per unit; MOQ 1",
+          "status": "confirmed"
+        },
+        "media": {
+          "value": "assets/images/source-products/src03-y10-mechanical-low-voltage.jpg",
+          "status": "visual_source_only"
+        }
+      },
+      "option_matrix": {
+        "catalogue_id": "mechanical-switches",
+        "group_id": "src03-y10-mechanical",
+        "axes": {}
+      },
+      "variants": [
+        {
+          "variant_id": "src03-y10-013",
+          "sku": "Y10-013",
+          "attributes": {
+            "function": [
+              "emergency-call"
+            ],
+            "mechanism": [
+              "source-pending"
+            ],
+            "gang": [
+              "3"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "series": [
+              "y10"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "86-box"
+            ],
+            "material": [
+              "source-pending"
+            ],
+            "color": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-y10-mechanical-low-voltage.jpg",
+            "view": "source-preview",
+            "verification": "source_preview"
+          },
+          "views": [],
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed"
+          },
+          "spec_overrides": {},
+          "asset_overrides": {},
+          "publication_status": "published"
+        }
+      ]
+    },
+    {
+      "model_id": "mech-t10-011",
+      "source_name": "T10 Mechanical Switch",
+      "name": "Mechanical Switch",
+      "slug": "t10-011-mechanical-switch",
+      "editorial_order": 10,
+      "series": "T10",
+      "summary": "Source-backed T10 mechanical switch T10-011; switch function, 4 Gang. Material, finish, color and technical documents remain pending confirmation.",
+      "data_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 28,
+          "status": "visual_source_only"
+        }
+      ],
+      "source_fields": {
+        "identity": {
+          "value": "T10 / T10-011",
+          "status": "source_extracted"
+        },
+        "commercial_terms": {
+          "value": "USD 8.80 per unit; MOQ 1",
+          "status": "confirmed"
+        },
+        "media": {
+          "value": "assets/images/source-products/src03-t10-mechanical-low-voltage.jpg",
+          "status": "visual_source_only"
+        }
+      },
+      "option_matrix": {
+        "catalogue_id": "mechanical-switches",
+        "group_id": "src03-t10-mechanical",
+        "axes": {}
+      },
+      "variants": [
+        {
+          "variant_id": "src03-t10-011",
+          "sku": "T10-011",
+          "attributes": {
+            "function": [
+              "switch"
+            ],
+            "mechanism": [
+              "source-pending"
+            ],
+            "gang": [
+              "4"
+            ],
+            "finish": [
+              "source-pending"
+            ],
+            "series": [
+              "t10"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "load": [
+              "source-pending"
+            ],
+            "mounting": [
+              "86-box"
+            ],
+            "material": [
+              "source-pending"
+            ],
+            "color": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-t10-mechanical-low-voltage.jpg",
+            "view": "source-preview",
+            "verification": "source_preview"
+          },
+          "views": [],
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed"
+          },
+          "spec_overrides": {},
+          "asset_overrides": {},
+          "publication_status": "published"
+        }
+      ]
+    }
+  ]
+}

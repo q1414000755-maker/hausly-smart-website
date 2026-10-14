@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144" role="img" aria-label="Smart curtains">
+  <g fill="none" stroke="#0b2946" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="5" y="5" width="134" height="134" rx="12"/>
+    <path d="M25 30h94"/>
+    <rect x="25" y="22" width="19" height="16" rx="3"/>
+    <path d="M31 38v70M113 38v70"/>
+    <path d="M31 43c12 6 18 17 18 32s-6 26-18 33"/>
+    <path d="M113 43c-12 6-18 17-18 32s6 26 18 33"/>
+    <path d="M49 44c8 8 12 17 12 31s-4 23-12 33M95 44c-8 8-12 17-12 31s4 23 12 33"/>
+    <path d="M25 108h94"/>
+    <path d="M112 22l5 5-5 5"/>
+  </g>
+</svg>

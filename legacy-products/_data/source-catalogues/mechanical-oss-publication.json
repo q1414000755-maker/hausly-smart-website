@@ -1,0 +1,60 @@
+{
+  "stage": "08-08",
+  "status": "pass",
+  "published_at": "2026-09-21",
+  "target": {
+    "bucket": "localhost8080-asia",
+    "prefix": "",
+    "protocol": "https"
+  },
+  "deployment": {
+    "mode": "incremental",
+    "uploaded_objects": 111,
+    "mirrored_directory_keys": 113,
+    "deleted_objects": 0,
+    "excluded_paths": ["/source-preview/"],
+    "output_dir": "projects/Z02/site"
+  },
+  "publication": {
+    "category": "Mechanical Switches",
+    "plp_public_products": 10,
+    "pdp_routes": [
+      "s3-005-mechanical-switch",
+      "s2-006-mechanical-switch",
+      "s5-007-mechanical-switch",
+      "a8-008-mechanical-switch",
+      "a6-009-mechanical-switch",
+      "s8-005-mechanical-switch",
+      "a15-006-mechanical-switch",
+      "a16-007-mechanical-switch",
+      "y10-013-mechanical-switch",
+      "t10-011-mechanical-switch"
+    ],
+    "price_for_test": "USD 8.80",
+    "moq_for_test": 1,
+    "remaining_candidates": 67,
+    "remaining_candidate_status": ["draft", "hold"]
+  },
+  "online_gate": {
+    "qa_script": "_qa/mechanical-oss-live-check.mjs",
+    "result": "pass",
+    "checks": [
+      "Mechanical PLP 200 and exactly 10 products",
+      "Clean internal route for S3; no legacy family route",
+      "S3 and A15 PDP 200",
+      "Model-specific title/content rendered",
+      "index, follow + canonical + Product JSON-LD",
+      "Quote action visible and enabled",
+      "All 10 published PDP routes return 200",
+      "sitemap includes published batch routes",
+      "robots.txt references sitemap",
+      "zero page errors during browser smoke"
+    ],
+    "index_policy": {
+      "product_center": "index, follow",
+      "published_pdp": "index, follow",
+      "mechanical_plp": "noindex, nofollow",
+      "draft_or_hold": "noindex, follow"
+    }
+  }
+}

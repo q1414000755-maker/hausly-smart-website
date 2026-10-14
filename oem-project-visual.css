@@ -1,0 +1,44 @@
+/* OEM brief presentation: scoped to this page; field names and behavior stay intact. */
+.oem-project-migrated #project-form{background:#f5f7fa;padding:64px 0 56px}
+.oem-project-migrated .of-section-head{gap:16px;align-items:flex-start;margin-bottom:36px}
+.oem-project-migrated .of-section-head .of-no{display:grid;place-items:center;width:42px;height:42px;flex:0 0 42px;margin-top:2px;border:1px solid #d6e2f1;border-radius:12px;background:#fff;color:#2457a7;font-size:15px;line-height:1;font-weight:700}
+.oem-project-migrated .of-section-head h2{font-size:clamp(28px,2.4vw,36px);letter-spacing:-.035em;line-height:1.2}
+.oem-project-migrated .of-section-head p{font-size:15px;line-height:1.7;color:#65758c;max-width:770px}
+.oem-project-migrated .of-project-layout{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:28px;align-items:start}
+.oem-project-migrated .of-project-form{gap:24px;counter-reset:brief-step}
+.oem-project-migrated .of-project-form fieldset{counter-increment:brief-step;padding:22px 26px 26px;border:1px solid #dde5ee;border-radius:12px;box-shadow:0 3px 16px #17345a04;background:white}
+.oem-project-migrated .of-project-form legend{display:inline-flex;align-items:center;gap:10px;padding:0 8px;font-size:17px;font-weight:600;line-height:1.4;letter-spacing:-.02em;color:#163151}
+.oem-project-migrated .of-project-form legend:before{content:counter(brief-step,decimal-leading-zero);display:grid;place-items:center;width:28px;height:28px;border-radius:8px;background:#edf3fb;color:#2457a7;font-size:11px;letter-spacing:.02em}
+.oem-project-migrated .of-fields{gap:20px 18px}
+.oem-project-migrated .of-field{font-size:13px;font-weight:600;gap:9px;color:#253e5d}
+.oem-project-migrated .of-field :is(input,textarea){font-weight:400;font-size:15px!important;line-height:1.5;border:1px solid #d4deea;border-radius:7px;background:#fff;padding:12px 14px;min-height:48px;box-sizing:border-box;transition:border-color .15s,box-shadow .15s}
+.oem-project-migrated .of-field :is(input,textarea)::placeholder{color:#8592a3}
+.oem-project-migrated .of-field :is(input,textarea):focus{outline:0;border-color:#2457a7;box-shadow:0 0 0 3px #2457a71a}
+.oem-project-migrated .of-field textarea{min-height:145px}
+.oem-project-migrated .of-project-form .of-note{font-size:12px;line-height:1.7;color:#718097;margin:14px 0 0}
+.oem-project-migrated .of-project-form fieldset>.of-note:first-of-type{margin:0 0 18px}
+.oem-project-migrated .of-checks{gap:10px;margin-top:0}
+.oem-project-migrated .of-checks label{align-items:center;min-height:58px;padding:13px 14px;box-sizing:border-box;border:1px solid #e1e7ef;border-radius:8px;background:#f8fafc;font-size:13px;line-height:1.4;color:#344d6b;transition:background .15s,border-color .15s}
+.oem-project-migrated .of-checks label:hover{background:#f1f5fb;border-color:#bdcee5}
+.oem-project-migrated .of-checks label:has(input:checked){background:#edf3fc;border-color:#2457a7;color:#2457a7;font-weight:600}
+.oem-project-migrated .of-checks label:focus-within{outline:2px solid #2457a7;outline-offset:2px}
+.oem-project-migrated .of-checks input{margin:0;width:17px;height:17px;accent-color:#2457a7}
+.oem-project-migrated .oem-extra-details{padding:14px 16px;background:#f8fafc;border-color:#e0e7f0;border-radius:8px}
+.oem-project-migrated .oem-extra-details summary{min-height:24px;font-size:13px;font-weight:600}
+.oem-project-migrated .oem-extra-details[open]{background:white}
+.oem-project-migrated .of-project-summary{top:96px;padding:28px;border:1px solid #d6e1ef;border-top:3px solid #2457a7;border-radius:12px;box-shadow:0 8px 28px #17345a08;min-width:0}
+.oem-project-migrated .of-project-summary h3{font-size:20px;line-height:1.3;letter-spacing:-.02em;color:#163151}
+.oem-project-migrated .of-project-summary>.of-note{font-size:12px;line-height:1.7;color:#718097}
+.oem-project-migrated #of-brief-summary{padding:18px;margin:20px 0;border:1px solid #e0e7f0;border-radius:8px;background:#f7f9fc;color:#48617f;font-size:13px;line-height:1.8;max-height:330px}
+.oem-project-migrated .of-project-summary .of-actions{gap:10px;margin-top:0}
+.oem-project-migrated .of-btn{border-radius:7px;min-height:46px;font-size:13px;line-height:1.4;font-weight:600;padding:12px 18px}
+.oem-project-migrated .of-project-summary .of-text-link{display:inline-flex;align-items:center;min-height:40px;font-size:13px}
+.oem-project-migrated .of-project-status{margin:0!important;background:#edf3fb;border:1px solid #dce6f3;border-radius:8px;padding:13px 16px;min-height:46px;color:#526a89;font-size:13px!important}
+.oem-project-migrated .of-restore{border-radius:10px;background:#fffaf0;border-color:#eee1c3;padding:18px 22px}
+.oem-project-migrated .of-scope-note{font-size:11px;line-height:1.7;color:#7b899b;padding-top:22px;padding-bottom:22px;text-align:center}
+.oem-project-migrated [data-site-footer]{background:#182430}
+@media(max-width:1000px){.oem-project-migrated .of-project-layout{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:20px}.oem-project-migrated .of-project-form fieldset{padding:20px}.oem-project-migrated .of-project-summary{padding:22px}.oem-project-migrated .of-checks{grid-template-columns:1fr}}
+@media(max-width:760px){.oem-project-migrated #project-form{padding:40px 0}.oem-project-migrated .of-project-layout{grid-template-columns:1fr;gap:24px}.oem-project-migrated .of-section-head{gap:12px;margin-bottom:28px}.oem-project-migrated .of-section-head .of-no{width:34px;height:34px;flex-basis:34px;border-radius:9px}.oem-project-migrated .of-section-head h2{font-size:27px}.oem-project-migrated .of-section-head p{font-size:14px}.oem-project-migrated .of-project-summary{position:static}.oem-project-migrated .of-field :is(input,textarea){font-size:16px!important}.oem-project-migrated .of-project-form legend{font-size:16px}.oem-project-migrated .of-project-form fieldset{padding:18px}.oem-project-migrated .of-project-form{gap:20px}.oem-project-migrated .of-checks label{min-height:52px}}
+@media(prefers-reduced-motion:reduce){.oem-project-migrated .of-field :is(input,textarea),.oem-project-migrated .of-checks label{transition:none}}
+
+.oem-project-migrated .of-scope-note{font-size:14px;line-height:1.7}

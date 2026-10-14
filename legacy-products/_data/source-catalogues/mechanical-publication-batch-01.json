@@ -1,0 +1,452 @@
+{
+  "schema_version": 1,
+  "catalogue_id": "mechanical-switches",
+  "stage": "08-07",
+  "batch_id": "mechanical-switches-batch-01",
+  "status": "first_batch_frozen_published_for_test",
+  "selection_rule": "Select 8–12 A-tier products to cover 1/2/3/4 Gang, multiple functions, and multiple source image families before any public PDP generation.",
+  "counts": {
+    "A_tier_candidates": 64,
+    "selected": 10,
+    "excluded_from_batch": 54,
+    "publication_routes": 10
+  },
+  "coverage": {
+    "selected_records": 10,
+    "unique_series": [
+      "S3",
+      "S2",
+      "S5",
+      "A8",
+      "A6",
+      "S8",
+      "A15",
+      "A16",
+      "Y10",
+      "T10"
+    ],
+    "functions": [
+      "switch",
+      "emergency-call"
+    ],
+    "gangs": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "source_images": [
+      "assets/images/source-products/src03-s3-mechanical.jpg",
+      "assets/images/source-products/src03-s2-mechanical.jpg",
+      "assets/images/source-products/src03-s5-mechanical.jpg",
+      "assets/images/source-products/src03-a8-mechanical.jpg",
+      "assets/images/source-products/src03-a6-mechanical.jpg",
+      "assets/images/source-products/src03-s8-mechanical.jpg",
+      "assets/images/source-products/src03-a15-mechanical.jpg",
+      "assets/images/source-products/src03-a16-mechanical.jpg",
+      "assets/images/source-products/src03-y10-mechanical-low-voltage.jpg",
+      "assets/images/source-products/src03-t10-mechanical-low-voltage.jpg"
+    ]
+  },
+  "publication_routes": 10,
+  "publication_rule": "Only the ten selected A-tier records with identity, image, core configuration, SKU, USD 8.80 test price and MOQ 1 are published. Material, finish, color, technical and document fields remain pending and are not inferred.",
+  "records": [
+    {
+      "batch_order": 1,
+      "product_id": "mech-s3-005",
+      "series": "S3",
+      "model": "S3-005",
+      "product_name": "S3 Mechanical Switch — 1 Gang",
+      "selection_reason": "Baseline 1-Gang switch for first batch",
+      "coverage": {
+        "function": "switch",
+        "gang": "1",
+        "mechanism": null,
+        "source_image": "assets/images/source-products/src03-s3-mechanical.jpg"
+      },
+      "evidence_gate": {
+        "identity": true,
+        "primary_image": true,
+        "function": true,
+        "gang": true,
+        "sku": true,
+        "reference_price": true,
+        "moq": true,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "open_items": [
+        "Verify source-preview image is suitable for the first public PDP batch.",
+        "Confirm Material / Finish / Color mapping before exposing those facets.",
+        "Collect technical specs and product documents where available."
+      ],
+      "publication_status": "published",
+      "route": "products/s3-005-mechanical-switch/",
+      "review_status": "approved_for_test",
+      "publication_note": "Published for controlled testing with user-authorized USD 8.80 reference price; unresolved source fields remain explicitly pending."
+    },
+    {
+      "batch_order": 2,
+      "product_id": "mech-s2-006",
+      "series": "S2",
+      "model": "S2-006",
+      "product_name": "S2 Mechanical Switch — 2 Gang",
+      "selection_reason": "2-Gang coverage",
+      "coverage": {
+        "function": "switch",
+        "gang": "2",
+        "mechanism": null,
+        "source_image": "assets/images/source-products/src03-s2-mechanical.jpg"
+      },
+      "evidence_gate": {
+        "identity": true,
+        "primary_image": true,
+        "function": true,
+        "gang": true,
+        "sku": true,
+        "reference_price": true,
+        "moq": true,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "open_items": [
+        "Verify source-preview image is suitable for the first public PDP batch.",
+        "Confirm Material / Finish / Color mapping before exposing those facets.",
+        "Collect technical specs and product documents where available."
+      ],
+      "publication_status": "published",
+      "route": "products/s2-006-mechanical-switch/",
+      "review_status": "approved_for_test",
+      "publication_note": "Published for controlled testing with user-authorized USD 8.80 reference price; unresolved source fields remain explicitly pending."
+    },
+    {
+      "batch_order": 3,
+      "product_id": "mech-s5-007",
+      "series": "S5",
+      "model": "S5-007",
+      "product_name": "S5 Mechanical Switch — 3 Gang",
+      "selection_reason": "3-Gang coverage",
+      "coverage": {
+        "function": "switch",
+        "gang": "3",
+        "mechanism": null,
+        "source_image": "assets/images/source-products/src03-s5-mechanical.jpg"
+      },
+      "evidence_gate": {
+        "identity": true,
+        "primary_image": true,
+        "function": true,
+        "gang": true,
+        "sku": true,
+        "reference_price": true,
+        "moq": true,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "open_items": [
+        "Verify source-preview image is suitable for the first public PDP batch.",
+        "Confirm Material / Finish / Color mapping before exposing those facets.",
+        "Collect technical specs and product documents where available."
+      ],
+      "publication_status": "published",
+      "route": "products/s5-007-mechanical-switch/",
+      "review_status": "approved_for_test",
+      "publication_note": "Published for controlled testing with user-authorized USD 8.80 reference price; unresolved source fields remain explicitly pending."
+    },
+    {
+      "batch_order": 4,
+      "product_id": "mech-a8-008",
+      "series": "A8",
+      "model": "A8-008",
+      "product_name": "A8 Mechanical Switch — 4 Gang",
+      "selection_reason": "4-Gang boundary coverage",
+      "coverage": {
+        "function": "switch",
+        "gang": "4",
+        "mechanism": null,
+        "source_image": "assets/images/source-products/src03-a8-mechanical.jpg"
+      },
+      "evidence_gate": {
+        "identity": true,
+        "primary_image": true,
+        "function": true,
+        "gang": true,
+        "sku": true,
+        "reference_price": true,
+        "moq": true,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "open_items": [
+        "Verify source-preview image is suitable for the first public PDP batch.",
+        "Confirm Material / Finish / Color mapping before exposing those facets.",
+        "Collect technical specs and product documents where available."
+      ],
+      "publication_status": "published",
+      "route": "products/a8-008-mechanical-switch/",
+      "review_status": "approved_for_test",
+      "publication_note": "Published for controlled testing with user-authorized USD 8.80 reference price; unresolved source fields remain explicitly pending."
+    },
+    {
+      "batch_order": 5,
+      "product_id": "mech-a6-009",
+      "series": "A6",
+      "model": "A6-009",
+      "product_name": "A6 Emergency Call Switch — 1 Gang",
+      "selection_reason": "Alternate function: emergency-call",
+      "coverage": {
+        "function": "emergency-call",
+        "gang": "1",
+        "mechanism": null,
+        "source_image": "assets/images/source-products/src03-a6-mechanical.jpg"
+      },
+      "evidence_gate": {
+        "identity": true,
+        "primary_image": true,
+        "function": true,
+        "gang": true,
+        "sku": true,
+        "reference_price": true,
+        "moq": true,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "open_items": [
+        "Verify source-preview image is suitable for the first public PDP batch.",
+        "Confirm Material / Finish / Color mapping before exposing those facets.",
+        "Collect technical specs and product documents where available."
+      ],
+      "publication_status": "published",
+      "route": "products/a6-009-mechanical-switch/",
+      "review_status": "approved_for_test",
+      "publication_note": "Published for controlled testing with user-authorized USD 8.80 reference price; unresolved source fields remain explicitly pending."
+    },
+    {
+      "batch_order": 6,
+      "product_id": "mech-s8-005",
+      "series": "S8",
+      "model": "S8-005",
+      "product_name": "S8 Mechanical Switch — 1 Gang",
+      "selection_reason": "Second source family for 1-Gang comparison",
+      "coverage": {
+        "function": "switch",
+        "gang": "1",
+        "mechanism": null,
+        "source_image": "assets/images/source-products/src03-s8-mechanical.jpg"
+      },
+      "evidence_gate": {
+        "identity": true,
+        "primary_image": true,
+        "function": true,
+        "gang": true,
+        "sku": true,
+        "reference_price": true,
+        "moq": true,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "open_items": [
+        "Verify source-preview image is suitable for the first public PDP batch.",
+        "Confirm Material / Finish / Color mapping before exposing those facets.",
+        "Collect technical specs and product documents where available."
+      ],
+      "publication_status": "published",
+      "route": "products/s8-005-mechanical-switch/",
+      "review_status": "approved_for_test",
+      "publication_note": "Published for controlled testing with user-authorized USD 8.80 reference price; unresolved source fields remain explicitly pending."
+    },
+    {
+      "batch_order": 7,
+      "product_id": "mech-a15-006",
+      "series": "A15",
+      "model": "A15-006",
+      "product_name": "A15 Mechanical Switch — 2 Gang",
+      "selection_reason": "Second source family for 2-Gang comparison",
+      "coverage": {
+        "function": "switch",
+        "gang": "2",
+        "mechanism": null,
+        "source_image": "assets/images/source-products/src03-a15-mechanical.jpg"
+      },
+      "evidence_gate": {
+        "identity": true,
+        "primary_image": true,
+        "function": true,
+        "gang": true,
+        "sku": true,
+        "reference_price": true,
+        "moq": true,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "open_items": [
+        "Verify source-preview image is suitable for the first public PDP batch.",
+        "Confirm Material / Finish / Color mapping before exposing those facets.",
+        "Collect technical specs and product documents where available."
+      ],
+      "publication_status": "published",
+      "route": "products/a15-006-mechanical-switch/",
+      "review_status": "approved_for_test",
+      "publication_note": "Published for controlled testing with user-authorized USD 8.80 reference price; unresolved source fields remain explicitly pending."
+    },
+    {
+      "batch_order": 8,
+      "product_id": "mech-a16-007",
+      "series": "A16",
+      "model": "A16-007",
+      "product_name": "A16 Mechanical Switch — 3 Gang",
+      "selection_reason": "Second source family for 3-Gang comparison",
+      "coverage": {
+        "function": "switch",
+        "gang": "3",
+        "mechanism": null,
+        "source_image": "assets/images/source-products/src03-a16-mechanical.jpg"
+      },
+      "evidence_gate": {
+        "identity": true,
+        "primary_image": true,
+        "function": true,
+        "gang": true,
+        "sku": true,
+        "reference_price": true,
+        "moq": true,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "open_items": [
+        "Verify source-preview image is suitable for the first public PDP batch.",
+        "Confirm Material / Finish / Color mapping before exposing those facets.",
+        "Collect technical specs and product documents where available."
+      ],
+      "publication_status": "published",
+      "route": "products/a16-007-mechanical-switch/",
+      "review_status": "approved_for_test",
+      "publication_note": "Published for controlled testing with user-authorized USD 8.80 reference price; unresolved source fields remain explicitly pending."
+    },
+    {
+      "batch_order": 9,
+      "product_id": "mech-y10-013",
+      "series": "Y10",
+      "model": "Y10-013",
+      "product_name": "Y10 Emergency Call Switch — 3 Gang",
+      "selection_reason": "Emergency-call plus non-default Gang mapping",
+      "coverage": {
+        "function": "emergency-call",
+        "gang": "3",
+        "mechanism": null,
+        "source_image": "assets/images/source-products/src03-y10-mechanical-low-voltage.jpg"
+      },
+      "evidence_gate": {
+        "identity": true,
+        "primary_image": true,
+        "function": true,
+        "gang": true,
+        "sku": true,
+        "reference_price": true,
+        "moq": true,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "open_items": [
+        "Verify source-preview image is suitable for the first public PDP batch.",
+        "Confirm Material / Finish / Color mapping before exposing those facets.",
+        "Collect technical specs and product documents where available."
+      ],
+      "publication_status": "published",
+      "route": "products/y10-013-mechanical-switch/",
+      "review_status": "approved_for_test",
+      "publication_note": "Published for controlled testing with user-authorized USD 8.80 reference price; unresolved source fields remain explicitly pending."
+    },
+    {
+      "batch_order": 10,
+      "product_id": "mech-t10-011",
+      "series": "T10",
+      "model": "T10-011",
+      "product_name": "T10 Mechanical Switch — 4 Gang",
+      "selection_reason": "Second source family for 4-Gang comparison",
+      "coverage": {
+        "function": "switch",
+        "gang": "4",
+        "mechanism": null,
+        "source_image": "assets/images/source-products/src03-t10-mechanical-low-voltage.jpg"
+      },
+      "evidence_gate": {
+        "identity": true,
+        "primary_image": true,
+        "function": true,
+        "gang": true,
+        "sku": true,
+        "reference_price": true,
+        "moq": true,
+        "material": false,
+        "finish": false,
+        "color": false,
+        "technical_specs": false,
+        "datasheet": false,
+        "manual": false,
+        "wiring_diagram": false
+      },
+      "open_items": [
+        "Verify source-preview image is suitable for the first public PDP batch.",
+        "Confirm Material / Finish / Color mapping before exposing those facets.",
+        "Collect technical specs and product documents where available."
+      ],
+      "publication_status": "published",
+      "route": "products/t10-011-mechanical-switch/",
+      "review_status": "approved_for_test",
+      "publication_note": "Published for controlled testing with user-authorized USD 8.80 reference price; unresolved source fields remain explicitly pending."
+    }
+  ],
+  "freeze": {
+    "frozen_at": "2026-09-20T17:51:32.706Z",
+    "batch_id": "mechanical-switches-batch-01",
+    "published_for": "controlled testing",
+    "excluded_records_remain_draft": true,
+    "quote_access": "published variants only"
+  }
+}

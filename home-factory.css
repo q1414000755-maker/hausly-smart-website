@@ -1,0 +1,74 @@
+.hf-factory{
+  padding:var(--z02-space-section-y,64px) 0;
+  background:#fff;
+  color:var(--z02-text);
+  font-family:var(--font,"Figtree");
+  scroll-margin-top:calc(var(--z02-shell-header-height,78px) + 12px);
+}
+.hf-factory *{box-sizing:border-box}
+.hf-factory__head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:var(--z02-space-section-gap,28px)}
+.hf-factory__heading{min-width:0}
+.hf-factory__eyebrow{margin:0 0 var(--z02-space-heading-kicker,12px);color:var(--z02-accent);font-size:var(--z02-fs-section-kicker,12px);font-weight:var(--z02-fw-semibold,600);line-height:var(--z02-lh-copy,1.6);letter-spacing:.09em;text-transform:uppercase}
+.hf-factory__title{margin:0;font-size:var(--z02-fs-section-title,36px);font-weight:var(--z02-fw-medium,500);line-height:var(--z02-lh-heading,1.2);letter-spacing:var(--z02-ls-heading,-.03em);text-wrap:balance}
+.hf-factory__title span{color:var(--z02-accent)}
+.hf-factory__intro{margin:14px 0 0;color:var(--z02-text-muted);font-size:var(--z02-fs-action,15px);font-weight:var(--z02-fw-regular,400);line-height:var(--z02-lh-copy,1.6)}
+.hf-factory__all{display:inline-flex;flex-shrink:0;align-items:center;gap:10px;min-height:44px;color:var(--z02-accent);font-size:var(--z02-fs-action,15px);font-weight:var(--z02-fw-medium,500);line-height:1.4;text-decoration:none;white-space:nowrap}
+.hf-factory__all:hover{text-decoration:underline;text-underline-offset:4px}
+.hf-factory__layout{display:grid;grid-template-columns:minmax(0,1.28fr) minmax(0,1fr);gap:20px;align-items:stretch}
+.hf-factory__feature{position:relative;display:flex;align-items:flex-end;min-width:0;min-height:370px;overflow:hidden;border-radius:8px;background:#07305c;color:#fff;text-decoration:none;isolation:isolate}
+.hf-factory__image{position:absolute;inset:0;z-index:-2;display:block;width:100%;height:100%;object-fit:cover;object-position:40% center;transition:transform .35s ease}
+.hf-factory__feature:before{position:absolute;inset:0;z-index:-1;content:"";background:linear-gradient(180deg,rgba(5,24,45,0) 25%,rgba(5,24,45,.28) 53%,rgba(5,24,45,.88) 100%)}
+.hf-factory__feature-body{width:100%;padding:30px}
+.hf-factory__feature-kicker{display:block;margin:0 0 9px;color:#d9e7f5;font-size:var(--z02-fs-section-kicker,12px);font-weight:var(--z02-fw-semibold,600);line-height:1.5;letter-spacing:.09em;text-transform:uppercase}
+.hf-factory__feature-title{margin:0;max-width:570px;font-size:clamp(22px,1.85vw,27px);font-weight:var(--z02-fw-medium,500);line-height:1.25;letter-spacing:var(--z02-ls-heading,-.03em);text-wrap:balance}
+.hf-factory__feature-description{max-width:540px;margin:11px 0 0;color:#e8eef5;font-size:var(--z02-fs-action,15px);line-height:var(--z02-lh-copy,1.6)}
+.hf-factory__feature-link{display:inline-flex;align-items:center;gap:10px;margin-top:18px;font-size:var(--z02-fs-action,15px);font-weight:var(--z02-fw-medium,500);line-height:1.5}
+.hf-factory__feature-link span{display:grid;place-items:center;width:28px;height:28px;border:1px solid rgba(255,255,255,.6);border-radius:50%;line-height:1}
+.hf-factory__feature:hover .hf-factory__image{transform:scale(1.035)}
+.hf-factory__cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;min-width:0}
+.hf-factory__card{display:flex;flex-direction:column;align-items:flex-start;position:relative;min-width:0;padding:23px 21px 25px;border:1px solid #dfe7f0;border-radius:8px;background:#f9fbfe;color:inherit;text-decoration:none;transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}
+.hf-factory__icon{display:grid;place-items:center;width:36px;height:36px;margin-bottom:19px;border-radius:8px;background:#eaf1fb;color:var(--z02-accent)}
+.hf-factory__icon svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.hf-factory__card-title{margin:0 24px 0 0;font-size:var(--z02-fs-card-title,clamp(18px,1.4vw,20px));font-weight:var(--z02-fw-medium,500);line-height:var(--z02-lh-card-title,1.3);letter-spacing:var(--z02-ls-heading,-.03em)}
+.hf-factory__card-description{margin:9px 0 0;color:var(--z02-text-muted);font-size:var(--z02-fs-action,15px);line-height:var(--z02-lh-copy,1.6)}
+.hf-factory__arrow{position:absolute;top:25px;right:18px;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#eaf1fb;color:var(--z02-accent);font-size:15px;line-height:1;transition:color .2s ease,background .2s ease}
+.hf-factory__card:hover{transform:translateY(-2px);border-color:var(--z02-accent);box-shadow:0 8px 24px rgba(27,48,77,.07)}
+.hf-factory__card:hover .hf-factory__arrow,.hf-factory__card:focus-visible .hf-factory__arrow{background:var(--z02-accent);color:#fff}
+.hf-factory a:focus-visible{outline:2px solid var(--z02-accent);outline-offset:4px}
+.hf-factory__feature:focus-visible{outline-offset:5px}
+@media(max-width:1180px){
+  .hf-factory__head{flex-direction:column;align-items:flex-start;gap:15px}
+  .hf-factory__layout{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px}
+  .hf-factory__cards{gap:14px}
+  .hf-factory__card{padding:20px 16px}
+  .hf-factory__arrow{right:14px;top:21px}
+  .hf-factory__feature-body{padding:24px}
+}
+@media(max-width:900px){
+  .hf-factory__layout{grid-template-columns:1fr}
+  .hf-factory__feature{min-height:340px}
+  .hf-factory__cards{gap:18px}
+  .hf-factory__card{padding:23px}
+}
+@media(max-width:760px){
+  .hf-factory{padding:48px 0}
+  .hf-factory__head{gap:12px;margin-bottom:24px}
+  .hf-factory__title{font-size:28px}
+  .hf-factory__all{font-size:var(--z02-fs-meta,13.6px)}
+  .hf-factory__feature{min-height:330px}
+  .hf-factory__feature-body{padding:23px}
+  .hf-factory__feature-title{font-size:24px}
+  .hf-factory__cards{gap:14px}
+  .hf-factory__card{padding:20px 18px}
+}
+@media(max-width:480px){
+  .hf-factory__cards{grid-template-columns:1fr}
+  .hf-factory__card{min-height:158px;padding:22px}
+  .hf-factory__icon{margin-bottom:14px}
+  .hf-factory__feature{min-height:320px}
+  .hf-factory__feature-body{padding:22px}
+}
+@media(prefers-reduced-motion:reduce){
+  .hf-factory__image,.hf-factory__card,.hf-factory__arrow{transition:none}
+  .hf-factory__feature:hover .hf-factory__image,.hf-factory__card:hover{transform:none}
+}

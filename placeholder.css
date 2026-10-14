@@ -1,0 +1,15 @@
+.new-placeholder{min-height:220px;padding:70px 10%;text-align:center;background:#fff;color:#8793a3;border-top:1px solid #edf0f4}.new-placeholder>span{font-size:11px;letter-spacing:.16em}.new-placeholder h2{font-size:22px;color:#526176;font-weight:500;margin:16px 0 8px}.new-placeholder p{font-size:14px;margin:0}.new-skip{position:fixed;left:20px;top:-80px;z-index:10000;padding:12px;background:#fff;color:#142239}.new-skip:focus{top:15px}#new-contact{width:min(480px,90vw);border:1px solid #e1e6ed;border-radius:10px;padding:34px;color:#142239;font-family:inherit}#new-contact::backdrop{background:#10223588}#new-contact h2{font-size:24px}#new-contact p{color:#67758a;line-height:1.6}.new-close{position:absolute;right:12px;top:8px;background:none;border:0;font-size:25px;cursor:pointer}.new-dismiss{background:#0963c8;border:0;border-radius:5px;color:white;padding:11px 20px;cursor:pointer}.new-placeholder:target{outline:none}
+
+/* Desktop footer: five navigation groups on one row. */
+@media (min-width:1181px){.z02-footer-main{grid-template-columns:minmax(220px,.7fr) minmax(0,3fr);gap:48px}.z02-footer-links{grid-template-columns:repeat(5,minmax(0,1fr));gap:22px}.z02-footer-links nav{min-width:0}}
+
+/* Raise the footer logo without shifting the copy or navigation. */
+.z02-footer-wordmark{position:relative;top:-48px}
+
+/* Keep the raised logo and close the gap below it. */
+.z02-footer-brand p{margin-top:-28px}
+
+@media(max-width:760px){body.has-inner-banner .inner-banner-inner{padding-top:190px!important}body.has-inner-banner .inner-banner{min-height:640px}}
+
+/* Full-width white background behind inner-page content. */
+body.has-inner-banner,body.has-inner-banner #main-content{background:#fff}

@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "kicker": "PRODUCT CUSTOMIZATION",
+    "title": "Product Customization",
+    "subtitle": "Choose your product and define what you want to customize.",
+    "copy": "Start from a Hauslysmart base product, select the customization areas, and provide key requirements. You can then go deeper into technical or branding details in the next steps.",
+    "image": "assets/images/hero-smart-switches-s02.webp",
+    "image_width": 2172,
+    "image_height": 724,
+    "image_alt": "Hauslysmart switch installation detail",
+    "breadcrumb": ["Home", "OEM & ODM", "Product Customization"]
+  },
+  "badges": [
+    { "icon": "assets/icons/oem-pen.png", "title": "Flexible Options", "copy": "From appearance to functions" },
+    { "icon": "assets/icons/support-cube.png", "title": "Based on Real Products", "copy": "Verified product platforms" },
+    { "icon": "assets/icons/oem-shield.png", "title": "Support Your Project", "copy": "From evaluation to production" }
+  ],
+  "steps": [
+    "Product Customization Entry",
+    "Base Product Context",
+    "Choose Customization Areas",
+    "Appearance & Physical Customization",
+    "Technical Customization",
+    "Branding & Product Delivery",
+    "Review & Summary",
+    "Continue the Project"
+  ],
+  "entry": {
+    "title": "1. Product Customization Entry",
+    "subtitle": "Select a product to customize",
+    "tabs": ["Search Products", "Browse by Category", "Recommended Products"],
+    "search_placeholder": "Search by product name, category or keyword...",
+    "search_label": "Search"
+  },
+  "categories": [
+    { "label": "Smart Switches", "image": "assets/icons/cat-smart-switches.png" },
+    { "label": "Smart Sockets", "image": "assets/icons/cat-sockets.png" },
+    { "label": "Thermostats", "image": "assets/icons/cat-thermostats.png" },
+    { "label": "Sensors", "image": "assets/icons/cat-sensors.png" },
+    { "label": "Gateways", "image": "assets/icons/cat-controllers.png" },
+    { "label": "Lighting Control", "image": "assets/icons/cat-lighting.png" },
+    { "label": "Other Products", "more": true }
+  ],
+  "products": [
+    { "name": "Smart Wall Switch", "meta": "Wi-Fi / Zigbee / Matter", "image": "assets/images/home/featured-scene-switch-render-v1.webp", "category": "Smart Switches" },
+    { "name": "Smart Touch Switch", "meta": "Wi-Fi / Zigbee / Matter", "image": "assets/images/home/featured-switch-4-gang-render-v2.webp", "category": "Smart Switches" },
+    { "name": "Smart Socket", "meta": "Wi-Fi / Zigbee / Matter", "image": "assets/images/home/featured-usb-socket-render-v1.webp", "category": "Smart Sockets" },
+    { "name": "Smart Thermostat", "meta": "Wi-Fi / Zigbee", "image": "assets/images/home/featured-thermostat-render-v1.png", "category": "Thermostats" },
+    { "name": "Smart Sensor", "meta": "Zigbee / Bluetooth", "image": "assets/images/home/featured-presence-sensor-render-v1.webp", "category": "Sensors" }
+  ],
+  "recommend": {
+    "title": "Not sure which product is the best fit?",
+    "copy": "Our team can help you find the right base product based on your application, market and customization needs.",
+    "cta": "Get Recommendations",
+    "href": "contact.html",
+    "image": "assets/images/home/oem-customization-bg-v1.png"
+  },
+  "sidebar": {
+    "context_title": "Your Product Context",
+    "context_empty": "No product selected yet",
+    "context_hint": "Choose a product to see the current configuration and start your customization request.",
+    "info_title": "Start with any product",
+    "info_copy": "You can choose a product now or start from your requirements if you do not have a specific product yet.",
+    "quick_title": "Quick Actions",
+    "quick_actions": [
+      { "icon": "assets/icons/support-document.png", "title": "Continue from Quote List", "copy": "Import products you have selected", "href": "../quote-list.html" },
+      { "icon": "assets/icons/dealers-chat.png", "title": "Start from Requirements", "copy": "Discuss your product needs", "href": "start-project.html" },
+      { "icon": "assets/icons/support-cube.png", "title": "View Product Catalog", "copy": "Explore all products", "href": "../products.html" }
+    ],
+    "help_title": "Need Help?",
+    "help_links": [
+      { "icon": "assets/icons/oem-sliders.png", "label": "Compare products", "href": "../compare.html" },
+      { "icon": "assets/icons/support-headset.png", "label": "Talk to our team", "href": "../contact.html" },
+      { "icon": "assets/icons/support-document.png", "label": "Download product catalog", "href": "../resources/catalogues.html" }
+    ],
+    "continue_label": "Continue to Next Step",
+    "continue_href": "start-project.html",
+    "next_note": "Step 2. Base Product Context"
+  },
+  "values": [
+    { "icon": "assets/icons/support-cube.png", "title": "Real Products", "copy": "Based on Hauslysmart product platform" },
+    { "icon": "assets/icons/oem-sliders.png", "title": "Flexible Customization", "copy": "Appearance, functions, branding and more" },
+    { "icon": "assets/icons/support-headset.png", "title": "Professional Support", "copy": "From concept to mass production" },
+    { "icon": "assets/icons/dealers-globe-pin.png", "title": "Global Cooperation", "copy": "Trusted by partners worldwide" }
+  ]
+}

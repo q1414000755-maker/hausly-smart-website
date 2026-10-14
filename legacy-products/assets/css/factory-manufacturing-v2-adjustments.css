@@ -1,0 +1,3 @@
+/* Product-family render scale: 84 × 110px → 112 × 147px (+33%). */
+.fm-v2__products article{grid-template-columns:112px 1fr}
+.fm-v2__products img{width:112px;height:147px}

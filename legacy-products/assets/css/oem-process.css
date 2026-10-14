@@ -1,0 +1,394 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   OEM「OEM & ODM Process」页 —— 本页专属组件（设计稿 05.png，2026-09-20）
+   通用原语（band / 区头 / 按钮 / 药丸 / 卡片 / 键值行 / 注脚）
+   在 assets/css/oem-flow.css —— 本文件只放 opx- 前缀的部件。
+   颜色 / 字号 / 行高 / 字距 / 字重一律走 --z02-* token。
+   设计稿的正文区比本站 --z02-canvas 宽（1783 vs 1632 @1920）：
+   → 只照搬「相对比例与列数」，不照搬绝对像素。
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── 01 首屏段：左文案 + 右生命周期卡（同 04 页 obx-intro-grid 的比例） ── */
+.opx-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.85fr);
+  gap: 28px;
+  align-items: start;
+}
+.opx-intro-copy .osp-actions { margin-top: 24px; }
+.opx-life { padding: 20px 18px 18px; }
+.opx-life .osp-card-title { margin-bottom: 18px; }
+
+/* ── 通用版式：主区 + 右栏 / 网格 ─────────────────────────────── */
+.opx-side {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 356px);
+  gap: 18px;
+  align-items: start;
+}
+.opx-grid { display: grid; gap: 12px; align-items: start; }
+.opx-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.opx-grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.opx-grid--5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.opx-grid--6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+
+/* ── 01 生命周期步骤条（卡片内 6 列，窄卡里标签自然折两行） ────── */
+.opx-steps {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+}
+.opx-step {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  padding: 0 2px;
+  border: 0;
+  background: transparent;
+  text-align: center;
+  font-family: var(--font);
+  cursor: pointer;
+}
+.opx-step-dot {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 50%;
+  background: var(--z02-surface);
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  /* 2026-09-20：原为 --z02-fw-medium(500)，与 .ose-step-dot（同为「圆形容器里的序号」）
+     的 --z02-fw-semibold(600) 不一致；两处统一 600。 */
+  font-weight: var(--z02-fw-semibold);
+}
+.opx-step-label {
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-card-title);
+}
+/* 连接线：从本步圆点右缘画到下一步圆点左缘（最后一个不画）。
+   线会跨过列间距，属于设计稿里的连续轴线 —— 溢出的是装饰不是内容。 */
+.opx-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: calc(50% + 16px);
+  width: calc(100% - 32px);
+  height: 1px;
+  background: var(--z02-border-line);
+}
+.opx-step:hover .opx-step-dot { border-color: var(--z02-accent); color: var(--z02-accent); }
+.opx-step.is-current .opx-step-dot {
+  border-color: var(--z02-accent);
+  background: var(--z02-accent);
+  color: #fff;
+}
+.opx-step.is-current .opx-step-label { color: var(--z02-text); font-weight: var(--z02-fw-semibold); }
+
+/* 当前阶段：卡片里的内嵌小块（图标 + 阶段 + 说明） */
+.opx-life-current {
+  display: grid;
+  grid-template-columns: 38px auto minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 6px;
+  background: var(--z02-surface-page);
+}
+.opx-life-current .opx-mini-icon { width: 30px; height: 30px; border-radius: 6px; }
+.opx-life-current .opx-mini-icon img { width: 16px; height: 16px; }
+.opx-current-block { display: block; min-width: 0; }
+.opx-current-label {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--z02-accent);
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-semibold);
+  letter-spacing: var(--z02-ls-wider);
+  text-transform: uppercase;
+}
+.opx-current-block strong { display: block; color: var(--z02-text); font-size: var(--z02-fs-action); font-weight: var(--z02-fw-semibold); }
+.opx-life-current p { margin: 0; color: var(--z02-text-muted); font-size: var(--z02-fs-copy); line-height: var(--z02-lh-copy); }
+
+/* ── 02 起始方式 ─────────────────────────────────────────────── */
+.opx-opts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; align-items: start; }
+.opx-opt {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  padding: 16px 14px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 7px;
+  background: var(--z02-surface);
+  color: inherit;
+  text-decoration: none;
+}
+.opx-opt:hover { border-color: var(--z02-accent); box-shadow: 0 8px 22px rgba(23, 53, 101, .08); }
+.opx-opt-icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 7px;
+  background: var(--z02-surface-selected);
+}
+.opx-opt-icon img { width: 20px; height: 20px; object-fit: contain; }
+.opx-opt strong { color: var(--z02-text); font-size: var(--z02-fs-action); font-weight: var(--z02-fw-semibold); line-height: var(--z02-lh-card-title); }
+.opx-opt-copy { color: var(--z02-text-muted); font-size: var(--z02-fs-copy); line-height: var(--z02-lh-copy); }
+.opx-opt b { margin-top: 4px; color: var(--z02-accent); font-size: var(--z02-fs-label); font-weight: var(--z02-fw-medium); }
+
+/* ── 卡片零件（03 / 05 / 06 / 08 共用） ──────────────────────── */
+.opx-mini-icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 7px;
+  background: var(--z02-surface-selected);
+}
+.opx-mini-icon img { width: 20px; height: 20px; object-fit: contain; }
+.opx-mini-title {
+  margin: 10px 0 0;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-card-title);
+  font-weight: var(--z02-fw-semibold);
+  line-height: var(--z02-lh-card-title);
+  /* 2026-09-20：删除 letter-spacing(--z02-ls-component-title,-0.4px)。卡题档在族内的
+     基准是共享原语 .osp-card-title = 20/26/不加字距/600；本类是唯一边界情况。 */
+}
+.opx-mini-copy { margin: 8px 0 0; color: var(--z02-text-muted); font-size: var(--z02-fs-copy); line-height: var(--z02-lh-copy); }
+.opx-mini > .opx-mini-icon + .opx-mini-title { margin-top: 12px; }
+.opx-list {
+  margin: 10px 0 0;
+  padding-left: 15px;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-copy);
+  line-height: var(--z02-lh-copy);
+}
+.opx-list li { margin-bottom: 5px; }
+.opx-list li:last-child { margin-bottom: 0; }
+.opx-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--z02-accent);
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-medium);
+  text-decoration: none;
+}
+.opx-link:hover { text-decoration: underline; }
+.opx-mini--icon {
+  display: grid;
+  align-content: start;
+  padding: 16px 14px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 7px;
+  background: var(--z02-surface);
+}
+.opx-mini--icon .opx-mini-icon { width: 32px; height: 32px; }
+.opx-mini--icon .opx-mini-title { margin-top: 10px; }
+
+/* ── 右栏注脚（03 / 06 在右栏内、05 在左区下方） ─────────────── */
+.opx-note {
+  display: grid;
+  grid-template-columns: 15px minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+  margin: 14px 0 0;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: var(--z02-surface-selected);
+  color: var(--z02-text);
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-copy);
+}
+.opx-note-glyph {
+  display: grid;
+  place-items: center;
+  width: 15px;
+  height: 15px;
+  margin-top: 1px;
+  border-radius: 50%;
+  background: var(--z02-accent);
+  color: #fff;
+  font-size: var(--z02-fs-glyph);
+  font-style: normal;
+  font-weight: var(--z02-fw-semibold);
+  line-height: 1;
+}
+.opx-note--band { grid-column: 1; margin-top: 0; }
+
+/* 04 平台比对：现有产品 → 变更 → 复核 → 结论（同排四段） ───── */
+.opx-flow { display: grid; gap: 12px; align-items: start; }
+.opx-flow--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.opx-flow--4:has(> .opx-arrow) { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr); }
+.opx-arrow { align-self: center; color: var(--z02-text-faint); font-size: var(--z02-fs-copy); }
+.opx-arrow--lg { font-size: var(--z02-fs-panel-title); }
+.opx-plat-card { min-height: 100%; }
+.opx-plat-media {
+  height: 104px;
+  margin-bottom: 12px;
+  padding: 8px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  background: var(--z02-surface-page);
+  overflow: hidden;
+}
+.opx-plat-media img { width: 100%; height: 100%; object-fit: contain; }
+.opx-plat-review .osp-card-title { margin-bottom: 14px; }
+.opx-review-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: var(--z02-surface-selected);
+}
+.opx-glass {
+  position: relative;
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--z02-accent);
+  border-radius: 50%;
+}
+.opx-glass::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  bottom: -4px;
+  width: 9px;
+  height: 2px;
+  background: var(--z02-accent);
+  transform: rotate(45deg);
+}
+.opx-outcomes { display: grid; gap: 10px; align-content: start; }
+.opx-outcome { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 9px; align-items: start; }
+.opx-outcome-glyph { width: 20px; height: 20px; padding: 0; justify-content: center; border-radius: 50%; }
+.opx-outcome strong { display: block; color: var(--z02-text); font-size: var(--z02-fs-label); font-weight: var(--z02-fw-semibold); }
+.opx-outcome em { display: block; margin-top: 2px; color: var(--z02-text-muted); font-size: var(--z02-fs-label); font-style: normal; }
+
+/* 04 右侧：复核结果切换 */
+.opx-tabs { display: flex; gap: 4px; margin: -4px -4px 12px; border-bottom: 1px solid var(--z02-border-line); }
+.opx-tab {
+  flex: 1 1 0;
+  padding: 0 6px 10px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--z02-text-muted);
+  font-family: var(--font);
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-medium);
+  cursor: pointer;
+}
+.opx-tab.is-on { color: var(--z02-accent); border-bottom-color: var(--z02-accent); }
+.opx-tabpanel.is-hidden { display: none; }
+
+/* ── 07 生产交接 ─────────────────────────────────────────────── */
+.opx-handoff {
+  display: grid;
+  grid-template-columns: minmax(210px, 1fr) minmax(0, 1.95fr) minmax(230px, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+.opx-check { margin: 0; padding: 0; list-style: none; }
+.opx-check li {
+  position: relative;
+  padding: 6px 0 6px 24px;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-card-title);
+}
+.opx-check li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  display: grid;
+  place-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background: var(--z02-accent);
+  color: #fff;
+  font-size: var(--z02-fs-glyph);
+  line-height: 1;
+}
+.opx-flow-step { display: grid; justify-items: center; gap: 7px; text-align: center; }
+.opx-flow-step strong { color: var(--z02-text); font-size: var(--z02-fs-label); font-weight: var(--z02-fw-semibold); line-height: var(--z02-lh-card-title); }
+.opx-flow-step span:last-child { color: var(--z02-text-muted); font-size: var(--z02-fs-label); line-height: var(--z02-lh-copy); }
+.opx-areas { display: grid; gap: 8px; }
+.opx-area {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--z02-border-line);
+  color: inherit;
+  text-decoration: none;
+}
+.opx-area:last-child { border-bottom: 0; }
+.opx-area:hover strong { color: var(--z02-accent); }
+.opx-area .opx-mini-icon { width: 30px; height: 30px; border-radius: 6px; }
+.opx-area .opx-mini-icon img { width: 16px; height: 16px; }
+.opx-area strong { display: block; color: var(--z02-text); font-size: var(--z02-fs-label); font-weight: var(--z02-fw-semibold); }
+.opx-area em { display: block; margin-top: 2px; color: var(--z02-text-muted); font-size: var(--z02-fs-label); font-style: normal; }
+
+/* ── 08 生产之后 ─────────────────────────────────────────────── */
+.opx-grid--support .opx-support { display: grid; align-content: start; }
+
+/* ── 09 从哪里开始 ───────────────────────────────────────────── */
+.opx-next-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(220px, 1.25fr);
+  gap: 12px;
+  align-items: stretch;
+}
+.opx-next {
+  display: grid;
+  gap: 7px;
+  align-content: start;
+  padding: 18px 16px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 7px;
+  background: var(--z02-surface);
+  color: inherit;
+  text-decoration: none;
+}
+.opx-next:hover { border-color: var(--z02-accent); box-shadow: 0 8px 22px rgba(23, 53, 101, .08); }
+.opx-next strong { color: var(--z02-text); font-size: var(--z02-fs-action); font-weight: var(--z02-fw-semibold); line-height: var(--z02-lh-card-title); }
+.opx-next > span { color: var(--z02-text-muted); font-size: var(--z02-fs-copy); line-height: var(--z02-lh-copy); }
+.opx-next b { margin-top: 6px; color: var(--z02-accent); font-size: var(--z02-fs-label); font-weight: var(--z02-fw-medium); }
+
+/* ── 断点：只做 PC（≤1679），窄屏保底不破版 ──────────────────────
+   1440 档（版心 1224，右栏切走 356 后左列 850）仍按设计稿原列数走：
+   4 栏 ≈ 204、5 栏 ≈ 158、6 栏 ≈ 133 —— 设计稿本身也是这个密度
+   （它的正文区 1783 宽，折到本站 1224 后卡片宽度基本一致）。 */
+@media (max-width: 1280px) {
+  .opx-intro-grid { grid-template-columns: minmax(0, 1fr); }
+  .opx-side { grid-template-columns: minmax(0, 1fr); }
+  .opx-note--band { grid-column: 1; margin-top: 0; }
+  .opx-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 16px; }
+  .opx-step:not(:last-child)::after { content: none; }
+  .opx-life-current { grid-template-columns: 38px minmax(0, 1fr); }
+  .opx-life-current p { grid-column: 2; }
+  .opx-current-block strong { font-size: var(--z02-fs-label); }
+  .opx-flow--4:has(> .opx-arrow) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .opx-arrow { display: none; }
+  .opx-handoff { grid-template-columns: minmax(0, 1fr); }
+  .opx-next-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .opx-opts, .opx-grid--3, .opx-grid--4, .opx-grid--5, .opx-grid--6, .opx-next-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .opx-flow--4,
+  .opx-flow--4:has(> .opx-arrow) { grid-template-columns: minmax(0, 1fr); }
+}

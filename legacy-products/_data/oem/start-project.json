@@ -1,0 +1,289 @@
+{
+  "hero": {
+    "kicker": "START AN OEM PROJECT",
+    "title": "Plan Your OEM Project",
+    "subtitle": "Share your product and customization needs with our team. We review and get back to you quickly.",
+    "image": "assets/images/hero-smart-switches-s02.webp",
+    "image_width": 2172,
+    "image_height": 724,
+    "breadcrumb": ["Home", "OEM & ODM", "Start an OEM Project"]
+  },
+  "start": {
+    "kicker": "CHOOSE HOW TO START",
+    "title": "Choose How to Start",
+    "subtitle": "Select the option that best fits your situation. You can also fill in a custom request if your needs are unique.",
+    "options": [
+      {
+        "key": "select",
+        "icon": "assets/icons/oem-cube.png",
+        "title": "Select from Products",
+        "copy": "Choose from our existing products and customize.",
+        "cta": "Browse Products",
+        "href": "product-customization.html"
+      },
+      {
+        "key": "customize",
+        "icon": "assets/icons/oem-sliders.png",
+        "title": "Customize an Existing Product",
+        "copy": "Based on a product in our current portfolio.",
+        "cta": "Use Selected Product",
+        "href": "product-customization.html"
+      },
+      {
+        "key": "develop",
+        "icon": "assets/icons/oem-shield.png",
+        "title": "New Product Development",
+        "copy": "Work with us on a new idea or tailored solution.",
+        "cta": "Share Requirements",
+        "href": "technical-customization.html"
+      },
+      {
+        "key": "rebrand",
+        "icon": "assets/icons/oem-pen.png",
+        "title": "Rebranding / Private Label",
+        "copy": "Apply your brand to existing products.",
+        "cta": "Discuss Options",
+        "href": "branding-packaging.html"
+      }
+    ]
+  },
+  "products": {
+    "kicker": "PRODUCTS & QUANTITIES",
+    "title": "Products & Quantities",
+    "subtitle": "Add the products you are interested in and tell us your estimated quantities. You can add multiple products.",
+    "add": { "label": "Add Product(s)", "href": "product-customization.html" },
+    "columns": ["#", "Product", "Model / Description", "Key Specifications", "Estimated Quantity", "Actions"],
+    "quantity_unit": "pcs",
+    "view_label": "View Details",
+    "remove_label": "Remove",
+    "rows": [
+      {
+        "n": "1",
+        "image": "assets/images/home/featured-scene-switch-render-v1.webp",
+        "name": "Smart Wi-Fi Wall Switch",
+        "model": "Touch switch, Wi-Fi/BLE",
+        "example": "(Example product)",
+        "specs": ["Input: 100–240V (to be confirmed)", "Color: White", "Other: To be confirmed"],
+        "qty": "1,000",
+        "view_href": "../products.html"
+      },
+      {
+        "n": "2",
+        "image": "assets/images/home/featured-control-panel-render-v1.webp",
+        "name": "Smart Control Panel",
+        "model": "4-inch Smart Panel",
+        "example": "(Example product)",
+        "specs": ["Display: 4-inch, Touch", "Connectivity: Wi-Fi (to be confirmed)", "Other: To be confirmed"],
+        "qty": "500",
+        "view_href": "../products.html"
+      }
+    ]
+  },
+  "customization": {
+    "kicker": "CUSTOMIZATION SUMMARY",
+    "title": "Customization Summary",
+    "subtitle": "Define what you need to customize for each product. This helps us understand your requirements clearly.",
+    "rows": ["Appearance", "Hardware Configuration", "Software / Firmware", "Branding", "Accessories", "Others"],
+    "not_specified": "Not specified",
+    "edit_label": "Edit Customization",
+    "edit_href": "product-customization.html",
+    "products": [
+      {
+        "name": "Smart Wi-Fi Wall Switch",
+        "image": "assets/images/home/featured-scene-switch-render-v1.webp",
+        "values": { "Branding": "Logo, color, packaging (to be confirmed)" }
+      },
+      {
+        "name": "Smart Control Panel",
+        "image": "assets/images/home/featured-control-panel-render-v1.webp",
+        "values": {}
+      }
+    ]
+  },
+  "brief": {
+    "kicker": "TECHNICAL BRIEF & BRAND PACKAGE",
+    "title": "Technical Brief & Brand Package",
+    "subtitle": "Share your technical requirements and brand assets. You can upload files or provide details in the form.",
+    "cards": [
+      {
+        "key": "technical",
+        "icon": "assets/icons/support-tools.png",
+        "title": "Technical Brief",
+        "rows": [
+          ["Functional Requirements", "Not specified"],
+          ["Interfaces / Connectivity", "Not specified"],
+          ["Software Requirements", "Not specified"],
+          ["Compliance Requirements", "Not specified"],
+          ["Other Technical Notes", "Not specified"]
+        ],
+        "upload": { "label": "Upload Technical Brief (Optional)", "accept": ".pdf,.doc,.docx,.txt,.png,.jpg" }
+      },
+      {
+        "key": "brand",
+        "icon": "assets/icons/oem-pen.png",
+        "title": "Brand Package",
+        "rows": [
+          ["Logo Files", "Not uploaded"],
+          ["Brand Guidelines", "Not specified"],
+          ["Color / Material Preferences", "Not specified"],
+          ["Packaging Requirements", "Not specified"],
+          ["Other Brand Notes", "Not specified"]
+        ],
+        "upload": { "label": "Upload Brand Files (Optional)", "accept": ".pdf,.zip,.ai,.png,.jpg,.svg" }
+      }
+    ]
+  },
+  "context": {
+    "kicker": "PROJECT & COMMERCIAL CONTEXT",
+    "title": "Project & Commercial Context",
+    "subtitle": "Help us understand your project background and business context.",
+    "rows": [
+      [
+        { "type": "text", "name": "project_title", "label": "Project Title / Reference", "placeholder": "e.g. Smart Home Project" },
+        {
+          "type": "select", "name": "target_market", "label": "Target Market / Region", "placeholder": "Select market",
+          "options": ["North America", "Europe", "Middle East", "Southeast Asia", "Australia / New Zealand", "Other"]
+        },
+        {
+          "type": "select", "name": "project_type", "label": "Project Type", "placeholder": "Select type",
+          "options": ["OEM · Existing Product", "OEM · Customized Product", "ODM · New Development", "Private Label", "To be confirmed"]
+        },
+        {
+          "type": "select", "name": "timeline", "label": "Target Launch Timeline", "placeholder": "Select timeline",
+          "options": ["Within 3 months", "3–6 months", "6–12 months", "Over 12 months", "To be confirmed"]
+        }
+      ],
+      [
+        {
+          "type": "select", "name": "annual_volume", "label": "Estimated Annual Volume", "placeholder": "To be confirmed",
+          "options": ["Under 1,000 pcs", "1,000–5,000 pcs", "5,000–20,000 pcs", "20,000–100,000 pcs", "Over 100,000 pcs", "To be confirmed"]
+        },
+        {
+          "type": "select", "name": "price_range", "label": "Intended Price Range", "placeholder": "To be confirmed",
+          "options": ["Under $10", "$10–$25", "$25–$50", "Over $50", "To be confirmed"]
+        },
+        {
+          "type": "select", "name": "channel", "label": "Distribution Channel", "placeholder": "Select channel",
+          "options": ["Retail", "Distribution / Dealer", "Project / Contractor", "E-commerce", "Other"]
+        },
+        { "type": "text", "name": "additional", "label": "Additional Information", "placeholder": "Tell us more about your project..." }
+      ]
+    ]
+  },
+  "company": {
+    "kicker": "COMPANY & CONTACT",
+    "title": "Company & Contact",
+    "subtitle": "Tell us about your company and the main point of contact for this project.",
+    "rows": [
+      [
+        { "type": "text", "name": "company_name", "label": "Company Name", "placeholder": "Enter company name" },
+        {
+          "type": "select", "name": "country", "label": "Country / Region", "placeholder": "Select country / region",
+          "options": ["China", "United States", "Germany", "United Kingdom", "France", "Netherlands", "Australia", "United Arab Emirates", "Other"]
+        },
+        {
+          "type": "select", "name": "business_type", "label": "Business Type", "placeholder": "Select business type",
+          "options": ["Brand Owner", "Distributor / Wholesaler", "Retailer", "System Integrator", "Contractor / Project", "Other"]
+        }
+      ],
+      [
+        { "type": "text", "name": "contact_person", "label": "Contact Person", "placeholder": "Enter full name" },
+        { "type": "email", "name": "email", "label": "Email Address", "placeholder": "name@company.com" },
+        { "type": "tel", "name": "phone", "label": "Phone Number", "placeholder": "Enter phone number" },
+        { "type": "url", "name": "website", "label": "Company Website (Optional)", "placeholder": "https://" }
+      ]
+    ]
+  },
+  "review": {
+    "kicker": "PROJECT REVIEW & VALIDATION",
+    "title": "Project Review & Validation",
+    "subtitle": "Review your information before submitting. You can edit any section if needed.",
+    "badge_title": "Ready to Submit",
+    "badge_copy": "Please review the information above. You can still make changes before submitting.",
+    "action": { "label": "Review All Sections", "href": "#ose-start" }
+  },
+  "submit": {
+    "kicker": "SUBMIT & PROJECT STATUS",
+    "title": "Submit & Project Status",
+    "subtitle": "Submit your project inquiry to our team. We will review your information and get back to you soon.",
+    "steps": [
+      { "n": "1", "title": "Submit Project", "copy": "Send your inquiry" },
+      { "n": "2", "title": "Under Review", "copy": "Our team is reviewing" },
+      { "n": "3", "title": "In Discussion", "copy": "We will contact you" },
+      { "n": "4", "title": "Project Tracking", "copy": "Follow progress" }
+    ],
+    "action": "Submit Project Inquiry",
+    "note_before": "By submitting, you agree to our ",
+    "note_privacy": "Privacy Policy",
+    "note_after": ". Your information will only be used for project communication.",
+    "ok_note": "Online submission is not connected yet — your project summary has been copied to the clipboard. Please paste it into your inquiry to our sales team.",
+    "fail_note": "Online submission is not connected yet, and the automatic copy failed — please copy your project details into your inquiry manually."
+  },
+  "rail": {
+    "summary": {
+      "title": "OEM Project Summary",
+      "pill": "Draft",
+      "value_state": "muted",
+      "rows": [
+        { "key": "project_no", "label": "Project No.", "value": "Not created" },
+        { "key": "initiated_on", "label": "Initiated On", "value": "Not submitted" },
+        { "key": "project_type", "label": "Project Type", "value": "Not selected" },
+        { "key": "products", "label": "Products", "value": "0 item(s)", "unit": "item(s)" },
+        { "key": "customization", "label": "Customization", "value": "Not specified", "unit": "selected" },
+        { "key": "target_market", "label": "Target Market", "value": "Not specified" }
+      ],
+      "action": "Save as Draft",
+      "ok_note": "Saving online is not connected yet — your project summary has been copied to the clipboard instead.",
+      "fail_note": "Saving online is not connected yet, and the automatic copy failed — please select and copy the summary manually."
+    },
+    "readiness": {
+      "title": "Readiness Checklist",
+      "done_pill": "Complete",
+      "pending_pill": "Pending",
+      "rows": [
+        { "key": "products", "label": "Product(s) added", "state": "done" },
+        { "key": "customization", "label": "Customization summary", "state": "pending" },
+        { "key": "technical", "label": "Technical requirements", "state": "pending" },
+        { "key": "context", "label": "Project context", "state": "pending" },
+        { "key": "company", "label": "Company information", "state": "pending" },
+        { "key": "review", "label": "Review completed", "state": "pending" },
+        { "key": "submit", "label": "Submit project", "state": "pending" }
+      ]
+    },
+    "contact": {
+      "title": "Quick Contact",
+      "copy_top": "Have questions?",
+      "copy_main": "Our OEM team is here to help.",
+      "action": { "label": "Contact Our Team", "href": "../contact.html" }
+    },
+    "notes": {
+      "title": "Application Notes",
+      "copy": "This is a project inquiry. All details will be reviewed by our team. Specifications, quantities, and timing are subject to further discussion."
+    },
+    "resources": {
+      "title": "Helpful Resources",
+      "links": [
+        { "label": "OEM Process Overview", "href": "process.html" },
+        { "label": "Product Catalog", "href": "../resources/catalogues.html" },
+        { "label": "Customization Options", "href": "product-customization.html" },
+        { "label": "Packaging Examples", "href": "branding-packaging.html" },
+        { "label": "FAQ", "href": "../partners/faq.html" }
+      ]
+    },
+    "why": {
+      "title": "Why Choose Hauslysmart",
+      "items": [
+        "Focus on smart home products",
+        "Flexible customization options",
+        "Professional technical support",
+        "Responsive communication",
+        "Long-term partnership mindset"
+      ]
+    },
+    "cta": {
+      "title": "Let's Build Smarter Together",
+      "copy": "Turn your ideas into real products with Hauslysmart.",
+      "action": { "label": "Start Your OEM Project", "href": "#ose-start" }
+    }
+  }
+}

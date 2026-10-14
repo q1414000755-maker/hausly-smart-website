@@ -1,0 +1,25 @@
+{
+  "stage": "09-05",
+  "status": "pass_material_intake_hold_publication",
+  "catalogue": "Low-Voltage & Data Panels",
+  "batch_id": "low-voltage-data-panels-batch-01",
+  "counts": {
+    "selected_records": 12,
+    "family_preview_images_available": 12,
+    "source_page_previews_available": 12,
+    "model_specific_images": 0,
+    "datasheets": 0,
+    "manuals": 0,
+    "wiring_diagrams": 0,
+    "publication_ready": 0,
+    "public_routes": 0
+  },
+  "asset_policy": "Family preview images and page snapshots support audit only; neither is promoted to a model-level PDP asset.",
+  "publication": {
+    "status": "hold",
+    "sitemap_included": false,
+    "quote_exposed": false,
+    "oss_published": false
+  },
+  "next_stage": "model-level source package intake and controlled PDP generation only after the readiness gate passes"
+}

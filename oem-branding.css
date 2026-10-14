@@ -1,0 +1,157 @@
+/* Branding body: independent component scope, shared chrome preserved. */
+.bp-page{width:100%;max-width:none;margin:0;background:#fff;color:#07305c;font-family:Arial,sans-serif;line-height:1.5}
+.bp-page *{box-sizing:border-box}
+.bp-page h2,.bp-page h3,.bp-page p,.bp-page figure{margin:0}
+.bp-wrap{width:85%;max-width:none;margin:0 auto}
+.bp-section{padding:64px 0;scroll-margin-top:96px}
+.bp-tint{background:#eaf4ff}
+.bp-heading{margin-bottom:32px}
+.bp-page .bp-kicker{font-size:14px;font-weight:700;letter-spacing:.06em;color:#2457a7;margin-bottom:16px}
+.bp-page h2{font-size:clamp(28px,2.65vw,48px);font-weight:700;letter-spacing:-.035em;line-height:1.12}
+.bp-heading>p:last-child{font-size:18px;color:#36577a;margin-top:16px}
+.bp-page h3{font-size:22px;line-height:1.3;margin-bottom:10px}
+.bp-page p{font-size:16px;color:#36577a}
+.bp-grid{display:grid;gap:32px}
+.bp-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.bp-four{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.bp-card{min-width:0}
+.bp-page img{display:block;width:100%;height:auto}
+.bp-card>img{aspect-ratio:4/3;object-fit:fill;background:#f7f9fc;border:1px solid #d3dfeb;border-radius:8px;margin-bottom:20px}
+.bp-card p{max-width:95%}
+.bp-presentation{padding:56px 0}
+.bp-presentation-grid{display:grid;grid-template-columns:42% 58%;align-items:center}
+.bp-presentation-copy{padding-right:34px}
+.bp-copy-group{margin-top:26px}
+.bp-copy-group h3{margin-bottom:8px}
+.bp-suite img{aspect-ratio:4/3;object-fit:fill}
+.bp-pack-grid{display:grid;grid-template-columns:64% minmax(0,1fr);gap:3.5%}
+.bp-pack img{aspect-ratio:4/3;object-fit:fill;border-radius:8px}
+.bp-pack-copy{padding-top:4px}
+.bp-pack-copy .bp-copy-group:first-child{margin-top:0}
+.bp-mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:34px}
+.bp-mini-grid img{aspect-ratio:1;object-fit:fill;border:1px solid #d3dfeb;border-radius:8px;background:#f7f9fc}
+.bp-mini-grid figcaption{text-align:center;font-size:14px;color:#36577a;margin-top:12px}
+.bp-rule-note{display:flex;align-items:center;gap:18px;text-align:center;justify-content:center;margin-top:36px!important;font-size:14px!important}
+.bp-rule-note:before,.bp-rule-note:after{content:"";flex:1;border-top:1px solid #c7d9ec}
+.bp-documents{grid-template-columns:1.45fr 1fr .7fr}
+.bp-documents .bp-card>img{height:clamp(240px,23vw,440px);aspect-ratio:auto}
+.bp-four h3{font-size:20px}
+.bp-brief-grid{display:grid;grid-template-columns:1fr 1fr;gap:5%;align-items:start}
+.bp-brief-description{max-width:620px;margin-top:32px!important;font-size:18px!important}
+.bp-confidential{margin-top:30px!important}
+.bp-concept-note{font-size:13px!important;color:#667d94!important;max-width:620px;margin-top:28px!important}
+.bp-form{border:1px solid #d3dfeb;padding:28px;border-radius:8px;background:#fff}
+.bp-field-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.bp-form label,.bp-form legend{display:block;font-size:14px;font-weight:600;color:#244468}
+.bp-form label>span,.bp-form legend>span{font-weight:400}
+.bp-form input:not([type=checkbox]),.bp-form textarea{width:100%;border:1px solid #bccfe2;border-radius:8px;padding:10px 12px;font:14px Arial,sans-serif;color:#163756;background:#fff;margin-top:6px}
+.bp-form>label{margin-top:18px}
+.bp-form textarea{resize:vertical;min-height:88px}
+.bp-form fieldset{border:0;padding:0;margin:20px 0 0}
+.bp-form legend{padding:0;margin-bottom:10px}
+.bp-checkboxes{display:flex;flex-wrap:wrap;gap:12px 20px}
+.bp-checkboxes label{display:flex;align-items:center;gap:7px;font-weight:400}
+.bp-checkboxes input{accent-color:#2457a7;margin:0;width:16px;height:16px}
+.bp-save{display:block;width:100%;border:0;border-radius:8px;background:#2457a7;color:#fff;padding:13px 20px;margin-top:22px;font:600 15px Arial;cursor:pointer}
+.bp-save:hover{background:#2457a7}
+.bp-status{font-size:12px!important;text-align:center;margin-top:12px!important;color:#5c748c!important}
+.bp-page :focus-visible{outline:3px solid #2457a7;outline-offset:3px}
+@media(min-width:1600px){.bp-section{padding:74px 0}.bp-presentation{padding:56px 0}.bp-heading{margin-bottom:36px}}
+@media(max-width:1100px){.bp-page h3{font-size:19px}.bp-grid{gap:22px}.bp-four{grid-template-columns:repeat(2,minmax(0,1fr))}.bp-pack-grid{grid-template-columns:1fr}.bp-pack-copy{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:24px}.bp-pack-copy .bp-copy-group{margin-top:0}.bp-mini-grid{grid-column:1/-1;margin-top:0}.bp-mini-grid img{aspect-ratio:4/3}.bp-documents{grid-template-columns:1fr 1fr 1fr}.bp-documents .bp-card>img{height:auto;aspect-ratio:4/3}.bp-presentation-grid{grid-template-columns:1fr 1.2fr}.bp-page p{font-size:15px}.bp-brief-grid{gap:4%}}
+@media(max-width:700px){.bp-section{padding:44px 0}.bp-wrap{width:90%}.bp-presentation-grid,.bp-brief-grid{grid-template-columns:1fr}.bp-presentation-copy{padding-right:0}.bp-suite{margin-top:24px!important}.bp-three,.bp-documents{grid-template-columns:1fr}.bp-four{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 18px}.bp-heading{margin-bottom:24px}.bp-heading>p:last-child{font-size:16px}.bp-page .bp-kicker{font-size:12px}.bp-page h2{font-size:30px}.bp-page h3,.bp-four h3{font-size:19px}.bp-card>img{margin-bottom:16px}.bp-pack-copy{grid-template-columns:1fr;gap:20px}.bp-form{padding:22px;margin-top:30px}.bp-field-row{grid-template-columns:1fr;gap:16px}.bp-rule-note:before,.bp-rule-note:after{display:none}.bp-mini-grid{gap:12px}.bp-mini-grid figcaption{font-size:12px}}
+@media(max-width:420px){.bp-four{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.bp-page *{scroll-behavior:auto}}
+/* The shared #new-content rule is a container; this page uses full-width section canvases. */
+#new-content.bp-page{width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
+
+/* Match the broad packaging composition in the approved design. */
+.bp-pack img{aspect-ratio:2/1}
+.bp-pack-copy .bp-copy-group{margin-top:24px}
+.bp-pack-copy .bp-copy-group:first-child{margin-top:0}
+
+/* Optical alignment against the body design: heading begins at the section top. */
+.bp-presentation-grid{align-items:start}
+.bp-presentation{padding:40px 0}
+.bp-presentation-copy{padding-top:10px}
+@media(max-width:700px){.bp-presentation{padding:44px 0}.bp-presentation-copy{padding-top:0}}
+
+/* Use the shared canvas token so body, banner and footer have identical edges at every breakpoint. */
+.bp-page .bp-wrap{width:var(--z02-canvas,85%)}
+
+/* Documents imagery fills each frame instead of letterboxing. */
+.bp-documents .bp-card>img{object-fit:fill;object-position:center}
+
+
+@media(min-width:701px) and (max-width:1100px){.bp-documents{grid-template-columns:1.45fr 1fr .7fr}.bp-documents .bp-card>img{height:23vw;aspect-ratio:auto}}
+@media(max-width:700px){.bp-documents .bp-card>img{height:auto;aspect-ratio:auto}}
+
+/* Packaging heading spans the row; both content columns begin below it. */
+.bp-pack-grid>.bp-heading{grid-column:1/-1;margin-bottom:0}
+.bp-pack-grid{row-gap:36px}
+.bp-pack-grid>.bp-pack-copy{padding-top:0}
+@media(max-width:1100px){.bp-pack-grid{row-gap:24px}.bp-pack-grid>.bp-pack-copy{margin-top:0}}
+
+/* Packaging detail thumbnails fill their square frames. */
+.bp-mini-grid img{object-fit:fill;object-position:center}
+
+/* A slightly wider artwork-review frame, with the full image stretched to fit. */
+.bp-four .bp-card>img{aspect-ratio:3/2}
+
+/* Matched-aspect independent assets eliminate optical stretching. */
+.bp-mini-grid img,.bp-four .bp-card>img{object-fit:cover}
+.bp-mini-grid img{aspect-ratio:1}
+.bp-presentation-grid{align-items:center}
+.bp-presentation-copy{padding-top:0}
+.bp-presentation-copy .bp-copy-group{margin-top:32px}
+@media(max-width:700px){.bp-presentation-copy .bp-copy-group{margin-top:24px}}
+
+/* Keep the brand presentation subordinate to the original banner. */
+@media(min-width:701px){.bp-presentation-grid{grid-template-columns:48% 52%;gap:0}.bp-suite{display:flex;align-items:center;justify-content:center}.bp-suite img{width:100%;max-width:640px;aspect-ratio:4/3;object-fit:contain}.bp-presentation-copy .bp-copy-group{margin-top:24px}.bp-presentation-copy .bp-heading{margin-bottom:24px}.bp-presentation{padding:48px 0}}
+
+/* Wide native composition fills the image column without increasing visual height. */
+.bp-suite img{width:100%;max-width:none;aspect-ratio:2/1;object-fit:cover}
+@media(min-width:701px){.bp-presentation-grid{grid-template-columns:minmax(0,40%) minmax(0,60%)}.bp-presentation-copy{padding-right:40px}}
+
+
+.bp-suite img{border-radius:8px}
+
+
+/* Consistent heading measure and more open typography. */
+.bp-page h2{letter-spacing:-.015em}
+.bp-heading h2{max-width:1100px}
+.bp-presentation-copy h2{font-size:clamp(28px,2.15vw,40px);line-height:1.2}
+.bp-brief h2{font-size:clamp(28px,2.3vw,44px);line-height:1.2}
+@media(max-width:700px){.bp-page h2{font-size:30px;letter-spacing:-.01em}.bp-presentation-copy h2{font-size:clamp(23px,5.9vw,30px)}.bp-brief h2{font-size:clamp(24px,6vw,30px)}}
+
+/* Shared section-heading hierarchy and explicit canvas alignment. */
+.bp-page .bp-heading{display:flex;flex-direction:column;align-items:flex-start;width:100%;text-align:left;padding:0;margin-left:0;margin-right:0;margin-bottom:32px}
+.bp-page .bp-heading>.bp-kicker{width:100%;padding:0;margin:0 0 12px;color:#2457a7;font-size:16px;font-weight:600;line-height:1.4;letter-spacing:.04em}
+.bp-page .bp-heading>h2{margin:0;padding:0;color:#07305c;font-size:clamp(30px,2.4vw,42px);line-height:1.2;letter-spacing:-.015em}
+.bp-page .bp-heading>p:last-child{margin:14px 0 0;padding:0;color:#526980;font-size:18px;line-height:1.6;max-width:100%}
+.bp-page .bp-presentation-copy .bp-heading>h2,.bp-page .bp-brief .bp-heading>h2{font-size:clamp(28px,2.15vw,40px)}
+.bp-page .bp-pack-grid>.bp-heading{margin-bottom:0}
+.bp-page .bp-card h3,.bp-page .bp-copy-group h3{color:#07305c;font-size:20px;line-height:1.35}
+.bp-page .bp-card p,.bp-page .bp-copy-group p{color:#526980;font-size:16px;line-height:1.6}
+@media(max-width:700px){.bp-page .bp-heading{margin-bottom:24px}.bp-page .bp-heading>.bp-kicker{font-size:13px;margin-bottom:10px}.bp-page .bp-heading>h2{font-size:28px}.bp-page .bp-presentation-copy .bp-heading>h2,.bp-page .bp-brief .bp-heading>h2{font-size:clamp(23px,5.9vw,28px)}.bp-page .bp-heading>p:last-child{font-size:16px;margin-top:12px}.bp-page .bp-pack-grid>.bp-heading{margin-bottom:0}}
+
+/* Compact section rhythm: remove oversized gaps throughout the body. */
+.bp-page .bp-section{padding-top:40px;padding-bottom:40px}
+.bp-page .bp-heading{margin-bottom:22px}
+.bp-page .bp-heading>.bp-kicker{margin-bottom:6px;line-height:1.3}
+.bp-page .bp-heading>h2{line-height:1.15}
+.bp-page .bp-heading>p:last-child{margin-top:8px;line-height:1.45}
+.bp-page .bp-pack-grid{row-gap:22px}
+.bp-page .bp-pack-grid>.bp-heading{margin-bottom:0}
+@media(max-width:700px){.bp-page .bp-section{padding-top:28px;padding-bottom:28px}.bp-page .bp-heading{margin-bottom:18px}.bp-page .bp-heading>.bp-kicker{margin-bottom:6px}.bp-page .bp-heading>p:last-child{margin-top:8px}.bp-page .bp-pack-grid{row-gap:18px}.bp-page .bp-pack-grid>.bp-heading{margin-bottom:0}}
+
+/* Match the existing product action's mineral blue. */
+.bp-page .bp-heading>.bp-kicker{color:var(--z02-accent,#2457a7)}
+
+
+/* Unified blue for all interactive states; hover uses shadow instead of another hue. */
+.bp-save:hover{background:#2457a7;box-shadow:0 3px 10px rgba(0,0,0,.14)}
+.bp-save:active{box-shadow:none}
+
+/* This page header scrolls away with the banner, with no scroll-driven animation. */
+body[data-header-scroll=static] .z02-site-header{position:absolute!important;top:0;transform:none!important;transition:none!important;animation:none!important}
+

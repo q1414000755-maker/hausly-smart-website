@@ -1,0 +1,10 @@
+/* Dealers & Distributors overview: page-specific measurements only.
+   Header, banner topology, breadcrumb and footer remain the shared shell. */
+
+@media (min-width: 761px) {
+  .partners-overview-page .inner-banner,
+  .partners-overview-page .inner-banner-inner {
+    height: 620px;
+    min-height: 620px;
+  }
+}

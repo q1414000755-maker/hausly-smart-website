@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "audit_id": "new-product-catalogues-2026-09-21",
+  "audit_status": "source-audited-publication-hold",
+  "created_at": "2026-09-21",
+  "scope": {
+    "rule": "One source-confirmed model or independently sold item is one Product Master record and one PDP candidate.",
+    "do_not_merge": [
+      "A product family/series page is not a product record.",
+      "Material, finish, color, gang and protocol are not separate PDPs unless the source gives a distinct model/SKU.",
+      "An image-only catalogue page is evidence, not permission to invent a model or SKU."
+    ],
+    "commercial_test_policy": {
+      "reference_price_usd": 8.8,
+      "price_status": "test-confirmed-only",
+      "missing_text_display": "-",
+      "missing_image_display": "purpose-labelled-placeholder",
+      "missing_sku_or_boundary": "hold",
+      "oss_publish": false
+    }
+  },
+  "catalogues": [
+    {
+      "catalogue_id": "smart-solutions-cn-260410",
+      "file": "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf",
+      "sha256": "CE1CE4E21DCD1D17EC926D1F817A5D60B9D02FCDE6ACE028B7AC710868A2825E",
+      "page_count": 33,
+      "text_extraction": "usable-with-font-glyph-noise",
+      "page_index": [
+        {"pages":"1-4","section":"cover, contents and category overview","category":"overview","status":"evidence-only"},
+        {"pages":"5-8","section":"voice control / smart control panels","category":"control-panels","models":["TPL04-M1","TPP01-Z","TPL07-M1","TPA10-M1","TPA10-M2","SS190"],"status":"source-confirmed-models"},
+        {"pages":"9-10","section":"smart gateways","category":"controllers-gateways","models":["THP10-B-V2","THP10-Z","THP10-Z-X","THP12-Z-V5"],"status":"source-confirmed-models"},
+        {"pages":"11-18","section":"cameras, video doorbells and locks","category":"cameras-locks","models":["SC155-WQ3C","SC106-WL3","SC116-WZ4A","SC305-WBQ4","SC316-WBA2","SC399-WBD4","SC216-WBU4","SC316-WB4A","SC296-WBD4","SC256-WS5","SC162-WCD3","SC336-WBNP3","SF254-WC2","SF254-WBA3A","L3660-L","SC374-WBD3","SC437-WNA4","L3561","S1","LL01-B","L3160-L","LD05-T1","LD05-T"],"status":"source-confirmed-models"},
+        {"pages":"19-21","section":"AI interactive products","category":"ai-products","models":["S1","JX116B","SS200-A","SS200-B","SS-A300"],"status":"source-confirmed-models"},
+        {"pages":"22-23","section":"smart sensors","category":"sensors","models":["HP320-W","HP222-ZT","TH210-R"],"status":"source-confirmed-models"},
+        {"pages":"24-27","section":"smart electrical and renewable-energy products","category":"electrical-energy","models":["TSW-T111","TSW-T211","TSW-T412","TSC2-T412","TSW-T6X","SDM01-TWM","SPM01","SPM02","TSOL-MS800","CME03-2BS204","CME05-2BL200","EAR-AC07"],"status":"source-confirmed-models"},
+        {"pages":"28-30","section":"smart lighting","category":"lighting","models":["TY-ZBLC01G-AC","TY-MC079D-IR-ZB2","TY-MC079D-99-ZB2","GET8-1.2-18W-TYBM","GET8-1.2-18W-TYB","C2CL1800-860-G13-1200-1","C5CL1800-860-G13-1200-1","E2CL1800-860-G13-1200-1","E5CL1800-860-G13-1200-1"],"status":"source-confirmed-models"},
+        {"pages":"31-32","section":"smart travel","category":"accessories","models":["TTFM-53G"],"status":"source-confirmed-model"},
+        {"pages":"33","section":"closing statement","category":"overview","status":"evidence-only"}
+      ],
+      "product_candidates": {
+        "count_floor": 59,
+        "rule": "count_floor counts explicit model identifiers only; family/series labels and catalogue item numbers are not silently converted into products",
+        "source_confirmed_model_ids": ["TPL04-M1","TPP01-Z","TPL07-M1","TPA10-M1","TPA10-M2","SS190","THP10-B-V2","THP10-Z","THP10-Z-X","THP12-Z-V5","SC155-WQ3C","SC106-WL3","SC116-WZ4A","SC305-WBQ4","SC316-WBA2","SC399-WBD4","SC216-WBU4","SC316-WB4A","SC296-WBD4","SC256-WS5","SC162-WCD3","SC336-WBNP3","SF254-WC2","SF254-WBA3A","L3660-L","SC374-WBD3","SC437-WNA4","L3561","S1","LL01-B","L3160-L","LD05-T1","LD05-T","JX116B","SS200-A","SS200-B","SS-A300","HP320-W","HP222-ZT","TH210-R","TSW-T111","TSW-T211","TSW-T412","TSC2-T412","TSW-T6X","SDM01-TWM","SPM01","SPM02","TSOL-MS800","CME03-2BS204","CME05-2BL200","EAR-AC07","TY-ZBLC01G-AC","TY-MC079D-IR-ZB2","TY-MC079D-99-ZB2","GET8-1.2-18W-TYBM","GET8-1.2-18W-TYB","TTFM-53G"]
+      }
+    },
+    {
+      "catalogue_id": "purepoint-smart-hotel",
+      "file": "产品资料/Purepoint Smart.pdf",
+      "sha256": "7BBCB7FF46F571E216DF2798B61B6760378A22FD83963A7FE95EC5D597CEEA01",
+      "page_count": 20,
+      "text_extraction": "usable-with-layout-order-noise",
+      "page_index": [
+        {"pages":"1-2","section":"hotel solutions and company overview","category":"overview","status":"evidence-only"},
+        {"pages":"3-4","section":"host gateway and DIN modules","category":"controllers-gateways","models":["Host gateway module","8-channel relay module","Infrared IR2 module","0-10V dimming module","Central air-conditioning module","2-channel controllable silicon dimming module","Dry contact module","Curtain module"],"status":"overview-only-no-commercial-model"},
+        {"pages":"5-11","section":"hotel smart switch series","category":"smart-switches","models":["B5","K2","B6","Q20","D8","D5A","V8"],"status":"source-confirmed-series-models"},
+        {"pages":"12","section":"F1 mechanical and smart switch series","category":"mechanical-switches","models":["F1-K01A","F1-K01B","F1-K02A","F1-K02B","F1-K03A","F1-K03B","F1-K04A","F1-K04B","F1-K05","F1-K06","F1-K08","F1-H101-G","F1-H202-G","F1-H204-G","F1-H303A-G","F1-H303B-G","F1-H404-G","F1-H306-G","F1-H408-G","F1-S102-G","F1-S202-G","F1-SL303-G","F1-SR303-G","F1-S303-G","F1-S204-G","F1-S306-G","F1-S102-H","F1-S202-H","F1-SL303-H","F1-SR303-H","F1-S303-H","F1-S204-H","F1-S306-H"],"status":"source-confirmed-models"},
+        {"pages":"13-14","section":"hotel signage and custom door locks","category":"hotel-controls-locks","models":["custom door signage","custom hotel door locks"],"status":"overview-only-custom"},
+        {"pages":"15-17","section":"smart curtain motors","category":"curtain-motors","models":["ID92D-L","ID100-WF","IDS2D-WF"],"status":"source-confirmed-models"},
+        {"pages":"18","section":"curtain components and tracks","category":"curtain-components","status":"overview-only"},
+        {"pages":"19","section":"hotel sensors","category":"sensors","models":["5.8GHz motion sensor switch","embedded infrared sensor","dry contact sensor"],"status":"overview-only-no-model-id"},
+        {"pages":"20","section":"after-sales contact","category":"overview","status":"evidence-only"}
+      ],
+      "product_candidates": {
+        "count_floor": 43,
+        "rule": "series labels are retained as model evidence; no SKU or variant combination is generated without a model-level source record"
+      }
+    },
+    {
+      "catalogue_id": "smart-switch-catalog-image",
+      "file": "产品资料/Smart Switch catalog.pdf",
+      "sha256": "AED6EDD83FA1805C4FF25FC9CCCFB5FC25B2BFB6522321BF91E4A07704F63B3F",
+      "page_count": 63,
+      "text_extraction": "image-only-zero-text-layer",
+      "visual_verification": {"rendered": true, "contact_sheet": "tmp/pdfs/new-catalogues/rendered/smart-contact.jpg", "rule": "visual page evidence only; OCR/model transcription remains pending review"},
+      "page_index": [
+        {"pages":"1-3","series":"T12","section":"series overview and product matrix","status":"visual-confirmed-family-and-model-codes"},
+        {"pages":"4-6","series":"A15","section":"series overview and product matrix","status":"visual-confirmed-family"},
+        {"pages":"7-9","series":"A16","section":"series overview and product matrix","status":"visual-confirmed-family"},
+        {"pages":"10-12","series":"T20","section":"series overview and product matrix","status":"visual-confirmed-family"},
+        {"pages":"13-16","series":"Y10","section":"series overview, finish/options and matrix","status":"visual-confirmed-family"},
+        {"pages":"17-19","series":"T80","section":"series overview and product matrix","status":"visual-confirmed-family"},
+        {"pages":"20-22","series":"T90","section":"series overview and product matrix","status":"visual-confirmed-family"},
+        {"pages":"23-25","series":"unlabelled mixed collection","section":"collection overview and matrix","status":"visual-confirmed-but-boundary-pending"},
+        {"pages":"26-28","series":"T10","section":"series overview and product matrix","status":"visual-confirmed-family"},
+        {"pages":"29-32","series":"T50","section":"series overview and product matrix","status":"visual-confirmed-family"},
+        {"pages":"33-34","series":"T70","section":"series overview and product matrix","status":"visual-confirmed-family"},
+        {"pages":"35-36","series":"T70","section":"series continuation and matrix","status":"visual-confirmed-family"},
+        {"pages":"37-38","series":"S1","section":"series overview and product matrix","status":"visual-confirmed-family"},
+        {"pages":"39-41","series":"S1","section":"series continuation and matrix","status":"visual-confirmed-family"},
+        {"pages":"42-45","series":"S2","section":"series overview and product matrix","status":"visual-confirmed-family"},
+        {"pages":"46-49","series":"S3","section":"series overview and product matrix","status":"visual-confirmed-family"},
+        {"pages":"50-53","series":"S5","section":"series overview and product matrix","status":"visual-confirmed-family"},
+        {"pages":"54-57","series":"A8","section":"series overview and product matrix","status":"visual-confirmed-family"},
+        {"pages":"58-61","series":"A6","section":"series overview and product matrix","status":"visual-confirmed-family"},
+        {"pages":"62-63","series":"S8","section":"series overview and product matrix","status":"visual-confirmed-family"}
+      ],
+      "publication_status": "hold",
+      "hold_reasons": ["image-only source requires model-code transcription review", "family pages overlap existing Low-Voltage source collections", "no reliable SKU/price/MOQ evidence in extracted layer"]
+    }
+  ],
+  "audit_diff": {
+    "exact_or_family_overlap_with_existing": [
+      {"new_source":"Smart Switch catalog.pdf p.1-63", "existing":"low-voltage-data-panel-product-master.json and legacy family collections", "families":["T12","A15","A16","T20","Y10","T80","T10","T50","T70","S2","S3","S5","A8","A6","S8"], "decision":"conflict_hold", "reason":"same family labels appear in a Low-Voltage source boundary; do not publish a second product tree until model/category ownership is resolved"},
+      {"new_source":"Purepoint Smart.pdf p.5-12", "existing":"mechanical-switch-product-master.json", "families":["F1"], "decision":"candidate-overlap-review", "reason":"F1 is independently documented as a mechanical switch series; reconcile model codes before adding records"},
+      {"new_source":"Purepoint Smart.pdf p.15-17", "existing":"curtain category registry", "families":["ID92D-L","ID100-WF","IDS2D-WF"], "decision":"new-source-candidates-hold", "reason":"model-level evidence exists but media/SKU/commercial fields are not yet in the Product Master"}
+    ],
+    "not_same_as_smart_switch_golden_reference": ["B5","K2","B6","Q20","D8","D5A","V8","F1","T12","A15","A16","T20","Y10","T80","T90","T10","T50","T70","S1","S2","S3","S5","A8","A6","S8"]
+  },
+  "category_option_matrix_templates": {
+    "smart-switches": ["series","model","function","gang","mechanism","material","finish","color","protocol","platform","power"],
+    "mechanical-switches": ["series","model","function","gang","mechanism","material","finish","color"],
+    "controllers-gateways": ["model","uplink","downlink","protocol","io_channels","load","power","installation"],
+    "control-panels": ["model","screen","relay_channels","protocol","platform","power","mounting"],
+    "cameras": ["model","device_type","resolution","lens","connectivity","storage","power","ip_rating","mounting"],
+    "smart-door-locks": ["model","unlock_method","material","finish","battery","emergency_power","ip_rating","handing"],
+    "curtain-motors": ["model","motor_type","voltage","torque","speed","control","protocol","track","installation"],
+    "sensors": ["model","sensor_type","range","protocol","power","mounting","environment"],
+    "lighting": ["model","fixture_type","input","power","control","color_temperature","ip_rating","mounting"],
+    "electrical-energy": ["model","device_type","voltage","current","power","protocol","metering","ip_rating","mounting"],
+    "accessories": ["model","device_type","connectivity","battery","compatibility"]
+  },
+  "publication_gate": {
+    "required": ["product_id","model","category","source_refs","source_confidence","route"],
+    "publishable_only_if": ["model_boundary_confirmed","no_conflicting_category_owner","route_approved","real_media_or_labelled_placeholder","sku_status_not_invented"],
+    "commercial": "Use USD 8.80 only as the explicitly marked testing reference price; missing production price/MOQ remains '-' / to be confirmed.",
+    "fail_closed": ["unresolved family-vs-model boundary","unresolved duplicate","unconfirmed SKU","unconfirmed legal option combination","source-only overview item"]
+  }
+}

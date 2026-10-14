@@ -1,0 +1,1066 @@
+/* Quote Drawer —— B2B 询价清单侧边栏。
+   ─────────────────────────────────────────────────────────────────────────
+   刻意**不做电商购物车的视觉语言**：没有 Checkout / Subtotal 那一套的橙色、
+   促销红、大阴影。整体是精密制造品牌的克制灰白 + 一个蓝色主 CTA。
+   版心/字号/颜色一律走 --z02-* token，不写裸值。
+*/
+.qd {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  justify-content: flex-end;
+}
+.qd[hidden] {
+  display: none;
+}
+
+/* 背景不要全黑：客户要能感知「我还在刚才那个页面」 */
+.qd-scrim {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 26, 33, 0.3);
+  animation: qd-fade 0.22s ease both;
+}
+
+.qd-panel {
+  position: relative;
+  width: 540px;
+  max-width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--z02-surface);
+  box-shadow: -18px 0 48px rgba(16, 24, 34, 0.18);
+  animation: qd-slide 0.26s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+@keyframes qd-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes qd-slide {
+  from { transform: translateX(24px); opacity: 0.4; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* 打开时锁背景滚动，但不改变布局宽度（否则版心会跳） */
+html.qd-lock,
+html.qd-lock body {
+  overflow: hidden;
+}
+
+/* ── 状态容器：四个状态共用一个面板 ────────────────────────────────────── */
+.qd-state {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  flex: 1 1 auto;
+}
+.qd-state[hidden] {
+  display: none;
+}
+
+/* ── 头部（固定） ─────────────────────────────────────────────────────── */
+.qd-head {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 22px 16px;
+  border-bottom: 1px solid var(--z02-border-line);
+}
+.qd-head--sub {
+  align-items: center;
+  padding-bottom: 14px;
+}
+.qd-head h2 {
+  margin: 0;
+  font-size: var(--z02-fs-h4);
+  font-weight: 600;
+  color: var(--z02-text);
+}
+.qd-head-meta {
+  margin: 4px 0 0;
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text-muted);
+}
+
+.qd-icon-btn {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid transparent;
+  border-radius: var(--z02-radius-control);
+  background: none;
+  color: var(--z02-text-muted);
+  cursor: pointer;
+}
+.qd-icon-btn svg {
+  width: 18px;
+  height: 18px;
+}
+.qd-icon-btn:hover {
+  background: var(--z02-surface-product);
+  color: var(--z02-text);
+}
+
+.qd-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  background: none;
+  padding: 4px 0;
+  font-family: var(--font);
+  font-size: var(--z02-fs-meta);
+  font-weight: 600;
+  color: var(--z02-accent);
+  cursor: pointer;
+}
+.qd-back:hover {
+  color: var(--z02-accent-hover);
+}
+
+/* ── 说明块（固定，不滚） ─────────────────────────────────────────────── */
+.qd-prepare {
+  flex: 0 0 auto;
+  margin: 14px 22px 0;
+  padding: 14px 16px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--z02-radius-card);
+  background: var(--z02-surface-selected);
+  max-height: 220px;
+  overflow: hidden;
+  transition: max-height .25s ease, opacity .2s ease, margin .25s ease, padding .25s ease, border-width .25s ease;
+}
+/* 滚动读清单时收起（quote-drawer.js 依 scrollTop > 24 切 is-collapsed），回顶展开 */
+.qd-prepare.is-collapsed {
+  max-height: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.qd-prepare strong {
+  display: block;
+  font-size: var(--z02-fs-meta);
+  font-weight: 600;
+  color: var(--z02-text);
+}
+.qd-prepare p {
+  margin: 6px 0 0;
+  font-size: var(--z02-fs-meta);
+  line-height: 1.55;
+  color: var(--z02-text-muted);
+}
+.qd-prepare-note {
+  display: block;
+  margin-top: 8px;
+  font-size: var(--z02-fs-label);
+  letter-spacing: 0.02em;
+  color: var(--z02-text-faint);
+}
+
+/* ── 滚动区 ───────────────────────────────────────────────────────────── */
+.qd-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 16px 22px 20px;
+}
+
+/* ── 空态 ─────────────────────────────────────────────────────────────── */
+.qd-empty {
+  padding: 28px 4px 8px;
+  text-align: left;
+}
+.qd-empty[hidden] {
+  display: none;
+}
+.qd-empty-title {
+  margin: 0;
+  font-size: var(--z02-fs-h4);
+  font-weight: 600;
+  color: var(--z02-text);
+}
+.qd-empty-copy {
+  margin: 8px 0 18px;
+  font-size: var(--z02-fs-copy);
+  line-height: 1.6;
+  color: var(--z02-text-muted);
+}
+.qd-empty-help {
+  margin: 18px 0 0;
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text-muted);
+}
+.qd-empty-help a {
+  color: var(--z02-accent);
+  text-decoration: none;
+}
+.qd-empty-help a:hover {
+  text-decoration: underline;
+}
+
+/* ── Apply to all ─────────────────────────────────────────────────────── */
+/* ── 整单加工项（OEM / ODM 那块）：默认折叠，只占一行 ──────────────────
+   包子 2026-09-19：不该一进来就压掉半屏清单，客户要谈 OEM/ODM 时才展开。
+   padding 从 .qd-all 挪到 head / body，让整行都是点击区。 */
+.qd-all {
+  margin-bottom: 16px;
+  padding: 0;
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--z02-radius-card);
+  background: var(--z02-surface);
+}
+.qd-all[hidden] {
+  display: none;
+}
+.qd-all-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 16px;
+  border: 0;
+  background: none;
+  font-family: var(--font);
+  text-align: left;
+  cursor: pointer;
+}
+.qd-all-head-text {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+.qd-all-head-text strong {
+  font-size: var(--z02-fs-meta);
+  font-weight: 600;
+  color: var(--z02-text);
+}
+.qd-all-head:hover strong {
+  color: var(--z02-accent);
+}
+.qd-all-head-hint {
+  font-size: var(--z02-fs-label);
+  font-style: normal;
+  color: var(--z02-text-muted);
+}
+/* 折叠时也要看得见「已经选了几项」，否则客户会以为自己的选择丢了 */
+.qd-all-count {
+  flex: 0 0 auto;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--z02-surface-selected);
+  font-size: var(--z02-fs-label);
+  font-style: normal;
+  font-weight: 600;
+  color: var(--z02-accent);
+}
+.qd-all-count[hidden] {
+  display: none;
+}
+.qd-all-caret {
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  color: var(--z02-text-muted);
+  transition: transform 0.18s ease;
+}
+.qd-all.is-open .qd-all-caret {
+  transform: rotate(180deg);
+}
+.qd-all-body {
+  padding: 0 16px 14px;
+}
+.qd-all-body[hidden] {
+  display: none;
+}
+.qd-all-note {
+  margin: 0 0 12px;
+  font-size: var(--z02-fs-label);
+  line-height: 1.5;
+  color: var(--z02-text-muted);
+}
+
+/* ── 勾选 / 单选 ──────────────────────────────────────────────────────── */
+.qd-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+.qd-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text);
+  cursor: pointer;
+}
+.qd-check input,
+.qd-radio input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.qd-check i {
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--z02-border-control);
+  border-radius: 4px;
+  background: var(--z02-surface);
+  position: relative;
+}
+.qd-check input:checked + i {
+  background: var(--z02-accent);
+  border-color: var(--z02-accent);
+}
+.qd-check input:checked + i::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1.5px;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.qd-check input:focus-visible + i,
+.qd-radio input:focus-visible + i {
+  outline: 2px solid var(--z02-accent);
+  outline-offset: 2px;
+}
+
+.qd-radios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px 14px;
+}
+.qd-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text);
+  cursor: pointer;
+}
+.qd-radio i {
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--z02-border-control);
+  border-radius: 50%;
+  background: var(--z02-surface);
+  position: relative;
+}
+.qd-radio input:checked + i {
+  border-color: var(--z02-accent);
+  border-width: 5px;
+}
+.qd-muted {
+  color: var(--z02-text-faint);
+}
+
+/* ── 产品行 ───────────────────────────────────────────────────────────── */
+.qd-lines {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.qd-line {
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--z02-radius-card);
+  background: var(--z02-surface);
+  padding: 14px 16px 12px;
+}
+.qd-line-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.qd-thumb {
+  flex: 0 0 auto;
+  width: 96px;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface-product);
+  overflow: hidden;
+}
+.qd-thumb--lg {
+  width: 112px;
+  aspect-ratio: 4 / 3;
+  height: auto;
+}
+.qd-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.qd-line-head {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.qd-line-head h3 {
+  margin: 0;
+  font-size: var(--z02-fs-card-title);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--z02-text);
+}
+.qd-line-head h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+.qd-line-head h3 a:hover {
+  color: var(--z02-accent);
+}
+.qd-line-family {
+  margin: 3px 0 0;
+  font-size: var(--z02-fs-label);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--z02-text-faint);
+}
+.qd-line-config {
+  margin: 8px 0 0;
+  /* flex 而不是 nowrap 裸行：摘要文字很长时要被截断，但右侧的「+N more」
+     必须活下来 —— 它正是「还有东西没显示」的唯一提示，被省略号吃掉就白做了。 */
+  display: flex;
+  align-items: baseline;
+  font-size: var(--z02-fs-meta);
+  line-height: 1.5;
+  color: var(--z02-text-muted);
+}
+.qd-line-config span {
+  flex: 0 0 auto;
+  display: inline-block;
+  margin-right: 6px;
+  font-size: var(--z02-fs-label);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--z02-text-faint);
+}
+.qd-line-summary {
+  min-width: 0;
+  font-style: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.qd-line-more {
+  flex: 0 0 auto;
+  margin-left: 6px;
+  font-style: normal;
+  white-space: nowrap;
+  color: var(--z02-text-faint);
+}
+
+.qd-line-remove {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  display: inline-grid;
+  place-items: center;
+  border: 0;
+  border-radius: var(--z02-radius-control);
+  background: none;
+  color: var(--z02-text-faint);
+  cursor: pointer;
+}
+.qd-line-remove svg {
+  width: 16px;
+  height: 16px;
+}
+.qd-line-remove:hover {
+  background: var(--z02-surface-product);
+  color: var(--z02-text);
+}
+
+.qd-line-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+.qd-line-label {
+  flex: 0 0 auto;
+  min-width: 92px;
+  font-size: var(--z02-fs-label);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--z02-text-faint);
+}
+.qd-line-custom {
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text);
+  min-width: 0;
+}
+.qd-line-price {
+  margin-left: auto;
+  font-size: var(--z02-fs-meta);
+  font-weight: 600;
+  color: var(--z02-text);
+  font-variant-numeric: tabular-nums;
+}
+.qd-line-actions {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--z02-border-line);
+}
+
+/* ── 数量步进器 ───────────────────────────────────────────────────────── */
+.qd-stepper {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--z02-border-control);
+  border-radius: var(--z02-radius-control);
+  overflow: hidden;
+  background: var(--z02-surface);
+}
+.qd-stepper--wide {
+  width: 100%;
+  max-width: 220px;
+}
+.qd-stepper button {
+  width: 34px;
+  border: 0;
+  background: var(--z02-surface-page);
+  color: var(--z02-text);
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+}
+.qd-stepper button:hover {
+  background: var(--z02-surface-selected);
+  color: var(--z02-accent);
+}
+.qd-stepper input {
+  width: 62px;
+  border: 0;
+  border-inline: 1px solid var(--z02-border-line);
+  padding: 7px 6px;
+  text-align: center;
+  font-family: var(--font);
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text);
+  font-variant-numeric: tabular-nums;
+  -moz-appearance: textfield;
+}
+.qd-stepper--wide input {
+  flex: 1 1 auto;
+  width: auto;
+}
+.qd-stepper input::-webkit-outer-spin-button,
+.qd-stepper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.qd-stepper input:focus-visible,
+.qd-stepper button:focus-visible {
+  outline: 2px solid var(--z02-accent);
+  outline-offset: -2px;
+}
+
+/* ── 页脚（固定） ─────────────────────────────────────────────────────── */
+.qd-foot {
+  flex: 0 0 auto;
+  border-top: 1px solid var(--z02-border-line);
+  background: var(--z02-surface);
+  padding: 16px 22px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* list / done 态：三个动作一排 3×1（2026-09-20 拍板）。
+   其余态（edit/send 单按钮）保持上面的竖排全宽。 */
+.qd-state[data-quote-state="list"] .qd-foot,
+.qd-state[data-quote-state="done"] .qd-foot {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+}
+.qd-state[data-quote-state="list"] .qd-foot > .qd-summary,
+.qd-state[data-quote-state="list"] .qd-foot > .qd-disclaimer,
+.qd-state[data-quote-state="list"] .qd-foot > .qd-confirm,
+.qd-state[data-quote-state="done"] .qd-foot > .qd-confirm {
+  grid-column: 1 / -1;
+}
+.qd-state[data-quote-state="list"] .qd-foot > .qd-link,
+.qd-state[data-quote-state="done"] .qd-foot > .qd-link--btn {
+  justify-self: center;
+}
+/* 159px 列宽放不下 15px 主按钮文案，压回单行 */
+.qd-state[data-quote-state="list"] .qd-foot .qd-btn,
+.qd-state[data-quote-state="done"] .qd-foot .qd-btn {
+  min-height: 44px;
+  padding: 0 10px;
+  font-size: var(--z02-fs-meta);
+  white-space: nowrap;
+}
+.qd-summary[hidden] {
+  display: none;
+}
+.qd-summary-title {
+  margin: 0 0 6px;
+  font-size: var(--z02-fs-label);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--z02-text-faint);
+}
+.qd-summary-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text);
+  font-variant-numeric: tabular-nums;
+}
+.qd-disclaimer {
+  margin: 0;
+  font-size: var(--z02-fs-label);
+  line-height: 1.5;
+  color: var(--z02-text-faint);
+}
+
+/* ── 按钮 ─────────────────────────────────────────────────────────────── */
+.qd-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 18px;
+  border: 1px solid transparent;
+  border-radius: var(--z02-radius-control);
+  font-family: var(--font);
+  font-size: var(--z02-fs-action);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.qd-btn--block {
+  width: 100%;
+}
+.qd-btn--primary {
+  background: var(--z02-accent);
+  color: #fff;
+}
+.qd-btn--primary:hover {
+  background: var(--z02-accent-hover);
+}
+.qd-btn--primary:disabled {
+  background: var(--z02-border-line);
+  color: var(--z02-text-faint);
+  cursor: not-allowed;
+}
+.qd-btn--ghost {
+  border-color: var(--z02-border-control);
+  background: var(--z02-surface);
+  color: var(--z02-text);
+}
+.qd-btn--ghost:hover {
+  border-color: var(--z02-accent);
+  color: var(--z02-accent);
+}
+
+.qd-link {
+  align-self: center;
+  border: 0;
+  background: none;
+  padding: 0;
+  font-family: var(--font);
+  font-size: var(--z02-fs-meta);
+  font-weight: 600;
+  color: var(--z02-accent);
+  text-decoration: none;
+  cursor: pointer;
+}
+.qd-link:hover {
+  color: var(--z02-accent-hover);
+  text-decoration: underline;
+}
+.qd-link--btn {
+  font-size: var(--z02-fs-meta);
+}
+
+/* ── 编辑态 ───────────────────────────────────────────────────────────── */
+.qd-edit-head {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.qd-edit-head h3 {
+  margin: 0;
+  font-size: var(--z02-fs-h4);
+  font-weight: 600;
+  color: var(--z02-text);
+}
+.qd-edit-sku {
+  margin: 6px 0 0;
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text-muted);
+}
+.qd-edit-sku span {
+  font-variant-numeric: tabular-nums;
+  color: var(--z02-text);
+}
+.qd-section-title {
+  margin: 0 0 10px;
+  font-size: var(--z02-fs-label);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--z02-text-faint);
+}
+.qd-edit-group {
+  margin-bottom: 20px;
+}
+.qd-edit-group--config {
+  padding-top: 4px;
+}
+.qd-edit-group h4 {
+  margin: 0 0 8px;
+  font-size: var(--z02-fs-meta);
+  font-weight: 600;
+  color: var(--z02-text);
+}
+.qd-edit-note {
+  margin: 0 0 14px;
+  font-size: var(--z02-fs-label);
+  line-height: 1.55;
+  color: var(--z02-text-muted);
+}
+.qd-edit-group textarea,
+.qd-field textarea {
+  width: 100%;
+  border: 1px solid var(--z02-border-control);
+  border-radius: var(--z02-radius-control);
+  padding: 10px 12px;
+  font-family: var(--font);
+  font-size: var(--z02-fs-meta);
+  line-height: 1.55;
+  color: var(--z02-text);
+  resize: vertical;
+}
+.qd-edit-group textarea:focus-visible,
+.qd-field textarea:focus-visible {
+  outline: 2px solid var(--z02-accent);
+  outline-offset: -1px;
+}
+
+/* ── 发送表单 ─────────────────────────────────────────────────────────── */
+.qd-send-head {
+  margin-bottom: 20px;
+}
+.qd-send-head h2 {
+  margin: 0;
+  font-size: var(--z02-fs-h4);
+  font-weight: 600;
+  color: var(--z02-text);
+}
+.qd-send-head p {
+  margin: 6px 0 0;
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.qd-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 14px;
+  margin-bottom: 20px;
+}
+.qd-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+.qd-field-label {
+  font-size: var(--z02-fs-label);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--z02-text-muted);
+}
+.qd-field-label b {
+  color: var(--z02-accent);
+}
+.qd-field-label em {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--z02-text-faint);
+}
+.qd-field input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--z02-border-control);
+  border-radius: var(--z02-radius-control);
+  padding: 0 12px;
+  font-family: var(--font);
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text);
+  background: var(--z02-surface);
+}
+.qd-field input:focus-visible {
+  outline: 2px solid var(--z02-accent);
+  outline-offset: -1px;
+}
+/* 邮箱排第一且占满整行 —— 后续沟通几乎全靠它 */
+.qd-fields .qd-field:first-child {
+  grid-column: 1 / -1;
+}
+.qd-check--single {
+  margin-top: 14px;
+}
+.qd-form-note {
+  margin: 14px 0 0;
+  font-size: var(--z02-fs-label);
+  color: var(--z02-text-faint);
+}
+.qd-form-error {
+  margin: 10px 0 0;
+  padding: 10px 12px;
+  border-radius: var(--z02-radius-control);
+  background: #fdf2f2;
+  font-size: var(--z02-fs-meta);
+  color: #8a2f2f;
+}
+.qd-form-error[hidden] {
+  display: none;
+}
+
+/* ── 完成态 ───────────────────────────────────────────────────────────── */
+.qd-done-lead {
+  margin: 8px 0 0;
+  font-size: var(--z02-fs-copy);
+  line-height: 1.62;
+  color: var(--z02-text-muted);
+}
+.qd-done-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--z02-radius-card);
+  background: var(--z02-surface-page);
+  font-size: var(--z02-fs-meta);
+  font-weight: 600;
+  color: var(--z02-text);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Toast：加购后的轻提示（不自动开抽屉） ─────────────────────────────── */
+.qd-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  transform: translate(-50%, 12px);
+  z-index: 1300;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface-dark);
+  color: #fff;
+  font-size: var(--z02-fs-meta);
+  box-shadow: 0 12px 32px rgba(16, 24, 34, 0.24);
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.qd-toast[hidden] {
+  display: none;
+}
+.qd-toast.is-on {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.qd-toast-action {
+  border: 0;
+  background: none;
+  padding: 0;
+  font-family: var(--font);
+  font-size: var(--z02-fs-meta);
+  font-weight: 600;
+  color: var(--z02-accent-on-dark);
+  cursor: pointer;
+}
+.qd-toast-action:hover {
+  text-decoration: underline;
+}
+
+/* ── 移动端：不做 540px 抽屉，直接整屏 ────────────────────────────────── */
+@media (max-width: 720px) {
+  .qd {
+    justify-content: stretch;
+  }
+  .qd-panel {
+    width: 100vw;
+    max-width: none;
+    box-shadow: none;
+  }
+  .qd-head {
+    padding: 16px 16px 12px;
+  }
+  .qd-prepare {
+    margin: 12px 16px 0;
+  }
+  .qd-scroll {
+    padding: 14px 16px 18px;
+  }
+  .qd-foot {
+    padding: 14px 16px 16px;
+  }
+  .qd-fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .qd-line-label {
+    min-width: 78px;
+  }
+  .qd-thumb {
+    width: 88px;
+  }
+  .qd-thumb--lg {
+    width: 104px;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   旧草稿恢复 / 清空清单（2026-09-19 分级恢复策略）
+   判定逻辑全在 assets/js/quote-cart.js，这里只管表现。
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* 页头蓝点（.z02-tool-quote.is-quote-pending）在 site-shell.css 里，这里不重复 */
+
+/* ── 清空：确认块就地替换整块 footer，避免「抽屉 → Modal」第二层 ── */
+.qd-foot.is-confirming > :not(.qd-confirm) {
+  display: none;
+}
+.qd-link--danger {
+  color: var(--z02-text-muted);
+}
+.qd-link--danger:hover {
+  color: var(--z02-danger);
+}
+.qd-btn--danger {
+  border-color: var(--z02-danger);
+  background: var(--z02-danger);
+  color: #fff;
+}
+.qd-btn--danger:hover {
+  filter: brightness(0.94);
+}
+.qd-confirm h3 {
+  margin: 0 0 6px;
+  font-size: var(--z02-fs-copy);
+  font-weight: 600;
+  color: var(--z02-text);
+}
+.qd-confirm p {
+  margin: 0 0 14px;
+  font-size: var(--z02-fs-meta);
+  line-height: 1.5;
+  color: var(--z02-text-muted);
+}
+.qd-confirm-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* ── 抽屉内的恢复入口：占空态的位置，复用空态的标题/正文样式保持同款 ── */
+.qd-restore-inline {
+  padding: 20px 4px 8px;
+}
+.qd-restore-inline[hidden] {
+  display: none;
+}
+.qd-restore-inline .qd-empty-copy {
+  margin-bottom: 14px;
+}
+
+/* ── 恢复提示条：右下角，不挡浏览也不打断阅读。
+   ⚠️ 刻意不做 Modal —— 包子明确不要「一进来就弹大框挡住 Hero」。 ── */
+.qd-restore {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1250;
+  width: min(360px, calc(100vw - 32px));
+  padding: 16px 18px;
+  border: 1px solid var(--z02-border-control);
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface);
+  box-shadow: 0 18px 40px rgba(16, 24, 34, 0.16);
+}
+.qd-restore[hidden] {
+  display: none;
+}
+.qd-restore-title {
+  margin: 0 0 4px;
+  padding-right: 26px;
+  font-size: var(--z02-fs-copy);
+  font-weight: 600;
+  color: var(--z02-text);
+}
+.qd-restore-body {
+  margin: 0;
+  font-size: var(--z02-fs-meta);
+  line-height: 1.5;
+  color: var(--z02-text-muted);
+}
+.qd-restore-note {
+  display: block;
+  margin-top: 6px;
+  font-size: var(--z02-fs-label);
+  color: var(--z02-text-muted);
+}
+.qd-restore-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.qd-restore-actions .qd-btn {
+  flex: 1 1 auto;
+}
+.qd-restore-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media (max-width: 720px) {
+  .qd-restore {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    width: auto;
+  }
+}

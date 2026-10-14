@@ -1,0 +1,1874 @@
+{
+  "schema_version": 1,
+  "page": "cat-control-panels",
+  "locale": "en",
+  "_placeholder": {
+    "active": true,
+    "render_banner": false,
+    "summary": "本文件全部为占位数据，用于把页面结构与交互跑通。替换真实数据时只改本文件的值，代码不需要改。",
+    "why_no_banner": "与 smart-switches.json 同一口径：包子 2026-09-17 指示「标记写在代码里，页面渲染看不到」，所以 render_banner = false。对外演示或上线前改成 true 即可渲染出原型横幅。",
+    "replace": [
+      {
+        "what": "产品图",
+        "where": "model_groups[*].variants[*].image.src",
+        "with": "真实产品摄影。当前全部指向 assets/images/placeholders/product-*.svg。"
+      },
+      {
+        "what": "参考价",
+        "where": "model_groups[*].variants[*].price.amount",
+        "with": "真实参考价。换价时把 price.status 从 placeholder 改成 confirmed，并更新 checked_on。"
+      },
+      {
+        "what": "型号与 SKU",
+        "where": "model_groups[*].model_id 与 variants[*].sku",
+        "with": "真实型号编码与 SKU。当前 GSL-* 这类是行业通用写法，不是真实编码。"
+      }
+    ]
+  },
+  "eyebrow": "PRODUCT CATALOGUE",
+  "title": "Control Panels",
+  "intro": "Wall-mounted touch panels from a 4-inch scene plate to an 8-inch whole-home controller. Screen size, mounting depth and wiring are stated per model.",
+  "price_note": "Reference price per unit. Panel prices move with screen size, memory and finishing.",
+  "dimensions": [
+    {
+      "key": "role",
+      "label": "Panel Role",
+      "primary": true
+    },
+    {
+      "key": "screen",
+      "label": "Screen Size",
+      "primary": true
+    },
+    {
+      "key": "protocol",
+      "label": "Connectivity",
+      "primary": true
+    },
+    {
+      "key": "finish",
+      "label": "Color & Finish",
+      "primary": true
+    },
+    {
+      "key": "mounting",
+      "label": "Mounting",
+      "primary": true
+    },
+    {
+      "key": "power",
+      "label": "Power Supply",
+      "primary": false
+    },
+    {
+      "key": "integration",
+      "label": "System Integration",
+      "primary": false
+    },
+    {
+      "key": "os",
+      "label": "Platform",
+      "primary": false
+    },
+    {
+      "key": "audio",
+      "label": "Audio",
+      "primary": false
+    }
+  ],
+  "labels": {
+    "role": {
+      "scene": "Scene panel",
+      "whole-home": "Whole-home control",
+      "hvac": "HVAC control",
+      "intercom": "Video intercom"
+    },
+    "screen": {
+      "4": "4 inch",
+      "5": "5 inch",
+      "6": "6 inch",
+      "8": "8 inch",
+      "10.1": "10.1 inch"
+    },
+    "protocol": {
+      "wifi": "Wi-Fi",
+      "zigbee": "Zigbee",
+      "rs485": "RS485 bus",
+      "ethernet": "Ethernet"
+    },
+    "finish": {
+      "white": "White",
+      "black": "Black",
+      "gold": "Gold",
+      "glass-black": "Glass black"
+    },
+    "mounting": {
+      "eu86": "EU 86 box",
+      "us1": "US 1-gang",
+      "flush": "Flush mount",
+      "desktop": "Desktop stand"
+    },
+    "power": {
+      "ac220": "AC 220–240 V",
+      "poe": "PoE",
+      "dc12": "DC 12 V"
+    },
+    "integration": {
+      "gsl": "Hauslysmart App",
+      "sip": "SIP intercom"
+    },
+    "os": {
+      "android": "Android",
+      "linux": "Linux"
+    },
+    "audio": {
+      "none": "No audio",
+      "mic-speaker": "Mic and speaker"
+    }
+  },
+  "value_order": {
+    "role": [
+      "scene",
+      "whole-home",
+      "hvac",
+      "intercom"
+    ],
+    "screen": [
+      "4",
+      "5",
+      "6",
+      "8",
+      "10.1"
+    ],
+    "protocol": [
+      "wifi",
+      "zigbee",
+      "rs485",
+      "ethernet"
+    ],
+    "finish": [
+      "white",
+      "black",
+      "gold",
+      "glass-black"
+    ],
+    "mounting": [
+      "eu86",
+      "us1",
+      "flush",
+      "desktop"
+    ],
+    "power": [
+      "ac220",
+      "poe",
+      "dc12"
+    ],
+    "integration": [
+      "gsl",
+      "sip"
+    ],
+    "os": [
+      "android",
+      "linux"
+    ],
+    "audio": [
+      "none",
+      "mic-speaker"
+    ]
+  },
+  "sorts": [
+    {
+      "key": "featured",
+      "label": "Featured"
+    },
+    {
+      "key": "model-asc",
+      "label": "Model A–Z"
+    },
+    {
+      "key": "price-asc",
+      "label": "Price, low to high"
+    },
+    {
+      "key": "price-desc",
+      "label": "Price, high to low"
+    }
+  ],
+  "batch_size": 8,
+  "card": {
+    "spec_keys": [
+      "screen",
+      "power",
+      "mounting"
+    ],
+    "badge_keys": [
+      "protocol"
+    ],
+    "compare_limit": {
+      "min": 2,
+      "max": 4
+    },
+    "quote": {
+      "add_label": "Add to Quote",
+      "added_label": "In Quote List"
+    },
+    "detail_label": "View Product",
+    "detail_route": "product-detail-v3.html"
+  },
+  "detail": {
+    "_note": "模板口径（2026-09-18 包子确认：做网页模板，数据是 demo 内容）：本块以《智慧中控屏 MAX 规格书》V1.1.2 为 demo 数据源——硬件参数取自规格书，软件/生态功能按 GSL 站口径写成 demo 文案，不逐项真实核验，占位标注由品类级 _placeholder 机制负责。行值仅支持 from:<维度> / kind / status:pending（build.mjs 不渲染字面量文本），规格书里维度外的硬件参数（分辨率、RAM/ROM、摄像头、传感器、负载等）走 status:pending，待扩维度或真实数据时再接。",
+    "nav": [
+      {
+        "id": "pd-selection",
+        "label": "Overview"
+      },
+      {
+        "id": "pd-details",
+        "label": "Details & operation"
+      },
+      {
+        "id": "pd-specifications",
+        "label": "Specifications"
+      },
+      {
+        "id": "pd-installation",
+        "label": "Installation & compatibility"
+      },
+      {
+        "id": "pd-downloads",
+        "label": "Downloads"
+      },
+      {
+        "id": "pd-ordering",
+        "label": "Ordering & customization"
+      },
+      {
+        "id": "pd-related",
+        "label": "Related products"
+      }
+    ],
+    "highlight_keys": [
+      "screen",
+      "protocol",
+      "audio",
+      "mounting"
+    ],
+    "spec_groups": [
+      {
+        "label": "Identification & control",
+        "rows": [
+          {
+            "label": "Model",
+            "kind": "sku"
+          },
+          {
+            "label": "Configuration",
+            "kind": "variant"
+          },
+          {
+            "label": "Series",
+            "kind": "series"
+          },
+          {
+            "label": "Panel role",
+            "from": "role"
+          },
+          {
+            "label": "Platform",
+            "from": "os"
+          },
+          {
+            "label": "System integration",
+            "from": "integration"
+          }
+        ]
+      },
+      {
+        "label": "Display & audio",
+        "rows": [
+          {
+            "label": "Screen size",
+            "from": "screen"
+          },
+          {
+            "label": "Audio",
+            "from": "audio"
+          },
+          {
+            "label": "Display resolution",
+            "status": "pending"
+          },
+          {
+            "label": "Touch type",
+            "status": "pending"
+          },
+          {
+            "label": "Camera",
+            "status": "pending"
+          }
+        ]
+      },
+      {
+        "label": "Connectivity",
+        "rows": [
+          {
+            "label": "Wireless protocols",
+            "from": "protocol"
+          },
+          {
+            "label": "Ethernet ports",
+            "status": "pending"
+          },
+          {
+            "label": "Field bus",
+            "status": "pending"
+          },
+          {
+            "label": "Gateway capacity",
+            "status": "pending"
+          }
+        ]
+      },
+      {
+        "label": "Electrical & mounting",
+        "rows": [
+          {
+            "label": "Power supply",
+            "from": "power"
+          },
+          {
+            "label": "Relay circuits",
+            "status": "pending"
+          },
+          {
+            "label": "Load rating",
+            "status": "pending"
+          },
+          {
+            "label": "Mounting",
+            "from": "mounting"
+          },
+          {
+            "label": "Dimensions",
+            "status": "pending"
+          }
+        ]
+      },
+      {
+        "label": "Environment",
+        "rows": [
+          {
+            "label": "Operating temperature",
+            "status": "pending"
+          },
+          {
+            "label": "Operating humidity",
+            "status": "pending"
+          },
+          {
+            "label": "Built-in sensors",
+            "status": "pending"
+          }
+        ]
+      },
+      {
+        "label": "Certification & package",
+        "rows": [
+          {
+            "label": "Certifications",
+            "status": "pending"
+          },
+          {
+            "label": "Standard pack quantity",
+            "status": "pending"
+          },
+          {
+            "label": "Package dimensions",
+            "status": "pending"
+          }
+        ]
+      }
+    ],
+    "details": {
+      "image_slot": {
+        "status": "pending",
+        "note": "Product detail photograph pending. A placeholder may not stand in for a verified close-up (§13)."
+      },
+      "context_slot": {
+        "status": "pending",
+        "note": "Installed-context photograph pending — it has to show the panel at a recognisable scale, not a distant interior (§6)."
+      },
+      "slots": [
+        {
+          "label": "Screen, touch and ambient sensing",
+          "status": "pending",
+          "text": null
+        },
+        {
+          "label": "Gateway, sub-devices and local control",
+          "status": "pending",
+          "text": null
+        },
+        {
+          "label": "Camera, privacy cover and intercom use",
+          "status": "pending",
+          "text": null
+        },
+        {
+          "label": "Difference from smaller panels in this category",
+          "status": "pending",
+          "text": null
+        }
+      ]
+    },
+    "installation": {
+      "rows": [
+        {
+          "label": "Mounting form",
+          "from": "mounting"
+        },
+        {
+          "label": "Wall box depth",
+          "status": "pending"
+        },
+        {
+          "label": "Wiring version",
+          "status": "pending"
+        },
+        {
+          "label": "Included in the box",
+          "status": "pending"
+        },
+        {
+          "label": "Required separately",
+          "status": "pending"
+        }
+      ],
+      "drawing": {
+        "status": "pending",
+        "note": "Dimension and wiring drawing pending. §8.1: a concept drawing must not be shown as construction documentation."
+      },
+      "drawings": []
+    },
+    "compatibility": [
+      {
+        "mode": "App control",
+        "from": "integration",
+        "support": "conditional",
+        "note": "Requires the app listed for this configuration. Account and network conditions are not confirmed."
+      },
+      {
+        "mode": "Network uplink",
+        "from": "protocol",
+        "only": [
+          "wifi",
+          "ethernet"
+        ],
+        "support": "supported",
+        "note": "Wi-Fi or Ethernet uplink, per this configuration's own record."
+      },
+      {
+        "mode": "Sub-device gateway",
+        "from": "protocol",
+        "only": [
+          "zigbee",
+          "rs485"
+        ],
+        "support": "conditional",
+        "note": "Downlink bus or sub-device support only where listed for this configuration."
+      },
+      {
+        "mode": "Voice assistant",
+        "status": "pending",
+        "support": "pending",
+        "note": ""
+      },
+      {
+        "mode": "Video intercom",
+        "status": "pending",
+        "support": "pending",
+        "note": ""
+      }
+    ],
+    "documents": [
+      {
+        "type": "Datasheet",
+        "scope": "Model",
+        "status": "pending",
+        "path": null,
+        "size_bytes": null,
+        "revision": null,
+        "revision_date": null,
+        "language": null,
+        "checked_on": null
+      },
+      {
+        "type": "Installation guide",
+        "scope": "Model",
+        "status": "pending",
+        "path": null,
+        "size_bytes": null,
+        "revision": null,
+        "revision_date": null,
+        "language": null,
+        "checked_on": null
+      },
+      {
+        "type": "Dimension drawing",
+        "scope": "Model",
+        "status": "pending",
+        "path": null,
+        "size_bytes": null,
+        "revision": null,
+        "revision_date": null,
+        "language": null,
+        "checked_on": null
+      },
+      {
+        "type": "Wiring diagram",
+        "scope": "Configuration",
+        "status": "pending",
+        "path": null,
+        "size_bytes": null,
+        "revision": null,
+        "revision_date": null,
+        "language": null,
+        "checked_on": null
+      },
+      {
+        "type": "User manual",
+        "scope": "Series",
+        "status": "pending",
+        "path": null,
+        "size_bytes": null,
+        "revision": null,
+        "revision_date": null,
+        "language": null,
+        "checked_on": null
+      },
+      {
+        "type": "Declaration of conformity",
+        "scope": "Model",
+        "status": "pending",
+        "path": null,
+        "size_bytes": null,
+        "revision": null,
+        "revision_date": null,
+        "language": null,
+        "checked_on": null
+      }
+    ],
+    "ordering": {
+      "rows": [
+        {
+          "label": "Reference price basis",
+          "kind": "terms"
+        },
+        {
+          "label": "MOQ",
+          "kind": "moq"
+        },
+        {
+          "label": "Standard pack",
+          "status": "pending"
+        },
+        {
+          "label": "Lead time",
+          "status": "pending"
+        },
+        {
+          "label": "Sample request",
+          "status": "pending"
+        },
+        {
+          "label": "Tax and shipping basis",
+          "status": "pending"
+        }
+      ],
+      "customization": [
+        "Screen size and memory configuration",
+        "Colour and finish",
+        "Interface and field-bus options",
+        "Packaging"
+      ],
+      "customization_route": "oem-odm/customization.html",
+      "customization_note": "Discussion topics only. These are not confirmed capabilities and do not create an orderable custom SKU (§10)."
+    },
+    "related": {
+      "same_series_label": "Same series",
+      "same_series_note": "Same series does not mean interchangeable. Check power supply, back-box depth and bus wiring before substituting one panel for another (§11).",
+      "alternatives": [],
+      "accessories": [],
+      "why_others_empty": "Alternative models and compatible accessories need model-matched verification. Until that exists these two groups are not rendered at all (§11: only groups that actually have content appear).",
+      "cross_category": {
+        "heading": "More smart control solutions",
+        "note": "Category entry points, not recommendations for this model. Suitability has to be checked on the product itself — sharing a series or a protocol does not make two products interchangeable (§11).",
+        "items": [
+          {
+            "label": "Smart switches",
+            "route": "smart-switches.html"
+          },
+          {
+            "label": "Sockets & outlets",
+            "route": "sockets.html"
+          },
+          {
+            "label": "Thermostats",
+            "route": "thermostats.html"
+          },
+          {
+            "label": "Controllers & gateways",
+            "route": "controllers.html"
+          },
+          {
+            "label": "Sensors",
+            "route": "sensors.html"
+          }
+        ]
+      }
+    }
+  },
+  "model_groups": [
+    {
+      "model_id": "gsl-cp4",
+      "name": "4-Inch Scene Control Panel",
+      "slug": "gsl-cp4",
+      "editorial_order": 10,
+      "summary": "Compact scene plate that replaces a bank of switches with four pages of controls.",
+      "variants": [
+        {
+          "variant_id": "gsl-cp4-wifi-white-eu86",
+          "sku": "GSL-CP4-WIFI-WHITE-EU86",
+          "attributes": {
+            "role": [
+              "scene"
+            ],
+            "screen": [
+              "4"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "linux"
+            ],
+            "audio": [
+              "none"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cp4-zigbee-white-eu86",
+          "sku": "GSL-CP4-ZIGBEE-WHITE-EU86",
+          "attributes": {
+            "role": [
+              "scene"
+            ],
+            "screen": [
+              "4"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "linux"
+            ],
+            "audio": [
+              "none"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "finish": [
+              "white"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cp4-wifi-black-us1",
+          "sku": "GSL-CP4-WIFI-BLACK-US1",
+          "attributes": {
+            "role": [
+              "scene"
+            ],
+            "screen": [
+              "4"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "linux"
+            ],
+            "audio": [
+              "none"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "black"
+            ],
+            "mounting": [
+              "us1"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cp5",
+      "name": "5-Inch Touch Control Panel",
+      "slug": "gsl-cp5",
+      "editorial_order": 20,
+      "summary": "Five-inch capacitive panel with room temperature display and relay outputs.",
+      "variants": [
+        {
+          "variant_id": "gsl-cp5-wifi-white-eu86",
+          "sku": "GSL-CP5-WIFI-WHITE-EU86",
+          "attributes": {
+            "role": [
+              "scene"
+            ],
+            "screen": [
+              "5"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "linux"
+            ],
+            "audio": [
+              "none"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cp5-zigbee-glass-black-flush",
+          "sku": "GSL-CP5-ZIGBEE-GLASSBLACK-FLUSH",
+          "attributes": {
+            "role": [
+              "scene"
+            ],
+            "screen": [
+              "5"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "linux"
+            ],
+            "audio": [
+              "none"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "finish": [
+              "glass-black"
+            ],
+            "mounting": [
+              "flush"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cp5-ethernet-white-flush",
+          "sku": "GSL-CP5-ETHERNET-WHITE-FLUSH",
+          "attributes": {
+            "role": [
+              "scene"
+            ],
+            "screen": [
+              "5"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "linux"
+            ],
+            "audio": [
+              "none"
+            ],
+            "protocol": [
+              "ethernet"
+            ],
+            "finish": [
+              "white"
+            ],
+            "mounting": [
+              "flush"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cp6",
+      "name": "6-Inch Whole-Home Control Panel",
+      "slug": "gsl-cp6",
+      "editorial_order": 30,
+      "summary": "Six-inch Android panel running the whole-home UI, intercom client and camera view.",
+      "variants": [
+        {
+          "variant_id": "gsl-cp6-ethernet-white-flush",
+          "sku": "GSL-CP6-ETHERNET-WHITE-FLUSH",
+          "attributes": {
+            "role": [
+              "whole-home"
+            ],
+            "screen": [
+              "6"
+            ],
+            "power": [
+              "poe"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "android"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "ethernet"
+            ],
+            "finish": [
+              "white"
+            ],
+            "mounting": [
+              "flush"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cp6-wifi-black-flush",
+          "sku": "GSL-CP6-WIFI-BLACK-FLUSH",
+          "attributes": {
+            "role": [
+              "whole-home"
+            ],
+            "screen": [
+              "6"
+            ],
+            "power": [
+              "poe"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "android"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "black"
+            ],
+            "mounting": [
+              "flush"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cp6-ethernet-gold-flush",
+          "sku": "GSL-CP6-ETHERNET-GOLD-FLUSH",
+          "attributes": {
+            "role": [
+              "whole-home"
+            ],
+            "screen": [
+              "6"
+            ],
+            "power": [
+              "poe"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "android"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "ethernet"
+            ],
+            "finish": [
+              "gold"
+            ],
+            "mounting": [
+              "flush"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cp8",
+      "name": "8-Inch Whole-Home Control Panel",
+      "slug": "gsl-cp8",
+      "editorial_order": 40,
+      "summary": "Eight-inch wall panel for villas and suites where one plate carries every function.",
+      "variants": [
+        {
+          "variant_id": "gsl-cp8-ethernet-white-flush",
+          "sku": "GSL-CP8-ETHERNET-WHITE-FLUSH",
+          "attributes": {
+            "role": [
+              "whole-home"
+            ],
+            "screen": [
+              "8"
+            ],
+            "power": [
+              "poe"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "android"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "ethernet"
+            ],
+            "finish": [
+              "white"
+            ],
+            "mounting": [
+              "flush"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cp8-ethernet-glass-black-flush",
+          "sku": "GSL-CP8-ETHERNET-GLASSBLACK-FLUSH",
+          "attributes": {
+            "role": [
+              "whole-home"
+            ],
+            "screen": [
+              "8"
+            ],
+            "power": [
+              "poe"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "android"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "ethernet"
+            ],
+            "finish": [
+              "glass-black"
+            ],
+            "mounting": [
+              "flush"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cp8-wifi-white-us1",
+          "sku": "GSL-CP8-WIFI-WHITE-US1",
+          "attributes": {
+            "role": [
+              "whole-home"
+            ],
+            "screen": [
+              "8"
+            ],
+            "power": [
+              "poe"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "android"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "mounting": [
+              "us1"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cp10",
+      "name": "10.1-Inch Smart Control Hub",
+      "slug": "gsl-cp10",
+      "editorial_order": 45,
+      "series": "GSL-CP",
+      "_note": "模板 demo 数据，来源：《智慧中控屏 MAX 规格书》V1.1.2（RK3566 方案，2023-02-10）。包子 2026-09-18 确认：现在是做网页模板，数据是 demo 内容——规格书的硬件参数照搬，软件/生态功能按 GSL 站口径写成 demo 文案，不必逐项真实核验（占位标注仍由品类级 _placeholder 机制负责）。protocol 多值是刻意的：网关型产品（Wi-Fi 上行 + Zigbee/蓝牙下行），12pin 底座比 6pin 多 RJ45+RS485，两变体靠 protocol 区分；多值不会在 PDP 被建成假单选组（optionKeysOf 判据②），属预期。",
+      "summary": "10.1-inch Android 11 hub on an RK3566 core with a 1920x1200 touch screen, Zigbee and Bluetooth gateway, camera and relay circuits in the wall base.",
+      "variants": [
+        {
+          "variant_id": "gsl-cp10-6pin-white-eu86",
+          "sku": "GSL-CP10-6PIN-WHITE-EU86",
+          "attributes": {
+            "role": [
+              "whole-home"
+            ],
+            "screen": [
+              "10.1"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "android"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "wifi",
+              "zigbee"
+            ],
+            "finish": [
+              "white"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cp10-12pin-white-eu86",
+          "sku": "GSL-CP10-12PIN-WHITE-EU86",
+          "attributes": {
+            "role": [
+              "whole-home"
+            ],
+            "screen": [
+              "10.1"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "android"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "wifi",
+              "zigbee",
+              "ethernet",
+              "rs485"
+            ],
+            "finish": [
+              "white"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cph1",
+      "name": "HVAC Control Panel",
+      "slug": "gsl-cph1",
+      "editorial_order": 50,
+      "summary": "Fan-coil and heat-pump control with schedule, setpoint and occupancy hold-back.",
+      "variants": [
+        {
+          "variant_id": "gsl-cph1-wifi-white-eu86",
+          "sku": "GSL-CPH1-WIFI-WHITE-EU86",
+          "attributes": {
+            "role": [
+              "hvac"
+            ],
+            "screen": [
+              "4"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "linux"
+            ],
+            "audio": [
+              "none"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cph1-rs485-white-eu86",
+          "sku": "GSL-CPH1-RS485-WHITE-EU86",
+          "attributes": {
+            "role": [
+              "hvac"
+            ],
+            "screen": [
+              "4"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "linux"
+            ],
+            "audio": [
+              "none"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "finish": [
+              "white"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cph1-wifi-black-us1",
+          "sku": "GSL-CPH1-WIFI-BLACK-US1",
+          "attributes": {
+            "role": [
+              "hvac"
+            ],
+            "screen": [
+              "4"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "linux"
+            ],
+            "audio": [
+              "none"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "black"
+            ],
+            "mounting": [
+              "us1"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cpi1",
+      "name": "Video Intercom Panel",
+      "slug": "gsl-cpi1",
+      "editorial_order": 60,
+      "summary": "Door station panel with camera preview, unlock relay and SIP call handling.",
+      "variants": [
+        {
+          "variant_id": "gsl-cpi1-ethernet-white-flush",
+          "sku": "GSL-CPI1-ETHERNET-WHITE-FLUSH",
+          "attributes": {
+            "role": [
+              "intercom"
+            ],
+            "screen": [
+              "5"
+            ],
+            "power": [
+              "poe"
+            ],
+            "integration": [
+              "gsl",
+              "sip"
+            ],
+            "os": [
+              "android"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "ethernet"
+            ],
+            "finish": [
+              "white"
+            ],
+            "mounting": [
+              "flush"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cpi1-wifi-glass-black-flush",
+          "sku": "GSL-CPI1-WIFI-GLASSBLACK-FLUSH",
+          "attributes": {
+            "role": [
+              "intercom"
+            ],
+            "screen": [
+              "5"
+            ],
+            "power": [
+              "poe"
+            ],
+            "integration": [
+              "gsl",
+              "sip"
+            ],
+            "os": [
+              "android"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "glass-black"
+            ],
+            "mounting": [
+              "flush"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cpd1",
+      "name": "Desktop Control Console",
+      "slug": "gsl-cpd1",
+      "editorial_order": 70,
+      "summary": "Angled desktop console for counters, reception desks and bedside tables.",
+      "variants": [
+        {
+          "variant_id": "gsl-cpd1-wifi-white-desktop",
+          "sku": "GSL-CPD1-WIFI-WHITE-DESKTOP",
+          "attributes": {
+            "role": [
+              "whole-home"
+            ],
+            "screen": [
+              "6"
+            ],
+            "power": [
+              "dc12"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "android"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "mounting": [
+              "desktop"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cpd1-ethernet-black-desktop",
+          "sku": "GSL-CPD1-ETHERNET-BLACK-DESKTOP",
+          "attributes": {
+            "role": [
+              "whole-home"
+            ],
+            "screen": [
+              "6"
+            ],
+            "power": [
+              "dc12"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "android"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "ethernet"
+            ],
+            "finish": [
+              "black"
+            ],
+            "mounting": [
+              "desktop"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cpk1",
+      "name": "Kitchen Control Panel",
+      "slug": "gsl-cpk1",
+      "editorial_order": 80,
+      "summary": "Splash-resistant panel with timers, scenes and appliance status on one plate.",
+      "variants": [
+        {
+          "variant_id": "gsl-cpk1-wifi-white-eu86",
+          "sku": "GSL-CPK1-WIFI-WHITE-EU86",
+          "attributes": {
+            "role": [
+              "scene"
+            ],
+            "screen": [
+              "5"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "linux"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "white"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cpk1-zigbee-glass-black-eu86",
+          "sku": "GSL-CPK1-ZIGBEE-GLASSBLACK-EU86",
+          "attributes": {
+            "role": [
+              "scene"
+            ],
+            "screen": [
+              "5"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "linux"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "finish": [
+              "glass-black"
+            ],
+            "mounting": [
+              "eu86"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cpk1-wifi-gold-us1",
+          "sku": "GSL-CPK1-WIFI-GOLD-US1",
+          "attributes": {
+            "role": [
+              "scene"
+            ],
+            "screen": [
+              "5"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "os": [
+              "linux"
+            ],
+            "audio": [
+              "mic-speaker"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "finish": [
+              "gold"
+            ],
+            "mounting": [
+              "us1"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    }
+  ]
+}

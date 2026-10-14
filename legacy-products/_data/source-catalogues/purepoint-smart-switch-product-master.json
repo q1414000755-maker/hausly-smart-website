@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "catalogue_id": "purepoint-smart-switch",
+  "catalogue_title": "Purepoint Smart Switch",
+  "source_file": "产品资料/Purepoint Smart Switch .pdf",
+  "source_page_count": 54,
+  "source_scope": {
+    "included": "Smart Switches product family from the Purepoint catalogue",
+    "excluded_from_import": [
+      "Matching socket PDP granularity",
+      "Hotel solution pages (catalogue pages 48-54)",
+      "Other catalogues"
+    ]
+  },
+  "product_granularity": {
+    "rule": "One model or series is one product and one PDP.",
+    "variant_axes": ["gang_or_function", "material", "color", "protocol_or_platform"],
+    "combination_rule": "Only source-confirmed combinations may be selectable. Do not generate a Cartesian product of option values.",
+    "material_rule": "Material pages are evidence for variants of the parent model, not separate products.",
+    "status_values": ["confirmed", "overview_only", "pending", "conflict"]
+  },
+  "pdp_granularity_decisions": {
+    "M6 Glass": {
+      "parent_model": "M6",
+      "decision": "variant_on_parent_pdp",
+      "canonical_route": "products/m6-smart-switch/",
+      "reason": "The catalogue identifies the commercial model as M6; Glass is a material option confirmed on the M6 detail page."
+    },
+    "M10 Glass": {
+      "parent_model": "M10",
+      "decision": "variant_on_parent_pdp",
+      "canonical_route": "products/m10-smart-switch/",
+      "reason": "The catalogue identifies the commercial model as M10; Glass is the confirmed material on the M10 detail page."
+    }
+  },
+  "products": [
+    {
+      "product_id": "m6",
+      "model": "M6",
+      "name": "M6 Smart Switch",
+      "slug": "m6-smart-switch",
+      "category": "smart-switches",
+      "pdp_count": 1,
+      "source_refs": ["overview p.5", "M6 detailed pages p.6-10"],
+      "options": {
+        "gang_or_function": ["1-gang", "2-gang", "3-gang", "4-gang", "4-gang-2-scene"],
+        "material": [
+          {"value": "skin-feel-pc", "status": "confirmed", "source": "M6 PC page"},
+          {"value": "skin-feel-glass", "status": "confirmed", "source": "M6 glass page"},
+          {"value": "all-copper", "status": "confirmed", "source": "M6 copper page"},
+          {"value": "aluminum-alloy", "status": "confirmed", "source": "M6 aluminum page"}
+        ],
+        "color": {
+          "skin-feel-pc": {"status": "confirmed", "values": ["premium-gray", "skin-gray", "skin-silver", "skin-white", "skin-black", "skin-gold", "cream-gold"]},
+          "all-copper": {"status": "confirmed", "values": ["antique-brushed-copper", "gun-black-orb", "colorful-blue", "coffee-bronze-vertical-brushed", "bright-chrome"]},
+          "skin-feel-glass": {"status": "pending", "values": []},
+          "aluminum-alloy": {"status": "pending", "values": []}
+        },
+        "protocol_or_platform": {"status": "confirmed", "values": ["zigbee", "bluetooth-mesh", "xiaomi", "tuya", "xiaodu", "tmall"]}
+      }
+    },
+    {
+      "product_id": "m6s",
+      "model": "M6S",
+      "name": "M6S Smart Switch",
+      "slug": "m6s-smart-switch",
+      "category": "smart-switches",
+      "pdp_count": 1,
+      "source_refs": ["overview p.5", "M6S detailed page"],
+      "options": {"gang_or_function": ["1-gang", "2-gang", "3-gang", "4-gang", "4-gang-2-scene"], "material": [{"value": "skin-feel-pc", "status": "confirmed"}], "color": {"status": "pending", "values": []}, "protocol_or_platform": {"status": "pending", "values": []}}
+    },
+    {
+      "product_id": "m8",
+      "model": "M8",
+      "name": "M8 Smart Switch",
+      "slug": "m8-smart-switch",
+      "category": "smart-switches",
+      "pdp_count": 1,
+      "source_refs": ["overview p.5", "M8 detailed pages"],
+      "options": {"gang_or_function": ["1-gang", "2-gang", "3-gang", "4-gang"], "material": [{"value": "skin-feel-pc", "status": "confirmed"}, {"value": "all-copper", "status": "confirmed"}, {"value": "aluminum-alloy", "status": "confirmed"}, {"value": "skin-feel-glass", "status": "overview_only"}], "color": {"status": "pending", "values": []}, "protocol_or_platform": {"status": "pending", "values": []}}
+    },
+    {
+      "product_id": "m9",
+      "model": "M9",
+      "name": "M9 Smart Switch",
+      "slug": "m9-smart-switch",
+      "category": "smart-switches",
+      "pdp_count": 1,
+      "source_refs": ["overview p.5", "M9 detailed pages"],
+      "options": {"gang_or_function": ["4-gang-4-scene"], "material": [{"value": "skin-feel-pc", "status": "confirmed"}, {"value": "all-copper", "status": "confirmed"}, {"value": "aluminum-alloy", "status": "confirmed"}], "color": {"status": "pending", "values": []}, "protocol_or_platform": {"status": "pending", "values": []}}
+    },
+    {
+      "product_id": "m10",
+      "model": "M10",
+      "name": "M10 Smart Switch",
+      "slug": "m10-smart-switch",
+      "category": "smart-switches",
+      "pdp_count": 1,
+      "source_refs": ["overview p.5", "M10 detailed page"],
+      "options": {"gang_or_function": ["1-gang", "2-gang", "3-gang", "4-gang", "4-gang-4-scene"], "material": [{"value": "skin-feel-glass", "status": "confirmed"}], "color": {"status": "pending", "values": []}, "protocol_or_platform": {"status": "pending", "values": []}}
+    },
+    {
+      "product_id": "m12",
+      "model": "M12",
+      "name": "M12 Smart Switch",
+      "slug": "m12-smart-switch",
+      "category": "smart-switches",
+      "pdp_count": 1,
+      "source_refs": ["overview p.5", "M12 detailed page"],
+      "options": {"gang_or_function": ["2-gang", "3-gang", "4-gang"], "material": [{"value": "pc", "status": "confirmed"}], "color": {"status": "pending", "values": []}, "protocol_or_platform": {"status": "pending", "values": []}}
+    },
+    {
+      "product_id": "m12-s",
+      "model": "M12/S",
+      "name": "M12/S Smart Switch",
+      "slug": "m12-s-smart-switch",
+      "category": "smart-switches",
+      "pdp_count": 1,
+      "source_refs": ["overview p.5", "M12/S detailed pages"],
+      "notes": ["Model spelling must be normalized before SKU import; catalogue overview and detail pages are not fully consistent."],
+      "options": {"gang_or_function": ["1-gang", "2-gang", "3-gang", "4-gang"], "material": [{"value": "pc", "status": "confirmed"}, {"value": "skin-feel-glass", "status": "confirmed"}, {"value": "aluminum-alloy", "status": "confirmed"}], "color": {"status": "pending", "values": []}, "protocol_or_platform": {"status": "pending", "values": []}}
+    },
+    {
+      "product_id": "z5",
+      "model": "Z5",
+      "name": "Z5 Smart Switch",
+      "slug": "z5-smart-switch",
+      "category": "smart-switches",
+      "pdp_count": 1,
+      "source_refs": ["overview p.5", "Z5 detailed pages"],
+      "options": {"gang_or_function": ["1-gang", "2-gang", "3-gang"], "material": [{"value": "pc", "status": "confirmed"}, {"value": "skin-feel-glass", "status": "confirmed"}, {"value": "aluminum-alloy", "status": "confirmed"}], "color": {"status": "pending", "values": []}, "protocol_or_platform": {"status": "pending", "values": []}}
+    },
+    {
+      "product_id": "z6",
+      "model": "Z6",
+      "name": "Z6 Smart Switch",
+      "slug": "z6-smart-switch",
+      "category": "smart-switches",
+      "pdp_count": 1,
+      "source_refs": ["overview p.5", "Z6 detailed pages"],
+      "options": {"gang_or_function": ["1-gang", "2-gang", "3-gang", "4-gang", "4-gang-2-scene"], "material": [{"value": "pc", "status": "confirmed"}, {"value": "skin-feel-glass", "status": "confirmed"}, {"value": "aluminum-alloy", "status": "confirmed"}], "color": {"status": "pending", "values": []}, "protocol_or_platform": {"status": "pending", "values": []}}
+    },
+    {
+      "product_id": "z7",
+      "model": "Z7",
+      "name": "Z7 Smart Switch",
+      "slug": "z7-smart-switch",
+      "category": "smart-switches",
+      "pdp_count": 1,
+      "source_refs": ["overview p.5", "Z7 detailed pages"],
+      "options": {"gang_or_function": ["2-gang", "3-gang", "4-gang", "4-gang-2-scene"], "material": [{"value": "pc", "status": "confirmed"}, {"value": "skin-feel-glass", "status": "confirmed"}, {"value": "aluminum-alloy", "status": "confirmed"}], "color": {"status": "pending", "values": []}, "protocol_or_platform": {"status": "pending", "values": []}}
+    },
+    {
+      "product_id": "s7",
+      "model": "S7",
+      "name": "S7 Smart Switch",
+      "slug": "s7-smart-switch",
+      "category": "smart-switches",
+      "pdp_count": 1,
+      "source_refs": ["overview p.5", "S7 detailed pages"],
+      "options": {"gang_or_function": ["1-gang", "2-gang", "3-gang"], "material": [{"value": "skin-feel-pc", "status": "confirmed"}, {"value": "skin-feel-glass", "status": "confirmed"}], "color": {"status": "pending", "values": []}, "protocol_or_platform": {"status": "pending", "values": []}}
+    },
+    {
+      "product_id": "s8",
+      "model": "S8",
+      "name": "S8 Smart Switch",
+      "slug": "s8-smart-switch",
+      "category": "smart-switches",
+      "pdp_count": 1,
+      "source_refs": ["overview p.5", "S8 detailed pages"],
+      "options": {"gang_or_function": ["1-gang", "2-gang", "3-gang", "4-gang", "4-gang-2-scene"], "material": [{"value": "skin-feel-pc", "status": "confirmed"}, {"value": "skin-feel-glass", "status": "confirmed"}], "color": {"status": "pending", "values": []}, "protocol_or_platform": {"status": "pending", "values": []}}
+    },
+    {
+      "product_id": "s9",
+      "model": "S9",
+      "name": "S9 Smart Switch",
+      "slug": "s9-smart-switch",
+      "category": "smart-switches",
+      "pdp_count": 1,
+      "source_refs": ["overview p.5", "S9 detailed pages"],
+      "options": {"gang_or_function": ["4-gang"], "material": [{"value": "pc", "status": "confirmed"}, {"value": "skin-feel-glass", "status": "confirmed"}, {"value": "aluminum-alloy", "status": "confirmed"}], "color": {"status": "pending", "values": []}, "protocol_or_platform": {"status": "pending", "values": []}}
+    },
+    {
+      "product_id": "blc-right-angle-touch",
+      "model": "BLC Right Angle Touch",
+      "name": "BLC Right Angle Touch Smart Switch",
+      "slug": "blc-right-angle-touch-smart-switch",
+      "category": "smart-switches",
+      "pdp_count": 1,
+      "source_refs": ["overview p.5", "BLC / Right Angle Touch detailed page"],
+      "options": {"gang_or_function": ["1-gang", "2-gang", "3-gang", "4-gang"], "material": [{"value": "tempered-glass", "status": "confirmed"}], "color": {"status": "pending", "values": []}, "protocol_or_platform": {"status": "pending", "values": []}}
+    }
+  ],
+  "pending_products": [
+    {"product_id": "smart-card-power", "name": "Smart Card Power", "status": "pending_detail", "source_ref": "overview p.5"},
+    {"product_id": "wall-mounted-telephone", "name": "Wall-mounted Telephone", "status": "pending_detail", "source_ref": "overview p.5"},
+    {"product_id": "smart-electric-curtain", "name": "Smart Electric Curtain", "status": "pending_detail", "source_ref": "overview p.5"}
+  ],
+  "source_conflicts": [
+    {"issue": "The page titled Skin-feel Glass matching sockets contains fields labelled Skin-feel PC.", "status": "conflict", "action": "Do not propagate the material to switch or socket variants until verified."},
+    {"issue": "M12/S naming is not fully consistent between overview and detail pages.", "status": "conflict", "action": "Normalize the formal model name before SKU import."},
+    {"issue": "Overview material claims are broader than some detailed parameter pages.", "status": "overview_only", "action": "Expose only detailed-page-confirmed materials in the selector."}
+  ],
+  "implementation_gate": {
+    "product_cards": 14,
+    "pdp_routes": 14,
+    "sku_and_price": "pending_source_data",
+    "valid_variants": "must be explicit source-backed rows; no Cartesian generation",
+    "publication": "draft_until_sku_price_image_and_variant_combination_are_confirmed"
+  }
+}

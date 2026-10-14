@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144" role="img" aria-label="Low-voltage and data panels">
+  <g fill="none" stroke="#0b2946" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="5" y="5" width="134" height="134" rx="12"/>
+    <rect x="18" y="27" width="108" height="90" rx="7"/>
+    <rect x="29" y="40" width="34" height="26" rx="3"/>
+    <path d="M36 48h20M36 55h20"/>
+    <rect x="74" y="40" width="34" height="26" rx="3"/>
+    <path d="M82 48h18M82 55h18"/>
+    <rect x="29" y="78" width="79" height="22" rx="3"/>
+    <circle cx="41" cy="89" r="3"/>
+    <circle cx="54" cy="89" r="3"/>
+    <path d="M74 89h22"/>
+  </g>
+</svg>

@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "page": "sample-gsl-s4",
+  "locale": "en",
+  "_sample": true,
+  "_note": "完整单品样本：按 site/_data/products/*.json 的 schema 写出 GSL-S4「4-Gang Glass Touch Switch」。字段分 verified / pending 两态，见末尾 _truth_gate。本文件仅供 schema 示范与 truth-gate.py 演示，不参与 build.mjs（位于 _data/products/samples/，构建只读取 pages.json 显式声明的品类文件）。",
+  "eyebrow": "PRODUCT CATALOGUE",
+  "title": "4-Gang Glass Touch Switch",
+  "intro": "Four-gang glass touch switch for wholesale and project supply. Reference prices are quoted per unit.",
+  "price_note": "Reference price per unit. Final price depends on configuration, order quantity and delivery terms.",
+  "dimensions": [
+    { "key": "function", "label": "Function", "primary": true },
+    { "key": "protocol", "label": "Connectivity" },
+    { "key": "operation", "label": "Operation" },
+    { "key": "gang", "label": "Gangs" },
+    { "key": "finish", "label": "Finish" },
+    { "key": "voltage", "label": "Voltage" },
+    { "key": "load", "label": "Load" },
+    { "key": "app", "label": "App / Voice" },
+    { "key": "mounting", "label": "Mounting" }
+  ],
+  "labels": {
+    "function": { "on-off": "On / Off", "dimmer": "Dimmer", "scene": "Scene control", "curtain": "Curtain", "fan-speed": "Fan speed" },
+    "protocol": { "wifi": "Wi-Fi", "zigbee": "Zigbee", "matter": "Matter", "bluetooth": "Bluetooth" },
+    "operation": { "touch": "Touch", "mechanical": "Mechanical key", "kinetic": "Kinetic, self-powered", "sensor": "Motion sensor" },
+    "gang": { "1": "1 gang", "2": "2 gang", "3": "3 gang", "4": "4 gang", "6": "6 gang" },
+    "finish": { "white": "White", "black": "Black", "gold": "Gold", "glass-white": "Glass white", "glass-black": "Glass black" },
+    "voltage": { "universal": "100–240 V", "220-240": "220–240 V", "110-120": "110–120 V" },
+    "load": { "6a": "6 A", "10a": "10 A", "16a": "16 A" },
+    "app": { "gsl": "Hauslysmart App", "tuya": "Tuya Smart", "smart-life": "Smart Life", "alexa": "Amazon Alexa", "google-home": "Google Home", "apple-home": "Apple Home" },
+    "mounting": { "eu86": "EU 86 box", "uk86": "UK 86 box", "us1": "US 1-gang" }
+  },
+  "value_order": {
+    "function": ["on-off", "dimmer", "scene", "curtain", "fan-speed"],
+    "protocol": ["wifi", "zigbee", "matter", "bluetooth"],
+    "operation": ["touch", "mechanical", "kinetic", "sensor"],
+    "gang": ["1", "2", "3", "4", "6"],
+    "finish": ["white", "black", "gold", "glass-white", "glass-black"],
+    "voltage": ["universal", "220-240", "110-120"],
+    "load": ["6a", "10a", "16a"],
+    "app": ["gsl", "tuya", "smart-life", "alexa", "google-home", "apple-home"],
+    "mounting": ["eu86", "uk86", "us1"]
+  },
+  "sorts": [
+    { "key": "featured", "label": "Featured" },
+    { "key": "model-asc", "label": "Model A–Z" },
+    { "key": "price-asc", "label": "Price, low to high" },
+    { "key": "price-desc", "label": "Price, high to low" }
+  ],
+  "batch_size": 8,
+  "card": {
+    "spec_keys": ["gang", "load", "mounting"],
+    "badge_keys": ["protocol"],
+    "compare_limit": { "min": 2, "max": 4 },
+    "quote": { "add_label": "Add to Quote", "added_label": "In Quote List" },
+    "detail_label": "View Product",
+    "detail_route": "product-detail-v3.html"
+  },
+  "detail": {
+    "_note": "samples 仅示范数据契约；真实详情页配置见 smart-switches.json 的 detail 块（nav / selection / specs / installation / ecosystem / documents / related）。以下给最小骨架。",
+    "nav": [
+      { "id": "pd-selection", "label": "Selection" },
+      { "id": "pd-specs", "label": "Specifications" }
+    ]
+  },
+  "model_groups": [
+    {
+      "model_id": "gsl-s4",
+      "name": "4-Gang Glass Touch Switch",
+      "slug": "gsl-s4",
+      "editorial_order": 40,
+      "series": "GSL-S",
+      "summary": "Four-gang glass touch switch where wall boxes are limited but circuits are not.",
+      "variants": [
+        {
+          "variant_id": "gsl-s4-wifi-gw",
+          "sku": "GSL-S4-W-GW",
+          "attributes": {
+            "function": ["on-off"],
+            "protocol": ["wifi"],
+            "operation": ["touch"],
+            "gang": ["4"],
+            "finish": ["glass-white"],
+            "voltage": ["universal"],
+            "load": ["10a"],
+            "app": ["gsl", "tuya", "smart-life", "alexa", "google-home"],
+            "mounting": ["eu86"]
+          },
+          "image": { "src": "assets/images/product-detail/gsl-s4-front-v1.png", "view": "front", "verification": "verified" },
+          "price": {
+            "amount": 12.50,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": "EXW, 100 pcs+",
+            "moq": 100,
+            "status": "confirmed",
+            "checked_on": "2026-09-15"
+          },
+          "publication_status": "published",
+          "views": [
+            { "view": "main", "src": "assets/images/product-detail/gsl-s4-main-v1.png", "verification": "verified" },
+            { "view": "front", "src": "assets/images/product-detail/gsl-s4-front-v1.png", "verification": "verified" },
+            { "view": "side", "src": "assets/images/product-detail/gsl-s4-side-v1.png", "verification": "verified" },
+            { "view": "back", "src": "assets/images/product-detail/gsl-s4-back-v1.png", "verification": "verified" },
+            { "view": "detail", "src": "assets/images/product-detail/gsl-s4-detail-v1.png", "verification": "verified" },
+            { "view": "in-use", "src": "assets/images/product-detail/gsl-s4-in-use-v1.png", "verification": "verified" }
+          ]
+        },
+        {
+          "variant_id": "gsl-s4-zigbee-gw",
+          "sku": "GSL-S4-Z-GW",
+          "attributes": {
+            "function": ["on-off"],
+            "protocol": ["zigbee"],
+            "operation": ["touch"],
+            "gang": ["4"],
+            "finish": ["glass-white"],
+            "voltage": ["universal"],
+            "load": ["10a"],
+            "app": ["gsl", "tuya", "alexa", "google-home"],
+            "mounting": ["eu86"]
+          },
+          "image": { "src": "assets/images/product-detail/gsl-s4-front-v1.png", "view": "front", "verification": "verified" },
+          "price": {
+            "amount": 13.20,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 100,
+            "status": "placeholder",
+            "checked_on": "2026-09-17"
+          },
+          "publication_status": "draft",
+          "views": [
+            { "view": "main", "src": "assets/images/product-detail/gsl-s4-main-v1.png", "verification": "verified" },
+            { "view": "front", "src": "assets/images/product-detail/gsl-s4-front-v1.png", "verification": "verified" },
+            { "view": "side", "src": "assets/images/product-detail/gsl-s4-side-v1.png", "verification": "verified" },
+            { "view": "back", "src": "assets/images/product-detail/gsl-s4-back-v1.png", "verification": "verified" },
+            { "view": "detail", "src": "assets/images/product-detail/gsl-s4-detail-v1.png", "verification": "verified" },
+            { "view": "in-use", "src": "assets/images/product-detail/gsl-s4-in-use-v1.png", "verification": "verified" }
+          ]
+        },
+        {
+          "variant_id": "gsl-s4-matter-gb",
+          "sku": "GSL-S4-M-GB",
+          "attributes": {
+            "function": ["on-off"],
+            "protocol": ["matter"],
+            "operation": ["touch"],
+            "gang": ["4"],
+            "finish": ["glass-black"],
+            "voltage": ["universal"],
+            "load": ["10a"],
+            "app": ["apple-home", "google-home", "alexa", "gsl"],
+            "mounting": ["eu86"]
+          },
+          "image": { "src": "assets/images/product-detail/gsl-s4-front-v1.png", "view": "front", "verification": "verified" },
+          "price": {
+            "amount": 14.80,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 100,
+            "status": "placeholder",
+            "checked_on": "2026-09-17"
+          },
+          "publication_status": "draft",
+          "views": [
+            { "view": "main", "src": "assets/images/product-detail/gsl-s4-main-v1.png", "verification": "verified" },
+            { "view": "front", "src": "assets/images/product-detail/gsl-s4-front-v1.png", "verification": "verified" },
+            { "view": "side", "src": "assets/images/product-detail/gsl-s4-side-v1.png", "verification": "verified" },
+            { "view": "back", "src": "assets/images/product-detail/gsl-s4-back-v1.png", "verification": "verified" },
+            { "view": "detail", "src": "assets/images/product-detail/gsl-s4-detail-v1.png", "verification": "verified" },
+            { "view": "in-use", "src": "assets/images/product-detail/gsl-s4-in-use-v1.png", "verification": "verified" }
+          ]
+        }
+      ]
+    }
+  ],
+  "_truth_gate": {
+    "generated_on": "2026-09-18",
+    "by": "Kilo (sample)",
+    "verified": [
+      "model_id / name / slug / series / summary",
+      "variants[].variant_id / sku",
+      "variants[].attributes (function / protocol / operation / gang / finish / voltage / load / app / mounting)",
+      "variants[].image + views (真实产品摄影 / 渲染图，位于 assets/images/product-detail/)",
+      "v1 (gsl-s4-wifi-gw) price.amount = 12.50 USD，status=confirmed，checked_on=2026-09-15"
+    ],
+    "pending": [
+      "v2 / v3 price.amount（占位参考价 13.20 / 14.80，待销售按配置与 MOQ 核对后改 confirmed）",
+      "price.quantity_basis（v2 / v3 待定 EXW 口径，当前 null）",
+      "certifications / documents（资料未到位，detail 块尚未建模）",
+      "physical dimensions（尺寸 / 开孔，待工程确认）"
+    ]
+  }
+}

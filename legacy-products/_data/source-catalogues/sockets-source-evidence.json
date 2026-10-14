@@ -1,0 +1,1795 @@
+{
+  "schema_version": 1,
+  "stage": "10-03",
+  "status": "source_boundary_review_complete_explicit_candidates_published",
+  "candidate_count": 86,
+  "source_groups": [
+    {
+      "source_group_id": "src03-t12-sockets",
+      "source_group_name": "T12 Power Socket Series",
+      "source_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 3,
+          "status": "visual_source_only"
+        }
+      ],
+      "boundary_rule": "explicit code/configuration candidates remain independent; family container is not publishable"
+    },
+    {
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_group_name": "M-Series Matching Sockets",
+      "source_status": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 11,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 13,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 15,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 35,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 39,
+          "status": "source_extracted"
+        }
+      ],
+      "boundary_rule": "explicit code/configuration candidates remain independent; family container is not publishable"
+    },
+    {
+      "source_group_id": "gsl-ske1",
+      "source_group_name": "EU Switched Socket",
+      "source_status": "unverified",
+      "source_refs": [],
+      "boundary_rule": "temporary/unverified group; hold until external source is confirmed"
+    },
+    {
+      "source_group_id": "gsl-skuk1",
+      "source_group_name": "UK Switched Socket",
+      "source_status": "unverified",
+      "source_refs": [],
+      "boundary_rule": "temporary/unverified group; hold until external source is confirmed"
+    },
+    {
+      "source_group_id": "gsl-skus1",
+      "source_group_name": "US Receptacle",
+      "source_status": "unverified",
+      "source_refs": [],
+      "boundary_rule": "temporary/unverified group; hold until external source is confirmed"
+    },
+    {
+      "source_group_id": "gsl-skau1",
+      "source_group_name": "AU / NZ Switched Socket",
+      "source_status": "unverified",
+      "source_refs": [],
+      "boundary_rule": "temporary/unverified group; hold until external source is confirmed"
+    },
+    {
+      "source_group_id": "gsl-skun1",
+      "source_group_name": "Multi-Standard Socket",
+      "source_status": "unverified",
+      "source_refs": [],
+      "boundary_rule": "temporary/unverified group; hold until external source is confirmed"
+    },
+    {
+      "source_group_id": "gsl-skpd1",
+      "source_group_name": "USB-C Power Delivery Socket",
+      "source_status": "unverified",
+      "source_refs": [],
+      "boundary_rule": "temporary/unverified group; hold until external source is confirmed"
+    },
+    {
+      "source_group_id": "gsl-skm1",
+      "source_group_name": "Smart Metering Socket",
+      "source_status": "unverified",
+      "source_refs": [],
+      "boundary_rule": "temporary/unverified group; hold until external source is confirmed"
+    },
+    {
+      "source_group_id": "gsl-skip1",
+      "source_group_name": "IP66 Outdoor Socket",
+      "source_status": "unverified",
+      "source_refs": [],
+      "boundary_rule": "temporary/unverified group; hold until external source is confirmed"
+    },
+    {
+      "source_group_id": "gsl-skp1",
+      "source_group_name": "Pop-Up Desk Socket",
+      "source_status": "unverified",
+      "source_refs": [],
+      "boundary_rule": "temporary/unverified group; hold until external source is confirmed"
+    },
+    {
+      "source_group_id": "src03-s2-sockets",
+      "source_group_name": "S2 Power Socket Collection",
+      "source_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 45,
+          "status": "visual_source_only"
+        }
+      ],
+      "boundary_rule": "explicit code/configuration candidates remain independent; family container is not publishable"
+    },
+    {
+      "source_group_id": "src03-s3-sockets",
+      "source_group_name": "S3 Power Socket Collection",
+      "source_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 48,
+          "status": "visual_source_only"
+        }
+      ],
+      "boundary_rule": "explicit code/configuration candidates remain independent; family container is not publishable"
+    },
+    {
+      "source_group_id": "src03-s5-sockets",
+      "source_group_name": "S5 Power Socket Collection",
+      "source_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 52,
+          "status": "visual_source_only"
+        }
+      ],
+      "boundary_rule": "explicit code/configuration candidates remain independent; family container is not publishable"
+    },
+    {
+      "source_group_id": "src03-a8-sockets",
+      "source_group_name": "A8 Power Socket Collection",
+      "source_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 55,
+          "status": "visual_source_only"
+        }
+      ],
+      "boundary_rule": "explicit code/configuration candidates remain independent; family container is not publishable"
+    },
+    {
+      "source_group_id": "src03-a6-sockets",
+      "source_group_name": "A6 Power Socket Collection",
+      "source_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 58,
+          "status": "visual_source_only"
+        }
+      ],
+      "boundary_rule": "explicit code/configuration candidates remain independent; family container is not publishable"
+    },
+    {
+      "source_group_id": "src03-s8-sockets",
+      "source_group_name": "S8 Power Socket Collection",
+      "source_status": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 63,
+          "status": "visual_source_only"
+        }
+      ],
+      "boundary_rule": "explicit code/configuration candidates remain independent; family container is not publishable"
+    }
+  ],
+  "candidates": [
+    {
+      "product_id": "socket-src03-t12-socket-015",
+      "model_code": "T12-015",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-015",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-t12-socket-016",
+      "model_code": "T12-016",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-016",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-t12-socket-017",
+      "model_code": "T12-017",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-017",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-t12-socket-018",
+      "model_code": "T12-018",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-018",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-t12-socket-019",
+      "model_code": "T12-019",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-019",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-t12-socket-020",
+      "model_code": "T12-020",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-020",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-t12-socket-021",
+      "model_code": "T12-021",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-021",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-t12-socket-022",
+      "model_code": "T12-022",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-022",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-m-socket-typec",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-typec",
+      "source_confidence": "source_extracted",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-src03-m-socket-16a",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-16a",
+      "source_confidence": "source_extracted",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-src03-m-socket-switched-16a",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-switched-16a",
+      "source_confidence": "source_extracted",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-src03-m-socket-blank",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-blank",
+      "source_confidence": "source_extracted",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-src03-m-socket-data",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-data",
+      "source_confidence": "source_extracted",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-src03-m-socket-tv-data-tel",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-tv-data-tel",
+      "source_confidence": "source_extracted",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-src03-m-socket-cable",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-cable",
+      "source_confidence": "source_extracted",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-src03-m-socket-switched",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-switched",
+      "source_confidence": "source_extracted",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-src03-m-socket-usb",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-usb",
+      "source_confidence": "source_extracted",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-src03-m-socket-five-hole",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-five-hole",
+      "source_confidence": "source_extracted",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-ske1-white-none-n-a",
+      "model_code": null,
+      "source_group_id": "gsl-ske1",
+      "source_variant_id": "gsl-ske1-white-none-n-a",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-ske1-white-none-wifi",
+      "model_code": null,
+      "source_group_id": "gsl-ske1",
+      "source_variant_id": "gsl-ske1-white-none-wifi",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-ske1-black-usb-c-wifi",
+      "model_code": null,
+      "source_group_id": "gsl-ske1",
+      "source_variant_id": "gsl-ske1-black-usb-c-wifi",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-ske1-white-usb-a-zigbee",
+      "model_code": null,
+      "source_group_id": "gsl-ske1",
+      "source_variant_id": "gsl-ske1-white-usb-a-zigbee",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skuk1-white-none-n-a",
+      "model_code": null,
+      "source_group_id": "gsl-skuk1",
+      "source_variant_id": "gsl-skuk1-white-none-n-a",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skuk1-white-usb-c-wifi",
+      "model_code": null,
+      "source_group_id": "gsl-skuk1",
+      "source_variant_id": "gsl-skuk1-white-usb-c-wifi",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skuk1-black-both-wifi",
+      "model_code": null,
+      "source_group_id": "gsl-skuk1",
+      "source_variant_id": "gsl-skuk1-black-both-wifi",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skus1-white-none-n-a",
+      "model_code": null,
+      "source_group_id": "gsl-skus1",
+      "source_variant_id": "gsl-skus1-white-none-n-a",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skus1-white-usb-c-wifi",
+      "model_code": null,
+      "source_group_id": "gsl-skus1",
+      "source_variant_id": "gsl-skus1-white-usb-c-wifi",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skus1-gray-both-zigbee",
+      "model_code": null,
+      "source_group_id": "gsl-skus1",
+      "source_variant_id": "gsl-skus1-gray-both-zigbee",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skau1-white-none-n-a",
+      "model_code": null,
+      "source_group_id": "gsl-skau1",
+      "source_variant_id": "gsl-skau1-white-none-n-a",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skau1-white-usb-a-wifi",
+      "model_code": null,
+      "source_group_id": "gsl-skau1",
+      "source_variant_id": "gsl-skau1-white-usb-a-wifi",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skau1-black-usb-c-zigbee",
+      "model_code": null,
+      "source_group_id": "gsl-skau1",
+      "source_variant_id": "gsl-skau1-black-usb-c-zigbee",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skun1-white-none-n-a",
+      "model_code": null,
+      "source_group_id": "gsl-skun1",
+      "source_variant_id": "gsl-skun1-white-none-n-a",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skun1-white-both-wifi",
+      "model_code": null,
+      "source_group_id": "gsl-skun1",
+      "source_variant_id": "gsl-skun1-white-both-wifi",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skun1-gold-both-wifi",
+      "model_code": null,
+      "source_group_id": "gsl-skun1",
+      "source_variant_id": "gsl-skun1-gold-both-wifi",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skpd1-white-usb-c-n-a",
+      "model_code": null,
+      "source_group_id": "gsl-skpd1",
+      "source_variant_id": "gsl-skpd1-white-usb-c-n-a",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skpd1-white-usb-c-wifi",
+      "model_code": null,
+      "source_group_id": "gsl-skpd1",
+      "source_variant_id": "gsl-skpd1-white-usb-c-wifi",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skpd1-black-both-wifi",
+      "model_code": null,
+      "source_group_id": "gsl-skpd1",
+      "source_variant_id": "gsl-skpd1-black-both-wifi",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skm1-white-none-wifi",
+      "model_code": null,
+      "source_group_id": "gsl-skm1",
+      "source_variant_id": "gsl-skm1-white-none-wifi",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skm1-white-none-zigbee",
+      "model_code": null,
+      "source_group_id": "gsl-skm1",
+      "source_variant_id": "gsl-skm1-white-none-zigbee",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skm1-black-none-wifi",
+      "model_code": null,
+      "source_group_id": "gsl-skm1",
+      "source_variant_id": "gsl-skm1-black-none-wifi",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skip1-gray-none-n-a",
+      "model_code": null,
+      "source_group_id": "gsl-skip1",
+      "source_variant_id": "gsl-skip1-gray-none-n-a",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skip1-gray-none-wifi",
+      "model_code": null,
+      "source_group_id": "gsl-skip1",
+      "source_variant_id": "gsl-skip1-gray-none-wifi",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skp1-white-both-n-a",
+      "model_code": null,
+      "source_group_id": "gsl-skp1",
+      "source_variant_id": "gsl-skp1-white-both-n-a",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-gsl-skp1-black-both-n-a",
+      "model_code": null,
+      "source_group_id": "gsl-skp1",
+      "source_variant_id": "gsl-skp1-black-both-n-a",
+      "source_confidence": "unverified",
+      "boundary_status": "code_pending",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ]
+    },
+    {
+      "product_id": "socket-src03-s2-socket-010",
+      "model_code": "S2-010",
+      "source_group_id": "src03-s2-sockets",
+      "source_variant_id": "src03-s2-socket-010",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s2-socket-011",
+      "model_code": "S2-011",
+      "source_group_id": "src03-s2-sockets",
+      "source_variant_id": "src03-s2-socket-011",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s2-socket-012",
+      "model_code": "S2-012",
+      "source_group_id": "src03-s2-sockets",
+      "source_variant_id": "src03-s2-socket-012",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s2-socket-013",
+      "model_code": "S2-013",
+      "source_group_id": "src03-s2-sockets",
+      "source_variant_id": "src03-s2-socket-013",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s2-socket-014",
+      "model_code": "S2-014",
+      "source_group_id": "src03-s2-sockets",
+      "source_variant_id": "src03-s2-socket-014",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s2-socket-015",
+      "model_code": "S2-015",
+      "source_group_id": "src03-s2-sockets",
+      "source_variant_id": "src03-s2-socket-015",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s2-socket-016",
+      "model_code": "S2-016",
+      "source_group_id": "src03-s2-sockets",
+      "source_variant_id": "src03-s2-socket-016",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s3-socket-010",
+      "model_code": "S3-010",
+      "source_group_id": "src03-s3-sockets",
+      "source_variant_id": "src03-s3-socket-010",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s3-socket-011",
+      "model_code": "S3-011",
+      "source_group_id": "src03-s3-sockets",
+      "source_variant_id": "src03-s3-socket-011",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s3-socket-012",
+      "model_code": "S3-012",
+      "source_group_id": "src03-s3-sockets",
+      "source_variant_id": "src03-s3-socket-012",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s3-socket-013",
+      "model_code": "S3-013",
+      "source_group_id": "src03-s3-sockets",
+      "source_variant_id": "src03-s3-socket-013",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s3-socket-014",
+      "model_code": "S3-014",
+      "source_group_id": "src03-s3-sockets",
+      "source_variant_id": "src03-s3-socket-014",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s3-socket-015",
+      "model_code": "S3-015",
+      "source_group_id": "src03-s3-sockets",
+      "source_variant_id": "src03-s3-socket-015",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s3-socket-016",
+      "model_code": "S3-016",
+      "source_group_id": "src03-s3-sockets",
+      "source_variant_id": "src03-s3-socket-016",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s5-socket-010",
+      "model_code": "S5-010",
+      "source_group_id": "src03-s5-sockets",
+      "source_variant_id": "src03-s5-socket-010",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s5-socket-011",
+      "model_code": "S5-011",
+      "source_group_id": "src03-s5-sockets",
+      "source_variant_id": "src03-s5-socket-011",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s5-socket-012",
+      "model_code": "S5-012",
+      "source_group_id": "src03-s5-sockets",
+      "source_variant_id": "src03-s5-socket-012",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s5-socket-013",
+      "model_code": "S5-013",
+      "source_group_id": "src03-s5-sockets",
+      "source_variant_id": "src03-s5-socket-013",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s5-socket-014",
+      "model_code": "S5-014",
+      "source_group_id": "src03-s5-sockets",
+      "source_variant_id": "src03-s5-socket-014",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s5-socket-015",
+      "model_code": "S5-015",
+      "source_group_id": "src03-s5-sockets",
+      "source_variant_id": "src03-s5-socket-015",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s5-socket-016",
+      "model_code": "S5-016",
+      "source_group_id": "src03-s5-sockets",
+      "source_variant_id": "src03-s5-socket-016",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-a8-socket-010",
+      "model_code": "A8-010",
+      "source_group_id": "src03-a8-sockets",
+      "source_variant_id": "src03-a8-socket-010",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-a8-socket-011",
+      "model_code": "A8-011",
+      "source_group_id": "src03-a8-sockets",
+      "source_variant_id": "src03-a8-socket-011",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-a8-socket-012",
+      "model_code": "A8-012",
+      "source_group_id": "src03-a8-sockets",
+      "source_variant_id": "src03-a8-socket-012",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-a8-socket-013",
+      "model_code": "A8-013",
+      "source_group_id": "src03-a8-sockets",
+      "source_variant_id": "src03-a8-socket-013",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-a8-socket-014",
+      "model_code": "A8-014",
+      "source_group_id": "src03-a8-sockets",
+      "source_variant_id": "src03-a8-socket-014",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-a8-socket-015",
+      "model_code": "A8-015",
+      "source_group_id": "src03-a8-sockets",
+      "source_variant_id": "src03-a8-socket-015",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-a8-socket-016",
+      "model_code": "A8-016",
+      "source_group_id": "src03-a8-sockets",
+      "source_variant_id": "src03-a8-socket-016",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-a6-socket-010",
+      "model_code": "A6-010",
+      "source_group_id": "src03-a6-sockets",
+      "source_variant_id": "src03-a6-socket-010",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-a6-socket-011",
+      "model_code": "A6-011",
+      "source_group_id": "src03-a6-sockets",
+      "source_variant_id": "src03-a6-socket-011",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-a6-socket-012",
+      "model_code": "A6-012",
+      "source_group_id": "src03-a6-sockets",
+      "source_variant_id": "src03-a6-socket-012",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-a6-socket-013",
+      "model_code": "A6-013",
+      "source_group_id": "src03-a6-sockets",
+      "source_variant_id": "src03-a6-socket-013",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-a6-socket-014",
+      "model_code": "A6-014",
+      "source_group_id": "src03-a6-sockets",
+      "source_variant_id": "src03-a6-socket-014",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-a6-socket-015",
+      "model_code": "A6-015",
+      "source_group_id": "src03-a6-sockets",
+      "source_variant_id": "src03-a6-socket-015",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-a6-socket-016",
+      "model_code": "A6-016",
+      "source_group_id": "src03-a6-sockets",
+      "source_variant_id": "src03-a6-socket-016",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s8-socket-010",
+      "model_code": "S8-010",
+      "source_group_id": "src03-s8-sockets",
+      "source_variant_id": "src03-s8-socket-010",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s8-socket-011",
+      "model_code": "S8-011",
+      "source_group_id": "src03-s8-sockets",
+      "source_variant_id": "src03-s8-socket-011",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s8-socket-012",
+      "model_code": "S8-012",
+      "source_group_id": "src03-s8-sockets",
+      "source_variant_id": "src03-s8-socket-012",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s8-socket-013",
+      "model_code": "S8-013",
+      "source_group_id": "src03-s8-sockets",
+      "source_variant_id": "src03-s8-socket-013",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s8-socket-014",
+      "model_code": "S8-014",
+      "source_group_id": "src03-s8-sockets",
+      "source_variant_id": "src03-s8-socket-014",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s8-socket-015",
+      "model_code": "S8-015",
+      "source_group_id": "src03-s8-sockets",
+      "source_variant_id": "src03-s8-socket-015",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    },
+    {
+      "product_id": "socket-src03-s8-socket-016",
+      "model_code": "S8-016",
+      "source_group_id": "src03-s8-sockets",
+      "source_variant_id": "src03-s8-socket-016",
+      "source_confidence": "visual_source_only",
+      "boundary_status": "explicit_code_confirmed_for_public_route",
+      "conflicts": [],
+      "unresolved": [
+        "socket_type",
+        "plug_standard",
+        "rated_current",
+        "rated_voltage",
+        "material",
+        "finish",
+        "color"
+      ],
+      "publication_status": "published"
+    }
+  ]
+}

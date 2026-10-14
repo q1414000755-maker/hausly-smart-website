@@ -1,0 +1,1619 @@
+{
+  "schema_version": 1,
+  "page": "cat-sensors",
+  "locale": "en",
+  "_placeholder": {
+    "active": true,
+    "render_banner": false,
+    "summary": "本文件全部为占位数据，用于把页面结构与交互跑通。替换真实数据时只改本文件的值，代码不需要改。",
+    "why_no_banner": "与 smart-switches.json 同一口径：包子 2026-09-17 指示「标记写在代码里，页面渲染看不到」，所以 render_banner = false。对外演示或上线前改成 true 即可渲染出原型横幅。",
+    "replace": [
+      {
+        "what": "产品图",
+        "where": "model_groups[*].variants[*].image.src",
+        "with": "真实产品摄影。当前全部指向 assets/images/placeholders/product-*.svg。"
+      },
+      {
+        "what": "参考价",
+        "where": "model_groups[*].variants[*].price.amount",
+        "with": "真实参考价。换价时把 price.status 从 placeholder 改成 confirmed，并更新 checked_on。"
+      },
+      {
+        "what": "型号与 SKU",
+        "where": "model_groups[*].model_id 与 variants[*].sku",
+        "with": "真实型号编码与 SKU。当前 GSL-* 这类是行业通用写法，不是真实编码。"
+      }
+    ]
+  },
+  "eyebrow": "PRODUCT CATALOGUE",
+  "title": "Sensors",
+  "intro": "Motion, presence, door, temperature, humidity and leak sensing. Detection range, power source and mounting are stated per model so you can place them before ordering.",
+  "price_note": "Reference price per unit. Batteries are included where the model takes them.",
+  "dimensions": [
+    {
+      "key": "type",
+      "label": "Sensor Type",
+      "primary": true
+    },
+    {
+      "key": "detection",
+      "label": "Detection",
+      "primary": true
+    },
+    {
+      "key": "protocol",
+      "label": "Connectivity",
+      "primary": true
+    },
+    {
+      "key": "power",
+      "label": "Power Source",
+      "primary": true
+    },
+    {
+      "key": "install",
+      "label": "Installation",
+      "primary": true
+    },
+    {
+      "key": "range",
+      "label": "Detection Range",
+      "primary": false
+    },
+    {
+      "key": "ip",
+      "label": "IP Rating",
+      "primary": false
+    },
+    {
+      "key": "battery",
+      "label": "Battery",
+      "primary": false
+    },
+    {
+      "key": "finish",
+      "label": "Color",
+      "primary": false
+    }
+  ],
+  "labels": {
+    "type": {
+      "motion": "Motion",
+      "presence": "Presence",
+      "door": "Door & window",
+      "climate": "Temperature & humidity",
+      "leak": "Water leak",
+      "light": "Ambient light"
+    },
+    "detection": {
+      "pir": "PIR",
+      "mmwave": "60 GHz mmWave",
+      "dual": "PIR + mmWave",
+      "n-a": "Not applicable",
+      "source-pending": "Source confirmation pending"
+    },
+    "protocol": {
+      "zigbee": "Zigbee",
+      "wifi": "Wi-Fi",
+      "ble": "Bluetooth",
+      "bluetooth-mesh": "Bluetooth Mesh",
+      "matter": "Matter"
+    },
+    "power": {
+      "battery": "Battery",
+      "usb": "USB-C",
+      "ac220": "AC 220–240 V"
+    },
+    "install": {
+      "ceiling": "Ceiling",
+      "wall": "Wall",
+      "surface": "Surface / magnet",
+      "source-pending": "Source confirmation pending"
+    },
+    "range": {
+      "5m": "5 m",
+      "8m": "8 m",
+      "12m": "12 m",
+      "n-a": "Not applicable",
+      "source-pending": "Source confirmation pending"
+    },
+    "ip": {
+      "ip20": "IP20 indoor",
+      "ip44": "IP44 splash",
+      "ip65": "IP65 outdoor",
+      "source-pending": "Source confirmation pending"
+    },
+    "battery": {
+      "cr2450": "CR2450",
+      "cr123a": "CR123A",
+      "aaa": "2 × AAA",
+      "aaa-3": "3 × AAA",
+      "n-a": "Mains powered"
+    },
+    "finish": {
+      "white": "White",
+      "gray": "Gray",
+      "source-pending": "Source confirmation pending"
+    }
+  },
+  "value_order": {
+    "type": [
+      "motion",
+      "presence",
+      "door",
+      "climate",
+      "leak",
+      "light"
+    ],
+    "detection": [
+      "pir",
+      "mmwave",
+      "dual",
+      "n-a",
+      "source-pending"
+    ],
+    "protocol": [
+      "zigbee",
+      "wifi",
+      "ble",
+      "bluetooth-mesh",
+      "matter"
+    ],
+    "power": [
+      "battery",
+      "usb",
+      "ac220"
+    ],
+    "install": [
+      "ceiling",
+      "wall",
+      "surface",
+      "source-pending"
+    ],
+    "range": [
+      "5m",
+      "8m",
+      "12m",
+      "n-a",
+      "source-pending"
+    ],
+    "ip": [
+      "ip20",
+      "ip44",
+      "ip65",
+      "source-pending"
+    ],
+    "battery": [
+      "cr2450",
+      "cr123a",
+      "aaa",
+      "aaa-3",
+      "n-a"
+    ],
+    "finish": [
+      "white",
+      "gray",
+      "source-pending"
+    ]
+  },
+  "sorts": [
+    {
+      "key": "featured",
+      "label": "Featured"
+    },
+    {
+      "key": "model-asc",
+      "label": "Model A–Z"
+    },
+    {
+      "key": "price-asc",
+      "label": "Price, low to high"
+    },
+    {
+      "key": "price-desc",
+      "label": "Price, high to low"
+    }
+  ],
+  "batch_size": 8,
+  "card": {
+    "spec_keys": [
+      "range",
+      "power",
+      "install"
+    ],
+    "badge_keys": [
+      "protocol"
+    ],
+    "compare_limit": {
+      "min": 2,
+      "max": 4
+    },
+    "quote": {
+      "add_label": "Add to Quote",
+      "added_label": "In Quote List"
+    },
+    "detail_label": "View Product",
+    "detail_route": "product-detail-v3.html"
+  },
+  "model_groups": [
+    {
+      "model_id": "src03-human-body-sensor",
+      "source_name": "Human body sensor",
+      "name": "Human Body Sensor",
+      "slug": "src03-human-body-sensor",
+      "editorial_order": 4,
+      "summary": "Source-backed Bluetooth Mesh human body sensor; final model code and installation configuration remain pending.",
+      "data_status": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 41,
+          "status": "source_extracted"
+        }
+      ],
+      "source_fields": {
+        "material": {
+          "value": "PC",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 41
+        },
+        "battery": {
+          "value": "3 × AAA",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 41
+        },
+        "protocol": {
+          "value": "Bluetooth Mesh",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 41
+        },
+        "detection_angle": {
+          "value": "120° wide angle",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 41
+        },
+        "operating_temperature": {
+          "value": "0–40 °C",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 41
+        },
+        "functions": {
+          "value": "State sensing and low-battery warning",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 41
+        },
+        "commercial_terms": {
+          "value": "USD 8.8 per unit; MOQ 1 pcs",
+          "status": "confirmed",
+          "source_id": "USER-CONFIRMATION",
+          "source_page": null
+        }
+      },
+      "variants": [
+        {
+          "variant_id": "src03-human-body-sensor-btmesh",
+          "sku": "Human body sensor — code pending",
+          "attributes": {
+            "type": [
+              "motion"
+            ],
+            "detection": [
+              "source-pending"
+            ],
+            "protocol": [
+              "bluetooth-mesh"
+            ],
+            "power": [
+              "battery"
+            ],
+            "install": [
+              "source-pending"
+            ],
+            "range": [
+              "source-pending"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "battery": [
+              "aaa-3"
+            ],
+            "finish": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-human-body-sensor.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        }
+      ],
+      "source_image": {
+        "status": "source_preview",
+        "path": "assets/images/source-products/src03-human-body-sensor.jpg",
+        "source_refs": [
+          {
+            "source_id": "SRC03",
+            "source_page": 41,
+            "status": "source_extracted"
+          }
+        ]
+      }
+    },
+    {
+      "model_id": "src03-door-window-sensor",
+      "source_name": "Door/window sensor",
+      "name": "Door & Window Sensor",
+      "slug": "src03-door-window-sensor",
+      "editorial_order": 5,
+      "summary": "Source-backed Bluetooth Mesh door/window sensor; final model code remains pending.",
+      "data_status": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 42,
+          "status": "source_extracted"
+        }
+      ],
+      "source_fields": {
+        "material": {
+          "value": "PC",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 42
+        },
+        "battery": {
+          "value": "CR2450",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 42
+        },
+        "protocol": {
+          "value": "Bluetooth Mesh",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 42
+        },
+        "communication_range": {
+          "value": "Indoor >30 m",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 42
+        },
+        "battery_life": {
+          "value": ">2 years under stated conditions",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 42
+        },
+        "operating_temperature": {
+          "value": "0–40 °C",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 42
+        },
+        "commercial_terms": {
+          "value": "USD 8.8 per unit; MOQ 1 pcs",
+          "status": "confirmed",
+          "source_id": "USER-CONFIRMATION",
+          "source_page": null
+        }
+      },
+      "variants": [
+        {
+          "variant_id": "src03-door-window-sensor-btmesh",
+          "sku": "Door/window sensor — code pending",
+          "attributes": {
+            "type": [
+              "door"
+            ],
+            "detection": [
+              "n-a"
+            ],
+            "protocol": [
+              "bluetooth-mesh"
+            ],
+            "power": [
+              "battery"
+            ],
+            "install": [
+              "surface"
+            ],
+            "range": [
+              "n-a"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "battery": [
+              "cr2450"
+            ],
+            "finish": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-door-window-sensor.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        }
+      ],
+      "source_image": {
+        "status": "source_preview",
+        "path": "assets/images/source-products/src03-door-window-sensor.jpg",
+        "source_refs": [
+          {
+            "source_id": "SRC03",
+            "source_page": 42,
+            "status": "source_extracted"
+          }
+        ]
+      }
+    },
+    {
+      "model_id": "gsl-sn1",
+      "name": "Ceiling Motion Sensor",
+      "slug": "gsl-sn1",
+      "editorial_order": 10,
+      "summary": "360° ceiling PIR for corridors, lobbies and stairwells.",
+      "variants": [
+        {
+          "variant_id": "gsl-sn1-zigbee-battery-pir",
+          "sku": "GSL-SN1-ZIGBEE-BATTERY-PIR",
+          "attributes": {
+            "type": [
+              "motion"
+            ],
+            "install": [
+              "ceiling"
+            ],
+            "range": [
+              "8m"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "cr123a"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "battery"
+            ],
+            "detection": [
+              "pir"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-sn1-wifi-battery-pir",
+          "sku": "GSL-SN1-WIFI-BATTERY-PIR",
+          "attributes": {
+            "type": [
+              "motion"
+            ],
+            "install": [
+              "ceiling"
+            ],
+            "range": [
+              "8m"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "cr123a"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "power": [
+              "battery"
+            ],
+            "detection": [
+              "pir"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-sn1-ble-battery-pir",
+          "sku": "GSL-SN1-BLE-BATTERY-PIR",
+          "attributes": {
+            "type": [
+              "motion"
+            ],
+            "install": [
+              "ceiling"
+            ],
+            "range": [
+              "8m"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "cr123a"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "ble"
+            ],
+            "power": [
+              "battery"
+            ],
+            "detection": [
+              "pir"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-sn2",
+      "name": "Wall Motion Sensor",
+      "slug": "gsl-sn2",
+      "editorial_order": 20,
+      "summary": "Wall-mounted PIR with a 120° field for rooms and washrooms.",
+      "variants": [
+        {
+          "variant_id": "gsl-sn2-zigbee-battery-pir",
+          "sku": "GSL-SN2-ZIGBEE-BATTERY-PIR",
+          "attributes": {
+            "type": [
+              "motion"
+            ],
+            "install": [
+              "wall"
+            ],
+            "range": [
+              "5m"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "cr2450"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "battery"
+            ],
+            "detection": [
+              "pir"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-sn2-matter-battery-pir",
+          "sku": "GSL-SN2-MATTER-BATTERY-PIR",
+          "attributes": {
+            "type": [
+              "motion"
+            ],
+            "install": [
+              "wall"
+            ],
+            "range": [
+              "5m"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "cr2450"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "power": [
+              "battery"
+            ],
+            "detection": [
+              "pir"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-sn3",
+      "name": "mmWave Presence Sensor",
+      "slug": "gsl-sn3",
+      "editorial_order": 30,
+      "summary": "60 GHz presence detection that still sees a person sitting still.",
+      "variants": [
+        {
+          "variant_id": "gsl-sn3-zigbee-usb-mmwave",
+          "sku": "GSL-SN3-ZIGBEE-USB-MMWAVE",
+          "attributes": {
+            "type": [
+              "presence"
+            ],
+            "install": [
+              "ceiling"
+            ],
+            "range": [
+              "8m"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "n-a"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "usb"
+            ],
+            "detection": [
+              "mmwave"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-sn3-matter-usb-mmwave",
+          "sku": "GSL-SN3-MATTER-USB-MMWAVE",
+          "attributes": {
+            "type": [
+              "presence"
+            ],
+            "install": [
+              "ceiling"
+            ],
+            "range": [
+              "8m"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "n-a"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "power": [
+              "usb"
+            ],
+            "detection": [
+              "mmwave"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-sn3-wifi-usb-mmwave",
+          "sku": "GSL-SN3-WIFI-USB-MMWAVE",
+          "attributes": {
+            "type": [
+              "presence"
+            ],
+            "install": [
+              "ceiling"
+            ],
+            "range": [
+              "8m"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "n-a"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "power": [
+              "usb"
+            ],
+            "detection": [
+              "mmwave"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-sn4",
+      "name": "Dual-Technology Presence Sensor",
+      "slug": "gsl-sn4",
+      "editorial_order": 40,
+      "summary": "PIR and mmWave in one housing to cut false triggers in offices.",
+      "variants": [
+        {
+          "variant_id": "gsl-sn4-zigbee-usb-dual",
+          "sku": "GSL-SN4-ZIGBEE-USB-DUAL",
+          "attributes": {
+            "type": [
+              "presence"
+            ],
+            "install": [
+              "ceiling"
+            ],
+            "range": [
+              "12m"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "n-a"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "usb"
+            ],
+            "detection": [
+              "dual"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-sn4-matter-ac220-dual",
+          "sku": "GSL-SN4-MATTER-AC220-DUAL",
+          "attributes": {
+            "type": [
+              "presence"
+            ],
+            "install": [
+              "ceiling"
+            ],
+            "range": [
+              "12m"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "n-a"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "detection": [
+              "dual"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-sn5",
+      "name": "Door & Window Contact",
+      "slug": "gsl-sn5",
+      "editorial_order": 50,
+      "summary": "Magnetic contact that triggers scenes on open and close.",
+      "variants": [
+        {
+          "variant_id": "gsl-sn5-zigbee-battery-n-a",
+          "sku": "GSL-SN5-ZIGBEE-BATTERY-NA",
+          "attributes": {
+            "type": [
+              "door"
+            ],
+            "install": [
+              "surface"
+            ],
+            "range": [
+              "n-a"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "cr2450"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "battery"
+            ],
+            "detection": [
+              "n-a"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-sn5-wifi-battery-n-a",
+          "sku": "GSL-SN5-WIFI-BATTERY-NA",
+          "attributes": {
+            "type": [
+              "door"
+            ],
+            "install": [
+              "surface"
+            ],
+            "range": [
+              "n-a"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "cr2450"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "power": [
+              "battery"
+            ],
+            "detection": [
+              "n-a"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-sn5-matter-battery-n-a",
+          "sku": "GSL-SN5-MATTER-BATTERY-NA",
+          "attributes": {
+            "type": [
+              "door"
+            ],
+            "install": [
+              "surface"
+            ],
+            "range": [
+              "n-a"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "cr2450"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "power": [
+              "battery"
+            ],
+            "detection": [
+              "n-a"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-sn6",
+      "name": "Temperature & Humidity Sensor",
+      "slug": "gsl-sn6",
+      "editorial_order": 60,
+      "summary": "Room climate sensor with a local display and history in the app.",
+      "variants": [
+        {
+          "variant_id": "gsl-sn6-zigbee-battery-n-a",
+          "sku": "GSL-SN6-ZIGBEE-BATTERY-NA",
+          "attributes": {
+            "type": [
+              "climate"
+            ],
+            "install": [
+              "wall"
+            ],
+            "range": [
+              "n-a"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "aaa"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "battery"
+            ],
+            "detection": [
+              "n-a"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-sn6-wifi-battery-n-a",
+          "sku": "GSL-SN6-WIFI-BATTERY-NA",
+          "attributes": {
+            "type": [
+              "climate"
+            ],
+            "install": [
+              "wall"
+            ],
+            "range": [
+              "n-a"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "aaa"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "power": [
+              "battery"
+            ],
+            "detection": [
+              "n-a"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-sn6-ble-battery-n-a",
+          "sku": "GSL-SN6-BLE-BATTERY-NA",
+          "attributes": {
+            "type": [
+              "climate"
+            ],
+            "install": [
+              "wall"
+            ],
+            "range": [
+              "n-a"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "battery": [
+              "aaa"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "ble"
+            ],
+            "power": [
+              "battery"
+            ],
+            "detection": [
+              "n-a"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-sn7",
+      "name": "Water Leak Sensor",
+      "slug": "gsl-sn7",
+      "editorial_order": 70,
+      "summary": "Probe sensor for kitchens, plant rooms and under-sink cabinets.",
+      "variants": [
+        {
+          "variant_id": "gsl-sn7-zigbee-battery-n-a",
+          "sku": "GSL-SN7-ZIGBEE-BATTERY-NA",
+          "attributes": {
+            "type": [
+              "leak"
+            ],
+            "install": [
+              "surface"
+            ],
+            "range": [
+              "n-a"
+            ],
+            "ip": [
+              "ip65"
+            ],
+            "battery": [
+              "cr123a"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "battery"
+            ],
+            "detection": [
+              "n-a"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-sn7-wifi-battery-n-a",
+          "sku": "GSL-SN7-WIFI-BATTERY-NA",
+          "attributes": {
+            "type": [
+              "leak"
+            ],
+            "install": [
+              "surface"
+            ],
+            "range": [
+              "n-a"
+            ],
+            "ip": [
+              "ip65"
+            ],
+            "battery": [
+              "cr123a"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "power": [
+              "battery"
+            ],
+            "detection": [
+              "n-a"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-sn8",
+      "name": "Ambient Light Sensor",
+      "slug": "gsl-sn8",
+      "editorial_order": 80,
+      "summary": "Lux measurement for daylight harvesting and scene thresholds.",
+      "variants": [
+        {
+          "variant_id": "gsl-sn8-zigbee-usb-n-a",
+          "sku": "GSL-SN8-ZIGBEE-USB-NA",
+          "attributes": {
+            "type": [
+              "light"
+            ],
+            "install": [
+              "ceiling"
+            ],
+            "range": [
+              "n-a"
+            ],
+            "ip": [
+              "ip44"
+            ],
+            "battery": [
+              "n-a"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "usb"
+            ],
+            "detection": [
+              "n-a"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-sn8-matter-ac220-n-a",
+          "sku": "GSL-SN8-MATTER-AC220-NA",
+          "attributes": {
+            "type": [
+              "light"
+            ],
+            "install": [
+              "ceiling"
+            ],
+            "range": [
+              "n-a"
+            ],
+            "ip": [
+              "ip44"
+            ],
+            "battery": [
+              "n-a"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "detection": [
+              "n-a"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-sn9",
+      "name": "Outdoor Motion Sensor",
+      "slug": "gsl-sn9",
+      "editorial_order": 90,
+      "summary": "IP65 PIR for entrances, driveways and perimeter lighting.",
+      "variants": [
+        {
+          "variant_id": "gsl-sn9-zigbee-ac220-pir",
+          "sku": "GSL-SN9-ZIGBEE-AC220-PIR",
+          "attributes": {
+            "type": [
+              "motion"
+            ],
+            "install": [
+              "wall"
+            ],
+            "range": [
+              "12m"
+            ],
+            "ip": [
+              "ip65"
+            ],
+            "battery": [
+              "n-a"
+            ],
+            "finish": [
+              "gray"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "detection": [
+              "pir"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-sn9-wifi-ac220-pir",
+          "sku": "GSL-SN9-WIFI-AC220-PIR",
+          "attributes": {
+            "type": [
+              "motion"
+            ],
+            "install": [
+              "wall"
+            ],
+            "range": [
+              "12m"
+            ],
+            "ip": [
+              "ip65"
+            ],
+            "battery": [
+              "n-a"
+            ],
+            "finish": [
+              "gray"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "detection": [
+              "pir"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    }
+  ]
+}

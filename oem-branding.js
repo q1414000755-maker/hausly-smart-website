@@ -1,0 +1,7 @@
+(()=>{'use strict';
+const form=document.querySelector('#bp-form'),status=document.querySelector('#bp-status'),key='hauslysmart:branding-brief:v1';
+if(!form)return;
+const fields=['reference','model','languages','notes'];
+try{const data=JSON.parse(localStorage.getItem(key)||'null');if(data&&typeof data==='object'){for(const name of fields)if(typeof data[name]==='string')form.elements[name].value=data[name];for(const input of form.querySelectorAll('[name=scope]'))input.checked=Array.isArray(data.scope)&&data.scope.includes(input.value);status.textContent='Your saved project brief has been restored. No information has been sent.';}}catch{status.textContent='Saved draft could not be restored. You can prepare a new brief.';}
+form.addEventListener('submit',event=>{event.preventDefault();const data={version:1,scope:[...form.querySelectorAll('[name=scope]:checked')].map(input=>input.value)};for(const name of fields)data[name]=form.elements[name].value.trim();try{localStorage.setItem(key,JSON.stringify(data));status.textContent='Project brief saved in this browser. No information has been sent.';}catch{status.textContent='This browser could not save the brief. Please keep a copy of your notes.';}});
+})();

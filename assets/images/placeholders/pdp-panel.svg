@@ -1,0 +1,6 @@
+<!-- PLACEHOLDER PDP MEDIA - replace when verified panel material photography is supplied. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Panel material image pending">
+  <rect width="1200" height="800" fill="#eff1f3"/><rect x="34" y="34" width="1132" height="732" rx="10" fill="none" stroke="#ccd2d8" stroke-width="3" stroke-dasharray="16 12"/>
+  <path d="M190 510 260 220l220 45-70 290z" fill="#fff" stroke="#c7ced6" stroke-width="4"/><path d="M490 510 560 220l220 45-70 290z" fill="#dfe4e9" stroke="#c7ced6" stroke-width="4"/><path d="M790 510 860 220l160 32-70 290z" fill="#c6a05b" stroke="#aa864a" stroke-width="4"/>
+  <text x="600" y="635" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="600" letter-spacing="5" fill="#747d87">PANEL MATERIAL REFERENCE</text><text x="600" y="680" text-anchor="middle" font-family="sans-serif" font-size="21" letter-spacing="2" fill="#a0a8b0">IMAGE PENDING</text>
+</svg>

@@ -1,0 +1,550 @@
+{
+  "schema_version": 1,
+  "catalogue_id": "low-voltage-data-panels",
+  "stage": "09-05",
+  "batch_id": "low-voltage-data-panels-batch-01",
+  "status": "material_intake_complete_hold",
+  "source_scope": "Local SRC03 visual source snapshots and existing family-preview assets only.",
+  "counts": {
+    "selected_records": 12,
+    "family_preview_images_available": 12,
+    "source_page_previews_available": 12,
+    "model_specific_images": 0,
+    "datasheets": 0,
+    "manuals": 0,
+    "wiring_diagrams": 0,
+    "publication_ready": 0,
+    "public_routes": 0
+  },
+  "decision": "All twelve records remain source_snapshot_only and hold. Family images and source-page snapshots are evidence for review, not model-level publication assets.",
+  "records": [
+    {
+      "product_id": "lv-src03-t12-023",
+      "family": "T12",
+      "model": "T12-023",
+      "interface_type": "information-socket",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 3,
+          "status": "visual_source_only"
+        }
+      ],
+      "materials": {
+        "family_preview_image": {
+          "path": "site/assets/images/source-products/src03-t12-low-voltage.jpg",
+          "exists": true,
+          "sha256": "8c121f3468bfaa5f55879f15a79ce749626cf6ac73fb31f3c2afdb99fa18776d",
+          "status": "available_family_preview_only"
+        },
+        "source_page_preview": {
+          "path": "tmp/pdf-preview/src03-index/page-03.png",
+          "exists": true,
+          "sha256": "b386f1edb7851772e138327deaf1855e876e4b1d24b6baf2f159bc837d95498e",
+          "status": "available_visual_source_snapshot"
+        },
+        "model_specific_images": [],
+        "dimension_drawing": null,
+        "wiring_diagram": null,
+        "datasheet": null,
+        "manual": null,
+        "packaging": null,
+        "certification": null
+      },
+      "material_status": "source_snapshot_only",
+      "publication_eligible": false,
+      "publication_status": "hold",
+      "route": null,
+      "blockers": [
+        "No model-specific primary image supplied; the available image is a family preview.",
+        "No per-model module/port/signal/function/electrical evidence supplied.",
+        "No datasheet, manual, wiring diagram, packaging or certification file supplied.",
+        "Shared USD 8.80 / MOQ 1 remains test-only and is not production commercial evidence."
+      ]
+    },
+    {
+      "product_id": "lv-src03-t12-028",
+      "family": "T12",
+      "model": "T12-028",
+      "interface_type": "weak-current",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 3,
+          "status": "visual_source_only"
+        }
+      ],
+      "materials": {
+        "family_preview_image": {
+          "path": "site/assets/images/source-products/src03-t12-low-voltage.jpg",
+          "exists": true,
+          "sha256": "8c121f3468bfaa5f55879f15a79ce749626cf6ac73fb31f3c2afdb99fa18776d",
+          "status": "available_family_preview_only"
+        },
+        "source_page_preview": {
+          "path": "tmp/pdf-preview/src03-index/page-03.png",
+          "exists": true,
+          "sha256": "b386f1edb7851772e138327deaf1855e876e4b1d24b6baf2f159bc837d95498e",
+          "status": "available_visual_source_snapshot"
+        },
+        "model_specific_images": [],
+        "dimension_drawing": null,
+        "wiring_diagram": null,
+        "datasheet": null,
+        "manual": null,
+        "packaging": null,
+        "certification": null
+      },
+      "material_status": "source_snapshot_only",
+      "publication_eligible": false,
+      "publication_status": "hold",
+      "route": null,
+      "blockers": [
+        "No model-specific primary image supplied; the available image is a family preview.",
+        "No per-model module/port/signal/function/electrical evidence supplied.",
+        "No datasheet, manual, wiring diagram, packaging or certification file supplied.",
+        "Shared USD 8.80 / MOQ 1 remains test-only and is not production commercial evidence."
+      ]
+    },
+    {
+      "product_id": "lv-src03-a15-020",
+      "family": "A15",
+      "model": "A15-020",
+      "interface_type": "information-socket",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 6,
+          "status": "visual_source_only"
+        }
+      ],
+      "materials": {
+        "family_preview_image": {
+          "path": "site/assets/images/source-products/src03-a15-low-voltage.jpg",
+          "exists": true,
+          "sha256": "7b40e55d43c978634aceaf4da21c38c9d6be5cc77f9180371daf0b1d54568724",
+          "status": "available_family_preview_only"
+        },
+        "source_page_preview": {
+          "path": "tmp/pdf-preview/src03-index/page-06.png",
+          "exists": true,
+          "sha256": "f47b7e68a1551fe27e558d1d3f56610af5d095a35d9e874c8d8e85cab1c1fc72",
+          "status": "available_visual_source_snapshot"
+        },
+        "model_specific_images": [],
+        "dimension_drawing": null,
+        "wiring_diagram": null,
+        "datasheet": null,
+        "manual": null,
+        "packaging": null,
+        "certification": null
+      },
+      "material_status": "source_snapshot_only",
+      "publication_eligible": false,
+      "publication_status": "hold",
+      "route": null,
+      "blockers": [
+        "No model-specific primary image supplied; the available image is a family preview.",
+        "No per-model module/port/signal/function/electrical evidence supplied.",
+        "No datasheet, manual, wiring diagram, packaging or certification file supplied.",
+        "Shared USD 8.80 / MOQ 1 remains test-only and is not production commercial evidence."
+      ]
+    },
+    {
+      "product_id": "lv-src03-a15-025",
+      "family": "A15",
+      "model": "A15-025",
+      "interface_type": "weak-current",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 6,
+          "status": "visual_source_only"
+        }
+      ],
+      "materials": {
+        "family_preview_image": {
+          "path": "site/assets/images/source-products/src03-a15-low-voltage.jpg",
+          "exists": true,
+          "sha256": "7b40e55d43c978634aceaf4da21c38c9d6be5cc77f9180371daf0b1d54568724",
+          "status": "available_family_preview_only"
+        },
+        "source_page_preview": {
+          "path": "tmp/pdf-preview/src03-index/page-06.png",
+          "exists": true,
+          "sha256": "f47b7e68a1551fe27e558d1d3f56610af5d095a35d9e874c8d8e85cab1c1fc72",
+          "status": "available_visual_source_snapshot"
+        },
+        "model_specific_images": [],
+        "dimension_drawing": null,
+        "wiring_diagram": null,
+        "datasheet": null,
+        "manual": null,
+        "packaging": null,
+        "certification": null
+      },
+      "material_status": "source_snapshot_only",
+      "publication_eligible": false,
+      "publication_status": "hold",
+      "route": null,
+      "blockers": [
+        "No model-specific primary image supplied; the available image is a family preview.",
+        "No per-model module/port/signal/function/electrical evidence supplied.",
+        "No datasheet, manual, wiring diagram, packaging or certification file supplied.",
+        "Shared USD 8.80 / MOQ 1 remains test-only and is not production commercial evidence."
+      ]
+    },
+    {
+      "product_id": "lv-src03-a16-020",
+      "family": "A16",
+      "model": "A16-020",
+      "interface_type": "information-socket",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 9,
+          "status": "visual_source_only"
+        }
+      ],
+      "materials": {
+        "family_preview_image": {
+          "path": "site/assets/images/source-products/src03-a16-low-voltage.jpg",
+          "exists": true,
+          "sha256": "8f0b3b3970d9a13ce79a9ae6b3466f883ee53127779a587eba339f954c28981d",
+          "status": "available_family_preview_only"
+        },
+        "source_page_preview": {
+          "path": "tmp/pdf-preview/src03-index/page-09.png",
+          "exists": true,
+          "sha256": "32ca6d182f4fa6caf37a75aa084e8fb736910af191255ec1dce233cf6f8c6668",
+          "status": "available_visual_source_snapshot"
+        },
+        "model_specific_images": [],
+        "dimension_drawing": null,
+        "wiring_diagram": null,
+        "datasheet": null,
+        "manual": null,
+        "packaging": null,
+        "certification": null
+      },
+      "material_status": "source_snapshot_only",
+      "publication_eligible": false,
+      "publication_status": "hold",
+      "route": null,
+      "blockers": [
+        "No model-specific primary image supplied; the available image is a family preview.",
+        "No per-model module/port/signal/function/electrical evidence supplied.",
+        "No datasheet, manual, wiring diagram, packaging or certification file supplied.",
+        "Shared USD 8.80 / MOQ 1 remains test-only and is not production commercial evidence."
+      ]
+    },
+    {
+      "product_id": "lv-src03-a16-025",
+      "family": "A16",
+      "model": "A16-025",
+      "interface_type": "weak-current",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 9,
+          "status": "visual_source_only"
+        }
+      ],
+      "materials": {
+        "family_preview_image": {
+          "path": "site/assets/images/source-products/src03-a16-low-voltage.jpg",
+          "exists": true,
+          "sha256": "8f0b3b3970d9a13ce79a9ae6b3466f883ee53127779a587eba339f954c28981d",
+          "status": "available_family_preview_only"
+        },
+        "source_page_preview": {
+          "path": "tmp/pdf-preview/src03-index/page-09.png",
+          "exists": true,
+          "sha256": "32ca6d182f4fa6caf37a75aa084e8fb736910af191255ec1dce233cf6f8c6668",
+          "status": "available_visual_source_snapshot"
+        },
+        "model_specific_images": [],
+        "dimension_drawing": null,
+        "wiring_diagram": null,
+        "datasheet": null,
+        "manual": null,
+        "packaging": null,
+        "certification": null
+      },
+      "material_status": "source_snapshot_only",
+      "publication_eligible": false,
+      "publication_status": "hold",
+      "route": null,
+      "blockers": [
+        "No model-specific primary image supplied; the available image is a family preview.",
+        "No per-model module/port/signal/function/electrical evidence supplied.",
+        "No datasheet, manual, wiring diagram, packaging or certification file supplied.",
+        "Shared USD 8.80 / MOQ 1 remains test-only and is not production commercial evidence."
+      ]
+    },
+    {
+      "product_id": "lv-src03-t20-014",
+      "family": "T20",
+      "model": "T20-014",
+      "interface_type": "information-socket",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 12,
+          "status": "visual_source_only"
+        }
+      ],
+      "materials": {
+        "family_preview_image": {
+          "path": "site/assets/images/source-products/src03-t20-low-voltage.jpg",
+          "exists": true,
+          "sha256": "da556ed70ac798fe7924010124cf9cf428bcf5fa6563c34a68c1e16d30b2a1e4",
+          "status": "available_family_preview_only"
+        },
+        "source_page_preview": {
+          "path": "tmp/pdf-preview/src03-index/page-12.png",
+          "exists": true,
+          "sha256": "f21fd6529996e70a3e8c66af1c7ed9b9a2784f8b66781b2e13681dcfde23e512",
+          "status": "available_visual_source_snapshot"
+        },
+        "model_specific_images": [],
+        "dimension_drawing": null,
+        "wiring_diagram": null,
+        "datasheet": null,
+        "manual": null,
+        "packaging": null,
+        "certification": null
+      },
+      "material_status": "source_snapshot_only",
+      "publication_eligible": false,
+      "publication_status": "hold",
+      "route": null,
+      "blockers": [
+        "No model-specific primary image supplied; the available image is a family preview.",
+        "No per-model module/port/signal/function/electrical evidence supplied.",
+        "No datasheet, manual, wiring diagram, packaging or certification file supplied.",
+        "Shared USD 8.80 / MOQ 1 remains test-only and is not production commercial evidence."
+      ]
+    },
+    {
+      "product_id": "lv-src03-t20-021",
+      "family": "T20",
+      "model": "T20-021",
+      "interface_type": "weak-current",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 12,
+          "status": "visual_source_only"
+        }
+      ],
+      "materials": {
+        "family_preview_image": {
+          "path": "site/assets/images/source-products/src03-t20-low-voltage.jpg",
+          "exists": true,
+          "sha256": "da556ed70ac798fe7924010124cf9cf428bcf5fa6563c34a68c1e16d30b2a1e4",
+          "status": "available_family_preview_only"
+        },
+        "source_page_preview": {
+          "path": "tmp/pdf-preview/src03-index/page-12.png",
+          "exists": true,
+          "sha256": "f21fd6529996e70a3e8c66af1c7ed9b9a2784f8b66781b2e13681dcfde23e512",
+          "status": "available_visual_source_snapshot"
+        },
+        "model_specific_images": [],
+        "dimension_drawing": null,
+        "wiring_diagram": null,
+        "datasheet": null,
+        "manual": null,
+        "packaging": null,
+        "certification": null
+      },
+      "material_status": "source_snapshot_only",
+      "publication_eligible": false,
+      "publication_status": "hold",
+      "route": null,
+      "blockers": [
+        "No model-specific primary image supplied; the available image is a family preview.",
+        "No per-model module/port/signal/function/electrical evidence supplied.",
+        "No datasheet, manual, wiring diagram, packaging or certification file supplied.",
+        "Shared USD 8.80 / MOQ 1 remains test-only and is not production commercial evidence."
+      ]
+    },
+    {
+      "product_id": "lv-src03-y10-014",
+      "family": "Y10",
+      "model": "Y10-014",
+      "interface_type": "information-socket",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 16,
+          "status": "visual_source_only"
+        }
+      ],
+      "materials": {
+        "family_preview_image": {
+          "path": "site/assets/images/source-products/src03-y10-mechanical-low-voltage.jpg",
+          "exists": true,
+          "sha256": "8bb406477a1181d35020d74f31c174dbc866d352b2affab7842735db7e7327e0",
+          "status": "available_family_preview_only"
+        },
+        "source_page_preview": {
+          "path": "tmp/pdf-preview/src03-index/page-16.png",
+          "exists": true,
+          "sha256": "0fd995d84ddd8df8d850bad1ef6550c89fc12ff7564aec44e3b2e49d32697c14",
+          "status": "available_visual_source_snapshot"
+        },
+        "model_specific_images": [],
+        "dimension_drawing": null,
+        "wiring_diagram": null,
+        "datasheet": null,
+        "manual": null,
+        "packaging": null,
+        "certification": null
+      },
+      "material_status": "source_snapshot_only",
+      "publication_eligible": false,
+      "publication_status": "hold",
+      "route": null,
+      "blockers": [
+        "No model-specific primary image supplied; the available image is a family preview.",
+        "No per-model module/port/signal/function/electrical evidence supplied.",
+        "No datasheet, manual, wiring diagram, packaging or certification file supplied.",
+        "Shared USD 8.80 / MOQ 1 remains test-only and is not production commercial evidence."
+      ]
+    },
+    {
+      "product_id": "lv-src03-y10-021",
+      "family": "Y10",
+      "model": "Y10-021",
+      "interface_type": "weak-current",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 16,
+          "status": "visual_source_only"
+        }
+      ],
+      "materials": {
+        "family_preview_image": {
+          "path": "site/assets/images/source-products/src03-y10-mechanical-low-voltage.jpg",
+          "exists": true,
+          "sha256": "8bb406477a1181d35020d74f31c174dbc866d352b2affab7842735db7e7327e0",
+          "status": "available_family_preview_only"
+        },
+        "source_page_preview": {
+          "path": "tmp/pdf-preview/src03-index/page-16.png",
+          "exists": true,
+          "sha256": "0fd995d84ddd8df8d850bad1ef6550c89fc12ff7564aec44e3b2e49d32697c14",
+          "status": "available_visual_source_snapshot"
+        },
+        "model_specific_images": [],
+        "dimension_drawing": null,
+        "wiring_diagram": null,
+        "datasheet": null,
+        "manual": null,
+        "packaging": null,
+        "certification": null
+      },
+      "material_status": "source_snapshot_only",
+      "publication_eligible": false,
+      "publication_status": "hold",
+      "route": null,
+      "blockers": [
+        "No model-specific primary image supplied; the available image is a family preview.",
+        "No per-model module/port/signal/function/electrical evidence supplied.",
+        "No datasheet, manual, wiring diagram, packaging or certification file supplied.",
+        "Shared USD 8.80 / MOQ 1 remains test-only and is not production commercial evidence."
+      ]
+    },
+    {
+      "product_id": "lv-src03-s2-lv-017",
+      "family": "S2",
+      "model": "S2-017",
+      "interface_type": "information-socket",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 45,
+          "status": "visual_source_only"
+        }
+      ],
+      "materials": {
+        "family_preview_image": {
+          "path": "site/assets/images/source-products/src03-s2-low-voltage.jpg",
+          "exists": true,
+          "sha256": "bd8466e789c0250b30db093a3b46dfaeabed93c01288a5ed06a2eed11821d9b7",
+          "status": "available_family_preview_only"
+        },
+        "source_page_preview": {
+          "path": "tmp/pdf-preview/src03-index/page-45.png",
+          "exists": true,
+          "sha256": "8756e76b1842791de01606fdcbea35c5eedd5fbb70d59f47df0e22a6443fc3eb",
+          "status": "available_visual_source_snapshot"
+        },
+        "model_specific_images": [],
+        "dimension_drawing": null,
+        "wiring_diagram": null,
+        "datasheet": null,
+        "manual": null,
+        "packaging": null,
+        "certification": null
+      },
+      "material_status": "source_snapshot_only",
+      "publication_eligible": false,
+      "publication_status": "hold",
+      "route": null,
+      "blockers": [
+        "No model-specific primary image supplied; the available image is a family preview.",
+        "No per-model module/port/signal/function/electrical evidence supplied.",
+        "No datasheet, manual, wiring diagram, packaging or certification file supplied.",
+        "Shared USD 8.80 / MOQ 1 remains test-only and is not production commercial evidence."
+      ]
+    },
+    {
+      "product_id": "lv-src03-s8-lv-017",
+      "family": "S8",
+      "model": "S8-017",
+      "interface_type": "information-socket",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 63,
+          "status": "visual_source_only"
+        }
+      ],
+      "materials": {
+        "family_preview_image": {
+          "path": "site/assets/images/source-products/src03-s8-low-voltage.jpg",
+          "exists": true,
+          "sha256": "b7c29d91ead43659d0f7ae2abe9c1a0e4f06ff3a788c4b14b03884e1c5264a47",
+          "status": "available_family_preview_only"
+        },
+        "source_page_preview": {
+          "path": "tmp/pdf-preview/src03-index/page-63.png",
+          "exists": true,
+          "sha256": "681fde7134f0712da376c04adb0fe626e108dbf567f636f3704659603a84bb5d",
+          "status": "available_visual_source_snapshot"
+        },
+        "model_specific_images": [],
+        "dimension_drawing": null,
+        "wiring_diagram": null,
+        "datasheet": null,
+        "manual": null,
+        "packaging": null,
+        "certification": null
+      },
+      "material_status": "source_snapshot_only",
+      "publication_eligible": false,
+      "publication_status": "hold",
+      "route": null,
+      "blockers": [
+        "No model-specific primary image supplied; the available image is a family preview.",
+        "No per-model module/port/signal/function/electrical evidence supplied.",
+        "No datasheet, manual, wiring diagram, packaging or certification file supplied.",
+        "Shared USD 8.80 / MOQ 1 remains test-only and is not production commercial evidence."
+      ]
+    }
+  ]
+}

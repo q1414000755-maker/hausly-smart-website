@@ -1,0 +1,6 @@
+<!-- PLACEHOLDER PDP MEDIA - replace when verified finish photography is supplied. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Finish reference image pending">
+  <rect width="1200" height="800" fill="#eff1f3"/><rect x="34" y="34" width="1132" height="732" rx="10" fill="none" stroke="#ccd2d8" stroke-width="3" stroke-dasharray="16 12"/>
+  <rect x="190" y="205" width="170" height="300" rx="12" fill="#fff" stroke="#c7ced6" stroke-width="4"/><rect x="405" y="205" width="170" height="300" rx="12" fill="#c7ced6" stroke="#aeb7c0" stroke-width="4"/><rect x="620" y="205" width="170" height="300" rx="12" fill="#6e747a" stroke="#59616a" stroke-width="4"/><rect x="835" y="205" width="170" height="300" rx="12" fill="#d6b77b" stroke="#b99a61" stroke-width="4"/>
+  <text x="600" y="635" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="600" letter-spacing="5" fill="#747d87">FINISH / COLOUR REFERENCE</text><text x="600" y="680" text-anchor="middle" font-family="sans-serif" font-size="21" letter-spacing="2" fill="#a0a8b0">IMAGE PENDING</text>
+</svg>

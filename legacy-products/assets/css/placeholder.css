@@ -1,0 +1,112 @@
+/* Z02 inner-page placeholder.
+   Sits between the shared shell and real content: one banner, one canvas, and a
+   set of labelled slots describing what the page must hold. Type reads from the
+   --z02-* console in site-shell.css; spacing from the shared section tokens.
+   The two --z02-ph-* values are local to this block and are not type tokens. */
+
+.z02-ph-main {
+  --z02-ph-line: #e3e9ef;
+  --z02-ph-surface: #f6f9fb;
+
+  width: var(--z02-canvas);
+  margin-inline: auto;
+  padding: var(--z02-space-section-y) 0;
+}
+
+.z02-ph-slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--z02-space-section-gap);
+  margin-top: var(--z02-space-section-gap);
+}
+
+.z02-ph-slot {
+  padding: 26px 24px 28px;
+  border: 1px solid var(--z02-ph-line);
+  border-top: 3px solid var(--z02-kicker);
+  border-radius: 10px;
+  background: var(--z02-ph-surface);
+}
+
+.z02-ph-slot-index {
+  margin: 0;
+  color: var(--z02-kicker);
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-semibold);
+  letter-spacing: var(--z02-ls-widest);
+}
+
+.z02-ph-slot h3 {
+  margin: 12px 0 0;
+  color: var(--z02-ink);
+  font-size: var(--z02-fs-h4);
+  font-weight: var(--z02-fw-medium);
+  letter-spacing: var(--z02-ls-component-title);
+  line-height: var(--z02-lh-subhead);
+}
+
+.z02-ph-slot p {
+  margin: 10px 0 0;
+  color: var(--z02-ink-muted);
+  font-size: var(--z02-fs-copy);
+  font-weight: var(--z02-fw-regular);
+  line-height: var(--z02-lh-copy);
+}
+
+.z02-ph-slot ul {
+  margin: 14px 0 0;
+  padding-left: 18px;
+}
+
+.z02-ph-slot li {
+  color: var(--z02-ink-faint);
+  font-size: var(--z02-fs-meta);
+  line-height: var(--z02-lh-copy);
+}
+
+.z02-ph-slot li + li {
+  margin-top: 6px;
+}
+
+.z02-ph-next {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--z02-space-section-gap);
+  margin-top: var(--z02-space-section-y);
+  padding-top: var(--z02-space-section-gap);
+  border-top: 1px solid var(--z02-ph-line);
+}
+
+.z02-ph-next h3 {
+  margin: 0;
+  color: var(--z02-ink);
+  font-size: var(--z02-fs-h3);
+  font-weight: var(--z02-fw-medium);
+  letter-spacing: var(--z02-ls-heading);
+  line-height: var(--z02-lh-heading);
+}
+
+.z02-ph-next p {
+  max-width: 560px;
+  margin: 10px 0 0;
+  color: var(--z02-ink-muted);
+  font-size: var(--z02-fs-copy);
+  font-weight: var(--z02-fw-regular);
+  line-height: var(--z02-lh-copy);
+}
+
+@media (max-width: 760px) {
+  .z02-ph-slot {
+    padding: 22px 20px 24px;
+  }
+
+  .z02-ph-next {
+    align-items: flex-start;
+  }
+
+  .z02-ph-next .button {
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,8 @@
+/* Match the adopted homepage footer without changing catalogue body styling. */
+[data-site-footer] .z02-footer-wordmark{position:relative;top:-48px}
+[data-site-footer] .z02-footer-brand p{margin-top:-28px}
+@media(min-width:1181px){
+  [data-site-footer] .z02-footer-main{grid-template-columns:minmax(220px,.7fr) minmax(0,3fr);gap:48px}
+  [data-site-footer] .z02-footer-links{grid-template-columns:repeat(5,minmax(0,1fr));gap:22px}
+  [data-site-footer] .z02-footer-links nav{min-width:0}
+}

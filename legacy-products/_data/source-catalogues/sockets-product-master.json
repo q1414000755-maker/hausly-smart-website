@@ -1,0 +1,4888 @@
+{
+  "schema_version": 1,
+  "stage": "10-02",
+  "catalogue_id": "sockets-and-power-outlets",
+  "status": "product_master_published_explicit_candidates_hold_remainder",
+  "source_group_count": 17,
+  "candidate_count": 86,
+  "public_routes": 50,
+  "quoteable_candidates": 50,
+  "products": {
+    "socket-src03-t12-socket-015": {
+      "product_id": "socket-src03-t12-socket-015",
+      "product_name": "T12-015",
+      "model_code": "T12-015",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-015",
+      "status": "published",
+      "route": "t12-015-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 3,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "T12-015",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-t12-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-t12-socket-016": {
+      "product_id": "socket-src03-t12-socket-016",
+      "product_name": "T12-016",
+      "model_code": "T12-016",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-016",
+      "status": "published",
+      "route": "t12-016-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 3,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "T12-016",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-t12-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-t12-socket-017": {
+      "product_id": "socket-src03-t12-socket-017",
+      "product_name": "T12-017",
+      "model_code": "T12-017",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-017",
+      "status": "published",
+      "route": "t12-017-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 3,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "T12-017",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-t12-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-t12-socket-018": {
+      "product_id": "socket-src03-t12-socket-018",
+      "product_name": "T12-018",
+      "model_code": "T12-018",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-018",
+      "status": "published",
+      "route": "t12-018-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 3,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "T12-018",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-t12-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-t12-socket-019": {
+      "product_id": "socket-src03-t12-socket-019",
+      "product_name": "T12-019",
+      "model_code": "T12-019",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-019",
+      "status": "published",
+      "route": "t12-019-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 3,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "T12-019",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-t12-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-t12-socket-020": {
+      "product_id": "socket-src03-t12-socket-020",
+      "product_name": "T12-020",
+      "model_code": "T12-020",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-020",
+      "status": "published",
+      "route": "t12-020-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 3,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "T12-020",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-t12-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-t12-socket-021": {
+      "product_id": "socket-src03-t12-socket-021",
+      "product_name": "T12-021",
+      "model_code": "T12-021",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-021",
+      "status": "published",
+      "route": "t12-021-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 3,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "T12-021",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-t12-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-t12-socket-022": {
+      "product_id": "socket-src03-t12-socket-022",
+      "product_name": "T12-022",
+      "model_code": "T12-022",
+      "source_group_id": "src03-t12-sockets",
+      "source_variant_id": "src03-t12-socket-022",
+      "status": "published",
+      "route": "t12-022-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 3,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "T12-022",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-t12-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-m-socket-typec": {
+      "product_id": "socket-src03-m-socket-typec",
+      "product_name": "M-Series Matching Sockets",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-typec",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 11,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 13,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 15,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 35,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 39,
+          "status": "source_extracted"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "usb-c",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/source-products/src03-m-series-matching-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-m-socket-16a": {
+      "product_id": "socket-src03-m-socket-16a",
+      "product_name": "M-Series Matching Sockets",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-16a",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 11,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 13,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 15,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 35,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 39,
+          "status": "source_extracted"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "unswitched",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "16a",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/source-products/src03-m-series-matching-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-m-socket-switched-16a": {
+      "product_id": "socket-src03-m-socket-switched-16a",
+      "product_name": "M-Series Matching Sockets",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-switched-16a",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 11,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 13,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 15,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 35,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 39,
+          "status": "source_extracted"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "16a",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/source-products/src03-m-series-matching-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-m-socket-blank": {
+      "product_id": "socket-src03-m-socket-blank",
+      "product_name": "M-Series Matching Sockets",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-blank",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 11,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 13,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 15,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 35,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 39,
+          "status": "source_extracted"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/source-products/src03-m-series-matching-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-m-socket-data": {
+      "product_id": "socket-src03-m-socket-data",
+      "product_name": "M-Series Matching Sockets",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-data",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 11,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 13,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 15,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 35,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 39,
+          "status": "source_extracted"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/source-products/src03-m-series-matching-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-m-socket-tv-data-tel": {
+      "product_id": "socket-src03-m-socket-tv-data-tel",
+      "product_name": "M-Series Matching Sockets",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-tv-data-tel",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 11,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 13,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 15,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 35,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 39,
+          "status": "source_extracted"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/source-products/src03-m-series-matching-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-m-socket-cable": {
+      "product_id": "socket-src03-m-socket-cable",
+      "product_name": "M-Series Matching Sockets",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-cable",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 11,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 13,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 15,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 35,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 39,
+          "status": "source_extracted"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/source-products/src03-m-series-matching-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-m-socket-switched": {
+      "product_id": "socket-src03-m-socket-switched",
+      "product_name": "M-Series Matching Sockets",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-switched",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 11,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 13,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 15,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 35,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 39,
+          "status": "source_extracted"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/source-products/src03-m-series-matching-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-m-socket-usb": {
+      "product_id": "socket-src03-m-socket-usb",
+      "product_name": "M-Series Matching Sockets",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-usb",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 11,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 13,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 15,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 35,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 39,
+          "status": "source_extracted"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "usb-a",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/source-products/src03-m-series-matching-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-m-socket-five-hole": {
+      "product_id": "socket-src03-m-socket-five-hole",
+      "product_name": "M-Series Matching Sockets",
+      "model_code": null,
+      "source_group_id": "src03-m-series-matching-sockets",
+      "source_variant_id": "src03-m-socket-five-hole",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 11,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 13,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 15,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 35,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 39,
+          "status": "source_extracted"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "unswitched",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/source-products/src03-m-series-matching-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-ske1-white-none-n-a": {
+      "product_id": "socket-gsl-ske1-white-none-n-a",
+      "product_name": "EU Switched Socket",
+      "model_code": null,
+      "source_group_id": "gsl-ske1",
+      "source_variant_id": "gsl-ske1-white-none-n-a",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "eu",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "16a",
+        "voltage": "220-240",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-ske1-white-none-wifi": {
+      "product_id": "socket-gsl-ske1-white-none-wifi",
+      "product_name": "EU Switched Socket",
+      "model_code": null,
+      "source_group_id": "gsl-ske1",
+      "source_variant_id": "gsl-ske1-white-none-wifi",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "eu",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "16a",
+        "voltage": "220-240",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-ske1-black-usb-c-wifi": {
+      "product_id": "socket-gsl-ske1-black-usb-c-wifi",
+      "product_name": "EU Switched Socket",
+      "model_code": null,
+      "source_group_id": "gsl-ske1",
+      "source_variant_id": "gsl-ske1-black-usb-c-wifi",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "eu",
+        "module": "source-pending",
+        "usb": "usb-c",
+        "current": "16a",
+        "voltage": "220-240",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "black",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-ske1-white-usb-a-zigbee": {
+      "product_id": "socket-gsl-ske1-white-usb-a-zigbee",
+      "product_name": "EU Switched Socket",
+      "model_code": null,
+      "source_group_id": "gsl-ske1",
+      "source_variant_id": "gsl-ske1-white-usb-a-zigbee",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "eu",
+        "module": "source-pending",
+        "usb": "usb-a",
+        "current": "16a",
+        "voltage": "220-240",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skuk1-white-none-n-a": {
+      "product_id": "socket-gsl-skuk1-white-none-n-a",
+      "product_name": "UK Switched Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skuk1",
+      "source_variant_id": "gsl-skuk1-white-none-n-a",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "uk",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "13a",
+        "voltage": "220-240",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skuk1-white-usb-c-wifi": {
+      "product_id": "socket-gsl-skuk1-white-usb-c-wifi",
+      "product_name": "UK Switched Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skuk1",
+      "source_variant_id": "gsl-skuk1-white-usb-c-wifi",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "uk",
+        "module": "source-pending",
+        "usb": "usb-c",
+        "current": "13a",
+        "voltage": "220-240",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skuk1-black-both-wifi": {
+      "product_id": "socket-gsl-skuk1-black-both-wifi",
+      "product_name": "UK Switched Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skuk1",
+      "source_variant_id": "gsl-skuk1-black-both-wifi",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "uk",
+        "module": "source-pending",
+        "usb": "both",
+        "current": "13a",
+        "voltage": "220-240",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "black",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skus1-white-none-n-a": {
+      "product_id": "socket-gsl-skus1-white-none-n-a",
+      "product_name": "US Receptacle",
+      "model_code": null,
+      "source_group_id": "gsl-skus1",
+      "source_variant_id": "gsl-skus1-white-none-n-a",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "us",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "20a",
+        "voltage": "110-120",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skus1-white-usb-c-wifi": {
+      "product_id": "socket-gsl-skus1-white-usb-c-wifi",
+      "product_name": "US Receptacle",
+      "model_code": null,
+      "source_group_id": "gsl-skus1",
+      "source_variant_id": "gsl-skus1-white-usb-c-wifi",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "us",
+        "module": "source-pending",
+        "usb": "usb-c",
+        "current": "20a",
+        "voltage": "110-120",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skus1-gray-both-zigbee": {
+      "product_id": "socket-gsl-skus1-gray-both-zigbee",
+      "product_name": "US Receptacle",
+      "model_code": null,
+      "source_group_id": "gsl-skus1",
+      "source_variant_id": "gsl-skus1-gray-both-zigbee",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "us",
+        "module": "source-pending",
+        "usb": "both",
+        "current": "20a",
+        "voltage": "110-120",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "gray",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skau1-white-none-n-a": {
+      "product_id": "socket-gsl-skau1-white-none-n-a",
+      "product_name": "AU / NZ Switched Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skau1",
+      "source_variant_id": "gsl-skau1-white-none-n-a",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "au",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "10a",
+        "voltage": "220-240",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skau1-white-usb-a-wifi": {
+      "product_id": "socket-gsl-skau1-white-usb-a-wifi",
+      "product_name": "AU / NZ Switched Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skau1",
+      "source_variant_id": "gsl-skau1-white-usb-a-wifi",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "au",
+        "module": "source-pending",
+        "usb": "usb-a",
+        "current": "10a",
+        "voltage": "220-240",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skau1-black-usb-c-zigbee": {
+      "product_id": "socket-gsl-skau1-black-usb-c-zigbee",
+      "product_name": "AU / NZ Switched Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skau1",
+      "source_variant_id": "gsl-skau1-black-usb-c-zigbee",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "au",
+        "module": "source-pending",
+        "usb": "usb-c",
+        "current": "10a",
+        "voltage": "220-240",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "black",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skun1-white-none-n-a": {
+      "product_id": "socket-gsl-skun1-white-none-n-a",
+      "product_name": "Multi-Standard Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skun1",
+      "source_variant_id": "gsl-skun1-white-none-n-a",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "unswitched",
+        "plug_standard": "universal",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "16a",
+        "voltage": "universal",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skun1-white-both-wifi": {
+      "product_id": "socket-gsl-skun1-white-both-wifi",
+      "product_name": "Multi-Standard Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skun1",
+      "source_variant_id": "gsl-skun1-white-both-wifi",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "unswitched",
+        "plug_standard": "universal",
+        "module": "source-pending",
+        "usb": "both",
+        "current": "16a",
+        "voltage": "universal",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skun1-gold-both-wifi": {
+      "product_id": "socket-gsl-skun1-gold-both-wifi",
+      "product_name": "Multi-Standard Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skun1",
+      "source_variant_id": "gsl-skun1-gold-both-wifi",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "unswitched",
+        "plug_standard": "universal",
+        "module": "source-pending",
+        "usb": "both",
+        "current": "16a",
+        "voltage": "universal",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "gold",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skpd1-white-usb-c-n-a": {
+      "product_id": "socket-gsl-skpd1-white-usb-c-n-a",
+      "product_name": "USB-C Power Delivery Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skpd1",
+      "source_variant_id": "gsl-skpd1-white-usb-c-n-a",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "unswitched",
+        "plug_standard": "universal",
+        "module": "source-pending",
+        "usb": "usb-c",
+        "current": "16a",
+        "voltage": "universal",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skpd1-white-usb-c-wifi": {
+      "product_id": "socket-gsl-skpd1-white-usb-c-wifi",
+      "product_name": "USB-C Power Delivery Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skpd1",
+      "source_variant_id": "gsl-skpd1-white-usb-c-wifi",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "unswitched",
+        "plug_standard": "universal",
+        "module": "source-pending",
+        "usb": "usb-c",
+        "current": "16a",
+        "voltage": "universal",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skpd1-black-both-wifi": {
+      "product_id": "socket-gsl-skpd1-black-both-wifi",
+      "product_name": "USB-C Power Delivery Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skpd1",
+      "source_variant_id": "gsl-skpd1-black-both-wifi",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "unswitched",
+        "plug_standard": "universal",
+        "module": "source-pending",
+        "usb": "both",
+        "current": "16a",
+        "voltage": "universal",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "black",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skm1-white-none-wifi": {
+      "product_id": "socket-gsl-skm1-white-none-wifi",
+      "product_name": "Smart Metering Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skm1",
+      "source_variant_id": "gsl-skm1-white-none-wifi",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "metered",
+        "plug_standard": "eu",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "16a",
+        "voltage": "220-240",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-module-d.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skm1-white-none-zigbee": {
+      "product_id": "socket-gsl-skm1-white-none-zigbee",
+      "product_name": "Smart Metering Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skm1",
+      "source_variant_id": "gsl-skm1-white-none-zigbee",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "metered",
+        "plug_standard": "eu",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "16a",
+        "voltage": "220-240",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-module-d.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skm1-black-none-wifi": {
+      "product_id": "socket-gsl-skm1-black-none-wifi",
+      "product_name": "Smart Metering Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skm1",
+      "source_variant_id": "gsl-skm1-black-none-wifi",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "metered",
+        "plug_standard": "eu",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "16a",
+        "voltage": "220-240",
+        "power": "source-pending",
+        "mounting": "flush",
+        "material": "source-pending",
+        "finish": "black",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-module-d.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skip1-gray-none-n-a": {
+      "product_id": "socket-gsl-skip1-gray-none-n-a",
+      "product_name": "IP66 Outdoor Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skip1",
+      "source_variant_id": "gsl-skip1-gray-none-n-a",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "universal",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "16a",
+        "voltage": "universal",
+        "power": "source-pending",
+        "mounting": "surface",
+        "material": "source-pending",
+        "finish": "gray",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skip1-gray-none-wifi": {
+      "product_id": "socket-gsl-skip1-gray-none-wifi",
+      "product_name": "IP66 Outdoor Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skip1",
+      "source_variant_id": "gsl-skip1-gray-none-wifi",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "switched",
+        "plug_standard": "universal",
+        "module": "source-pending",
+        "usb": "none",
+        "current": "16a",
+        "voltage": "universal",
+        "power": "source-pending",
+        "mounting": "surface",
+        "material": "source-pending",
+        "finish": "gray",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-switch-b.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skp1-white-both-n-a": {
+      "product_id": "socket-gsl-skp1-white-both-n-a",
+      "product_name": "Pop-Up Desk Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skp1",
+      "source_variant_id": "gsl-skp1-white-both-n-a",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "pop-up",
+        "plug_standard": "universal",
+        "module": "source-pending",
+        "usb": "both",
+        "current": "10a",
+        "voltage": "universal",
+        "power": "source-pending",
+        "mounting": "desk",
+        "material": "source-pending",
+        "finish": "white",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-module-d.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-gsl-skp1-black-both-n-a": {
+      "product_id": "socket-gsl-skp1-black-both-n-a",
+      "product_name": "Pop-Up Desk Socket",
+      "model_code": null,
+      "source_group_id": "gsl-skp1",
+      "source_variant_id": "gsl-skp1-black-both-n-a",
+      "status": "hold",
+      "route": null,
+      "publication_status": "hold",
+      "quoteable": false,
+      "source_confidence": "unverified",
+      "source_refs": [],
+      "option_axes": {
+        "socket_type": "pop-up",
+        "plug_standard": "universal",
+        "module": "source-pending",
+        "usb": "both",
+        "current": "10a",
+        "voltage": "universal",
+        "power": "source-pending",
+        "mounting": "desk",
+        "material": "source-pending",
+        "finish": "black",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": null,
+        "reference_price": {
+          "amount": null,
+          "currency": "USD",
+          "status": "test_only"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": null,
+        "family_image": "assets/images/placeholders/product-module-d.svg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s2-socket-010": {
+      "product_id": "socket-src03-s2-socket-010",
+      "product_name": "S2-010",
+      "model_code": "S2-010",
+      "source_group_id": "src03-s2-sockets",
+      "source_variant_id": "src03-s2-socket-010",
+      "status": "published",
+      "route": "s2-010-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 45,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S2-010",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s2-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s2-socket-011": {
+      "product_id": "socket-src03-s2-socket-011",
+      "product_name": "S2-011",
+      "model_code": "S2-011",
+      "source_group_id": "src03-s2-sockets",
+      "source_variant_id": "src03-s2-socket-011",
+      "status": "published",
+      "route": "s2-011-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 45,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S2-011",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s2-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s2-socket-012": {
+      "product_id": "socket-src03-s2-socket-012",
+      "product_name": "S2-012",
+      "model_code": "S2-012",
+      "source_group_id": "src03-s2-sockets",
+      "source_variant_id": "src03-s2-socket-012",
+      "status": "published",
+      "route": "s2-012-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 45,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S2-012",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s2-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s2-socket-013": {
+      "product_id": "socket-src03-s2-socket-013",
+      "product_name": "S2-013",
+      "model_code": "S2-013",
+      "source_group_id": "src03-s2-sockets",
+      "source_variant_id": "src03-s2-socket-013",
+      "status": "published",
+      "route": "s2-013-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 45,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S2-013",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s2-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s2-socket-014": {
+      "product_id": "socket-src03-s2-socket-014",
+      "product_name": "S2-014",
+      "model_code": "S2-014",
+      "source_group_id": "src03-s2-sockets",
+      "source_variant_id": "src03-s2-socket-014",
+      "status": "published",
+      "route": "s2-014-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 45,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S2-014",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s2-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s2-socket-015": {
+      "product_id": "socket-src03-s2-socket-015",
+      "product_name": "S2-015",
+      "model_code": "S2-015",
+      "source_group_id": "src03-s2-sockets",
+      "source_variant_id": "src03-s2-socket-015",
+      "status": "published",
+      "route": "s2-015-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 45,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S2-015",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s2-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s2-socket-016": {
+      "product_id": "socket-src03-s2-socket-016",
+      "product_name": "S2-016",
+      "model_code": "S2-016",
+      "source_group_id": "src03-s2-sockets",
+      "source_variant_id": "src03-s2-socket-016",
+      "status": "published",
+      "route": "s2-016-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 45,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S2-016",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s2-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s3-socket-010": {
+      "product_id": "socket-src03-s3-socket-010",
+      "product_name": "S3-010",
+      "model_code": "S3-010",
+      "source_group_id": "src03-s3-sockets",
+      "source_variant_id": "src03-s3-socket-010",
+      "status": "published",
+      "route": "s3-010-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 48,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S3-010",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s3-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s3-socket-011": {
+      "product_id": "socket-src03-s3-socket-011",
+      "product_name": "S3-011",
+      "model_code": "S3-011",
+      "source_group_id": "src03-s3-sockets",
+      "source_variant_id": "src03-s3-socket-011",
+      "status": "published",
+      "route": "s3-011-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 48,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S3-011",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s3-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s3-socket-012": {
+      "product_id": "socket-src03-s3-socket-012",
+      "product_name": "S3-012",
+      "model_code": "S3-012",
+      "source_group_id": "src03-s3-sockets",
+      "source_variant_id": "src03-s3-socket-012",
+      "status": "published",
+      "route": "s3-012-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 48,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S3-012",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s3-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s3-socket-013": {
+      "product_id": "socket-src03-s3-socket-013",
+      "product_name": "S3-013",
+      "model_code": "S3-013",
+      "source_group_id": "src03-s3-sockets",
+      "source_variant_id": "src03-s3-socket-013",
+      "status": "published",
+      "route": "s3-013-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 48,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S3-013",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s3-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s3-socket-014": {
+      "product_id": "socket-src03-s3-socket-014",
+      "product_name": "S3-014",
+      "model_code": "S3-014",
+      "source_group_id": "src03-s3-sockets",
+      "source_variant_id": "src03-s3-socket-014",
+      "status": "published",
+      "route": "s3-014-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 48,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S3-014",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s3-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s3-socket-015": {
+      "product_id": "socket-src03-s3-socket-015",
+      "product_name": "S3-015",
+      "model_code": "S3-015",
+      "source_group_id": "src03-s3-sockets",
+      "source_variant_id": "src03-s3-socket-015",
+      "status": "published",
+      "route": "s3-015-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 48,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S3-015",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s3-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s3-socket-016": {
+      "product_id": "socket-src03-s3-socket-016",
+      "product_name": "S3-016",
+      "model_code": "S3-016",
+      "source_group_id": "src03-s3-sockets",
+      "source_variant_id": "src03-s3-socket-016",
+      "status": "published",
+      "route": "s3-016-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 48,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S3-016",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s3-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s5-socket-010": {
+      "product_id": "socket-src03-s5-socket-010",
+      "product_name": "S5-010",
+      "model_code": "S5-010",
+      "source_group_id": "src03-s5-sockets",
+      "source_variant_id": "src03-s5-socket-010",
+      "status": "published",
+      "route": "s5-010-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 52,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S5-010",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s5-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s5-socket-011": {
+      "product_id": "socket-src03-s5-socket-011",
+      "product_name": "S5-011",
+      "model_code": "S5-011",
+      "source_group_id": "src03-s5-sockets",
+      "source_variant_id": "src03-s5-socket-011",
+      "status": "published",
+      "route": "s5-011-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 52,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S5-011",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s5-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s5-socket-012": {
+      "product_id": "socket-src03-s5-socket-012",
+      "product_name": "S5-012",
+      "model_code": "S5-012",
+      "source_group_id": "src03-s5-sockets",
+      "source_variant_id": "src03-s5-socket-012",
+      "status": "published",
+      "route": "s5-012-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 52,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S5-012",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s5-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s5-socket-013": {
+      "product_id": "socket-src03-s5-socket-013",
+      "product_name": "S5-013",
+      "model_code": "S5-013",
+      "source_group_id": "src03-s5-sockets",
+      "source_variant_id": "src03-s5-socket-013",
+      "status": "published",
+      "route": "s5-013-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 52,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S5-013",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s5-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s5-socket-014": {
+      "product_id": "socket-src03-s5-socket-014",
+      "product_name": "S5-014",
+      "model_code": "S5-014",
+      "source_group_id": "src03-s5-sockets",
+      "source_variant_id": "src03-s5-socket-014",
+      "status": "published",
+      "route": "s5-014-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 52,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S5-014",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s5-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s5-socket-015": {
+      "product_id": "socket-src03-s5-socket-015",
+      "product_name": "S5-015",
+      "model_code": "S5-015",
+      "source_group_id": "src03-s5-sockets",
+      "source_variant_id": "src03-s5-socket-015",
+      "status": "published",
+      "route": "s5-015-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 52,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S5-015",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s5-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s5-socket-016": {
+      "product_id": "socket-src03-s5-socket-016",
+      "product_name": "S5-016",
+      "model_code": "S5-016",
+      "source_group_id": "src03-s5-sockets",
+      "source_variant_id": "src03-s5-socket-016",
+      "status": "published",
+      "route": "s5-016-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 52,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S5-016",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s5-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-a8-socket-010": {
+      "product_id": "socket-src03-a8-socket-010",
+      "product_name": "A8-010",
+      "model_code": "A8-010",
+      "source_group_id": "src03-a8-sockets",
+      "source_variant_id": "src03-a8-socket-010",
+      "status": "published",
+      "route": "a8-010-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 55,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "A8-010",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-a8-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-a8-socket-011": {
+      "product_id": "socket-src03-a8-socket-011",
+      "product_name": "A8-011",
+      "model_code": "A8-011",
+      "source_group_id": "src03-a8-sockets",
+      "source_variant_id": "src03-a8-socket-011",
+      "status": "published",
+      "route": "a8-011-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 55,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "A8-011",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-a8-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-a8-socket-012": {
+      "product_id": "socket-src03-a8-socket-012",
+      "product_name": "A8-012",
+      "model_code": "A8-012",
+      "source_group_id": "src03-a8-sockets",
+      "source_variant_id": "src03-a8-socket-012",
+      "status": "published",
+      "route": "a8-012-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 55,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "A8-012",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-a8-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-a8-socket-013": {
+      "product_id": "socket-src03-a8-socket-013",
+      "product_name": "A8-013",
+      "model_code": "A8-013",
+      "source_group_id": "src03-a8-sockets",
+      "source_variant_id": "src03-a8-socket-013",
+      "status": "published",
+      "route": "a8-013-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 55,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "A8-013",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-a8-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-a8-socket-014": {
+      "product_id": "socket-src03-a8-socket-014",
+      "product_name": "A8-014",
+      "model_code": "A8-014",
+      "source_group_id": "src03-a8-sockets",
+      "source_variant_id": "src03-a8-socket-014",
+      "status": "published",
+      "route": "a8-014-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 55,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "A8-014",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-a8-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-a8-socket-015": {
+      "product_id": "socket-src03-a8-socket-015",
+      "product_name": "A8-015",
+      "model_code": "A8-015",
+      "source_group_id": "src03-a8-sockets",
+      "source_variant_id": "src03-a8-socket-015",
+      "status": "published",
+      "route": "a8-015-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 55,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "A8-015",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-a8-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-a8-socket-016": {
+      "product_id": "socket-src03-a8-socket-016",
+      "product_name": "A8-016",
+      "model_code": "A8-016",
+      "source_group_id": "src03-a8-sockets",
+      "source_variant_id": "src03-a8-socket-016",
+      "status": "published",
+      "route": "a8-016-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 55,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "A8-016",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-a8-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-a6-socket-010": {
+      "product_id": "socket-src03-a6-socket-010",
+      "product_name": "A6-010",
+      "model_code": "A6-010",
+      "source_group_id": "src03-a6-sockets",
+      "source_variant_id": "src03-a6-socket-010",
+      "status": "published",
+      "route": "a6-010-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 58,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "A6-010",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-a6-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-a6-socket-011": {
+      "product_id": "socket-src03-a6-socket-011",
+      "product_name": "A6-011",
+      "model_code": "A6-011",
+      "source_group_id": "src03-a6-sockets",
+      "source_variant_id": "src03-a6-socket-011",
+      "status": "published",
+      "route": "a6-011-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 58,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "A6-011",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-a6-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-a6-socket-012": {
+      "product_id": "socket-src03-a6-socket-012",
+      "product_name": "A6-012",
+      "model_code": "A6-012",
+      "source_group_id": "src03-a6-sockets",
+      "source_variant_id": "src03-a6-socket-012",
+      "status": "published",
+      "route": "a6-012-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 58,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "A6-012",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-a6-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-a6-socket-013": {
+      "product_id": "socket-src03-a6-socket-013",
+      "product_name": "A6-013",
+      "model_code": "A6-013",
+      "source_group_id": "src03-a6-sockets",
+      "source_variant_id": "src03-a6-socket-013",
+      "status": "published",
+      "route": "a6-013-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 58,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "A6-013",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-a6-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-a6-socket-014": {
+      "product_id": "socket-src03-a6-socket-014",
+      "product_name": "A6-014",
+      "model_code": "A6-014",
+      "source_group_id": "src03-a6-sockets",
+      "source_variant_id": "src03-a6-socket-014",
+      "status": "published",
+      "route": "a6-014-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 58,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "A6-014",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-a6-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-a6-socket-015": {
+      "product_id": "socket-src03-a6-socket-015",
+      "product_name": "A6-015",
+      "model_code": "A6-015",
+      "source_group_id": "src03-a6-sockets",
+      "source_variant_id": "src03-a6-socket-015",
+      "status": "published",
+      "route": "a6-015-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 58,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "A6-015",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-a6-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-a6-socket-016": {
+      "product_id": "socket-src03-a6-socket-016",
+      "product_name": "A6-016",
+      "model_code": "A6-016",
+      "source_group_id": "src03-a6-sockets",
+      "source_variant_id": "src03-a6-socket-016",
+      "status": "published",
+      "route": "a6-016-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 58,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "A6-016",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-a6-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s8-socket-010": {
+      "product_id": "socket-src03-s8-socket-010",
+      "product_name": "S8-010",
+      "model_code": "S8-010",
+      "source_group_id": "src03-s8-sockets",
+      "source_variant_id": "src03-s8-socket-010",
+      "status": "published",
+      "route": "s8-010-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 63,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S8-010",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s8-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s8-socket-011": {
+      "product_id": "socket-src03-s8-socket-011",
+      "product_name": "S8-011",
+      "model_code": "S8-011",
+      "source_group_id": "src03-s8-sockets",
+      "source_variant_id": "src03-s8-socket-011",
+      "status": "published",
+      "route": "s8-011-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 63,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S8-011",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s8-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s8-socket-012": {
+      "product_id": "socket-src03-s8-socket-012",
+      "product_name": "S8-012",
+      "model_code": "S8-012",
+      "source_group_id": "src03-s8-sockets",
+      "source_variant_id": "src03-s8-socket-012",
+      "status": "published",
+      "route": "s8-012-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 63,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S8-012",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s8-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s8-socket-013": {
+      "product_id": "socket-src03-s8-socket-013",
+      "product_name": "S8-013",
+      "model_code": "S8-013",
+      "source_group_id": "src03-s8-sockets",
+      "source_variant_id": "src03-s8-socket-013",
+      "status": "published",
+      "route": "s8-013-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 63,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S8-013",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s8-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s8-socket-014": {
+      "product_id": "socket-src03-s8-socket-014",
+      "product_name": "S8-014",
+      "model_code": "S8-014",
+      "source_group_id": "src03-s8-sockets",
+      "source_variant_id": "src03-s8-socket-014",
+      "status": "published",
+      "route": "s8-014-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 63,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S8-014",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s8-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s8-socket-015": {
+      "product_id": "socket-src03-s8-socket-015",
+      "product_name": "S8-015",
+      "model_code": "S8-015",
+      "source_group_id": "src03-s8-sockets",
+      "source_variant_id": "src03-s8-socket-015",
+      "status": "published",
+      "route": "s8-015-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 63,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S8-015",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s8-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    },
+    "socket-src03-s8-socket-016": {
+      "product_id": "socket-src03-s8-socket-016",
+      "product_name": "S8-016",
+      "model_code": "S8-016",
+      "source_group_id": "src03-s8-sockets",
+      "source_variant_id": "src03-s8-socket-016",
+      "status": "published",
+      "route": "s8-016-socket",
+      "publication_status": "published",
+      "quoteable": true,
+      "source_confidence": "visual_source_only",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 63,
+          "status": "visual_source_only"
+        }
+      ],
+      "option_axes": {
+        "socket_type": "source-pending",
+        "plug_standard": "source-pending",
+        "module": "source-pending",
+        "usb": "source-pending",
+        "current": "source-pending",
+        "voltage": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      },
+      "commercial": {
+        "sku": "S8-016",
+        "reference_price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "unit": "units",
+          "status": "to_be_confirmed"
+        }
+      },
+      "media": {
+        "model_image": "assets/images/placeholders/product-socket-pending.svg",
+        "family_image": "assets/images/source-products/src03-s8-sockets.jpg"
+      },
+      "technical": {
+        "status": "pending_source_audit",
+        "datasheet": null,
+        "manual": null,
+        "wiring": null
+      }
+    }
+  },
+  "published_candidates": 50,
+  "hold_candidates": 36
+}

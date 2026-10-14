@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "stage": "08-06",
+  "gate": "cross-category-product-engine",
+  "status": "review_required",
+  "evaluated_at": "2026-09-20T17:47:58.393Z",
+  "categories": [
+    "smart-switches",
+    "mechanical-switches"
+  ],
+  "pipeline": "Category → Product Family → Model → Options → Variant → SKU",
+  "summary": {
+    "checks": 12,
+    "passed": 11,
+    "follow_ups": 1,
+    "failures": 0
+  },
+  "checks": {
+    "shared_primitives": {
+      "status": "pass",
+      "detail": "Smart Switch and Mechanical Switch resolve through the same Product Engine publication and facet primitives."
+    },
+    "smart_schema": {
+      "status": "pass",
+      "detail": [
+        "function",
+        "protocol",
+        "platform",
+        "operation",
+        "gang",
+        "material",
+        "finish",
+        "color",
+        "voltage",
+        "load",
+        "app",
+        "mounting"
+      ]
+    },
+    "mechanical_schema": {
+      "status": "pass",
+      "detail": [
+        "series",
+        "gang",
+        "function",
+        "mechanism",
+        "material",
+        "finish"
+      ]
+    },
+    "option_matrix_separation": {
+      "status": "pass",
+      "detail": "Both categories use matrix-backed options with independent category dimensions."
+    },
+    "smart_variant_truth": {
+      "status": "pass",
+      "detail": "src03-m6 resolves a published SKU and confirmed USD 8.80 reference price."
+    },
+    "mechanical_batch_truth": {
+      "status": "pass",
+      "detail": "All ten Mechanical batch records are independent draft variants with no public fallback variant."
+    },
+    "no_cross_category_fields": {
+      "status": "pass",
+      "detail": "Mechanical batch variants contain no Smart Switch protocol/platform/app attributes."
+    },
+    "pdp_routes": {
+      "status": "pass",
+      "detail": "All ten clean Mechanical PDP routes exist on disk."
+    },
+    "no_fallback": {
+      "status": "pass",
+      "detail": "Mechanical PDPs contain no SSW-001, Smart Touch Wall Switch or Wi-Fi fallback content."
+    },
+    "seo_draft_gate": {
+      "status": "pass",
+      "detail": "All Mechanical draft PDPs carry clean canonical/JSON-LD metadata while remaining noindex."
+    },
+    "quote_draft_gate": {
+      "status": "pass",
+      "detail": "Mechanical draft batch IDs are absent from the public Quote Catalog."
+    },
+    "mechanical_plp_links": {
+      "status": "follow_up",
+      "detail": "Mechanical PLP currently links 0/10 selected batch routes; it still serves the legacy family snapshot and must be switched after publication approval."
+    }
+  },
+  "failures": [],
+  "follow_ups": [
+    {
+      "key": "mechanical_plp_links",
+      "detail": "Mechanical PLP currently links 0/10 selected batch routes; it still serves the legacy family snapshot and must be switched after publication approval."
+    }
+  ],
+  "publication_boundary": {
+    "smart": "existing published reference",
+    "mechanical_batch_01": "draft/noindex",
+    "public_mechanical_routes_added": 0,
+    "oss_published": false
+  }
+}

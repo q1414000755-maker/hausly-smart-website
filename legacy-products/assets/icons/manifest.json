@@ -1,0 +1,764 @@
+[
+  {
+    "group": "dealers",
+    "name": "storefront",
+    "file": "dealers-storefront.png",
+    "path": "assets/icons/dealers-storefront.png",
+    "src_box": [
+      91,
+      104,
+      228,
+      233
+    ],
+    "ink_pixels": 7776
+  },
+  {
+    "group": "dealers",
+    "name": "globe-pin",
+    "file": "dealers-globe-pin.png",
+    "path": "assets/icons/dealers-globe-pin.png",
+    "src_box": [
+      323,
+      90,
+      460,
+      242
+    ],
+    "ink_pixels": 9786
+  },
+  {
+    "group": "dealers",
+    "name": "headset",
+    "file": "dealers-headset.png",
+    "path": "assets/icons/dealers-headset.png",
+    "src_box": [
+      560,
+      104,
+      700,
+      242
+    ],
+    "ink_pixels": 4830
+  },
+  {
+    "group": "dealers",
+    "name": "cube",
+    "file": "dealers-cube.png",
+    "path": "assets/icons/dealers-cube.png",
+    "src_box": [
+      794,
+      97,
+      920,
+      234
+    ],
+    "ink_pixels": 5715
+  },
+  {
+    "group": "dealers",
+    "name": "chart",
+    "file": "dealers-chart.png",
+    "path": "assets/icons/dealers-chart.png",
+    "src_box": [
+      85,
+      320,
+      236,
+      442
+    ],
+    "ink_pixels": 6102
+  },
+  {
+    "group": "dealers",
+    "name": "document",
+    "file": "dealers-document.png",
+    "path": "assets/icons/dealers-document.png",
+    "src_box": [
+      338,
+      311,
+      452,
+      449
+    ],
+    "ink_pixels": 6241
+  },
+  {
+    "group": "dealers",
+    "name": "chat",
+    "file": "dealers-chat.png",
+    "path": "assets/icons/dealers-chat.png",
+    "src_box": [
+      562,
+      318,
+      700,
+      447
+    ],
+    "ink_pixels": 4102
+  },
+  {
+    "group": "oem",
+    "name": "pen",
+    "file": "oem-pen.png",
+    "path": "assets/icons/oem-pen.png",
+    "src_box": [
+      77,
+      74,
+      216,
+      221
+    ],
+    "ink_pixels": 7319
+  },
+  {
+    "group": "oem",
+    "name": "chip",
+    "file": "oem-chip.png",
+    "path": "assets/icons/oem-chip.png",
+    "src_box": [
+      310,
+      77,
+      464,
+      232
+    ],
+    "ink_pixels": 7877
+  },
+  {
+    "group": "oem",
+    "name": "cube",
+    "file": "oem-cube.png",
+    "path": "assets/icons/oem-cube.png",
+    "src_box": [
+      562,
+      75,
+      703,
+      231
+    ],
+    "ink_pixels": 7261
+  },
+  {
+    "group": "oem",
+    "name": "shield",
+    "file": "oem-shield.png",
+    "path": "assets/icons/oem-shield.png",
+    "src_box": [
+      819,
+      72,
+      948,
+      232
+    ],
+    "ink_pixels": 5808
+  },
+  {
+    "group": "oem",
+    "name": "gear",
+    "file": "oem-gear.png",
+    "path": "assets/icons/oem-gear.png",
+    "src_box": [
+      62,
+      300,
+      218,
+      456
+    ],
+    "ink_pixels": 7909
+  },
+  {
+    "group": "oem",
+    "name": "lightbulb",
+    "file": "oem-lightbulb.png",
+    "path": "assets/icons/oem-lightbulb.png",
+    "src_box": [
+      333,
+      297,
+      444,
+      455
+    ],
+    "ink_pixels": 4829
+  },
+  {
+    "group": "oem",
+    "name": "sliders",
+    "file": "oem-sliders.png",
+    "path": "assets/icons/oem-sliders.png",
+    "src_box": [
+      568,
+      316,
+      699,
+      440
+    ],
+    "ink_pixels": 5762
+  },
+  {
+    "group": "oem",
+    "name": "chart",
+    "file": "oem-chart.png",
+    "path": "assets/icons/oem-chart.png",
+    "src_box": [
+      817,
+      315,
+      947,
+      444
+    ],
+    "ink_pixels": 6204
+  },
+  {
+    "group": "factory",
+    "name": "factory",
+    "file": "factory-factory.png",
+    "path": "assets/icons/factory-factory.png",
+    "src_box": [
+      107,
+      134,
+      298,
+      344
+    ],
+    "ink_pixels": 14992
+  },
+  {
+    "group": "factory",
+    "name": "shield",
+    "file": "factory-shield.png",
+    "path": "assets/icons/factory-shield.png",
+    "src_box": [
+      427,
+      138,
+      598,
+      343
+    ],
+    "ink_pixels": 9362
+  },
+  {
+    "group": "factory",
+    "name": "microscope",
+    "file": "factory-microscope.png",
+    "path": "assets/icons/factory-microscope.png",
+    "src_box": [
+      740,
+      130,
+      902,
+      344
+    ],
+    "ink_pixels": 12719
+  },
+  {
+    "group": "factory",
+    "name": "certificate",
+    "file": "factory-certificate.png",
+    "path": "assets/icons/factory-certificate.png",
+    "src_box": [
+      121,
+      452,
+      297,
+      656
+    ],
+    "ink_pixels": 13246
+  },
+  {
+    "group": "factory",
+    "name": "building",
+    "file": "factory-building.png",
+    "path": "assets/icons/factory-building.png",
+    "src_box": [
+      408,
+      464,
+      617,
+      648
+    ],
+    "ink_pixels": 13724
+  },
+  {
+    "group": "factory",
+    "name": "document",
+    "file": "factory-document.png",
+    "path": "assets/icons/factory-document.png",
+    "src_box": [
+      748,
+      458,
+      911,
+      654
+    ],
+    "ink_pixels": 13121
+  },
+  {
+    "group": "factory",
+    "name": "check",
+    "file": "factory-check.png",
+    "path": "assets/icons/factory-check.png",
+    "src_box": [
+      107,
+      764,
+      281,
+      937
+    ],
+    "ink_pixels": 8201
+  },
+  {
+    "group": "factory",
+    "name": "check-2",
+    "file": "factory-check-2.png",
+    "path": "assets/icons/factory-check-2.png",
+    "src_box": [
+      425,
+      764,
+      599,
+      937
+    ],
+    "ink_pixels": 8258
+  },
+  {
+    "group": "factory",
+    "name": "check-3",
+    "file": "factory-check-3.png",
+    "path": "assets/icons/factory-check-3.png",
+    "src_box": [
+      743,
+      764,
+      918,
+      937
+    ],
+    "ink_pixels": 8223
+  },
+  {
+    "group": "support",
+    "name": "cart",
+    "file": "support-cart.png",
+    "path": "assets/icons/support-cart.png",
+    "src_box": [
+      57,
+      92,
+      177,
+      200
+    ],
+    "ink_pixels": 3742
+  },
+  {
+    "group": "support",
+    "name": "list",
+    "file": "support-list.png",
+    "path": "assets/icons/support-list.png",
+    "src_box": [
+      269,
+      86,
+      368,
+      202
+    ],
+    "ink_pixels": 4671
+  },
+  {
+    "group": "support",
+    "name": "cube",
+    "file": "support-cube.png",
+    "path": "assets/icons/support-cube.png",
+    "src_box": [
+      458,
+      86,
+      566,
+      202
+    ],
+    "ink_pixels": 4476
+  },
+  {
+    "group": "support",
+    "name": "coins",
+    "file": "support-coins.png",
+    "path": "assets/icons/support-coins.png",
+    "src_box": [
+      654,
+      92,
+      763,
+      202
+    ],
+    "ink_pixels": 5504
+  },
+  {
+    "group": "support",
+    "name": "truck",
+    "file": "support-truck.png",
+    "path": "assets/icons/support-truck.png",
+    "src_box": [
+      851,
+      99,
+      974,
+      195
+    ],
+    "ink_pixels": 4566
+  },
+  {
+    "group": "support",
+    "name": "truck-fast",
+    "file": "support-truck-fast.png",
+    "path": "assets/icons/support-truck-fast.png",
+    "src_box": [
+      58,
+      287,
+      184,
+      376
+    ],
+    "ink_pixels": 4356
+  },
+  {
+    "group": "support",
+    "name": "document",
+    "file": "support-document.png",
+    "path": "assets/icons/support-document.png",
+    "src_box": [
+      275,
+      272,
+      365,
+      386
+    ],
+    "ink_pixels": 4744
+  },
+  {
+    "group": "support",
+    "name": "globe",
+    "file": "support-globe.png",
+    "path": "assets/icons/support-globe.png",
+    "src_box": [
+      456,
+      274,
+      568,
+      386
+    ],
+    "ink_pixels": 6470
+  },
+  {
+    "group": "support",
+    "name": "headset",
+    "file": "support-headset.png",
+    "path": "assets/icons/support-headset.png",
+    "src_box": [
+      650,
+      273,
+      766,
+      387
+    ],
+    "ink_pixels": 3429
+  },
+  {
+    "group": "support",
+    "name": "shield",
+    "file": "support-shield.png",
+    "path": "assets/icons/support-shield.png",
+    "src_box": [
+      863,
+      272,
+      962,
+      387
+    ],
+    "ink_pixels": 3282
+  },
+  {
+    "group": "support",
+    "name": "tools",
+    "file": "support-tools.png",
+    "path": "assets/icons/support-tools.png",
+    "src_box": [
+      65,
+      455,
+      176,
+      565
+    ],
+    "ink_pixels": 4761
+  },
+  {
+    "group": "support",
+    "name": "users",
+    "file": "support-users.png",
+    "path": "assets/icons/support-users.png",
+    "src_box": [
+      246,
+      464,
+      391,
+      560
+    ],
+    "ink_pixels": 5330
+  },
+  {
+    "group": "support",
+    "name": "invoice",
+    "file": "support-invoice.png",
+    "path": "assets/icons/support-invoice.png",
+    "src_box": [
+      468,
+      454,
+      557,
+      568
+    ],
+    "ink_pixels": 4334
+  },
+  {
+    "group": "support",
+    "name": "book",
+    "file": "support-book.png",
+    "path": "assets/icons/support-book.png",
+    "src_box": [
+      647,
+      464,
+      768,
+      559
+    ],
+    "ink_pixels": 4020
+  },
+  {
+    "group": "support",
+    "name": "download",
+    "file": "support-download.png",
+    "path": "assets/icons/support-download.png",
+    "src_box": [
+      860,
+      453,
+      965,
+      563
+    ],
+    "ink_pixels": 2618
+  },
+  {
+    "group": "support",
+    "name": "document-alt",
+    "file": "support-document-alt.png",
+    "path": "assets/icons/support-document-alt.png",
+    "src_box": [
+      74,
+      639,
+      167,
+      752
+    ],
+    "ink_pixels": 4760
+  },
+  {
+    "group": "support",
+    "name": "book-alt",
+    "file": "support-book-alt.png",
+    "path": "assets/icons/support-book-alt.png",
+    "src_box": [
+      254,
+      648,
+      384,
+      745
+    ],
+    "ink_pixels": 6127
+  },
+  {
+    "group": "support",
+    "name": "gear",
+    "file": "support-gear.png",
+    "path": "assets/icons/support-gear.png",
+    "src_box": [
+      454,
+      638,
+      571,
+      753
+    ],
+    "ink_pixels": 5053
+  },
+  {
+    "group": "support",
+    "name": "hierarchy",
+    "file": "support-hierarchy.png",
+    "path": "assets/icons/support-hierarchy.png",
+    "src_box": [
+      650,
+      644,
+      764,
+      743
+    ],
+    "ink_pixels": 4653
+  },
+  {
+    "group": "company",
+    "name": "building",
+    "file": "company-building.png",
+    "path": "assets/icons/company-building.png",
+    "src_box": [
+      73,
+      118,
+      288,
+      302
+    ],
+    "ink_pixels": 13681
+  },
+  {
+    "group": "company",
+    "name": "globe-pin",
+    "file": "company-globe-pin.png",
+    "path": "assets/icons/company-globe-pin.png",
+    "src_box": [
+      408,
+      96,
+      600,
+      310
+    ],
+    "ink_pixels": 19175
+  },
+  {
+    "group": "company",
+    "name": "newspaper",
+    "file": "company-newspaper.png",
+    "path": "assets/icons/company-newspaper.png",
+    "src_box": [
+      748,
+      114,
+      944,
+      305
+    ],
+    "ink_pixels": 17187
+  },
+  {
+    "group": "company",
+    "name": "mail",
+    "file": "company-mail.png",
+    "path": "assets/icons/company-mail.png",
+    "src_box": [
+      91,
+      435,
+      286,
+      574
+    ],
+    "ink_pixels": 10702
+  },
+  {
+    "group": "company",
+    "name": "package",
+    "file": "company-package.png",
+    "path": "assets/icons/company-package.png",
+    "src_box": [
+      416,
+      393,
+      608,
+      607
+    ],
+    "ink_pixels": 13215
+  },
+  {
+    "group": "products",
+    "name": "cat-smart-switches",
+    "file": "cat-smart-switches.png",
+    "path": "assets/icons/cat-smart-switches.png",
+    "src_box": [
+      60,
+      22,
+      100,
+      68
+    ]
+  },
+  {
+    "group": "products",
+    "name": "cat-hotel-switches",
+    "file": "cat-hotel-switches.png",
+    "path": "assets/icons/cat-hotel-switches.png",
+    "src_box": [
+      233,
+      23,
+      273,
+      66
+    ]
+  },
+  {
+    "group": "products",
+    "name": "cat-control-panels",
+    "file": "cat-control-panels.png",
+    "path": "assets/icons/cat-control-panels.png",
+    "src_box": [
+      402,
+      25,
+      448,
+      65
+    ]
+  },
+  {
+    "group": "products",
+    "name": "cat-sockets",
+    "file": "cat-sockets.png",
+    "path": "assets/icons/cat-sockets.png",
+    "src_box": [
+      576,
+      23,
+      620,
+      67
+    ]
+  },
+  {
+    "group": "products",
+    "name": "cat-thermostats",
+    "file": "cat-thermostats.png",
+    "path": "assets/icons/cat-thermostats.png",
+    "src_box": [
+      757,
+      22,
+      783,
+      67
+    ]
+  },
+  {
+    "group": "products",
+    "name": "cat-controllers",
+    "file": "cat-controllers.png",
+    "path": "assets/icons/cat-controllers.png",
+    "src_box": [
+      58,
+      182,
+      102,
+      223
+    ]
+  },
+  {
+    "group": "products",
+    "name": "cat-sensors",
+    "file": "cat-sensors.png",
+    "path": "assets/icons/cat-sensors.png",
+    "src_box": [
+      231,
+      181,
+      275,
+      225
+    ]
+  },
+  {
+    "group": "products",
+    "name": "cat-lighting",
+    "file": "cat-lighting.png",
+    "path": "assets/icons/cat-lighting.png",
+    "src_box": [
+      408,
+      180,
+      442,
+      226
+    ]
+  },
+  {
+    "group": "products",
+    "name": "cat-smart-door-locks",
+    "file": "cat-smart-door-locks.png",
+    "path": "assets/icons/cat-smart-door-locks.png",
+    "src_box": [
+      579,
+      182,
+      617,
+      226
+    ]
+  },
+  {
+    "group": "products",
+    "name": "cat-accessories",
+    "file": "cat-accessories.png",
+    "path": "assets/icons/cat-accessories.png",
+    "src_box": [
+      747,
+      177,
+      793,
+      228
+    ]
+  },
+  {
+    "group": "products",
+    "name": "cat-mechanical-switches",
+    "file": "cat-mechanical-switches.svg",
+    "path": "assets/icons/cat-mechanical-switches.svg"
+  },
+  {
+    "group": "products",
+    "name": "cat-low-voltage-data-panels",
+    "file": "cat-low-voltage-data-panels.svg",
+    "path": "assets/icons/cat-low-voltage-data-panels.svg"
+  },
+  {
+    "group": "products",
+    "name": "cat-curtains",
+    "file": "cat-curtains.svg",
+    "path": "assets/icons/cat-curtains.svg"
+  }
+]

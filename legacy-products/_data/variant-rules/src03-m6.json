@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "rule_type": "variant-combination-rules",
+  "rule_id": "src03-m6",
+  "model_group": "src03-m6",
+  "source_refs": [
+    {
+      "source_id": "SRC03",
+      "source_page": 6,
+      "status": "source_extracted"
+    }
+  ],
+  "selection_axes": ["function", "gang"],
+  "fixed_attributes": {
+    "protocol": ["zigbee", "bluetooth-mesh"],
+    "operation": ["mechanical"],
+    "app": ["xiaodu", "xiaomi", "tuya", "tmall"],
+    "finish": ["m6-premium-gray", "m6-skin-gray", "m6-skin-silver", "m6-skin-white", "m6-skin-black", "m6-skin-gold", "m6-cream-gold"],
+    "voltage": ["250v"],
+    "load": ["source-pending"],
+    "mounting": ["eu86"]
+  },
+  "allowed_statuses": ["available", "source-pending", "unavailable"],
+  "combination_status": [
+    {
+      "selection": { "function": "on-off", "gang": "1" },
+      "variant_id": "src03-m6-1",
+      "status": "available",
+      "publication_status": "draft"
+    },
+    {
+      "selection": { "function": "on-off", "gang": "2" },
+      "variant_id": "src03-m6-2",
+      "status": "available",
+      "publication_status": "draft"
+    },
+    {
+      "selection": { "function": "on-off", "gang": "3" },
+      "variant_id": "src03-m6-3",
+      "status": "available",
+      "publication_status": "draft"
+    },
+    {
+      "selection": { "function": "on-off", "gang": "4" },
+      "variant_id": "src03-m6-4",
+      "status": "available",
+      "publication_status": "draft"
+    },
+    {
+      "selection": { "function": "scene", "gang": "4-2-scene" },
+      "variant_id": "src03-m6-4-2-scene",
+      "status": "available",
+      "publication_status": "draft"
+    }
+  ],
+  "constraints": [
+    {
+      "when": { "operation": "mechanical" },
+      "require": { "mounting": "eu86" }
+    }
+  ],
+  "notes": [
+    "This rule source describes confirmed source combinations; it does not generate variants.",
+    "Protocol and app values are multi-value capabilities on each existing gang variant, not additional SKU axes.",
+    "The PDF confirms panel styles and finishes, but it does not provide sellable SKU suffixes or rated load."
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "stage": "10-05",
+  "status": "material_intake_explicit_candidates_published_remainder_hold",
+  "selected_products": [
+    "socket-src03-t12-socket-015",
+    "socket-src03-t12-socket-016",
+    "socket-src03-t12-socket-017",
+    "socket-src03-t12-socket-018",
+    "socket-src03-t12-socket-019",
+    "socket-src03-t12-socket-020",
+    "socket-src03-t12-socket-021",
+    "socket-src03-t12-socket-022",
+    "socket-src03-m-socket-typec",
+    "socket-src03-m-socket-16a"
+  ],
+  "counts": {
+    "selected": 10,
+    "model_images": 0,
+    "variant_images": 0,
+    "datasheets": 0,
+    "manuals": 0,
+    "wiring_diagrams": 0,
+    "certifications": 0,
+    "publication_ready": 50
+  },
+  "records": [
+    {
+      "product_id": "socket-src03-t12-socket-015",
+      "family_preview_allowed": true,
+      "model_image": null,
+      "variant_images": [],
+      "technical_specs": null,
+      "dimensions": null,
+      "wiring": null,
+      "datasheet": null,
+      "manual": null,
+      "installation": null,
+      "packaging": null,
+      "certifications": [],
+      "price": {
+        "amount": null,
+        "status": "test_only"
+      },
+      "moq": {
+        "value": null,
+        "status": "to_be_confirmed"
+      },
+      "status": "published_with_placeholders",
+      "hold_reason": "Family/source preview exists, but model-level evidence is not available.",
+      "commercial": {
+        "price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "status": "to_be_confirmed"
+        }
+      }
+    },
+    {
+      "product_id": "socket-src03-t12-socket-016",
+      "family_preview_allowed": true,
+      "model_image": null,
+      "variant_images": [],
+      "technical_specs": null,
+      "dimensions": null,
+      "wiring": null,
+      "datasheet": null,
+      "manual": null,
+      "installation": null,
+      "packaging": null,
+      "certifications": [],
+      "price": {
+        "amount": null,
+        "status": "test_only"
+      },
+      "moq": {
+        "value": null,
+        "status": "to_be_confirmed"
+      },
+      "status": "published_with_placeholders",
+      "hold_reason": "Family/source preview exists, but model-level evidence is not available.",
+      "commercial": {
+        "price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "status": "to_be_confirmed"
+        }
+      }
+    },
+    {
+      "product_id": "socket-src03-t12-socket-017",
+      "family_preview_allowed": true,
+      "model_image": null,
+      "variant_images": [],
+      "technical_specs": null,
+      "dimensions": null,
+      "wiring": null,
+      "datasheet": null,
+      "manual": null,
+      "installation": null,
+      "packaging": null,
+      "certifications": [],
+      "price": {
+        "amount": null,
+        "status": "test_only"
+      },
+      "moq": {
+        "value": null,
+        "status": "to_be_confirmed"
+      },
+      "status": "published_with_placeholders",
+      "hold_reason": "Family/source preview exists, but model-level evidence is not available.",
+      "commercial": {
+        "price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "status": "to_be_confirmed"
+        }
+      }
+    },
+    {
+      "product_id": "socket-src03-t12-socket-018",
+      "family_preview_allowed": true,
+      "model_image": null,
+      "variant_images": [],
+      "technical_specs": null,
+      "dimensions": null,
+      "wiring": null,
+      "datasheet": null,
+      "manual": null,
+      "installation": null,
+      "packaging": null,
+      "certifications": [],
+      "price": {
+        "amount": null,
+        "status": "test_only"
+      },
+      "moq": {
+        "value": null,
+        "status": "to_be_confirmed"
+      },
+      "status": "published_with_placeholders",
+      "hold_reason": "Family/source preview exists, but model-level evidence is not available.",
+      "commercial": {
+        "price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "status": "to_be_confirmed"
+        }
+      }
+    },
+    {
+      "product_id": "socket-src03-t12-socket-019",
+      "family_preview_allowed": true,
+      "model_image": null,
+      "variant_images": [],
+      "technical_specs": null,
+      "dimensions": null,
+      "wiring": null,
+      "datasheet": null,
+      "manual": null,
+      "installation": null,
+      "packaging": null,
+      "certifications": [],
+      "price": {
+        "amount": null,
+        "status": "test_only"
+      },
+      "moq": {
+        "value": null,
+        "status": "to_be_confirmed"
+      },
+      "status": "published_with_placeholders",
+      "hold_reason": "Family/source preview exists, but model-level evidence is not available.",
+      "commercial": {
+        "price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "status": "to_be_confirmed"
+        }
+      }
+    },
+    {
+      "product_id": "socket-src03-t12-socket-020",
+      "family_preview_allowed": true,
+      "model_image": null,
+      "variant_images": [],
+      "technical_specs": null,
+      "dimensions": null,
+      "wiring": null,
+      "datasheet": null,
+      "manual": null,
+      "installation": null,
+      "packaging": null,
+      "certifications": [],
+      "price": {
+        "amount": null,
+        "status": "test_only"
+      },
+      "moq": {
+        "value": null,
+        "status": "to_be_confirmed"
+      },
+      "status": "published_with_placeholders",
+      "hold_reason": "Family/source preview exists, but model-level evidence is not available.",
+      "commercial": {
+        "price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "status": "to_be_confirmed"
+        }
+      }
+    },
+    {
+      "product_id": "socket-src03-t12-socket-021",
+      "family_preview_allowed": true,
+      "model_image": null,
+      "variant_images": [],
+      "technical_specs": null,
+      "dimensions": null,
+      "wiring": null,
+      "datasheet": null,
+      "manual": null,
+      "installation": null,
+      "packaging": null,
+      "certifications": [],
+      "price": {
+        "amount": null,
+        "status": "test_only"
+      },
+      "moq": {
+        "value": null,
+        "status": "to_be_confirmed"
+      },
+      "status": "published_with_placeholders",
+      "hold_reason": "Family/source preview exists, but model-level evidence is not available.",
+      "commercial": {
+        "price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "status": "to_be_confirmed"
+        }
+      }
+    },
+    {
+      "product_id": "socket-src03-t12-socket-022",
+      "family_preview_allowed": true,
+      "model_image": null,
+      "variant_images": [],
+      "technical_specs": null,
+      "dimensions": null,
+      "wiring": null,
+      "datasheet": null,
+      "manual": null,
+      "installation": null,
+      "packaging": null,
+      "certifications": [],
+      "price": {
+        "amount": null,
+        "status": "test_only"
+      },
+      "moq": {
+        "value": null,
+        "status": "to_be_confirmed"
+      },
+      "status": "published_with_placeholders",
+      "hold_reason": "Family/source preview exists, but model-level evidence is not available.",
+      "commercial": {
+        "price": {
+          "amount": 8.8,
+          "currency": "USD",
+          "status": "confirmed",
+          "source": "USER-CONFIRMATION",
+          "checked_on": "2026-09-21"
+        },
+        "moq": {
+          "value": null,
+          "status": "to_be_confirmed"
+        }
+      }
+    },
+    {
+      "product_id": "socket-src03-m-socket-typec",
+      "family_preview_allowed": true,
+      "model_image": null,
+      "variant_images": [],
+      "technical_specs": null,
+      "dimensions": null,
+      "wiring": null,
+      "datasheet": null,
+      "manual": null,
+      "installation": null,
+      "packaging": null,
+      "certifications": [],
+      "price": {
+        "amount": null,
+        "status": "test_only"
+      },
+      "moq": {
+        "value": null,
+        "status": "to_be_confirmed"
+      },
+      "status": "hold",
+      "hold_reason": "Family/source preview exists, but model-level evidence is not available."
+    },
+    {
+      "product_id": "socket-src03-m-socket-16a",
+      "family_preview_allowed": true,
+      "model_image": null,
+      "variant_images": [],
+      "technical_specs": null,
+      "dimensions": null,
+      "wiring": null,
+      "datasheet": null,
+      "manual": null,
+      "installation": null,
+      "packaging": null,
+      "certifications": [],
+      "price": {
+        "amount": null,
+        "status": "test_only"
+      },
+      "moq": {
+        "value": null,
+        "status": "to_be_confirmed"
+      },
+      "status": "hold",
+      "hold_reason": "Family/source preview exists, but model-level evidence is not available."
+    }
+  ]
+}

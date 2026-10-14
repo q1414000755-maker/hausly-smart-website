@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "stage": "08-07",
+  "gate": "mechanical-first-batch-freeze",
+  "status": "pass",
+  "evaluated_at": "2026-09-20T17:53:03.304Z",
+  "batch_id": "mechanical-switches-batch-01",
+  "summary": {
+    "selected": 10,
+    "published_for_test": 10,
+    "public_plp_products": 10,
+    "sitemap_routes": 10,
+    "excluded_candidates_remain_draft": 67
+  },
+  "checks": {
+    "publication_gate": {
+      "status": "pass",
+      "detail": "All ten selected records have identity, primary image, Function/Gang, SKU, USD 8.80 test price and MOQ 1."
+    },
+    "product_grain": {
+      "status": "pass",
+      "detail": "Each selected catalogue code is an independent Product Master group and clean PDP route."
+    },
+    "plp_gate": {
+      "status": "pass",
+      "detail": "Mechanical Switches PLP exposes exactly ten independent batch products and no legacy family snapshot routes."
+    },
+    "pdp_seo": {
+      "status": "pass",
+      "detail": "All ten PDPs are indexable with model title, description, canonical and Product JSON-LD Offer."
+    },
+    "quote_gate": {
+      "status": "pass",
+      "detail": "Only the ten published batch product IDs are present in the Quote Catalog; unresolved fields remain pending."
+    },
+    "sitemap_gate": {
+      "status": "pass",
+      "detail": "Sitemap includes the ten frozen batch routes and excludes legacy Mechanical family routes."
+    },
+    "fail_closed": {
+      "status": "pass",
+      "detail": "Material, finish, color, technical specs and documents remain explicitly pending; no fallback fields were inferred."
+    }
+  },
+  "next_stage": "08-08 Mechanical batch 01 external/OSS deployment and browser verification"
+}

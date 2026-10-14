@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "catalogue_id": "purepoint-smart-switch",
+  "purpose": "Normalize panel material, surface finish and commercial color before Variant SKU import.",
+  "source_file": "产品资料/Purepoint Smart Switch .pdf",
+  "pdp_granularity_note": "This file normalizes attribute axes only. It does not merge or split commercial PDP records. A separately titled material detail page, such as M6 Glass, remains an independent PDP when the product master marks it as such.",
+  "rules": {
+    "material": "What the panel is made of.",
+    "finish": "How the material surface is treated.",
+    "color": "The commercial color name shown to the buyer.",
+    "inheritance": "Colors and finishes are scoped to product plus material; never broadcast a global palette.",
+    "selector_gate": "Only confirmed values enter the selector. overview_only, pending and conflict stay out of the selector.",
+    "variant_gate": "A valid Variant is an explicit source-backed row. Do not create a Cartesian product of axes."
+  },
+  "canonical_materials": [
+    {"id": "pc", "label": "PC", "source_labels": ["PC", "肤感PC面板"]},
+    {"id": "glass", "label": "Glass", "source_labels": ["肤感玻璃", "AG肤感玻璃"]},
+    {"id": "tempered-glass", "label": "Tempered Glass", "source_labels": ["钢化玻璃"]},
+    {"id": "aluminum-alloy", "label": "Aluminum Alloy", "source_labels": ["铝合金面板"]},
+    {"id": "copper", "label": "Copper", "source_labels": ["全铜面板"]}
+  ],
+  "canonical_finishes": [
+    {"id": "skin-feel", "label": "Skin-feel", "source_labels": ["肤感", "肤感PC", "肤感玻璃"]},
+    {"id": "ag-skin-feel", "label": "AG Skin-feel", "source_labels": ["AG肤感玻璃"], "status": "confirmed_for_m10_glass"},
+    {"id": "vertical-brushed", "label": "Vertical Brushed", "source_labels": ["咖啡古铜竖拉丝"]},
+    {"id": "orb", "label": "ORB", "source_labels": ["枪黑ORB"]},
+    {"id": "bright-chrome", "label": "Bright Chrome", "source_labels": ["亮铬"]},
+    {"id": "pending-review", "label": "Finish to be confirmed", "status": "pending"}
+  ],
+  "palettes": {
+    "m6-pc": {
+      "scope": "M6 + PC",
+      "status": "confirmed",
+      "colors": ["advanced-gray", "skin-gray", "skin-silver", "skin-white", "skin-black", "skin-gold", "cream-gold"]
+    },
+    "m6-glass": {
+      "scope": "M6 Glass + Glass",
+      "status": "confirmed",
+      "colors": ["skin-gray", "skin-gold", "skin-white", "skin-black"]
+    },
+    "m6s-pc": {
+      "scope": "M6/S + PC",
+      "status": "confirmed",
+      "colors": ["skin-gray", "skin-black", "skin-white"]
+    },
+    "m10-glass": {
+      "scope": "M10 + Glass",
+      "status": "confirmed",
+      "colors": ["business-gray", "champagne-gold", "elegant-white", "mist-blue", "classic-black"]
+    },
+    "s7-pc": {
+      "scope": "S7 + PC",
+      "status": "confirmed",
+      "colors": ["star-gray", "green-apple", "orange", "blue-purple", "panda-white"]
+    },
+    "s7-glass": {
+      "scope": "S7 + Glass",
+      "status": "confirmed",
+      "colors": ["star-gray", "panda-white"]
+    },
+    "s8-pc": {
+      "scope": "S8 + PC",
+      "status": "confirmed",
+      "colors": ["star-gray", "panda-white"]
+    },
+    "m12s-pc": {
+      "scope": "M12/S + PC",
+      "status": "confirmed",
+      "colors": ["advanced-gray", "skin-gray", "skin-white", "cream-gold", "advanced-silver", "skin-gold", "skin-black"]
+    },
+    "m12s-glass": {
+      "scope": "M12/S + Glass",
+      "status": "confirmed",
+      "colors": ["business-gray", "champagne-gold", "elegant-white", "mist-blue", "classic-black"]
+    },
+    "m12s-aluminum": {
+      "scope": "M12/S + Aluminum Alloy",
+      "status": "confirmed",
+      "colors": ["advanced-gray", "space-gray", "elegant-white", "classic-black", "hermes-orange", "champagne-gold", "sapphire-blue"]
+    },
+    "copper-m6": {
+      "scope": "M6 + Copper",
+      "status": "confirmed",
+      "raw_entries": [
+        {"raw_label": "古铜格拉丝", "color": "antique-bronze", "finish": "pending-review", "normalization_status": "pending_review"},
+        {"raw_label": "枪黑ORB", "color": "gun-black", "finish": "orb", "normalization_status": "confirmed"},
+        {"raw_label": "缤纷蓝", "color": "colorful-blue", "finish": "pending-review", "normalization_status": "pending_review"},
+        {"raw_label": "咖啡古铜竖拉丝", "color": "coffee-bronze", "finish": "vertical-brushed", "normalization_status": "confirmed"},
+        {"raw_label": "亮铬", "color": "bright-chrome", "finish": "bright-chrome", "normalization_status": "confirmed"}
+      ]
+    }
+  },
+  "product_material_matrix": [
+    {"model": "M6", "material": "pc", "status": "confirmed", "finish": ["skin-feel"], "palette": "m6-pc", "source_pages": [6]},
+    {"model": "M6", "material": "glass", "status": "confirmed", "finish": ["skin-feel"], "palette": "m6-glass", "source_pages": [12]},
+    {"model": "M6", "material": "copper", "status": "confirmed", "finish": ["orb", "vertical-brushed", "bright-chrome", "pending-review"], "palette": "copper-m6", "source_pages": ["M6 copper detail page"]},
+    {"model": "M6", "material": "aluminum-alloy", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": ["M6 aluminum detail page"]},
+    {"model": "M6/S", "material": "pc", "status": "confirmed", "finish": ["skin-feel"], "palette": "m6s-pc", "source_pages": [7]},
+    {"model": "M8", "material": "pc", "status": "confirmed", "finish": ["skin-feel"], "palette": null, "source_pages": [8]},
+    {"model": "M8", "material": "copper", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": ["M8 copper detail page"]},
+    {"model": "M8", "material": "aluminum-alloy", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": ["M8 aluminum detail page"]},
+    {"model": "M8", "material": "glass", "status": "overview_only", "finish": [], "palette": null, "source_pages": [5]},
+    {"model": "M9", "material": "pc", "status": "confirmed", "finish": ["skin-feel"], "palette": null, "source_pages": [9]},
+    {"model": "M9", "material": "copper", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": ["M9 copper detail page"]},
+    {"model": "M9", "material": "aluminum-alloy", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": ["M9 aluminum detail page"]},
+    {"model": "M10", "material": "glass", "status": "confirmed", "finish": ["ag-skin-feel"], "palette": "m10-glass", "source_pages": [14]},
+    {"model": "M12", "material": "pc", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": [10]},
+    {"model": "M12/S", "material": "pc", "status": "confirmed", "finish": ["skin-feel"], "palette": "m12s-pc", "source_pages": [16, 17]},
+    {"model": "M12/S", "material": "glass", "status": "confirmed", "finish": ["skin-feel"], "palette": "m12s-glass", "source_pages": [16, 17]},
+    {"model": "M12/S", "material": "aluminum-alloy", "status": "confirmed", "finish": ["pending-review"], "palette": "m12s-aluminum", "source_pages": [16, 17]},
+    {"model": "Z5", "material": "pc", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": [5, "Z5 detail page"]},
+    {"model": "Z5", "material": "glass", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": [5, "Z5 detail page"]},
+    {"model": "Z5", "material": "aluminum-alloy", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": [5, "Z5 detail page"]},
+    {"model": "Z6", "material": "pc", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": [5, "Z6 detail page"]},
+    {"model": "Z6", "material": "glass", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": [5, "Z6 detail page"]},
+    {"model": "Z6", "material": "aluminum-alloy", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": [5, "Z6 detail page"]},
+    {"model": "Z7", "material": "pc", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": [5, "Z7 detail page"]},
+    {"model": "Z7", "material": "glass", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": [5, "Z7 detail page"]},
+    {"model": "Z7", "material": "aluminum-alloy", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": [5, "Z7 detail page"]},
+    {"model": "S7", "material": "pc", "status": "confirmed", "finish": ["skin-feel"], "palette": "s7-pc", "source_pages": [5, "S7 detail page"]},
+    {"model": "S7", "material": "glass", "status": "confirmed", "finish": ["skin-feel"], "palette": "s7-glass", "source_pages": [5, "S7 detail page"]},
+    {"model": "S8", "material": "pc", "status": "confirmed", "finish": ["skin-feel"], "palette": "s8-pc", "source_pages": [5, "S8 detail page"]},
+    {"model": "S8", "material": "glass", "status": "confirmed", "finish": ["skin-feel"], "palette": null, "source_pages": [5, "S8 detail page"]},
+    {"model": "S9", "material": "pc", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": [5, "S9 detail page"]},
+    {"model": "S9", "material": "glass", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": [5, "S9 detail page"]},
+    {"model": "S9", "material": "aluminum-alloy", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": [5, "S9 detail page"]},
+    {"model": "BLC Right Angle Touch", "material": "tempered-glass", "status": "confirmed", "finish": ["pending-review"], "palette": null, "source_pages": [5]}
+  ],
+  "protocol_policy": {
+    "default": "Treat protocol as a Variant axis only when the factory/SKU source defines the same parent model with different protocol modules.",
+    "separate_product_trigger": "If protocol changes the formal model code, hardware, firmware, certification or commercial SKU, create separate products.",
+    "current_status": "pending_factory_sku_confirmation"
+  }
+}

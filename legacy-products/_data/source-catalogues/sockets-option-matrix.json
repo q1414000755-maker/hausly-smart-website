@@ -1,0 +1,3667 @@
+{
+  "schema_version": 1,
+  "stage": "10-02",
+  "catalogue_id": "sockets-and-power-outlets",
+  "status": "option_matrix_published_explicit_candidates_hold_remainder",
+  "axis_keys": [
+    "socket_type",
+    "plug_standard",
+    "module",
+    "usb",
+    "current",
+    "voltage",
+    "power",
+    "mounting",
+    "material",
+    "finish",
+    "color"
+  ],
+  "dimensions": [
+    {
+      "key": "socket_type",
+      "label": "socket type",
+      "primary": true
+    },
+    {
+      "key": "plug_standard",
+      "label": "plug standard",
+      "primary": true
+    },
+    {
+      "key": "module",
+      "label": "module",
+      "primary": true
+    },
+    {
+      "key": "usb",
+      "label": "usb",
+      "primary": true
+    },
+    {
+      "key": "current",
+      "label": "current",
+      "primary": true
+    },
+    {
+      "key": "voltage",
+      "label": "voltage",
+      "primary": true
+    },
+    {
+      "key": "power",
+      "label": "power",
+      "primary": false
+    },
+    {
+      "key": "mounting",
+      "label": "mounting",
+      "primary": false
+    },
+    {
+      "key": "material",
+      "label": "material",
+      "primary": false
+    },
+    {
+      "key": "finish",
+      "label": "Color & Finish",
+      "primary": false
+    },
+    {
+      "key": "color",
+      "label": "color",
+      "primary": false
+    }
+  ],
+  "labels": {
+    "socket_type": {
+      "power-socket": "Power socket",
+      "data-socket": "Data socket",
+      "tv-data-telephone": "TV / data / telephone",
+      "blank-plate": "Blank plate",
+      "cable-pass-through": "Cable pass-through",
+      "source-pending": "Source confirmation pending"
+    },
+    "plug_standard": {
+      "eu": "EU",
+      "uk": "UK",
+      "us": "US",
+      "au": "AU / NZ",
+      "universal": "Universal",
+      "source-pending": "Source confirmation pending"
+    },
+    "module": {
+      "single": "Single module",
+      "multi": "Multi-module",
+      "source-pending": "Source confirmation pending"
+    },
+    "usb": {
+      "none": "No USB",
+      "usb-a": "USB-A",
+      "usb-c": "USB-C",
+      "both": "USB-A + USB-C",
+      "source-pending": "Source confirmation pending"
+    },
+    "current": {
+      "10a": "10 A",
+      "13a": "13 A",
+      "16a": "16 A",
+      "20a": "20 A",
+      "source-pending": "Source confirmation pending"
+    },
+    "voltage": {
+      "110-120": "110–120 V",
+      "220-240": "220–240 V",
+      "universal": "Universal",
+      "source-pending": "Source confirmation pending"
+    },
+    "power": {
+      "source-pending": "Source confirmation pending"
+    },
+    "mounting": {
+      "flush": "Flush",
+      "surface": "Surface",
+      "desk": "Desk / pop-up",
+      "source-pending": "Source confirmation pending"
+    },
+    "material": {
+      "pc": "Polycarbonate",
+      "glass": "Glass",
+      "metal": "Metal",
+      "source-pending": "Source confirmation pending"
+    },
+    "finish": {
+      "white": "White",
+      "black": "Black",
+      "gray": "Gray",
+      "gold": "Gold",
+      "source-pending": "Source confirmation pending"
+    },
+    "color": {
+      "white": "White",
+      "black": "Black",
+      "gray": "Gray",
+      "gold": "Gold",
+      "source-pending": "Source confirmation pending"
+    }
+  },
+  "value_order": {
+    "socket_type": [
+      "power-socket",
+      "data-socket",
+      "tv-data-telephone",
+      "blank-plate",
+      "cable-pass-through",
+      "source-pending"
+    ],
+    "plug_standard": [
+      "eu",
+      "uk",
+      "us",
+      "au",
+      "universal",
+      "source-pending"
+    ],
+    "module": [
+      "single",
+      "multi",
+      "source-pending"
+    ],
+    "usb": [
+      "none",
+      "usb-a",
+      "usb-c",
+      "both",
+      "source-pending"
+    ],
+    "current": [
+      "10a",
+      "13a",
+      "16a",
+      "20a",
+      "source-pending"
+    ],
+    "voltage": [
+      "110-120",
+      "220-240",
+      "universal",
+      "source-pending"
+    ],
+    "power": [
+      "source-pending"
+    ],
+    "mounting": [
+      "flush",
+      "surface",
+      "desk",
+      "source-pending"
+    ],
+    "material": [
+      "pc",
+      "glass",
+      "metal",
+      "source-pending"
+    ],
+    "finish": [
+      "white",
+      "black",
+      "gray",
+      "gold",
+      "source-pending"
+    ],
+    "color": [
+      "white",
+      "black",
+      "gray",
+      "gold",
+      "source-pending"
+    ]
+  },
+  "forbidden_inherited_axes": [
+    "protocol",
+    "platform",
+    "gang"
+  ],
+  "products": {
+    "socket-src03-t12-socket-015": {
+      "model": "T12-015",
+      "route_model_id": "socket-src03-t12-socket-015",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-t12-socket-016": {
+      "model": "T12-016",
+      "route_model_id": "socket-src03-t12-socket-016",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-t12-socket-017": {
+      "model": "T12-017",
+      "route_model_id": "socket-src03-t12-socket-017",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-t12-socket-018": {
+      "model": "T12-018",
+      "route_model_id": "socket-src03-t12-socket-018",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-t12-socket-019": {
+      "model": "T12-019",
+      "route_model_id": "socket-src03-t12-socket-019",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-t12-socket-020": {
+      "model": "T12-020",
+      "route_model_id": "socket-src03-t12-socket-020",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-t12-socket-021": {
+      "model": "T12-021",
+      "route_model_id": "socket-src03-t12-socket-021",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-t12-socket-022": {
+      "model": "T12-022",
+      "route_model_id": "socket-src03-t12-socket-022",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-m-socket-typec": {
+      "model": "M-Series Matching Sockets",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "usb-c"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-m-socket-16a": {
+      "model": "M-Series Matching Sockets",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "unswitched"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-m-socket-switched-16a": {
+      "model": "M-Series Matching Sockets",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-m-socket-blank": {
+      "model": "M-Series Matching Sockets",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-m-socket-data": {
+      "model": "M-Series Matching Sockets",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-m-socket-tv-data-tel": {
+      "model": "M-Series Matching Sockets",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-m-socket-cable": {
+      "model": "M-Series Matching Sockets",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-m-socket-switched": {
+      "model": "M-Series Matching Sockets",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-m-socket-usb": {
+      "model": "M-Series Matching Sockets",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "usb-a"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-m-socket-five-hole": {
+      "model": "M-Series Matching Sockets",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "unswitched"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-ske1-white-none-n-a": {
+      "model": "EU Switched Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "eu"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "220-240"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-ske1-white-none-wifi": {
+      "model": "EU Switched Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "eu"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "220-240"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-ske1-black-usb-c-wifi": {
+      "model": "EU Switched Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "eu"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "usb-c"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "220-240"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "black"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-ske1-white-usb-a-zigbee": {
+      "model": "EU Switched Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "eu"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "usb-a"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "220-240"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skuk1-white-none-n-a": {
+      "model": "UK Switched Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "uk"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "13a"
+        ],
+        "voltage": [
+          "220-240"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skuk1-white-usb-c-wifi": {
+      "model": "UK Switched Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "uk"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "usb-c"
+        ],
+        "current": [
+          "13a"
+        ],
+        "voltage": [
+          "220-240"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skuk1-black-both-wifi": {
+      "model": "UK Switched Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "uk"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "both"
+        ],
+        "current": [
+          "13a"
+        ],
+        "voltage": [
+          "220-240"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "black"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skus1-white-none-n-a": {
+      "model": "US Receptacle",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "us"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "20a"
+        ],
+        "voltage": [
+          "110-120"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skus1-white-usb-c-wifi": {
+      "model": "US Receptacle",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "us"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "usb-c"
+        ],
+        "current": [
+          "20a"
+        ],
+        "voltage": [
+          "110-120"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skus1-gray-both-zigbee": {
+      "model": "US Receptacle",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "us"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "both"
+        ],
+        "current": [
+          "20a"
+        ],
+        "voltage": [
+          "110-120"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "gray"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skau1-white-none-n-a": {
+      "model": "AU / NZ Switched Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "au"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "10a"
+        ],
+        "voltage": [
+          "220-240"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skau1-white-usb-a-wifi": {
+      "model": "AU / NZ Switched Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "au"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "usb-a"
+        ],
+        "current": [
+          "10a"
+        ],
+        "voltage": [
+          "220-240"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skau1-black-usb-c-zigbee": {
+      "model": "AU / NZ Switched Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "au"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "usb-c"
+        ],
+        "current": [
+          "10a"
+        ],
+        "voltage": [
+          "220-240"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "black"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skun1-white-none-n-a": {
+      "model": "Multi-Standard Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "unswitched"
+        ],
+        "plug_standard": [
+          "universal"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "universal"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skun1-white-both-wifi": {
+      "model": "Multi-Standard Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "unswitched"
+        ],
+        "plug_standard": [
+          "universal"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "both"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "universal"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skun1-gold-both-wifi": {
+      "model": "Multi-Standard Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "unswitched"
+        ],
+        "plug_standard": [
+          "universal"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "both"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "universal"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "gold"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skpd1-white-usb-c-n-a": {
+      "model": "USB-C Power Delivery Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "unswitched"
+        ],
+        "plug_standard": [
+          "universal"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "usb-c"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "universal"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skpd1-white-usb-c-wifi": {
+      "model": "USB-C Power Delivery Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "unswitched"
+        ],
+        "plug_standard": [
+          "universal"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "usb-c"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "universal"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skpd1-black-both-wifi": {
+      "model": "USB-C Power Delivery Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "unswitched"
+        ],
+        "plug_standard": [
+          "universal"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "both"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "universal"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "black"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skm1-white-none-wifi": {
+      "model": "Smart Metering Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "metered"
+        ],
+        "plug_standard": [
+          "eu"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "220-240"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skm1-white-none-zigbee": {
+      "model": "Smart Metering Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "metered"
+        ],
+        "plug_standard": [
+          "eu"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "220-240"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skm1-black-none-wifi": {
+      "model": "Smart Metering Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "metered"
+        ],
+        "plug_standard": [
+          "eu"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "220-240"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "flush"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "black"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skip1-gray-none-n-a": {
+      "model": "IP66 Outdoor Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "universal"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "universal"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "surface"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "gray"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skip1-gray-none-wifi": {
+      "model": "IP66 Outdoor Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "switched"
+        ],
+        "plug_standard": [
+          "universal"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "none"
+        ],
+        "current": [
+          "16a"
+        ],
+        "voltage": [
+          "universal"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "surface"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "gray"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skp1-white-both-n-a": {
+      "model": "Pop-Up Desk Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "pop-up"
+        ],
+        "plug_standard": [
+          "universal"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "both"
+        ],
+        "current": [
+          "10a"
+        ],
+        "voltage": [
+          "universal"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "desk"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "white"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-gsl-skp1-black-both-n-a": {
+      "model": "Pop-Up Desk Socket",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "socket_type": [
+          "pop-up"
+        ],
+        "plug_standard": [
+          "universal"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "both"
+        ],
+        "current": [
+          "10a"
+        ],
+        "voltage": [
+          "universal"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "desk"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "black"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s2-socket-010": {
+      "model": "S2-010",
+      "route_model_id": "socket-src03-s2-socket-010",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s2-socket-011": {
+      "model": "S2-011",
+      "route_model_id": "socket-src03-s2-socket-011",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s2-socket-012": {
+      "model": "S2-012",
+      "route_model_id": "socket-src03-s2-socket-012",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s2-socket-013": {
+      "model": "S2-013",
+      "route_model_id": "socket-src03-s2-socket-013",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s2-socket-014": {
+      "model": "S2-014",
+      "route_model_id": "socket-src03-s2-socket-014",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s2-socket-015": {
+      "model": "S2-015",
+      "route_model_id": "socket-src03-s2-socket-015",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s2-socket-016": {
+      "model": "S2-016",
+      "route_model_id": "socket-src03-s2-socket-016",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s3-socket-010": {
+      "model": "S3-010",
+      "route_model_id": "socket-src03-s3-socket-010",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s3-socket-011": {
+      "model": "S3-011",
+      "route_model_id": "socket-src03-s3-socket-011",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s3-socket-012": {
+      "model": "S3-012",
+      "route_model_id": "socket-src03-s3-socket-012",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s3-socket-013": {
+      "model": "S3-013",
+      "route_model_id": "socket-src03-s3-socket-013",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s3-socket-014": {
+      "model": "S3-014",
+      "route_model_id": "socket-src03-s3-socket-014",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s3-socket-015": {
+      "model": "S3-015",
+      "route_model_id": "socket-src03-s3-socket-015",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s3-socket-016": {
+      "model": "S3-016",
+      "route_model_id": "socket-src03-s3-socket-016",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s5-socket-010": {
+      "model": "S5-010",
+      "route_model_id": "socket-src03-s5-socket-010",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s5-socket-011": {
+      "model": "S5-011",
+      "route_model_id": "socket-src03-s5-socket-011",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s5-socket-012": {
+      "model": "S5-012",
+      "route_model_id": "socket-src03-s5-socket-012",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s5-socket-013": {
+      "model": "S5-013",
+      "route_model_id": "socket-src03-s5-socket-013",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s5-socket-014": {
+      "model": "S5-014",
+      "route_model_id": "socket-src03-s5-socket-014",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s5-socket-015": {
+      "model": "S5-015",
+      "route_model_id": "socket-src03-s5-socket-015",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s5-socket-016": {
+      "model": "S5-016",
+      "route_model_id": "socket-src03-s5-socket-016",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-a8-socket-010": {
+      "model": "A8-010",
+      "route_model_id": "socket-src03-a8-socket-010",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-a8-socket-011": {
+      "model": "A8-011",
+      "route_model_id": "socket-src03-a8-socket-011",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-a8-socket-012": {
+      "model": "A8-012",
+      "route_model_id": "socket-src03-a8-socket-012",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-a8-socket-013": {
+      "model": "A8-013",
+      "route_model_id": "socket-src03-a8-socket-013",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-a8-socket-014": {
+      "model": "A8-014",
+      "route_model_id": "socket-src03-a8-socket-014",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-a8-socket-015": {
+      "model": "A8-015",
+      "route_model_id": "socket-src03-a8-socket-015",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-a8-socket-016": {
+      "model": "A8-016",
+      "route_model_id": "socket-src03-a8-socket-016",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-a6-socket-010": {
+      "model": "A6-010",
+      "route_model_id": "socket-src03-a6-socket-010",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-a6-socket-011": {
+      "model": "A6-011",
+      "route_model_id": "socket-src03-a6-socket-011",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-a6-socket-012": {
+      "model": "A6-012",
+      "route_model_id": "socket-src03-a6-socket-012",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-a6-socket-013": {
+      "model": "A6-013",
+      "route_model_id": "socket-src03-a6-socket-013",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-a6-socket-014": {
+      "model": "A6-014",
+      "route_model_id": "socket-src03-a6-socket-014",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-a6-socket-015": {
+      "model": "A6-015",
+      "route_model_id": "socket-src03-a6-socket-015",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-a6-socket-016": {
+      "model": "A6-016",
+      "route_model_id": "socket-src03-a6-socket-016",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s8-socket-010": {
+      "model": "S8-010",
+      "route_model_id": "socket-src03-s8-socket-010",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s8-socket-011": {
+      "model": "S8-011",
+      "route_model_id": "socket-src03-s8-socket-011",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s8-socket-012": {
+      "model": "S8-012",
+      "route_model_id": "socket-src03-s8-socket-012",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s8-socket-013": {
+      "model": "S8-013",
+      "route_model_id": "socket-src03-s8-socket-013",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s8-socket-014": {
+      "model": "S8-014",
+      "route_model_id": "socket-src03-s8-socket-014",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s8-socket-015": {
+      "model": "S8-015",
+      "route_model_id": "socket-src03-s8-socket-015",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    },
+    "socket-src03-s8-socket-016": {
+      "model": "S8-016",
+      "route_model_id": "socket-src03-s8-socket-016",
+      "status": "published",
+      "axes": {
+        "socket_type": [
+          "source-pending"
+        ],
+        "plug_standard": [
+          "source-pending"
+        ],
+        "module": [
+          "source-pending"
+        ],
+        "usb": [
+          "source-pending"
+        ],
+        "current": [
+          "source-pending"
+        ],
+        "voltage": [
+          "source-pending"
+        ],
+        "power": [
+          "source-pending"
+        ],
+        "mounting": [
+          "source-pending"
+        ],
+        "material": [
+          "source-pending"
+        ],
+        "finish": [
+          "source-pending"
+        ],
+        "color": [
+          "source-pending"
+        ]
+      }
+    }
+  }
+}

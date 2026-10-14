@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("a[href]").forEach(a=>{const h=a.getAttribute("href");if(/^products\/[^?#]+\/$/.test(h))a.setAttribute("href",h+"index.html");});});

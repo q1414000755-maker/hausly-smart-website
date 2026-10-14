@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "catalogue_id": "purepoint-smart-switch",
+  "source_workbook": "E:/Website OS v1/GSL_Smart_Purepoint_Catalog01_Product_Master.xlsx",
+  "source_sheet": "02_Option_Matrix",
+  "source_row_count": 529,
+  "status_counts": {
+    "confirmed": 343,
+    "confirmed-source-label": 106,
+    "confirmed-as-supported": 69,
+    "overview_only": 11
+  },
+  "gates": {
+    "selector_status": "Only confirmed rows with Independent Selector=Yes are selector candidates.",
+    "protocol_platform": "Protocol and Platform rows are source-backed support values; they remain non-selectable until SKU mapping confirms independent variants.",
+    "combination_rule": "This matrix describes allowed axes and dependencies. It is not a Cartesian-product generator. Variant/SKU mapping remains fail-closed."
+  },
+  "axis_keys": ["gang", "function", "material", "finish", "color", "protocol", "platform"],
+  "products": {
+    "SW-M6": {
+      "model": "M6",
+      "route_model_id": "src03-m6",
+      "axes": {
+        "gang": ["1", "2", "3", "4", "4-2-scene"],
+        "material": ["pc", "glass", "copper", "aluminum-alloy"],
+        "finish": [{"value": "skin-feel", "material": "pc"}, {"value": "skin-feel", "material": "glass"}],
+        "color": [
+          {"value": "advanced-gray", "material": "pc"}, {"value": "skin-gray", "material": "pc"}, {"value": "skin-silver", "material": "pc"}, {"value": "skin-white", "material": "pc"}, {"value": "skin-black", "material": "pc"}, {"value": "skin-gold", "material": "pc"}, {"value": "cream-gold", "material": "pc"},
+          {"value": "skin-gray", "material": "glass"}, {"value": "skin-gold", "material": "glass"}, {"value": "skin-white", "material": "glass"}, {"value": "skin-black", "material": "glass"},
+          {"value": "antique-bronze", "material": "copper"}, {"value": "gun-black", "material": "copper"}, {"value": "colorful-blue", "material": "copper"}, {"value": "coffee-bronze", "material": "copper"}, {"value": "bright-chrome", "material": "copper"},
+          {"value": "business-gray", "material": "aluminum-alloy"}, {"value": "classic-black", "material": "aluminum-alloy"}, {"value": "champagne-gold", "material": "aluminum-alloy"}, {"value": "hermes-orange", "material": "aluminum-alloy"}, {"value": "ivory-white", "material": "aluminum-alloy"}, {"value": "space-gray", "material": "aluminum-alloy"}, {"value": "sapphire-blue", "material": "aluminum-alloy"}
+        ],
+        "protocol": ["zigbee", "bluetooth-mesh"],
+        "platform": ["xiaodu", "xiaomi", "tuya", "tmall"]
+      }
+    },
+    "SW-M6S": {"model": "M6S", "route_model_id": "src03-m6s", "axes": {"gang": ["1", "2", "3", "4", "4-2-scene"], "material": ["pc"], "finish": [{"value": "skin-feel", "material": "pc"}], "color": [{"value": "skin-gray", "material": "pc"}, {"value": "skin-black", "material": "pc"}, {"value": "skin-white", "material": "pc"}], "protocol": ["zigbee", "bluetooth-mesh"], "platform": ["xiaodu", "xiaomi", "tuya", "tmall"]}},
+    "SW-M8": {"model": "M8", "route_model_id": "src03-m8", "axes": {"gang": ["1", "2", "3", "4"], "material": ["pc", "copper", "aluminum-alloy"], "overview_only_material": ["glass"], "finish": [{"value": "skin-feel", "material": "pc"}, {"value": "anodized", "material": "aluminum-alloy"}], "color_palette_refs": {"pc": "m6-pc", "copper": "copper-m6", "aluminum-alloy": "m12s-aluminum"}, "protocol": ["zigbee", "bluetooth-mesh"], "platform": ["xiaodu", "xiaomi", "tuya", "tmall"]}},
+    "SW-M9": {"model": "M9", "route_model_id": "src03-m9", "axes": {"gang": ["4-4-scene"], "material": ["pc", "copper", "aluminum-alloy"], "overview_only_material": ["glass"], "finish": [{"value": "skin-feel", "material": "pc"}, {"value": "anodized", "material": "aluminum-alloy"}], "color_palette_refs": {"pc": "m6-pc", "copper": "copper-m6", "aluminum-alloy": "m12s-aluminum"}, "protocol": ["zigbee", "bluetooth-mesh"], "platform": ["xiaomi", "tuya"]}},
+    "SW-M10": {"model": "M10", "route_model_id": "src03-m10-glass", "axes": {"gang": ["1", "2", "3", "4", "4-4-scene"], "material": ["glass"], "overview_only_material": ["pc", "aluminum-alloy", "copper"], "finish": [{"value": "ag-skin-feel", "material": "glass"}], "color_palette_refs": {"glass": "m10-glass"}, "protocol": ["zigbee", "bluetooth-mesh"], "platform": ["xiaomi", "tuya"]}},
+    "SW-M12": {"model": "M12", "route_model_id": "src03-m12", "axes": {"gang": ["2", "3", "4"], "material": ["pc"], "overview_only_material": ["glass", "aluminum-alloy", "copper"], "finish": [{"value": "skin-feel", "material": "pc"}], "color": [{"value": "business-gray", "material": "pc"}, {"value": "champagne-gold", "material": "pc"}, {"value": "elegant-white", "material": "pc"}, {"value": "classic-black", "material": "pc"}], "protocol": ["zigbee", "bluetooth-mesh"], "platform": ["xiaomi", "tuya"]}},
+    "SW-M12S": {"model": "M12/S", "route_model_id": "src03-m12s", "axes": {"gang": ["1", "2", "3", "4"], "material": ["pc", "glass", "aluminum-alloy"], "overview_only_material": ["copper"], "finish": [{"value": "skin-feel", "material": "pc"}, {"value": "skin-feel", "material": "glass"}], "color_palette_refs": {"pc": "m12s-pc", "glass": "m12s-glass", "aluminum-alloy": "m12s-aluminum"}, "protocol": ["zigbee", "bluetooth-mesh"], "platform": ["xiaomi", "tuya"]}},
+    "SW-Z5": {"model": "Z5", "route_model_id": "src03-z5", "axes": {"gang": ["1", "2", "3"], "material": ["pc", "glass", "aluminum-alloy"], "finish": [{"value": "skin-feel", "material": "pc"}, {"value": "skin-feel", "material": "glass"}], "color_palette_refs": {"pc": "m12s-pc", "glass": "m12s-glass", "aluminum-alloy": "m12s-aluminum"}, "protocol": ["zigbee", "bluetooth-mesh"], "platform": ["xiaomi", "tuya"]}},
+    "SW-Z6": {"model": "Z6", "route_model_id": "src03-z6", "axes": {"gang": ["1", "2", "3", "4", "4-2-scene"], "material": ["pc", "glass", "aluminum-alloy"], "finish": [{"value": "skin-feel", "material": "pc"}, {"value": "skin-feel", "material": "glass"}], "color_palette_refs": {"pc": "m12s-pc", "glass": "m12s-glass", "aluminum-alloy": "m12s-aluminum"}, "protocol": ["zigbee", "bluetooth-mesh"], "platform": ["xiaomi", "tuya"]}},
+    "SW-Z7": {"model": "Z7", "route_model_id": "src03-z7", "axes": {"gang": ["2", "3", "4", "4-2-scene"], "material": ["pc", "glass", "aluminum-alloy"], "finish": [{"value": "skin-feel", "material": "pc"}, {"value": "skin-feel", "material": "glass"}], "color_palette_refs": {"pc": "m12s-pc", "glass": "m12s-glass", "aluminum-alloy": "m12s-aluminum"}, "protocol": ["zigbee", "bluetooth-mesh"], "platform": ["xiaomi", "tuya"]}},
+    "SW-S7": {"model": "S7", "route_model_id": "src03-s7", "axes": {"gang": ["1", "2", "3"], "material": ["pc", "glass"], "finish": [{"value": "skin-feel", "material": "pc"}, {"value": "skin-feel", "material": "glass"}], "color": [{"value": "space-gray", "material": "pc"}, {"value": "green-apple", "material": "pc"}, {"value": "orange", "material": "pc"}, {"value": "blue-purple", "material": "pc"}, {"value": "panda-white", "material": "pc"}, {"value": "space-gray", "material": "glass"}, {"value": "panda-white", "material": "glass"}], "protocol": ["zigbee", "bluetooth-mesh"], "platform": ["xiaomi", "tuya"]}},
+    "SW-S8": {"model": "S8", "route_model_id": "src03-s8-smart", "axes": {"gang": ["1", "2", "3", "4", "4-2-scene"], "material": ["pc", "glass"], "finish": [{"value": "skin-feel", "material": "pc"}, {"value": "skin-feel", "material": "glass"}], "color": [{"value": "space-gray", "material": "pc"}, {"value": "panda-white", "material": "pc"}, {"value": "space-gray", "material": "glass"}, {"value": "panda-white", "material": "glass"}], "protocol": ["zigbee", "bluetooth-mesh"], "platform": ["xiaomi", "tuya"]}},
+    "SW-S9": {"model": "S9", "route_model_id": "src03-s9", "axes": {"gang": ["4"], "material": ["pc", "glass", "aluminum-alloy"], "overview_only_material": ["copper"], "finish": [{"value": "skin-feel", "material": "pc"}, {"value": "skin-feel", "material": "glass"}], "color_palette_refs": {"pc": "m12s-pc", "glass": "m12s-glass", "aluminum-alloy": "m12s-aluminum"}, "protocol": ["zigbee"], "platform": ["tuya"]}},
+    "SW-BLC": {"model": "BLC Right Angle Touch", "route_model_id": "src03-blc", "axes": {"gang": ["1", "2", "3", "4"], "material": ["tempered-glass"], "color": [{"value": "classic-black", "material": "tempered-glass"}, {"value": "business-gray", "material": "tempered-glass"}, {"value": "elegant-white", "material": "tempered-glass"}, {"value": "champagne-gold", "material": "tempered-glass"}], "protocol": ["zigbee", "bluetooth-mesh"], "platform": ["xiaodu", "tmall", "xiaomi", "tuya"]}}
+  }
+}

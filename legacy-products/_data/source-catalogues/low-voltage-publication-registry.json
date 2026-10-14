@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "category_page": "cat-low-voltage-data-panels",
+  "category": "low-voltage-data-panels",
+  "status": "hold",
+  "source_master_candidates": 233,
+  "source_review_candidates": 231,
+  "source_code_anomaly_holds": 2,
+  "published_model_ids": [],
+  "published_routes": [],
+  "quoteable_model_ids": [],
+  "sitemap_routes": [],
+  "rule": "A Low-Voltage group is public only when this registry explicitly lists its model_id and approved route; legacy source collection publication_status values are ignored."
+}

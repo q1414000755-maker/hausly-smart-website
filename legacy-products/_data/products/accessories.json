@@ -1,0 +1,1269 @@
+{
+  "schema_version": 1,
+  "page": "cat-accessories",
+  "locale": "en",
+  "_placeholder": {
+    "active": true,
+    "render_banner": false,
+    "summary": "本文件全部为占位数据，用于把页面结构与交互跑通。替换真实数据时只改本文件的值，代码不需要改。",
+    "why_no_banner": "与 smart-switches.json 同一口径：包子 2026-09-17 指示「标记写在代码里，页面渲染看不到」，所以 render_banner = false。对外演示或上线前改成 true 即可渲染出原型横幅。",
+    "replace": [
+      {
+        "what": "产品图",
+        "where": "model_groups[*].variants[*].image.src",
+        "with": "真实产品摄影。当前全部指向 assets/images/placeholders/product-*.svg。"
+      },
+      {
+        "what": "参考价",
+        "where": "model_groups[*].variants[*].price.amount",
+        "with": "真实参考价。换价时把 price.status 从 placeholder 改成 confirmed，并更新 checked_on。"
+      },
+      {
+        "what": "型号与 SKU",
+        "where": "model_groups[*].model_id 与 variants[*].sku",
+        "with": "真实型号编码与 SKU。当前 GSL-* 这类是行业通用写法，不是真实编码。"
+      }
+    ]
+  },
+  "eyebrow": "PRODUCT CATALOGUE",
+  "title": "Accessories",
+  "intro": "Mounting frames, faceplates, relay modules, power supplies and spare parts — the pieces an installation needs besides the products themselves.",
+  "price_note": "Reference price per part. Frames and plates are packed in the quantity stated.",
+  "dimensions": [
+    {
+      "key": "role",
+      "label": "Part Role",
+      "primary": true
+    },
+    {
+      "key": "fits",
+      "label": "Fits",
+      "primary": true
+    },
+    {
+      "key": "size",
+      "label": "Size",
+      "primary": true
+    },
+    {
+      "key": "material",
+      "label": "Material",
+      "primary": true
+    },
+    {
+      "key": "finish",
+      "label": "Color & Finish",
+      "primary": true
+    },
+    {
+      "key": "pack",
+      "label": "Pack Size",
+      "primary": false
+    },
+    {
+      "key": "rating",
+      "label": "Rating",
+      "primary": false
+    },
+    {
+      "key": "wiring",
+      "label": "Wiring",
+      "primary": false
+    },
+    {
+      "key": "mounting",
+      "label": "Mounting",
+      "primary": false
+    }
+  ],
+  "labels": {
+    "role": {
+      "frame": "Mounting frame",
+      "plate": "Faceplate",
+      "module": "Control module",
+      "power": "Power supply",
+      "spare": "Spare part"
+    },
+    "fits": {
+      "switches": "Smart switches",
+      "panels": "Control panels",
+      "sockets": "Sockets",
+      "universal": "Universal"
+    },
+    "size": {
+      "86": "86 × 86",
+      "120": "120 × 74",
+      "n-a": "Not size dependent"
+    },
+    "material": {
+      "pc": "Polycarbonate",
+      "glass": "Glass",
+      "metal": "Metal",
+      "aluminum": "Aluminium"
+    },
+    "finish": {
+      "white": "White",
+      "black": "Black",
+      "gray": "Gray",
+      "gold": "Gold",
+      "glass-black": "Glass black"
+    },
+    "pack": {
+      "1pcs": "Single",
+      "10pcs": "Pack of 10",
+      "50pcs": "Pack of 50"
+    },
+    "rating": {
+      "10a": "10 A",
+      "16a": "16 A",
+      "n-a": "No load rating"
+    },
+    "wiring": {
+      "neutral": "Neutral required",
+      "no-neutral": "No neutral",
+      "n-a": "No wiring"
+    },
+    "mounting": {
+      "flush": "Flush box",
+      "surface": "Surface",
+      "din-rail": "DIN rail",
+      "n-a": "Not applicable"
+    }
+  },
+  "value_order": {
+    "role": [
+      "frame",
+      "plate",
+      "module",
+      "power",
+      "spare"
+    ],
+    "fits": [
+      "switches",
+      "panels",
+      "sockets",
+      "universal"
+    ],
+    "size": [
+      "86",
+      "120",
+      "n-a"
+    ],
+    "material": [
+      "pc",
+      "glass",
+      "metal",
+      "aluminum"
+    ],
+    "finish": [
+      "white",
+      "black",
+      "gray",
+      "gold",
+      "glass-black"
+    ],
+    "pack": [
+      "1pcs",
+      "10pcs",
+      "50pcs"
+    ],
+    "rating": [
+      "10a",
+      "16a",
+      "n-a"
+    ],
+    "wiring": [
+      "neutral",
+      "no-neutral",
+      "n-a"
+    ],
+    "mounting": [
+      "flush",
+      "surface",
+      "din-rail",
+      "n-a"
+    ]
+  },
+  "sorts": [
+    {
+      "key": "featured",
+      "label": "Featured"
+    },
+    {
+      "key": "model-asc",
+      "label": "Model A–Z"
+    },
+    {
+      "key": "price-asc",
+      "label": "Price, low to high"
+    },
+    {
+      "key": "price-desc",
+      "label": "Price, high to low"
+    }
+  ],
+  "batch_size": 8,
+  "card": {
+    "spec_keys": [
+      "fits",
+      "size",
+      "pack"
+    ],
+    "badge_keys": [
+      "role"
+    ],
+    "compare_limit": {
+      "min": 2,
+      "max": 4
+    },
+    "quote": {
+      "add_label": "Add to Quote",
+      "added_label": "In Quote List"
+    },
+    "detail_label": "View Product",
+    "detail_route": "product-detail-v3.html"
+  },
+  "model_groups": [
+    {
+      "model_id": "gsl-ac1",
+      "name": "Switch Mounting Frame",
+      "slug": "gsl-ac1",
+      "editorial_order": 10,
+      "summary": "Metal frame that carries one to three switch plates in a 86 box.",
+      "variants": [
+        {
+          "variant_id": "gsl-ac1-white-86-10pcs",
+          "sku": "GSL-AC1-WHITE-86-10PCS",
+          "attributes": {
+            "role": [
+              "frame"
+            ],
+            "fits": [
+              "switches"
+            ],
+            "material": [
+              "metal"
+            ],
+            "rating": [
+              "n-a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "size": [
+              "86"
+            ],
+            "pack": [
+              "10pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ac1-black-86-10pcs",
+          "sku": "GSL-AC1-BLACK-86-10PCS",
+          "attributes": {
+            "role": [
+              "frame"
+            ],
+            "fits": [
+              "switches"
+            ],
+            "material": [
+              "metal"
+            ],
+            "rating": [
+              "n-a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "black"
+            ],
+            "size": [
+              "86"
+            ],
+            "pack": [
+              "10pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ac1-gold-86-10pcs",
+          "sku": "GSL-AC1-GOLD-86-10PCS",
+          "attributes": {
+            "role": [
+              "frame"
+            ],
+            "fits": [
+              "switches"
+            ],
+            "material": [
+              "metal"
+            ],
+            "rating": [
+              "n-a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "gold"
+            ],
+            "size": [
+              "86"
+            ],
+            "pack": [
+              "10pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-ac2",
+      "name": "Glass Faceplate",
+      "slug": "gsl-ac2",
+      "editorial_order": 20,
+      "summary": "Tempered glass plate that clips over the switch frame.",
+      "variants": [
+        {
+          "variant_id": "gsl-ac2-white-86-1pcs",
+          "sku": "GSL-AC2-WHITE-86-1PCS",
+          "attributes": {
+            "role": [
+              "plate"
+            ],
+            "fits": [
+              "switches"
+            ],
+            "material": [
+              "glass"
+            ],
+            "rating": [
+              "n-a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "size": [
+              "86"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ac2-glass-black-86-1pcs",
+          "sku": "GSL-AC2-GLASSBLACK-86-1PCS",
+          "attributes": {
+            "role": [
+              "plate"
+            ],
+            "fits": [
+              "switches"
+            ],
+            "material": [
+              "glass"
+            ],
+            "rating": [
+              "n-a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "glass-black"
+            ],
+            "size": [
+              "86"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ac2-gold-120-1pcs",
+          "sku": "GSL-AC2-GOLD-120-1PCS",
+          "attributes": {
+            "role": [
+              "plate"
+            ],
+            "fits": [
+              "switches"
+            ],
+            "material": [
+              "glass"
+            ],
+            "rating": [
+              "n-a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "gold"
+            ],
+            "size": [
+              "120"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-ac3",
+      "name": "Panel Mounting Frame",
+      "slug": "gsl-ac3",
+      "editorial_order": 30,
+      "summary": "Flush frame for 4- to 8-inch control panels with a plaster-in option.",
+      "variants": [
+        {
+          "variant_id": "gsl-ac3-white-120-1pcs",
+          "sku": "GSL-AC3-WHITE-120-1PCS",
+          "attributes": {
+            "role": [
+              "frame"
+            ],
+            "fits": [
+              "panels"
+            ],
+            "material": [
+              "aluminum"
+            ],
+            "rating": [
+              "n-a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "size": [
+              "120"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ac3-black-120-1pcs",
+          "sku": "GSL-AC3-BLACK-120-1PCS",
+          "attributes": {
+            "role": [
+              "frame"
+            ],
+            "fits": [
+              "panels"
+            ],
+            "material": [
+              "aluminum"
+            ],
+            "rating": [
+              "n-a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "black"
+            ],
+            "size": [
+              "120"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-ac4",
+      "name": "Surface Mount Box",
+      "slug": "gsl-ac4",
+      "editorial_order": 40,
+      "summary": "Surface box for concrete walls where no flush box exists.",
+      "variants": [
+        {
+          "variant_id": "gsl-ac4-white-86-10pcs",
+          "sku": "GSL-AC4-WHITE-86-10PCS",
+          "attributes": {
+            "role": [
+              "frame"
+            ],
+            "fits": [
+              "universal"
+            ],
+            "material": [
+              "pc"
+            ],
+            "rating": [
+              "n-a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "surface"
+            ],
+            "finish": [
+              "white"
+            ],
+            "size": [
+              "86"
+            ],
+            "pack": [
+              "10pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ac4-gray-86-10pcs",
+          "sku": "GSL-AC4-GRAY-86-10PCS",
+          "attributes": {
+            "role": [
+              "frame"
+            ],
+            "fits": [
+              "universal"
+            ],
+            "material": [
+              "pc"
+            ],
+            "rating": [
+              "n-a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "surface"
+            ],
+            "finish": [
+              "gray"
+            ],
+            "size": [
+              "86"
+            ],
+            "pack": [
+              "10pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-ac5",
+      "name": "Relay Module",
+      "slug": "gsl-ac5",
+      "editorial_order": 50,
+      "summary": "Behind-the-switch relay that adds control to an existing circuit.",
+      "variants": [
+        {
+          "variant_id": "gsl-ac5-white-n-a-1pcs",
+          "sku": "GSL-AC5-WHITE-NA-1PCS",
+          "attributes": {
+            "role": [
+              "module"
+            ],
+            "fits": [
+              "switches"
+            ],
+            "material": [
+              "pc"
+            ],
+            "rating": [
+              "16a"
+            ],
+            "wiring": [
+              "no-neutral"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "size": [
+              "n-a"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ac5-white-n-a-10pcs",
+          "sku": "GSL-AC5-WHITE-NA-10PCS",
+          "attributes": {
+            "role": [
+              "module"
+            ],
+            "fits": [
+              "switches"
+            ],
+            "material": [
+              "pc"
+            ],
+            "rating": [
+              "16a"
+            ],
+            "wiring": [
+              "no-neutral"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "size": [
+              "n-a"
+            ],
+            "pack": [
+              "10pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-ac6",
+      "name": "DIN Rail Power Supply",
+      "slug": "gsl-ac6",
+      "editorial_order": 60,
+      "summary": "24 V DIN rail supply for panels, modules and RS485 segments.",
+      "variants": [
+        {
+          "variant_id": "gsl-ac6-gray-n-a-1pcs",
+          "sku": "GSL-AC6-GRAY-NA-1PCS",
+          "attributes": {
+            "role": [
+              "power"
+            ],
+            "fits": [
+              "panels"
+            ],
+            "material": [
+              "metal"
+            ],
+            "rating": [
+              "n-a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "din-rail"
+            ],
+            "finish": [
+              "gray"
+            ],
+            "size": [
+              "n-a"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ac6-gray-n-a-10pcs",
+          "sku": "GSL-AC6-GRAY-NA-10PCS",
+          "attributes": {
+            "role": [
+              "power"
+            ],
+            "fits": [
+              "panels"
+            ],
+            "material": [
+              "metal"
+            ],
+            "rating": [
+              "n-a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "din-rail"
+            ],
+            "finish": [
+              "gray"
+            ],
+            "size": [
+              "n-a"
+            ],
+            "pack": [
+              "10pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-ac7",
+      "name": "Spare Key Set",
+      "slug": "gsl-ac7",
+      "editorial_order": 70,
+      "summary": "Replacement mechanical keys and reset pin for mortise locks.",
+      "variants": [
+        {
+          "variant_id": "gsl-ac7-gray-n-a-10pcs",
+          "sku": "GSL-AC7-GRAY-NA-10PCS",
+          "attributes": {
+            "role": [
+              "spare"
+            ],
+            "fits": [
+              "universal"
+            ],
+            "material": [
+              "metal"
+            ],
+            "rating": [
+              "n-a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "n-a"
+            ],
+            "finish": [
+              "gray"
+            ],
+            "size": [
+              "n-a"
+            ],
+            "pack": [
+              "10pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ac7-gray-n-a-50pcs",
+          "sku": "GSL-AC7-GRAY-NA-50PCS",
+          "attributes": {
+            "role": [
+              "spare"
+            ],
+            "fits": [
+              "universal"
+            ],
+            "material": [
+              "metal"
+            ],
+            "rating": [
+              "n-a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "n-a"
+            ],
+            "finish": [
+              "gray"
+            ],
+            "size": [
+              "n-a"
+            ],
+            "pack": [
+              "50pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-ac8",
+      "name": "Socket Frame Adapter",
+      "slug": "gsl-ac8",
+      "editorial_order": 80,
+      "summary": "Adapter that lets a socket module sit in a switch frame.",
+      "variants": [
+        {
+          "variant_id": "gsl-ac8-white-86-10pcs",
+          "sku": "GSL-AC8-WHITE-86-10PCS",
+          "attributes": {
+            "role": [
+              "frame"
+            ],
+            "fits": [
+              "sockets"
+            ],
+            "material": [
+              "pc"
+            ],
+            "rating": [
+              "16a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "size": [
+              "86"
+            ],
+            "pack": [
+              "10pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ac8-black-86-10pcs",
+          "sku": "GSL-AC8-BLACK-86-10PCS",
+          "attributes": {
+            "role": [
+              "frame"
+            ],
+            "fits": [
+              "sockets"
+            ],
+            "material": [
+              "pc"
+            ],
+            "rating": [
+              "16a"
+            ],
+            "wiring": [
+              "n-a"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "black"
+            ],
+            "size": [
+              "86"
+            ],
+            "pack": [
+              "10pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-b.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-ac9",
+      "name": "Terminal & Wiring Kit",
+      "slug": "gsl-ac9",
+      "editorial_order": 90,
+      "summary": "Pre-cut wiring loom and terminals for a standard room layout.",
+      "variants": [
+        {
+          "variant_id": "gsl-ac9-white-n-a-1pcs",
+          "sku": "GSL-AC9-WHITE-NA-1PCS",
+          "attributes": {
+            "role": [
+              "spare"
+            ],
+            "fits": [
+              "universal"
+            ],
+            "material": [
+              "pc"
+            ],
+            "rating": [
+              "10a"
+            ],
+            "wiring": [
+              "neutral"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "size": [
+              "n-a"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ac9-white-n-a-10pcs",
+          "sku": "GSL-AC9-WHITE-NA-10PCS",
+          "attributes": {
+            "role": [
+              "spare"
+            ],
+            "fits": [
+              "universal"
+            ],
+            "material": [
+              "pc"
+            ],
+            "rating": [
+              "10a"
+            ],
+            "wiring": [
+              "neutral"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "size": [
+              "n-a"
+            ],
+            "pack": [
+              "10pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    }
+  ]
+}

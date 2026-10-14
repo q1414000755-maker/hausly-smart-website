@@ -1,0 +1,17 @@
+/* OEM 版型骨架页（oem-page 模板）—— 2026-09-20
+   这一页目前只有版型 banner，正文等定稿后再填。
+   这里只声明正文挂载点的版心与最小节奏，不预设任何版块。
+   ⚠️ 外层是 main 的直接子元素，body.has-inner-banner 已经把它压成 --z02-canvas，
+      所以这里不能再套第二层 canvas（85%×85% 版心会缩水）。 */
+.oem-page-body {
+  box-sizing: border-box;
+  width: var(--z02-canvas);
+  margin-inline: auto;
+  min-height: 240px;
+  padding: 40px 0 56px;
+}
+/* 空挂载点不占位、不显示任何提示 —— 页面看起来就是「banner + 干净的内容区」。 */
+.oem-page-body:empty {
+  min-height: 0;
+  padding: 0;
+}

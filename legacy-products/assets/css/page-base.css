@@ -1,0 +1,105 @@
+/* Shared base for non-homepage inner pages.
+   Keeps category/finder/landing/detail pages free of homepage.css. */
+:root {
+  --ink: var(--z02-text);
+  --paper: var(--z02-surface-page);
+  --navy: var(--z02-accent);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font);
+}
+
+/* 全站唯一字体：Figtree。
+   表单控件（button / input / select / textarea）按 CSS 规范**不继承** font-family，
+   只靠 body 的声明兜不到它们 —— 浏览器会把它们渲染成 UA 默认字体
+   （实测 Arial，textarea 更是 monospace），于是同一个抽屉、同一排按钮里
+   混出两种字体。这里统一硬锁到 --font，不留系统字体回退。
+   注意：只锁字体族，不碰字号 / 字重 —— 那些仍由各组件自己的 token 决定。 */
+button,
+input,
+select,
+textarea,
+optgroup,
+option {
+  font-family: var(--font);
+}
+
+a, button { -webkit-tap-highlight-color: transparent; }
+
+.skip {
+  position: fixed;
+  z-index: 100;
+  top: -80px;
+  left: 24px;
+  padding: 12px 18px;
+  background: var(--z02-surface);
+  color: var(--ink);
+}
+
+.skip:focus { top: 18px; }
+
+.eyebrow {
+  margin: 0;
+  color: var(--z02-ink-muted);
+  font-size: var(--z02-fs-section-kicker);
+  font-weight: var(--z02-fw-regular);
+  letter-spacing:var(--z02-ls-widest);
+}
+
+/* Required page primitives: new pages use these instead of inventing a canvas
+   or type scale. The token source stays in site-shell.css. */
+.z02-page-canvas { width: var(--z02-canvas); margin-inline: auto; }
+.z02-page-section-head { max-width: 760px; }
+.z02-page-section-head > h2 {
+  margin: 8px 0 0;
+  color: var(--z02-ink);
+  font-size: var(--z02-fs-section-title);
+  font-weight: var(--z02-fw-medium);
+  letter-spacing: var(--z02-ls-heading);
+  line-height: var(--z02-lh-heading);
+}
+.z02-page-section-head > p:not(.eyebrow) {
+  margin: 12px 0 0;
+  color: var(--z02-ink-muted);
+  font-size: var(--z02-fs-copy);
+  font-weight: var(--z02-fw-regular);
+  line-height: var(--z02-lh-copy);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 30px;
+  border: 1px solid var(--ink);
+  border-radius: var(--z02-radius-control);
+  color: var(--ink);
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-medium);
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.button b {
+  margin-left: 25px;
+  font-size: var(--z02-fs-h4);
+  font-weight: var(--z02-fw-regular);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 23px rgba(12, 21, 35, 0.12);
+}
+
+.button.dark {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--z02-on-dark);
+}

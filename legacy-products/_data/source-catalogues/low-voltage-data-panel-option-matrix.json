@@ -1,0 +1,4812 @@
+{
+  "schema_version": 1,
+  "catalogue_id": "low-voltage-data-panels",
+  "status": "audit_matrix_ready",
+  "source_status": "source-pending values are excluded from public facets and resolver matches",
+  "axis_keys": [
+    "interface_type",
+    "module",
+    "port",
+    "signal",
+    "function",
+    "standard",
+    "power",
+    "mounting",
+    "material",
+    "finish",
+    "color"
+  ],
+  "dimensions": [
+    {
+      "key": "interface_type",
+      "label": "Interface Type",
+      "primary": true
+    },
+    {
+      "key": "module",
+      "label": "Module",
+      "primary": true
+    },
+    {
+      "key": "port",
+      "label": "Port",
+      "primary": true
+    },
+    {
+      "key": "signal",
+      "label": "Signal",
+      "primary": true
+    },
+    {
+      "key": "function",
+      "label": "Function",
+      "primary": true
+    },
+    {
+      "key": "standard",
+      "label": "Standard",
+      "primary": false
+    },
+    {
+      "key": "power",
+      "label": "Power",
+      "primary": false
+    },
+    {
+      "key": "mounting",
+      "label": "Mounting",
+      "primary": false
+    },
+    {
+      "key": "material",
+      "label": "Material",
+      "primary": false
+    },
+    {
+      "key": "finish",
+      "label": "Color & Finish",
+      "primary": false
+    },
+    {
+      "key": "color",
+      "label": "Color",
+      "primary": false
+    }
+  ],
+  "labels": {
+    "interface_type": {
+      "information-socket": "Information socket",
+      "weak-current": "Low-voltage control part",
+      "source-pending": "Source confirmation pending"
+    },
+    "module": {
+      "source-pending": "Source confirmation pending"
+    },
+    "port": {
+      "source-pending": "Source confirmation pending"
+    },
+    "signal": {
+      "source-pending": "Source confirmation pending"
+    },
+    "function": {
+      "source-pending": "Source confirmation pending"
+    },
+    "standard": {
+      "source-pending": "Source confirmation pending"
+    },
+    "power": {
+      "source-pending": "Source confirmation pending"
+    },
+    "mounting": {
+      "source-pending": "Source confirmation pending"
+    },
+    "material": {
+      "source-pending": "Source confirmation pending"
+    },
+    "finish": {
+      "source-pending": "Source confirmation pending"
+    },
+    "color": {
+      "source-pending": "Source confirmation pending"
+    }
+  },
+  "value_order": {
+    "interface_type": [
+      "information-socket",
+      "weak-current",
+      "source-pending"
+    ],
+    "module": [
+      "source-pending"
+    ],
+    "port": [
+      "source-pending"
+    ],
+    "signal": [
+      "source-pending"
+    ],
+    "function": [
+      "source-pending"
+    ],
+    "standard": [
+      "source-pending"
+    ],
+    "power": [
+      "source-pending"
+    ],
+    "mounting": [
+      "source-pending"
+    ],
+    "material": [
+      "source-pending"
+    ],
+    "finish": [
+      "source-pending"
+    ],
+    "color": [
+      "source-pending"
+    ]
+  },
+  "products": {
+    "lv-src03-t12-023": {
+      "model": "T12-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t12-024": {
+      "model": "T12-024",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t12-025": {
+      "model": "T12-025",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t12-026": {
+      "model": "T12-026",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t12-027": {
+      "model": "T12-027",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t12-028": {
+      "model": "T12-028",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t12-029": {
+      "model": "T12-029",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t12-030": {
+      "model": "T12-030",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t12-031": {
+      "model": "T12-031",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t12-032": {
+      "model": "T12-032",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t12-033": {
+      "model": "T12-033",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t12-034": {
+      "model": "T12-034",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t12-035": {
+      "model": "T12-035",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t12-036": {
+      "model": "T12-036",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t12-037": {
+      "model": "T12-037",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-020": {
+      "model": "A15-020",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-021": {
+      "model": "A15-021",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-022": {
+      "model": "A15-022",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-023": {
+      "model": "A15-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-024": {
+      "model": "A15-024",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-025": {
+      "model": "A15-025",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-026": {
+      "model": "A15-026",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-027": {
+      "model": "A15-027",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-028": {
+      "model": "A15-028",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-029": {
+      "model": "A15-029",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-030": {
+      "model": "A15-030",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-031": {
+      "model": "A15-031",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-032": {
+      "model": "A15-032",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-033": {
+      "model": "A15-033",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-034": {
+      "model": "A15-034",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-035": {
+      "model": "A15-035",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-036": {
+      "model": "A15-0363",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-037": {
+      "model": "A15-037",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-038": {
+      "model": "A15-038",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a15-039": {
+      "model": "A15-039",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-020": {
+      "model": "A16-020",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-021": {
+      "model": "A16-021",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-022": {
+      "model": "A16-022",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-023": {
+      "model": "A16-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-024": {
+      "model": "A16-024",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-025": {
+      "model": "A16-025",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-026": {
+      "model": "A16-026",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-027": {
+      "model": "A16-027",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-028": {
+      "model": "A16-028",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-029": {
+      "model": "A16-029",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-030": {
+      "model": "A16-030",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-031": {
+      "model": "A16-031",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-032": {
+      "model": "A16-032",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-033": {
+      "model": "A16-033",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-034": {
+      "model": "A16-034",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-035": {
+      "model": "A16-035",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-0363": {
+      "model": "A16-0363",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-037": {
+      "model": "A16-037",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-038": {
+      "model": "A16-038",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a16-039": {
+      "model": "A16-039",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-014": {
+      "model": "T20-014",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-015": {
+      "model": "T20-015",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-016": {
+      "model": "T20-016",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-017": {
+      "model": "T20-017",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-018": {
+      "model": "T20-018",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-021": {
+      "model": "T20-021",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-022": {
+      "model": "T20-022",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-023": {
+      "model": "T20-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-024": {
+      "model": "T20-024",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-025": {
+      "model": "T20-025",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-026": {
+      "model": "T20-026",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-027": {
+      "model": "T20-027",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-028": {
+      "model": "T20-028",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-029": {
+      "model": "T20-029",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-030": {
+      "model": "T20-030",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-031": {
+      "model": "T20-031",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-032": {
+      "model": "T20-032",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-033": {
+      "model": "T20-033",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t20-034": {
+      "model": "T20-034",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-014": {
+      "model": "Y10-014",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-015": {
+      "model": "Y10-015",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-016": {
+      "model": "Y10-016",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-017": {
+      "model": "Y10-017",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-018": {
+      "model": "Y10-018",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-021": {
+      "model": "Y10-021",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-022": {
+      "model": "Y10-022",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-023": {
+      "model": "Y10-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-024": {
+      "model": "Y10-024",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-025": {
+      "model": "Y10-025",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-026": {
+      "model": "Y10-026",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-027": {
+      "model": "Y10-027",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-028": {
+      "model": "Y10-028",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-029": {
+      "model": "Y10-029",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-030": {
+      "model": "Y10-030",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-031": {
+      "model": "Y10-031",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-032": {
+      "model": "Y10-032",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-033": {
+      "model": "Y10-033",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-034": {
+      "model": "Y10-034",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-035": {
+      "model": "Y10-035",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-y10-036": {
+      "model": "Y10-036",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-014": {
+      "model": "T80-014",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-015": {
+      "model": "T80-015",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-016": {
+      "model": "T80-016",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-017": {
+      "model": "T80-017",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-018": {
+      "model": "T80-018",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-019": {
+      "model": "T80-019",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-020": {
+      "model": "T80-020",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-021": {
+      "model": "T80-021",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-022": {
+      "model": "T80-022",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-023": {
+      "model": "T80-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-024": {
+      "model": "T80-024",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-025": {
+      "model": "T80-025",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-026": {
+      "model": "T80-026",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-027": {
+      "model": "T80-027",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-028": {
+      "model": "T80-028",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-029": {
+      "model": "T80-029",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-030": {
+      "model": "T80-030",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-031": {
+      "model": "T80-031",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-032": {
+      "model": "T80-032",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t80-033": {
+      "model": "T80-033",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-021": {
+      "model": "T10-021",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-022": {
+      "model": "T10-022",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-023": {
+      "model": "T10-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-024": {
+      "model": "T10-024",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-025": {
+      "model": "T10-025",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-019": {
+      "model": "T10-019",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-029": {
+      "model": "T10-029",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-030": {
+      "model": "T10-030",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-031": {
+      "model": "T10-031",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-032": {
+      "model": "T10-032",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-033": {
+      "model": "T10-033",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-039": {
+      "model": "T10-039",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-041": {
+      "model": "T10-041",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-042": {
+      "model": "T10-042",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-043": {
+      "model": "T10-043",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-044": {
+      "model": "T10-044",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-045": {
+      "model": "T10-045",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-046": {
+      "model": "T10-046",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-047": {
+      "model": "T10-047",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t10-048": {
+      "model": "T10-048",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-017": {
+      "model": "T50-017",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-018": {
+      "model": "T50-018",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-019": {
+      "model": "T50-019",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-020": {
+      "model": "T50-020",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-022": {
+      "model": "T50-022",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-023": {
+      "model": "T50-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-024": {
+      "model": "T50-024",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-025": {
+      "model": "T50-025",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-026": {
+      "model": "T50-026",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-027": {
+      "model": "T50-027",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-028": {
+      "model": "T50-028",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-029": {
+      "model": "T50-029",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-030": {
+      "model": "T50-030",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-031": {
+      "model": "T50-031",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-032": {
+      "model": "T50-032",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-033": {
+      "model": "T50-033",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-034": {
+      "model": "T50-034",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-035": {
+      "model": "T50-035",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-036": {
+      "model": "T50-036",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-037": {
+      "model": "T50-037",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-038": {
+      "model": "T50-038",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-039": {
+      "model": "T50-039",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-040": {
+      "model": "T50-040",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-041": {
+      "model": "T50-041",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-042": {
+      "model": "T50-042",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-043": {
+      "model": "T50-043",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-044": {
+      "model": "T50-044",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t50-045": {
+      "model": "T50-045",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-017": {
+      "model": "T70-017",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-018": {
+      "model": "T70-018",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-019": {
+      "model": "T70-019",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-020": {
+      "model": "T70-020",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-022": {
+      "model": "T70-022",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-023": {
+      "model": "T70-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-024": {
+      "model": "T70-024",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-025": {
+      "model": "T70-025",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-026": {
+      "model": "T70-026",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-027": {
+      "model": "T70-027",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-028": {
+      "model": "T70-028",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-029": {
+      "model": "T70-029",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-030": {
+      "model": "T70-030",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-031": {
+      "model": "T70-031",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-032": {
+      "model": "T70-032",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-033": {
+      "model": "T70-033",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-034": {
+      "model": "T70-034",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-035": {
+      "model": "T70-035",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-036": {
+      "model": "T70-036",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-037": {
+      "model": "T70-037",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-038": {
+      "model": "T70-038",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-039": {
+      "model": "T70-039",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-040": {
+      "model": "T70-040",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-041": {
+      "model": "T70-041",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-042": {
+      "model": "T70-042",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-043": {
+      "model": "T70-043",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-044": {
+      "model": "T70-044",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-t70-045": {
+      "model": "T70-045",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "weak-current"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s2-lv-017": {
+      "model": "S2-017",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s2-lv-018": {
+      "model": "S2-018",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s2-lv-019": {
+      "model": "S2-019",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s2-lv-020": {
+      "model": "S2-020",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s2-lv-021": {
+      "model": "S2-021",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s2-lv-022": {
+      "model": "S2-022",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s2-lv-023": {
+      "model": "S2-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s3-lv-017": {
+      "model": "S3-017",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s3-lv-018": {
+      "model": "S3-018",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s3-lv-019": {
+      "model": "S3-019",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s3-lv-020": {
+      "model": "S3-020",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s3-lv-021": {
+      "model": "S3-021",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s3-lv-022": {
+      "model": "S3-022",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s3-lv-023": {
+      "model": "S3-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s5-lv-017": {
+      "model": "S5-017",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s5-lv-018": {
+      "model": "S5-018",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s5-lv-019": {
+      "model": "S5-019",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s5-lv-020": {
+      "model": "S5-020",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s5-lv-021": {
+      "model": "S5-021",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s5-lv-022": {
+      "model": "S5-022",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s5-lv-023": {
+      "model": "S5-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a8-lv-017": {
+      "model": "A8-017",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a8-lv-018": {
+      "model": "A8-018",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a8-lv-019": {
+      "model": "A8-019",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a8-lv-020": {
+      "model": "A8-020",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a8-lv-021": {
+      "model": "A8-021",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a8-lv-022": {
+      "model": "A8-022",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a8-lv-023": {
+      "model": "A8-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a6-lv-017": {
+      "model": "A6-017",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a6-lv-018": {
+      "model": "A6-018",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a6-lv-019": {
+      "model": "A6-019",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a6-lv-020": {
+      "model": "A6-020",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a6-lv-021": {
+      "model": "A6-021",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a6-lv-022": {
+      "model": "A6-022",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-a6-lv-023": {
+      "model": "A6-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s8-lv-017": {
+      "model": "S8-017",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s8-lv-018": {
+      "model": "S8-018",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s8-lv-019": {
+      "model": "S8-019",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s8-lv-020": {
+      "model": "S8-020",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s8-lv-021": {
+      "model": "S8-021",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s8-lv-022": {
+      "model": "S8-022",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    },
+    "lv-src03-s8-lv-023": {
+      "model": "S8-023",
+      "route_model_id": null,
+      "status": "hold",
+      "axes": {
+        "interface_type": [
+          "information-socket"
+        ],
+        "module": "source-pending",
+        "port": "source-pending",
+        "signal": "source-pending",
+        "function": "source-pending",
+        "standard": "source-pending",
+        "power": "source-pending",
+        "mounting": "source-pending",
+        "material": "source-pending",
+        "finish": "source-pending",
+        "color": "source-pending"
+      }
+    }
+  }
+}

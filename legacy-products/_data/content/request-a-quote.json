@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "_note": "询价页（request-a-quote.html）的内容。blocks[] 按顺序渲染，支持 routes / fields / facts / slots / prose 五种块。字段里 only_for 用来做「按询价类型变字段」—— 只有 enquiry_type 选中列出的值时该字段才出现。submit_endpoint 指向 Stage 05 RFQ intake；没有 endpoint 时保留浏览器摘要兜底。",
+  "description": "One enquiry form for product quotes, samples, OEM/ODM and partnership. Pick the enquiry type and the fields that matter for it appear.",
+  "lead": "One form for every commercial route. Pick what you need and the fields that matter for it appear.",
+  "form": {
+    "recipient_email": "postmaster@hauslysmart.com",
+    "submit_endpoint": "",
+    "submit_label": "Prepare email enquiry",
+    "disclaimer": "Your enquiry is prepared in this browser. The next step opens your email application addressed to Hauslysmart, where you can review and send it.",
+    "empty_message": "Fill in the required fields and this summary fills in as well.",
+    "ready_message": "Your enquiry is prepared below. Open your email application, review it and send it when ready."
+  },
+  "blocks": [
+    {
+      "kind": "fields",
+      "heading": "What you need from us",
+      "note": "The fields below change with the enquiry type, so you only answer what is relevant.",
+      "fields": [
+        {
+          "name": "enquiry_type",
+          "label": "Enquiry type",
+          "type": "select",
+          "required": true,
+          "help": "Technical questions fit the support route better — this form is for commercial enquiries.",
+          "options": [
+            {
+              "value": "product",
+              "label": "Product quote",
+              "selected": true
+            },
+            {
+              "value": "sample",
+              "label": "Sample request"
+            },
+            {
+              "value": "oem",
+              "label": "OEM / ODM project"
+            },
+            {
+              "value": "partnership",
+              "label": "Distribution or partnership"
+            }
+          ]
+        },
+        {
+          "name": "oem_scope",
+          "label": "What has to be customised",
+          "type": "textarea",
+          "rows": 3,
+          "help": "Panel, colour, protocol, logo, packaging, firmware — as much or as little as is decided so far.",
+          "only_for": [
+            "oem"
+          ]
+        },
+        {
+          "name": "sample_purpose",
+          "label": "What the samples are for",
+          "type": "text",
+          "help": "Evaluation, showroom, certification testing — it changes what we prepare.",
+          "only_for": [
+            "sample"
+          ]
+        },
+        {
+          "name": "market",
+          "label": "Market and channel",
+          "type": "text",
+          "help": "Which country or region you sell in, and whether you retail, distribute or install.",
+          "only_for": [
+            "partnership"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "fields",
+      "heading": "What you are asking about",
+      "note": "For a single product enquiry, enter one model here. When you arrive from Quote List, the selected product lines and configurations appear in a review above and are carried into the message.",
+      "fields": [
+        {
+          "name": "model",
+          "label": "Model",
+          "type": "text",
+          "required": true,
+          "width": "half",
+          "placeholder": "GSL-S4",
+          "help": "The model code on the product page or datasheet."
+        },
+        {
+          "name": "variant",
+          "label": "Variant / configuration",
+          "type": "text",
+          "width": "half",
+          "help": "Protocol, colour and gang, if you already know which one."
+        },
+        {
+          "name": "quantity",
+          "label": "Quantity",
+          "type": "number",
+          "required": true,
+          "min": 1,
+          "width": "half",
+          "help": "A target or a range is fine. Reference prices are quoted against a quantity basis."
+        },
+        {
+          "name": "target_date",
+          "label": "Target date",
+          "type": "text",
+          "width": "half",
+          "help": "When the order has to land. Leave it open if it is not decided yet."
+        }
+      ]
+    },
+    {
+      "kind": "fields",
+      "heading": "Who you are",
+      "fields": [
+        {
+          "name": "company",
+          "label": "Company",
+          "type": "text",
+          "required": true,
+          "width": "half"
+        },
+        {
+          "name": "contact_name",
+          "label": "Contact name",
+          "type": "text",
+          "required": true,
+          "width": "half"
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "width": "half"
+        },
+        {
+          "name": "phone",
+          "label": "Phone",
+          "type": "tel",
+          "width": "half"
+        },
+        {
+          "name": "country",
+          "label": "Country / region",
+          "type": "text",
+          "required": true,
+          "width": "half"
+        },
+        {
+          "name": "destination",
+          "label": "Destination port or city",
+          "type": "text",
+          "width": "half",
+          "help": "Only needed for a freight quote."
+        },
+        {
+          "name": "message",
+          "label": "Message",
+          "type": "textarea",
+          "rows": 5,
+          "help": "Anything that decides the answer: standards, certification, wiring, packaging, or the models you listed above."
+        }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "What is stored and what happens next",
+      "paragraphs": [
+        "Nothing you type here is uploaded to this website. The enquiry is prepared in your browser and then handed to your own email application for you to review and send.",
+        "The email is addressed to the Hauslysmart sales team. You remain in control of the final send action and keep a copy in your own Sent folder."
+      ]
+    },
+    {
+      "kind": "routes",
+      "heading": "Not the right form?",
+      "note": "A technical question does not need a quantity, and a support request should not wait behind a sales queue.",
+      "items": [
+        {
+          "label": "Technical support",
+          "note": "Wiring, pairing, firmware and document questions.",
+          "route": "support.html"
+        },
+        {
+          "label": "Contact",
+          "note": "Every route in one place, including how to reach us directly.",
+          "route": "contact.html"
+        },
+        {
+          "label": "Product finder",
+          "note": "Narrow the range by real attributes before asking.",
+          "route": "finder.html"
+        }
+      ]
+    }
+  ]
+}

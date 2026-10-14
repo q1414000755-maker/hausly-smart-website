@@ -1,0 +1,1358 @@
+{
+  "schema_version": 1,
+  "page": "cat-lighting",
+  "locale": "en",
+  "_placeholder": {
+    "active": true,
+    "render_banner": false,
+    "summary": "本文件全部为占位数据，用于把页面结构与交互跑通。替换真实数据时只改本文件的值，代码不需要改。",
+    "why_no_banner": "与 smart-switches.json 同一口径：包子 2026-09-17 指示「标记写在代码里，页面渲染看不到」，所以 render_banner = false。对外演示或上线前改成 true 即可渲染出原型横幅。",
+    "replace": [
+      {
+        "what": "产品图",
+        "where": "model_groups[*].variants[*].image.src",
+        "with": "真实产品摄影。当前全部指向 assets/images/placeholders/product-*.svg。"
+      },
+      {
+        "what": "参考价",
+        "where": "model_groups[*].variants[*].price.amount",
+        "with": "真实参考价。换价时把 price.status 从 placeholder 改成 confirmed，并更新 checked_on。"
+      },
+      {
+        "what": "型号与 SKU",
+        "where": "model_groups[*].model_id 与 variants[*].sku",
+        "with": "真实型号编码与 SKU。当前 GSL-* 这类是行业通用写法，不是真实编码。"
+      }
+    ]
+  },
+  "eyebrow": "PRODUCT CATALOGUE",
+  "title": "Lighting",
+  "intro": "Controllable downlights, spots, strips and panel lights with the dimming method and driver stated per model, so you know what it will work with before you order.",
+  "price_note": "Reference price per luminaire, driver included where one is required.",
+  "dimensions": [
+    {
+      "key": "type",
+      "label": "Luminaire Type",
+      "primary": true
+    },
+    {
+      "key": "cct",
+      "label": "Light Colour",
+      "primary": true
+    },
+    {
+      "key": "watt",
+      "label": "Power",
+      "primary": true
+    },
+    {
+      "key": "protocol",
+      "label": "Connectivity",
+      "primary": true
+    },
+    {
+      "key": "dimming",
+      "label": "Dimming Method",
+      "primary": true
+    },
+    {
+      "key": "beam",
+      "label": "Beam Angle",
+      "primary": false
+    },
+    {
+      "key": "ip",
+      "label": "IP Rating",
+      "primary": false
+    },
+    {
+      "key": "cri",
+      "label": "Colour Rendering",
+      "primary": false
+    },
+    {
+      "key": "finish",
+      "label": "Housing",
+      "primary": false
+    }
+  ],
+  "labels": {
+    "type": {
+      "downlight": "Downlight",
+      "spot": "Spotlight",
+      "strip": "LED strip",
+      "panel": "Panel light",
+      "track": "Track light"
+    },
+    "cct": {
+      "2700k": "2700 K warm",
+      "3000k": "3000 K warm white",
+      "4000k": "4000 K neutral",
+      "tunable": "Tunable white",
+      "rgbw": "RGBW"
+    },
+    "watt": {
+      "5w": "5 W",
+      "7w": "7 W",
+      "12w": "12 W",
+      "18w": "18 W"
+    },
+    "protocol": {
+      "wifi": "Wi-Fi",
+      "zigbee": "Zigbee",
+      "matter": "Matter",
+      "dali": "DALI",
+      "ble": "Bluetooth mesh"
+    },
+    "dimming": {
+      "pwm": "PWM",
+      "0-10v": "0–10 V",
+      "dali": "DALI"
+    },
+    "beam": {
+      "24": "24°",
+      "38": "38°",
+      "60": "60°",
+      "120": "120°"
+    },
+    "ip": {
+      "ip20": "IP20 indoor",
+      "ip44": "IP44 bathroom",
+      "ip65": "IP65 outdoor"
+    },
+    "cri": {
+      "80": "CRI 80",
+      "90": "CRI 90",
+      "95": "CRI 95"
+    },
+    "finish": {
+      "white": "White",
+      "black": "Black",
+      "silver": "Silver"
+    }
+  },
+  "value_order": {
+    "type": [
+      "downlight",
+      "spot",
+      "strip",
+      "panel",
+      "track"
+    ],
+    "cct": [
+      "2700k",
+      "3000k",
+      "4000k",
+      "tunable",
+      "rgbw"
+    ],
+    "watt": [
+      "5w",
+      "7w",
+      "12w",
+      "18w"
+    ],
+    "protocol": [
+      "wifi",
+      "zigbee",
+      "matter",
+      "dali",
+      "ble"
+    ],
+    "dimming": [
+      "pwm",
+      "0-10v",
+      "dali"
+    ],
+    "beam": [
+      "24",
+      "38",
+      "60",
+      "120"
+    ],
+    "ip": [
+      "ip20",
+      "ip44",
+      "ip65"
+    ],
+    "cri": [
+      "80",
+      "90",
+      "95"
+    ],
+    "finish": [
+      "white",
+      "black",
+      "silver"
+    ]
+  },
+  "sorts": [
+    {
+      "key": "featured",
+      "label": "Featured"
+    },
+    {
+      "key": "model-asc",
+      "label": "Model A–Z"
+    },
+    {
+      "key": "price-asc",
+      "label": "Price, low to high"
+    },
+    {
+      "key": "price-desc",
+      "label": "Price, high to low"
+    }
+  ],
+  "batch_size": 8,
+  "card": {
+    "spec_keys": [
+      "cct",
+      "watt",
+      "dimming"
+    ],
+    "badge_keys": [
+      "protocol"
+    ],
+    "compare_limit": {
+      "min": 2,
+      "max": 4
+    },
+    "quote": {
+      "add_label": "Add to Quote",
+      "added_label": "In Quote List"
+    },
+    "detail_label": "View Product",
+    "detail_route": "product-detail-v3.html"
+  },
+  "model_groups": [
+    {
+      "model_id": "gsl-lt1",
+      "name": "Recessed Downlight",
+      "slug": "gsl-lt1",
+      "editorial_order": 10,
+      "summary": "Round recessed downlight for corridors, lobbies and guest rooms.",
+      "variants": [
+        {
+          "variant_id": "gsl-lt1-wifi-3000k-7w",
+          "sku": "GSL-LT1-WIFI-3000K-7W",
+          "attributes": {
+            "type": [
+              "downlight"
+            ],
+            "dimming": [
+              "pwm"
+            ],
+            "beam": [
+              "60"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "90"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "cct": [
+              "3000k"
+            ],
+            "watt": [
+              "7w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lt1-zigbee-3000k-7w",
+          "sku": "GSL-LT1-ZIGBEE-3000K-7W",
+          "attributes": {
+            "type": [
+              "downlight"
+            ],
+            "dimming": [
+              "pwm"
+            ],
+            "beam": [
+              "60"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "90"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "cct": [
+              "3000k"
+            ],
+            "watt": [
+              "7w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lt1-zigbee-4000k-12w",
+          "sku": "GSL-LT1-ZIGBEE-4000K-12W",
+          "attributes": {
+            "type": [
+              "downlight"
+            ],
+            "dimming": [
+              "pwm"
+            ],
+            "beam": [
+              "60"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "90"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "cct": [
+              "4000k"
+            ],
+            "watt": [
+              "12w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lt1-dali-3000k-12w",
+          "sku": "GSL-LT1-DALI-3000K-12W",
+          "attributes": {
+            "type": [
+              "downlight"
+            ],
+            "dimming": [
+              "pwm"
+            ],
+            "beam": [
+              "60"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "90"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "dali"
+            ],
+            "cct": [
+              "3000k"
+            ],
+            "watt": [
+              "12w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-lt2",
+      "name": "Adjustable Spotlight",
+      "slug": "gsl-lt2",
+      "editorial_order": 20,
+      "summary": "Tiltable spot for accent and retail lighting on a 38° beam.",
+      "variants": [
+        {
+          "variant_id": "gsl-lt2-zigbee-3000k-7w",
+          "sku": "GSL-LT2-ZIGBEE-3000K-7W",
+          "attributes": {
+            "type": [
+              "spot"
+            ],
+            "dimming": [
+              "pwm"
+            ],
+            "beam": [
+              "38"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "90"
+            ],
+            "finish": [
+              "black"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "cct": [
+              "3000k"
+            ],
+            "watt": [
+              "7w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lt2-dali-4000k-12w",
+          "sku": "GSL-LT2-DALI-4000K-12W",
+          "attributes": {
+            "type": [
+              "spot"
+            ],
+            "dimming": [
+              "pwm"
+            ],
+            "beam": [
+              "38"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "90"
+            ],
+            "finish": [
+              "black"
+            ],
+            "protocol": [
+              "dali"
+            ],
+            "cct": [
+              "4000k"
+            ],
+            "watt": [
+              "12w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lt2-wifi-2700k-5w",
+          "sku": "GSL-LT2-WIFI-2700K-5W",
+          "attributes": {
+            "type": [
+              "spot"
+            ],
+            "dimming": [
+              "pwm"
+            ],
+            "beam": [
+              "38"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "90"
+            ],
+            "finish": [
+              "black"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "cct": [
+              "2700k"
+            ],
+            "watt": [
+              "5w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-lt3",
+      "name": "Tunable White Downlight",
+      "slug": "gsl-lt3",
+      "editorial_order": 30,
+      "summary": "Tunable white downlight that follows the time of day from 2700 K to 6500 K.",
+      "variants": [
+        {
+          "variant_id": "gsl-lt3-zigbee-tunable-12w",
+          "sku": "GSL-LT3-ZIGBEE-TUNABLE-12W",
+          "attributes": {
+            "type": [
+              "downlight"
+            ],
+            "dimming": [
+              "0-10v"
+            ],
+            "beam": [
+              "60"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "95"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "cct": [
+              "tunable"
+            ],
+            "watt": [
+              "12w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lt3-dali-tunable-12w",
+          "sku": "GSL-LT3-DALI-TUNABLE-12W",
+          "attributes": {
+            "type": [
+              "downlight"
+            ],
+            "dimming": [
+              "0-10v"
+            ],
+            "beam": [
+              "60"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "95"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "dali"
+            ],
+            "cct": [
+              "tunable"
+            ],
+            "watt": [
+              "12w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lt3-matter-tunable-12w",
+          "sku": "GSL-LT3-MATTER-TUNABLE-12W",
+          "attributes": {
+            "type": [
+              "downlight"
+            ],
+            "dimming": [
+              "0-10v"
+            ],
+            "beam": [
+              "60"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "95"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "cct": [
+              "tunable"
+            ],
+            "watt": [
+              "12w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-lt4",
+      "name": "RGBW Strip Kit",
+      "slug": "gsl-lt4",
+      "editorial_order": 40,
+      "summary": "Five-metre RGBW strip with controller and power supply in one kit.",
+      "variants": [
+        {
+          "variant_id": "gsl-lt4-wifi-rgbw-18w",
+          "sku": "GSL-LT4-WIFI-RGBW-18W",
+          "attributes": {
+            "type": [
+              "strip"
+            ],
+            "dimming": [
+              "pwm"
+            ],
+            "beam": [
+              "120"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "80"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "cct": [
+              "rgbw"
+            ],
+            "watt": [
+              "18w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lt4-zigbee-rgbw-18w",
+          "sku": "GSL-LT4-ZIGBEE-RGBW-18W",
+          "attributes": {
+            "type": [
+              "strip"
+            ],
+            "dimming": [
+              "pwm"
+            ],
+            "beam": [
+              "120"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "80"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "cct": [
+              "rgbw"
+            ],
+            "watt": [
+              "18w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lt4-ble-rgbw-12w",
+          "sku": "GSL-LT4-BLE-RGBW-12W",
+          "attributes": {
+            "type": [
+              "strip"
+            ],
+            "dimming": [
+              "pwm"
+            ],
+            "beam": [
+              "120"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "80"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "ble"
+            ],
+            "cct": [
+              "rgbw"
+            ],
+            "watt": [
+              "12w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-lt5",
+      "name": "Flat Panel Light",
+      "slug": "gsl-lt5",
+      "editorial_order": 50,
+      "summary": "Edge-lit panel for offices and meeting rooms, 600 × 600.",
+      "variants": [
+        {
+          "variant_id": "gsl-lt5-dali-4000k-18w",
+          "sku": "GSL-LT5-DALI-4000K-18W",
+          "attributes": {
+            "type": [
+              "panel"
+            ],
+            "dimming": [
+              "dali"
+            ],
+            "beam": [
+              "120"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "90"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "dali"
+            ],
+            "cct": [
+              "4000k"
+            ],
+            "watt": [
+              "18w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lt5-zigbee-4000k-18w",
+          "sku": "GSL-LT5-ZIGBEE-4000K-18W",
+          "attributes": {
+            "type": [
+              "panel"
+            ],
+            "dimming": [
+              "dali"
+            ],
+            "beam": [
+              "120"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "90"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "cct": [
+              "4000k"
+            ],
+            "watt": [
+              "18w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lt5-dali-tunable-18w",
+          "sku": "GSL-LT5-DALI-TUNABLE-18W",
+          "attributes": {
+            "type": [
+              "panel"
+            ],
+            "dimming": [
+              "dali"
+            ],
+            "beam": [
+              "120"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "90"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "dali"
+            ],
+            "cct": [
+              "tunable"
+            ],
+            "watt": [
+              "18w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-lt6",
+      "name": "Track Light Head",
+      "slug": "gsl-lt6",
+      "editorial_order": 60,
+      "summary": "Three-circuit track head for galleries and showrooms.",
+      "variants": [
+        {
+          "variant_id": "gsl-lt6-dali-3000k-12w",
+          "sku": "GSL-LT6-DALI-3000K-12W",
+          "attributes": {
+            "type": [
+              "track"
+            ],
+            "dimming": [
+              "0-10v"
+            ],
+            "beam": [
+              "24"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "95"
+            ],
+            "finish": [
+              "black"
+            ],
+            "protocol": [
+              "dali"
+            ],
+            "cct": [
+              "3000k"
+            ],
+            "watt": [
+              "12w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lt6-zigbee-2700k-12w",
+          "sku": "GSL-LT6-ZIGBEE-2700K-12W",
+          "attributes": {
+            "type": [
+              "track"
+            ],
+            "dimming": [
+              "0-10v"
+            ],
+            "beam": [
+              "24"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "cri": [
+              "95"
+            ],
+            "finish": [
+              "black"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "cct": [
+              "2700k"
+            ],
+            "watt": [
+              "12w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-lt7",
+      "name": "Bathroom Downlight",
+      "slug": "gsl-lt7",
+      "editorial_order": 70,
+      "summary": "IP44 downlight rated for zones 1 and 2 in bathrooms.",
+      "variants": [
+        {
+          "variant_id": "gsl-lt7-wifi-4000k-7w",
+          "sku": "GSL-LT7-WIFI-4000K-7W",
+          "attributes": {
+            "type": [
+              "downlight"
+            ],
+            "dimming": [
+              "pwm"
+            ],
+            "beam": [
+              "60"
+            ],
+            "ip": [
+              "ip44"
+            ],
+            "cri": [
+              "90"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "cct": [
+              "4000k"
+            ],
+            "watt": [
+              "7w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lt7-zigbee-3000k-7w",
+          "sku": "GSL-LT7-ZIGBEE-3000K-7W",
+          "attributes": {
+            "type": [
+              "downlight"
+            ],
+            "dimming": [
+              "pwm"
+            ],
+            "beam": [
+              "60"
+            ],
+            "ip": [
+              "ip44"
+            ],
+            "cri": [
+              "90"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "cct": [
+              "3000k"
+            ],
+            "watt": [
+              "7w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-lt8",
+      "name": "Outdoor Wall Light",
+      "slug": "gsl-lt8",
+      "editorial_order": 80,
+      "summary": "IP65 up/down wall light for entrances and facades.",
+      "variants": [
+        {
+          "variant_id": "gsl-lt8-zigbee-3000k-12w",
+          "sku": "GSL-LT8-ZIGBEE-3000K-12W",
+          "attributes": {
+            "type": [
+              "spot"
+            ],
+            "dimming": [
+              "pwm"
+            ],
+            "beam": [
+              "38"
+            ],
+            "ip": [
+              "ip65"
+            ],
+            "cri": [
+              "80"
+            ],
+            "finish": [
+              "silver"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "cct": [
+              "3000k"
+            ],
+            "watt": [
+              "12w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-lt8-wifi-rgbw-12w",
+          "sku": "GSL-LT8-WIFI-RGBW-12W",
+          "attributes": {
+            "type": [
+              "spot"
+            ],
+            "dimming": [
+              "pwm"
+            ],
+            "beam": [
+              "38"
+            ],
+            "ip": [
+              "ip65"
+            ],
+            "cri": [
+              "80"
+            ],
+            "finish": [
+              "silver"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "cct": [
+              "rgbw"
+            ],
+            "watt": [
+              "12w"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-switch-a.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    }
+  ]
+}

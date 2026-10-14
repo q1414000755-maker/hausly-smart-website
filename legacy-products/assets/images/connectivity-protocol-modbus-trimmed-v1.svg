@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="MODBUS">
+  <rect width="400" height="400" rx="64" fill="#17212B"/>
+  <rect x="22" y="22" width="356" height="356" rx="46" fill="none" stroke="#2457A7" stroke-width="6"/>
+  <text x="200" y="190" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="60" font-weight="700" fill="#FFFFFF" letter-spacing="2">MODBUS</text>
+  <text x="200" y="244" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="22" font-weight="500" fill="#8FB3E8" letter-spacing="6">PROTOCOL</text>
+</svg>

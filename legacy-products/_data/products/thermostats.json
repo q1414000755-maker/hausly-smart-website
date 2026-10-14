@@ -1,0 +1,1891 @@
+{
+  "schema_version": 1,
+  "page": "cat-thermostats",
+  "locale": "en",
+  "_placeholder": {
+    "active": true,
+    "render_banner": false,
+    "summary": "本文件全部为占位数据，用于把页面结构与交互跑通。替换真实数据时只改本文件的值，代码不需要改。",
+    "why_no_banner": "与 smart-switches.json 同一口径：包子 2026-09-17 指示「标记写在代码里，页面渲染看不到」，所以 render_banner = false。对外演示或上线前改成 true 即可渲染出原型横幅。",
+    "replace": [
+      {
+        "what": "产品图",
+        "where": "model_groups[*].variants[*].image.src",
+        "with": "真实产品摄影。当前全部指向 assets/images/placeholders/product-*.svg。"
+      },
+      {
+        "what": "参考价",
+        "where": "model_groups[*].variants[*].price.amount",
+        "with": "真实参考价。换价时把 price.status 从 placeholder 改成 confirmed，并更新 checked_on。"
+      },
+      {
+        "what": "型号与 SKU",
+        "where": "model_groups[*].model_id 与 variants[*].sku",
+        "with": "真实型号编码与 SKU。当前 GSL-* 这类是行业通用写法，不是真实编码。"
+      }
+    ]
+  },
+  "eyebrow": "PRODUCT CATALOGUE",
+  "title": "Thermostats",
+  "intro": "Room thermostats by heating system: boiler, heat pump, fan coil and underfloor. Each model states the control modes, sensor options and wiring it needs.",
+  "price_note": "Reference price per unit, excluding the external sensor where one is offered.",
+  "dimensions": [
+    {
+      "key": "system",
+      "label": "Heating System",
+      "primary": true
+    },
+    {
+      "key": "protocol",
+      "label": "Connectivity",
+      "primary": true
+    },
+    {
+      "key": "interface",
+      "label": "Interface",
+      "primary": true
+    },
+    {
+      "key": "sensor",
+      "label": "Sensor",
+      "primary": true
+    },
+    {
+      "key": "power",
+      "label": "Power Supply",
+      "primary": true
+    },
+    {
+      "key": "voltage",
+      "label": "Voltage",
+      "primary": false
+    },
+    {
+      "key": "stages",
+      "label": "Control Stages",
+      "primary": false
+    },
+    {
+      "key": "mounting",
+      "label": "Mounting",
+      "primary": false
+    },
+    {
+      "key": "finish",
+      "label": "Color & Finish",
+      "primary": false
+    }
+  ],
+  "labels": {
+    "system": {
+      "boiler": "Boiler",
+      "heat-pump": "Heat pump",
+      "fan-coil": "Fan coil",
+      "underfloor": "Underfloor",
+      "ac": "Air conditioner",
+      "source-pending": "Source confirmation pending"
+    },
+    "protocol": {
+      "wifi": "Wi-Fi",
+      "zigbee": "Zigbee",
+      "bluetooth-mesh": "Bluetooth Mesh",
+      "matter": "Matter",
+      "rs485": "RS485 Modbus"
+    },
+    "interface": {
+      "touch": "Touch screen",
+      "button": "Push button",
+      "dial": "Rotary dial",
+      "app-only": "App only",
+      "source-pending": "Source confirmation pending"
+    },
+    "sensor": {
+      "builtin": "Built-in",
+      "external": "External probe",
+      "both": "Built-in and external",
+      "source-pending": "Source confirmation pending"
+    },
+    "power": {
+      "ac220": "AC 220–240 V",
+      "ac24": "AC 24 V",
+      "battery": "Battery",
+      "ac250": "250 V ~ 50/60 Hz",
+      "source-pending": "Source confirmation pending"
+    },
+    "voltage": {
+      "220-240": "220–240 V",
+      "24v": "24 V",
+      "250v": "250 V ~ 50/60 Hz",
+      "source-pending": "Source confirmation pending"
+    },
+    "stages": {
+      "1": "1 stage",
+      "2": "2 stages",
+      "3": "3 stages",
+      "source-pending": "Source confirmation pending"
+    },
+    "mounting": {
+      "wall": "Wall",
+      "din-rail": "DIN rail",
+      "flush": "Flush box",
+      "source-pending": "Source confirmation pending"
+    },
+    "finish": {
+      "white": "White",
+      "glass-white": "Glass white",
+      "source-pending": "Source confirmation pending"
+    }
+  },
+  "value_order": {
+    "system": [
+      "boiler",
+      "heat-pump",
+      "fan-coil",
+      "underfloor",
+      "ac",
+      "source-pending"
+    ],
+    "protocol": [
+      "wifi",
+      "zigbee",
+      "bluetooth-mesh",
+      "matter",
+      "rs485"
+    ],
+    "interface": [
+      "touch",
+      "button",
+      "dial",
+      "app-only",
+      "source-pending"
+    ],
+    "sensor": [
+      "builtin",
+      "external",
+      "both",
+      "source-pending"
+    ],
+    "power": [
+      "ac220",
+      "ac24",
+      "battery",
+      "ac250",
+      "source-pending"
+    ],
+    "voltage": [
+      "220-240",
+      "24v",
+      "250v",
+      "source-pending"
+    ],
+    "stages": [
+      "1",
+      "2",
+      "3",
+      "source-pending"
+    ],
+    "mounting": [
+      "wall",
+      "din-rail",
+      "flush",
+      "source-pending"
+    ],
+    "finish": [
+      "white",
+      "glass-white",
+      "source-pending"
+    ]
+  },
+  "sorts": [
+    {
+      "key": "featured",
+      "label": "Featured"
+    },
+    {
+      "key": "model-asc",
+      "label": "Model A–Z"
+    },
+    {
+      "key": "price-asc",
+      "label": "Price, low to high"
+    },
+    {
+      "key": "price-desc",
+      "label": "Price, high to low"
+    }
+  ],
+  "batch_size": 8,
+  "card": {
+    "spec_keys": [
+      "system",
+      "stages",
+      "power"
+    ],
+    "badge_keys": [
+      "protocol"
+    ],
+    "compare_limit": {
+      "min": 2,
+      "max": 4
+    },
+    "quote": {
+      "add_label": "Add to Quote",
+      "added_label": "In Quote List"
+    },
+    "detail_label": "View Product",
+    "detail_route": "product-detail-v3.html"
+  },
+  "model_groups": [
+    {
+      "model_id": "src03-intelligent-temperature-controller",
+      "source_name": "Intelligent temperature controller",
+      "name": "Intelligent Temperature Controller",
+      "slug": "src03-intelligent-temperature-controller",
+      "editorial_order": 3,
+      "summary": "Source-backed 86-type Bluetooth Mesh temperature controller; final system configuration and model code remain pending.",
+      "data_status": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 43,
+          "status": "source_extracted"
+        }
+      ],
+      "source_fields": {
+        "surface": {
+          "value": "Tempered glass",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 43
+        },
+        "base_material": {
+          "value": "Flame-retardant PC",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 43
+        },
+        "dimensions": {
+          "value": "86 × 86 mm",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 43
+        },
+        "protocol": {
+          "value": "Bluetooth Mesh",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 43
+        },
+        "apps": {
+          "value": "Xiaodu and Mijia",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 43
+        },
+        "operating_temperature": {
+          "value": "0–40 °C",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 43
+        },
+        "commercial_terms": {
+          "value": "USD 8.8 per unit; MOQ 1 pcs",
+          "status": "confirmed",
+          "source_id": "USER-CONFIRMATION",
+          "source_page": null
+        }
+      },
+      "variants": [
+        {
+          "variant_id": "src03-intelligent-temperature-controller-btmesh",
+          "sku": "Intelligent temperature controller — code pending",
+          "attributes": {
+            "system": [
+              "source-pending"
+            ],
+            "protocol": [
+              "bluetooth-mesh"
+            ],
+            "interface": [
+              "source-pending"
+            ],
+            "sensor": [
+              "source-pending"
+            ],
+            "power": [
+              "source-pending"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "stages": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "finish": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-intelligent-temperature-controller.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        }
+      ],
+      "source_image": {
+        "status": "source_preview",
+        "path": "assets/images/source-products/src03-intelligent-temperature-controller.jpg",
+        "source_refs": [
+          {
+            "source_id": "SRC03",
+            "source_page": 43,
+            "status": "source_extracted"
+          }
+        ]
+      }
+    },
+    {
+      "model_id": "src03-knob-screen",
+      "source_name": "Dimming and temperature-control knob screen",
+      "name": "Dimming & Temperature-Control Knob Screen",
+      "slug": "src03-knob-screen",
+      "editorial_order": 4,
+      "summary": "Source-backed 86 × 86 mm Zigbee knob screen for dimming and temperature control; final system configuration and model code remain pending.",
+      "data_status": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 46,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC03",
+          "source_page": 47,
+          "status": "source_extracted"
+        }
+      ],
+      "source_fields": {
+        "panel_material": {
+          "value": "Aluminium alloy, all-copper or skin-feel glass",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 46
+        },
+        "dimensions": {
+          "value": "86 × 86 mm",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 46
+        },
+        "app": {
+          "value": "Tuya",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 46
+        },
+        "protocol": {
+          "value": "Zigbee",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 46
+        },
+        "commercial_terms": {
+          "value": "USD 8.8 per unit; MOQ 1 pcs",
+          "status": "confirmed",
+          "source_id": "USER-CONFIRMATION",
+          "source_page": null
+        }
+      },
+      "variants": [
+        {
+          "variant_id": "src03-knob-screen-zigbee",
+          "sku": "Dimming and temperature-control knob screen — code pending",
+          "attributes": {
+            "system": [
+              "source-pending"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "interface": [
+              "dial"
+            ],
+            "sensor": [
+              "source-pending"
+            ],
+            "power": [
+              "source-pending"
+            ],
+            "voltage": [
+              "source-pending"
+            ],
+            "stages": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "finish": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-knob-screen.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        }
+      ],
+      "source_image": {
+        "status": "source_preview",
+        "path": "assets/images/source-products/src03-knob-screen.jpg",
+        "source_refs": [
+          {
+            "source_id": "SRC03",
+            "source_page": 46,
+            "status": "source_extracted"
+          },
+          {
+            "source_id": "SRC03",
+            "source_page": 47,
+            "status": "source_extracted"
+          }
+        ]
+      }
+    },
+    {
+      "model_id": "src03-half-screen-thermostat",
+      "source_name": "Half screen thermostat",
+      "name": "Half Screen Thermostat",
+      "slug": "src03-half-screen-thermostat",
+      "editorial_order": 5,
+      "summary": "Source-backed 86 × 86 mm Zigbee thermostat; final system configuration and model code remain pending.",
+      "data_status": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC03",
+          "source_page": 44,
+          "status": "source_extracted"
+        }
+      ],
+      "source_fields": {
+        "panel_material": {
+          "value": "Aluminium alloy, brass or skin-feel glass",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 44
+        },
+        "dimensions": {
+          "value": "86 × 86 mm",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 44
+        },
+        "operating_temperature": {
+          "value": "0–40 °C",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 44
+        },
+        "app": {
+          "value": "Tuya",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 44
+        },
+        "rated_voltage": {
+          "value": "250 V ~ 50/60 Hz",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 44
+        },
+        "protocol": {
+          "value": "Zigbee",
+          "status": "source_extracted",
+          "source_id": "SRC03",
+          "source_page": 44
+        },
+        "commercial_terms": {
+          "value": "USD 8.8 per unit; MOQ 1 pcs",
+          "status": "confirmed",
+          "source_id": "USER-CONFIRMATION",
+          "source_page": null
+        }
+      },
+      "variants": [
+        {
+          "variant_id": "src03-half-screen-thermostat-zigbee",
+          "sku": "Half screen thermostat — code pending",
+          "attributes": {
+            "system": [
+              "source-pending"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "interface": [
+              "source-pending"
+            ],
+            "sensor": [
+              "source-pending"
+            ],
+            "power": [
+              "ac250"
+            ],
+            "voltage": [
+              "250v"
+            ],
+            "stages": [
+              "source-pending"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "finish": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src03-half-screen-thermostat.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        }
+      ],
+      "source_image": {
+        "status": "source_preview",
+        "path": "assets/images/source-products/src03-half-screen-thermostat.jpg",
+        "source_refs": [
+          {
+            "source_id": "SRC03",
+            "source_page": 44,
+            "status": "source_extracted"
+          }
+        ]
+      }
+    },
+    {
+      "model_id": "gsl-thb1",
+      "name": "Boiler Room Thermostat",
+      "slug": "gsl-thb1",
+      "editorial_order": 10,
+      "summary": "Single-stage boiler control with weekly schedule and open-window detection.",
+      "variants": [
+        {
+          "variant_id": "gsl-thb1-wifi-touch-ac220",
+          "sku": "GSL-THB1-WIFI-TOUCH-AC220",
+          "attributes": {
+            "system": [
+              "boiler"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "interface": [
+              "touch"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-thb1-zigbee-button-battery",
+          "sku": "GSL-THB1-ZIGBEE-BUTTON-BATTERY",
+          "attributes": {
+            "system": [
+              "boiler"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "interface": [
+              "button"
+            ],
+            "power": [
+              "battery"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-thb1-wifi-dial-ac220",
+          "sku": "GSL-THB1-WIFI-DIAL-AC220",
+          "attributes": {
+            "system": [
+              "boiler"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "interface": [
+              "dial"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-thh1",
+      "name": "Heat Pump Thermostat",
+      "slug": "gsl-thh1",
+      "editorial_order": 20,
+      "summary": "Two-stage heat pump control with defrost logic and outdoor sensor input.",
+      "variants": [
+        {
+          "variant_id": "gsl-thh1-wifi-touch-ac220",
+          "sku": "GSL-THH1-WIFI-TOUCH-AC220",
+          "attributes": {
+            "system": [
+              "heat-pump"
+            ],
+            "sensor": [
+              "both"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "2"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "interface": [
+              "touch"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-thh1-matter-touch-ac220",
+          "sku": "GSL-THH1-MATTER-TOUCH-AC220",
+          "attributes": {
+            "system": [
+              "heat-pump"
+            ],
+            "sensor": [
+              "both"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "2"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "interface": [
+              "touch"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-thh1-rs485-button-ac24",
+          "sku": "GSL-THH1-RS485-BUTTON-AC24",
+          "attributes": {
+            "system": [
+              "heat-pump"
+            ],
+            "sensor": [
+              "both"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "2"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "interface": [
+              "button"
+            ],
+            "power": [
+              "ac24"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-thf1",
+      "name": "Fan Coil Thermostat",
+      "slug": "gsl-thf1",
+      "editorial_order": 30,
+      "summary": "Three-speed fan coil control with valve outputs and hotel key-card input.",
+      "variants": [
+        {
+          "variant_id": "gsl-thf1-wifi-touch-ac220",
+          "sku": "GSL-THF1-WIFI-TOUCH-AC220",
+          "attributes": {
+            "system": [
+              "fan-coil"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "3"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "interface": [
+              "touch"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-thf1-rs485-touch-ac220",
+          "sku": "GSL-THF1-RS485-TOUCH-AC220",
+          "attributes": {
+            "system": [
+              "fan-coil"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "3"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "interface": [
+              "touch"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-thf1-zigbee-button-ac220",
+          "sku": "GSL-THF1-ZIGBEE-BUTTON-AC220",
+          "attributes": {
+            "system": [
+              "fan-coil"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "3"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "interface": [
+              "button"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-thu1",
+      "name": "Underfloor Heating Thermostat",
+      "slug": "gsl-thu1",
+      "editorial_order": 40,
+      "summary": "Floor probe control with limiting function so screed never overheats.",
+      "variants": [
+        {
+          "variant_id": "gsl-thu1-wifi-touch-ac220",
+          "sku": "GSL-THU1-WIFI-TOUCH-AC220",
+          "attributes": {
+            "system": [
+              "underfloor"
+            ],
+            "sensor": [
+              "external"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "interface": [
+              "touch"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-thu1-zigbee-touch-ac220",
+          "sku": "GSL-THU1-ZIGBEE-TOUCH-AC220",
+          "attributes": {
+            "system": [
+              "underfloor"
+            ],
+            "sensor": [
+              "external"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "interface": [
+              "touch"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-thu1-matter-touch-ac220",
+          "sku": "GSL-THU1-MATTER-TOUCH-AC220",
+          "attributes": {
+            "system": [
+              "underfloor"
+            ],
+            "sensor": [
+              "external"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "glass-white"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "interface": [
+              "touch"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-tha1",
+      "name": "Air Conditioner Thermostat",
+      "slug": "gsl-tha1",
+      "editorial_order": 50,
+      "summary": "Split and cassette control that replaces the infrared handset with a wall plate.",
+      "variants": [
+        {
+          "variant_id": "gsl-tha1-wifi-touch-ac220",
+          "sku": "GSL-THA1-WIFI-TOUCH-AC220",
+          "attributes": {
+            "system": [
+              "ac"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "interface": [
+              "touch"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-tha1-wifi-app-only-ac220",
+          "sku": "GSL-THA1-WIFI-APPONLY-AC220",
+          "attributes": {
+            "system": [
+              "ac"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "interface": [
+              "app-only"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-tha1-matter-button-ac24",
+          "sku": "GSL-THA1-MATTER-BUTTON-AC24",
+          "attributes": {
+            "system": [
+              "ac"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "interface": [
+              "button"
+            ],
+            "power": [
+              "ac24"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-thd1",
+      "name": "Rotary Dial Thermostat",
+      "slug": "gsl-thd1",
+      "editorial_order": 60,
+      "summary": "Non-connected dial thermostat for rooms that only need a setpoint.",
+      "variants": [
+        {
+          "variant_id": "gsl-thd1-wifi-dial-battery",
+          "sku": "GSL-THD1-WIFI-DIAL-BATTERY",
+          "attributes": {
+            "system": [
+              "boiler"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "interface": [
+              "dial"
+            ],
+            "power": [
+              "battery"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-thd1-zigbee-dial-battery",
+          "sku": "GSL-THD1-ZIGBEE-DIAL-BATTERY",
+          "attributes": {
+            "system": [
+              "boiler"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "interface": [
+              "dial"
+            ],
+            "power": [
+              "battery"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-thp1",
+      "name": "Programmable 7-Day Thermostat",
+      "slug": "gsl-thp1",
+      "editorial_order": 70,
+      "summary": "Seven-day schedule with four setpoints per day and holiday override.",
+      "variants": [
+        {
+          "variant_id": "gsl-thp1-wifi-button-ac220",
+          "sku": "GSL-THP1-WIFI-BUTTON-AC220",
+          "attributes": {
+            "system": [
+              "boiler"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "interface": [
+              "button"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-thp1-zigbee-button-battery",
+          "sku": "GSL-THP1-ZIGBEE-BUTTON-BATTERY",
+          "attributes": {
+            "system": [
+              "boiler"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "interface": [
+              "button"
+            ],
+            "power": [
+              "battery"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-thr1",
+      "name": "RS485 Modbus Thermostat",
+      "slug": "gsl-thr1",
+      "editorial_order": 80,
+      "summary": "Modbus RTU thermostat for BMS integration in hotels and offices.",
+      "variants": [
+        {
+          "variant_id": "gsl-thr1-rs485-touch-ac24",
+          "sku": "GSL-THR1-RS485-TOUCH-AC24",
+          "attributes": {
+            "system": [
+              "fan-coil"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "24v"
+            ],
+            "stages": [
+              "2"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "interface": [
+              "touch"
+            ],
+            "power": [
+              "ac24"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-thr1-rs485-button-ac24",
+          "sku": "GSL-THR1-RS485-BUTTON-AC24",
+          "attributes": {
+            "system": [
+              "fan-coil"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "24v"
+            ],
+            "stages": [
+              "2"
+            ],
+            "mounting": [
+              "flush"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "interface": [
+              "button"
+            ],
+            "power": [
+              "ac24"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-thw1",
+      "name": "Wireless Thermostat Kit",
+      "slug": "gsl-thw1",
+      "editorial_order": 90,
+      "summary": "Battery room unit with a wired receiver at the boiler or fan coil.",
+      "variants": [
+        {
+          "variant_id": "gsl-thw1-wifi-touch-battery",
+          "sku": "GSL-THW1-WIFI-TOUCH-BATTERY",
+          "attributes": {
+            "system": [
+              "boiler"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "interface": [
+              "touch"
+            ],
+            "power": [
+              "battery"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-thw1-zigbee-button-battery",
+          "sku": "GSL-THW1-ZIGBEE-BUTTON-BATTERY",
+          "attributes": {
+            "system": [
+              "boiler"
+            ],
+            "sensor": [
+              "builtin"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "1"
+            ],
+            "mounting": [
+              "wall"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "interface": [
+              "button"
+            ],
+            "power": [
+              "battery"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-thz1",
+      "name": "Multi-Zone Thermostat",
+      "slug": "gsl-thz1",
+      "editorial_order": 100,
+      "summary": "Controls up to six zones from one plate with per-zone schedules.",
+      "variants": [
+        {
+          "variant_id": "gsl-thz1-wifi-touch-ac220",
+          "sku": "GSL-THZ1-WIFI-TOUCH-AC220",
+          "attributes": {
+            "system": [
+              "underfloor"
+            ],
+            "sensor": [
+              "both"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "3"
+            ],
+            "mounting": [
+              "din-rail"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "wifi"
+            ],
+            "interface": [
+              "touch"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-thz1-rs485-touch-ac220",
+          "sku": "GSL-THZ1-RS485-TOUCH-AC220",
+          "attributes": {
+            "system": [
+              "underfloor"
+            ],
+            "sensor": [
+              "both"
+            ],
+            "voltage": [
+              "220-240"
+            ],
+            "stages": [
+              "3"
+            ],
+            "mounting": [
+              "din-rail"
+            ],
+            "finish": [
+              "white"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "interface": [
+              "touch"
+            ],
+            "power": [
+              "ac220"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-panel-c.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    }
+  ]
+}

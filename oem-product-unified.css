@@ -1,0 +1,16 @@
+body.oem-product-migrated [data-site-shell]{position:fixed!important;inset:0 0 auto!important;border-bottom:0}
+body.oem-product-migrated:not(.is-scrolled):not(.mobile-nav-open) [data-site-shell]{background:transparent!important;color:#fff!important;--z02-shell-header-text:#fff;--z02-shell-header-foreground:#fff;--z02-shell-control-border:rgba(255,255,255,.42)}
+body.oem-product-migrated:not(.is-scrolled):not(.mobile-nav-open) [data-site-shell] .z02-brand img{filter:none!important}
+body.oem-product-migrated:is(.is-scrolled,.mobile-nav-open) [data-site-shell]{background:#fff!important;color:#10264d!important;--z02-shell-header-text:#10264d;--z02-shell-header-foreground:#10264d}
+body.oem-product-migrated:is(.is-scrolled,.mobile-nav-open) [data-site-shell] .z02-brand img{filter:none!important}
+body.oem-product-migrated:is(.is-scrolled,.mobile-nav-open) [data-site-shell] .z02-brand.z02-brand{background:#182430!important}
+.oem-product-migrated .ub-banner h1,.oem-product-migrated .ub-banner .eyebrow{color:white!important}
+.oem-product-migrated .ub-banner .lead{color:#e7edf5!important}
+.oem-product-migrated .ub-banner .inner-banner-media{position:absolute;inset:0;width:100%;height:100%!important;object-fit:cover}
+.oem-product-migrated main>section{width:100%!important;max-width:none!important;margin-inline:0!important}
+.oem-product-migrated .ub-banner .of-actions{margin-top:24px}
+.oem-product-migrated .ub-banner .of-btn.secondary{color:white!important;background:#ffffff14;border-color:#ffffff80}
+.oem-product-migrated .of-btn{min-height:44px;border-radius:8px}
+.oem-product-migrated main [id]{scroll-margin-top:110px}
+@media(max-width:760px){.oem-product-migrated .of-wrap{width:calc(100% - 32px)}.oem-product-migrated .of-choices{flex-wrap:wrap}.oem-product-migrated .of-workspace>*{min-width:0}}
+@media(max-width:480px){.oem-product-migrated .of-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.oem-product-migrated .of-choice{min-width:0}.oem-product-migrated .of-choice span{padding:10px 8px}}

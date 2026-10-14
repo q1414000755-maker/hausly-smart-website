@@ -1,0 +1,1252 @@
+{
+  "schema_version": 1,
+  "page": "cat-cameras",
+  "locale": "en",
+  "_placeholder": {
+    "active": true,
+    "render_banner": false,
+    "summary": "本文件全部为占位数据，用于把页面结构与交互跑通。替换真实数据时只改本文件的值，代码不需要改。",
+    "why_no_banner": "与 smart-switches.json 同一口径：包子 2026-09-17 指示「标记写在代码里，页面渲染看不到」，所以 render_banner = false。对外演示或上线前改成 true 即可渲染出原型横幅。",
+    "replace": [
+      {
+        "what": "产品图",
+        "where": "model_groups[*].variants[*].image.src",
+        "with": "真实产品摄影。当前全部指向 assets/images/placeholders/product-*.svg。"
+      },
+      {
+        "what": "参考价",
+        "where": "model_groups[*].variants[*].price.amount",
+        "with": "真实参考价。换价时把 price.status 从 placeholder 改成 confirmed，并更新 checked_on。"
+      },
+      {
+        "what": "型号与 SKU",
+        "where": "model_groups[*].model_id 与 variants[*].sku",
+        "with": "真实型号编码与 SKU。当前 GSL-* 这类是行业通用写法，不是真实编码。"
+      }
+    ]
+  },
+  "eyebrow": "PRODUCT CATALOGUE",
+  "title": "Cameras",
+  "intro": "IP cameras that run on the same control platform as the switches and panels: bullet, dome, PTZ and doorbell, with resolution, lens and storage stated per model.",
+  "price_note": "Reference price per camera. Storage cards and NVR channels are quoted separately.",
+  "dimensions": [
+    {
+      "key": "type",
+      "label": "Camera Type",
+      "primary": true
+    },
+    {
+      "key": "resolution",
+      "label": "Resolution",
+      "primary": true
+    },
+    {
+      "key": "lens",
+      "label": "Lens",
+      "primary": true
+    },
+    {
+      "key": "night",
+      "label": "Night Vision",
+      "primary": true
+    },
+    {
+      "key": "power",
+      "label": "Power Supply",
+      "primary": true
+    },
+    {
+      "key": "storage",
+      "label": "Storage",
+      "primary": false
+    },
+    {
+      "key": "audio",
+      "label": "Audio",
+      "primary": false
+    },
+    {
+      "key": "ip",
+      "label": "IP Rating",
+      "primary": false
+    },
+    {
+      "key": "protocol",
+      "label": "Integration",
+      "primary": false
+    }
+  ],
+  "labels": {
+    "type": {
+      "bullet": "Bullet",
+      "dome": "Dome",
+      "ptz": "PTZ",
+      "doorbell": "Doorbell",
+      "fisheye": "Fisheye"
+    },
+    "resolution": {
+      "2mp": "2 MP 1080p",
+      "4mp": "4 MP 2K",
+      "5mp": "5 MP",
+      "8mp": "8 MP 4K"
+    },
+    "lens": {
+      "4": "4 mm",
+      "2.8": "2.8 mm wide",
+      "varifocal": "Varifocal 2.8–12 mm"
+    },
+    "night": {
+      "ir": "Infrared",
+      "colorvu": "Full colour",
+      "starlight": "Starlight"
+    },
+    "power": {
+      "poe": "PoE",
+      "dc12": "DC 12 V",
+      "battery": "Battery",
+      "solar": "Solar"
+    },
+    "storage": {
+      "sd": "MicroSD",
+      "cloud": "Cloud",
+      "all": "MicroSD + NVR + cloud"
+    },
+    "audio": {
+      "none": "No audio",
+      "one-way": "Listen only",
+      "two-way": "Two-way talk"
+    },
+    "ip": {
+      "ip65": "IP65",
+      "ip66": "IP66",
+      "ip67": "IP67"
+    },
+    "protocol": {
+      "onvif": "ONVIF",
+      "gsl": "Hauslysmart platform"
+    }
+  },
+  "value_order": {
+    "type": [
+      "bullet",
+      "dome",
+      "ptz",
+      "doorbell",
+      "fisheye"
+    ],
+    "resolution": [
+      "2mp",
+      "4mp",
+      "5mp",
+      "8mp"
+    ],
+    "lens": [
+      "2.8",
+      "4",
+      "varifocal"
+    ],
+    "night": [
+      "ir",
+      "colorvu",
+      "starlight"
+    ],
+    "power": [
+      "poe",
+      "dc12",
+      "battery",
+      "solar"
+    ],
+    "storage": [
+      "sd",
+      "cloud",
+      "all"
+    ],
+    "audio": [
+      "none",
+      "one-way",
+      "two-way"
+    ],
+    "ip": [
+      "ip65",
+      "ip66",
+      "ip67"
+    ],
+    "protocol": [
+      "onvif",
+      "gsl"
+    ]
+  },
+  "sorts": [
+    {
+      "key": "featured",
+      "label": "Featured"
+    },
+    {
+      "key": "model-asc",
+      "label": "Model A–Z"
+    },
+    {
+      "key": "price-asc",
+      "label": "Price, low to high"
+    },
+    {
+      "key": "price-desc",
+      "label": "Price, high to low"
+    }
+  ],
+  "batch_size": 8,
+  "card": {
+    "spec_keys": [
+      "resolution",
+      "lens",
+      "night"
+    ],
+    "badge_keys": [
+      "protocol"
+    ],
+    "compare_limit": {
+      "min": 2,
+      "max": 4
+    },
+    "quote": {
+      "add_label": "Add to Quote",
+      "added_label": "In Quote List"
+    },
+    "detail_label": "View Product",
+    "detail_route": "product-detail-v3.html"
+  },
+  "model_groups": [
+    {
+      "model_id": "gsl-cm1",
+      "name": "Entry Bullet Camera",
+      "slug": "gsl-cm1",
+      "editorial_order": 10,
+      "summary": "Fixed bullet for entrances and loading bays with infrared night vision.",
+      "variants": [
+        {
+          "variant_id": "gsl-cm1-2mp-28-poe",
+          "sku": "GSL-CM1-2MP-28-POE",
+          "attributes": {
+            "type": [
+              "bullet"
+            ],
+            "night": [
+              "ir"
+            ],
+            "storage": [
+              "sd"
+            ],
+            "audio": [
+              "none"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "2mp"
+            ],
+            "lens": [
+              "2.8"
+            ],
+            "power": [
+              "poe"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cm1-4mp-4-poe",
+          "sku": "GSL-CM1-4MP-4-POE",
+          "attributes": {
+            "type": [
+              "bullet"
+            ],
+            "night": [
+              "ir"
+            ],
+            "storage": [
+              "sd"
+            ],
+            "audio": [
+              "none"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "4mp"
+            ],
+            "lens": [
+              "4"
+            ],
+            "power": [
+              "poe"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cm1-2mp-28-dc12",
+          "sku": "GSL-CM1-2MP-28-DC12",
+          "attributes": {
+            "type": [
+              "bullet"
+            ],
+            "night": [
+              "ir"
+            ],
+            "storage": [
+              "sd"
+            ],
+            "audio": [
+              "none"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "2mp"
+            ],
+            "lens": [
+              "2.8"
+            ],
+            "power": [
+              "dc12"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cm2",
+      "name": "Colour Night Bullet Camera",
+      "slug": "gsl-cm2",
+      "editorial_order": 20,
+      "summary": "Full-colour night imaging with a white-light supplement on motion.",
+      "variants": [
+        {
+          "variant_id": "gsl-cm2-4mp-28-poe",
+          "sku": "GSL-CM2-4MP-28-POE",
+          "attributes": {
+            "type": [
+              "bullet"
+            ],
+            "night": [
+              "colorvu"
+            ],
+            "storage": [
+              "all"
+            ],
+            "audio": [
+              "two-way"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "4mp"
+            ],
+            "lens": [
+              "2.8"
+            ],
+            "power": [
+              "poe"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cm2-5mp-4-poe",
+          "sku": "GSL-CM2-5MP-4-POE",
+          "attributes": {
+            "type": [
+              "bullet"
+            ],
+            "night": [
+              "colorvu"
+            ],
+            "storage": [
+              "all"
+            ],
+            "audio": [
+              "two-way"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "5mp"
+            ],
+            "lens": [
+              "4"
+            ],
+            "power": [
+              "poe"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cm2-4mp-varifocal-poe",
+          "sku": "GSL-CM2-4MP-VARIFOCAL-POE",
+          "attributes": {
+            "type": [
+              "bullet"
+            ],
+            "night": [
+              "colorvu"
+            ],
+            "storage": [
+              "all"
+            ],
+            "audio": [
+              "two-way"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "4mp"
+            ],
+            "lens": [
+              "varifocal"
+            ],
+            "power": [
+              "poe"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cm3",
+      "name": "Vandal Dome Camera",
+      "slug": "gsl-cm3",
+      "editorial_order": 30,
+      "summary": "IK10 dome for corridors, lifts and anywhere a lens can be reached.",
+      "variants": [
+        {
+          "variant_id": "gsl-cm3-4mp-28-poe",
+          "sku": "GSL-CM3-4MP-28-POE",
+          "attributes": {
+            "type": [
+              "dome"
+            ],
+            "night": [
+              "ir"
+            ],
+            "storage": [
+              "sd"
+            ],
+            "audio": [
+              "one-way"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "4mp"
+            ],
+            "lens": [
+              "2.8"
+            ],
+            "power": [
+              "poe"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cm3-2mp-28-dc12",
+          "sku": "GSL-CM3-2MP-28-DC12",
+          "attributes": {
+            "type": [
+              "dome"
+            ],
+            "night": [
+              "ir"
+            ],
+            "storage": [
+              "sd"
+            ],
+            "audio": [
+              "one-way"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "2mp"
+            ],
+            "lens": [
+              "2.8"
+            ],
+            "power": [
+              "dc12"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cm3-5mp-4-poe",
+          "sku": "GSL-CM3-5MP-4-POE",
+          "attributes": {
+            "type": [
+              "dome"
+            ],
+            "night": [
+              "ir"
+            ],
+            "storage": [
+              "sd"
+            ],
+            "audio": [
+              "one-way"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "5mp"
+            ],
+            "lens": [
+              "4"
+            ],
+            "power": [
+              "poe"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cm4",
+      "name": "Starlight Dome Camera",
+      "slug": "gsl-cm4",
+      "editorial_order": 40,
+      "summary": "Low-light dome that holds colour detail down to 0.005 lux.",
+      "variants": [
+        {
+          "variant_id": "gsl-cm4-4mp-28-poe",
+          "sku": "GSL-CM4-4MP-28-POE",
+          "attributes": {
+            "type": [
+              "dome"
+            ],
+            "night": [
+              "starlight"
+            ],
+            "storage": [
+              "all"
+            ],
+            "audio": [
+              "two-way"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "4mp"
+            ],
+            "lens": [
+              "2.8"
+            ],
+            "power": [
+              "poe"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cm4-8mp-4-poe",
+          "sku": "GSL-CM4-8MP-4-POE",
+          "attributes": {
+            "type": [
+              "dome"
+            ],
+            "night": [
+              "starlight"
+            ],
+            "storage": [
+              "all"
+            ],
+            "audio": [
+              "two-way"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "8mp"
+            ],
+            "lens": [
+              "4"
+            ],
+            "power": [
+              "poe"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cm5",
+      "name": "PTZ Camera",
+      "slug": "gsl-cm5",
+      "editorial_order": 50,
+      "summary": "Pan-tilt-zoom with 25× optical zoom for car parks and warehouses.",
+      "variants": [
+        {
+          "variant_id": "gsl-cm5-4mp-varifocal-poe",
+          "sku": "GSL-CM5-4MP-VARIFOCAL-POE",
+          "attributes": {
+            "type": [
+              "ptz"
+            ],
+            "night": [
+              "ir"
+            ],
+            "storage": [
+              "all"
+            ],
+            "audio": [
+              "two-way"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "4mp"
+            ],
+            "lens": [
+              "varifocal"
+            ],
+            "power": [
+              "poe"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cm5-8mp-varifocal-poe",
+          "sku": "GSL-CM5-8MP-VARIFOCAL-POE",
+          "attributes": {
+            "type": [
+              "ptz"
+            ],
+            "night": [
+              "ir"
+            ],
+            "storage": [
+              "all"
+            ],
+            "audio": [
+              "two-way"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "8mp"
+            ],
+            "lens": [
+              "varifocal"
+            ],
+            "power": [
+              "poe"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cm6",
+      "name": "Video Doorbell",
+      "slug": "gsl-cm6",
+      "editorial_order": 60,
+      "summary": "Doorbell with two-way talk, package detection and indoor chime.",
+      "variants": [
+        {
+          "variant_id": "gsl-cm6-2mp-28-battery",
+          "sku": "GSL-CM6-2MP-28-BATTERY",
+          "attributes": {
+            "type": [
+              "doorbell"
+            ],
+            "night": [
+              "ir"
+            ],
+            "storage": [
+              "cloud"
+            ],
+            "audio": [
+              "two-way"
+            ],
+            "ip": [
+              "ip65"
+            ],
+            "protocol": [
+              "gsl"
+            ],
+            "resolution": [
+              "2mp"
+            ],
+            "lens": [
+              "2.8"
+            ],
+            "power": [
+              "battery"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cm6-4mp-28-battery",
+          "sku": "GSL-CM6-4MP-28-BATTERY",
+          "attributes": {
+            "type": [
+              "doorbell"
+            ],
+            "night": [
+              "ir"
+            ],
+            "storage": [
+              "cloud"
+            ],
+            "audio": [
+              "two-way"
+            ],
+            "ip": [
+              "ip65"
+            ],
+            "protocol": [
+              "gsl"
+            ],
+            "resolution": [
+              "4mp"
+            ],
+            "lens": [
+              "2.8"
+            ],
+            "power": [
+              "battery"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cm6-2mp-28-dc12",
+          "sku": "GSL-CM6-2MP-28-DC12",
+          "attributes": {
+            "type": [
+              "doorbell"
+            ],
+            "night": [
+              "ir"
+            ],
+            "storage": [
+              "cloud"
+            ],
+            "audio": [
+              "two-way"
+            ],
+            "ip": [
+              "ip65"
+            ],
+            "protocol": [
+              "gsl"
+            ],
+            "resolution": [
+              "2mp"
+            ],
+            "lens": [
+              "2.8"
+            ],
+            "power": [
+              "dc12"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cm7",
+      "name": "Solar PTZ Camera",
+      "slug": "gsl-cm7",
+      "editorial_order": 70,
+      "summary": "Off-grid PTZ with solar panel and 4G backhaul for remote sites.",
+      "variants": [
+        {
+          "variant_id": "gsl-cm7-4mp-varifocal-solar",
+          "sku": "GSL-CM7-4MP-VARIFOCAL-SOLAR",
+          "attributes": {
+            "type": [
+              "ptz"
+            ],
+            "night": [
+              "colorvu"
+            ],
+            "storage": [
+              "sd"
+            ],
+            "audio": [
+              "two-way"
+            ],
+            "ip": [
+              "ip67"
+            ],
+            "protocol": [
+              "gsl"
+            ],
+            "resolution": [
+              "4mp"
+            ],
+            "lens": [
+              "varifocal"
+            ],
+            "power": [
+              "solar"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cm7-2mp-varifocal-solar",
+          "sku": "GSL-CM7-2MP-VARIFOCAL-SOLAR",
+          "attributes": {
+            "type": [
+              "ptz"
+            ],
+            "night": [
+              "colorvu"
+            ],
+            "storage": [
+              "sd"
+            ],
+            "audio": [
+              "two-way"
+            ],
+            "ip": [
+              "ip67"
+            ],
+            "protocol": [
+              "gsl"
+            ],
+            "resolution": [
+              "2mp"
+            ],
+            "lens": [
+              "varifocal"
+            ],
+            "power": [
+              "solar"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-cm8",
+      "name": "Fisheye Camera",
+      "slug": "gsl-cm8",
+      "editorial_order": 80,
+      "summary": "360° fisheye with dewarping for lobbies and open-plan floors.",
+      "variants": [
+        {
+          "variant_id": "gsl-cm8-5mp-28-poe",
+          "sku": "GSL-CM8-5MP-28-POE",
+          "attributes": {
+            "type": [
+              "fisheye"
+            ],
+            "night": [
+              "ir"
+            ],
+            "storage": [
+              "all"
+            ],
+            "audio": [
+              "two-way"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "5mp"
+            ],
+            "lens": [
+              "2.8"
+            ],
+            "power": [
+              "poe"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-cm8-8mp-28-poe",
+          "sku": "GSL-CM8-8MP-28-POE",
+          "attributes": {
+            "type": [
+              "fisheye"
+            ],
+            "night": [
+              "ir"
+            ],
+            "storage": [
+              "all"
+            ],
+            "audio": [
+              "two-way"
+            ],
+            "ip": [
+              "ip66"
+            ],
+            "protocol": [
+              "onvif"
+            ],
+            "resolution": [
+              "8mp"
+            ],
+            "lens": [
+              "2.8"
+            ],
+            "power": [
+              "poe"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,496 @@
+/* Quote List 落地页 —— 加购清单的表格化呈现。
+   版心只认 --z02-canvas；字号/色一律走 --z02-* token（不写裸值、不写 border 色字面量）。
+   ─────────────────────────────────────────────────────────────────────────
+   桌面表格用 grid 而非 <table>：一行四列（产品 / 参考价 / 数量 / 移除），
+   列宽固定比例、单元格各自对齐，窄屏时降成堆叠卡片。
+*/
+.ql-main {
+  width: var(--z02-canvas);
+  margin-inline: auto;
+  padding-block: var(--z02-space-section-y);
+  display: flex;
+  flex-direction: column;
+  gap: var(--z02-space-section-gap);
+}
+
+/* ── 清单外壳 ────────────────────────────────────────────────────────── */
+.ql-shell {
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--z02-radius-panel);
+  background: var(--z02-surface);
+  overflow: hidden;
+}
+
+.ql-empty[hidden] { display: none !important; }
+.ql-empty {
+  padding: clamp(32px, 3.5vw, 56px) clamp(24px, 3vw, 48px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.ql-empty-title {
+  margin: 0;
+  font-size: var(--z02-fs-h4);
+  font-weight: 600;
+  color: var(--z02-text);
+}
+
+.ql-empty-copy {
+  margin: 0;
+  max-width: 52ch;
+  font-size: var(--z02-fs-copy);
+  line-height: 1.62;
+  color: var(--z02-text-muted);
+}
+
+.ql-empty .button {
+  margin-top: 6px;
+}
+
+/* ── 表头与行 ────────────────────────────────────────────────────────── */
+.ql-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(120px, 180px) minmax(140px, 190px) 92px;
+  gap: 20px;
+  align-items: center;
+  padding: 18px clamp(20px, 2vw, 28px);
+}
+
+.ql-row--head {
+  padding-block: 12px;
+  border-bottom: 1px solid var(--z02-border-line);
+  background: var(--z02-surface-page);
+  font-size: var(--z02-fs-label);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--z02-text-muted);
+}
+
+.ql-rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ql-rows .ql-row {
+  border-bottom: 1px solid var(--z02-border-line);
+}
+
+.ql-rows .ql-row:last-child {
+  border-bottom: 0;
+}
+
+.ql-cell {
+  min-width: 0;
+}
+
+.ql-cell-label {
+  display: none;
+  font-size: var(--z02-fs-label);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--z02-text-muted);
+}
+
+/* 产品列 */
+.ql-cell--product {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ql-media {
+  flex: 0 0 auto;
+  width: 112px;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  border-radius: var(--z02-radius-card);
+  background: var(--z02-surface-product);
+  overflow: hidden;
+}
+
+.ql-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.ql-media--empty {
+  background: var(--z02-surface-product);
+}
+
+.ql-copy {
+  min-width: 0;
+}
+
+.ql-family {
+  margin: 0 0 4px;
+  font-size: var(--z02-fs-label);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--z02-text-faint);
+}
+
+.ql-name {
+  margin: 0 0 4px;
+  font-size: var(--z02-fs-card-title);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--z02-text);
+}
+
+.ql-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ql-name a:hover,
+.ql-name a:focus-visible {
+  color: var(--z02-accent);
+  text-decoration: underline;
+}
+
+.ql-sku {
+  margin: 0;
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text-muted);
+}
+
+.ql-sku span {
+  font-variant-numeric: tabular-nums;
+  color: var(--z02-text);
+}
+
+/* 已选配置 / 加工 —— 2026-09-19 加：清单不再只是「产品 × 数量」，
+   而是带着客户的要求，这才对得起「采购需求编辑器」的定位。 */
+.ql-config {
+  margin: 4px 0 0;
+  font-size: var(--z02-fs-meta);
+  line-height: 1.5;
+  color: var(--z02-text-muted);
+}
+
+.ql-config--custom {
+  color: var(--z02-text);
+}
+
+/* 「+N more」：摘要按 5 项截断后，这里是唯一提示「还有内容」的地方（完整串在 title 上），
+   所以要比正文更弱、但不能弱到看不见。 */
+.ql-config-more {
+  margin-left: 6px;
+  font-style: normal;
+  white-space: nowrap;
+  color: var(--z02-text-faint);
+}
+
+.ql-note {
+  margin: 4px 0 0;
+  font-size: var(--z02-fs-meta);
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--z02-text-muted);
+}
+
+/* 价格列 */
+.ql-price-value {
+  display: block;
+  font-size: var(--z02-fs-lead);
+  font-weight: 600;
+  color: var(--z02-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.ql-price-value small {
+  font-size: var(--z02-fs-meta);
+  font-weight: 400;
+  color: var(--z02-text-muted);
+}
+
+.ql-price-moq {
+  display: block;
+  margin-top: 2px;
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text-faint);
+}
+
+.ql-price-none {
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text-muted);
+}
+
+/* 数量步进器 */
+.ql-stepper {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--z02-border-control);
+  border-radius: var(--z02-radius-control);
+  overflow: hidden;
+  background: var(--z02-surface);
+}
+
+.ql-stepper button {
+  width: 34px;
+  border: 0;
+  background: var(--z02-surface-page);
+  color: var(--z02-text);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.ql-stepper button:hover {
+  background: var(--z02-surface-selected);
+  color: var(--z02-accent);
+}
+
+.ql-stepper input {
+  width: 62px;
+  border: 0;
+  border-inline: 1px solid var(--z02-border-line);
+  padding: 8px 6px;
+  text-align: center;
+  font-family: var(--font);
+  font-size: var(--z02-fs-copy);
+  color: var(--z02-text);
+  font-variant-numeric: tabular-nums;
+  -moz-appearance: textfield;
+}
+
+.ql-stepper input::-webkit-outer-spin-button,
+.ql-stepper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.ql-stepper input:focus-visible,
+.ql-stepper button:focus-visible {
+  outline: 2px solid var(--z02-accent);
+  outline-offset: -2px;
+}
+
+/* 移除列现在是「Edit + Remove」两个动作，改成竖排小按钮组 */
+.ql-cell--remove {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.ql-cell--remove .ql-text-btn {
+  font-size: var(--z02-fs-meta);
+  font-weight: 600;
+}
+
+.ql-remove {
+  border: 0;
+  background: none;
+  padding: 0;
+  font-family: var(--font);
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text-muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.ql-remove:hover {
+  color: var(--z02-accent);
+}
+
+/* ── 陈旧数据提示 ────────────────────────────────────────────────────── */
+.ql-stale {
+  margin: 0;
+  padding: 12px clamp(20px, 2vw, 28px);
+  border-top: 1px solid var(--z02-border-line);
+  background: var(--z02-surface-selected);
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text-muted);
+}
+
+/* ── 页脚操作条 ──────────────────────────────────────────────────────── */
+.ql-foot {
+  border-top: 1px solid var(--z02-border-line);
+  background: var(--z02-surface-page);
+  padding: clamp(18px, 2vw, 26px) clamp(20px, 2vw, 28px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.ql-foot-summary {
+  min-width: 0;
+}
+
+.ql-summary {
+  margin: 0;
+  font-size: var(--z02-fs-lead);
+  font-weight: 600;
+  color: var(--z02-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.ql-disclaimer {
+  margin: 6px 0 0;
+  max-width: 60ch;
+  font-size: var(--z02-fs-meta);
+  line-height: 1.6;
+  color: var(--z02-text-muted);
+}
+
+.ql-foot-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.ql-text-btn {
+  border: 0;
+  background: none;
+  padding: 0;
+  font-family: var(--font);
+  font-size: var(--z02-fs-action);
+  color: var(--z02-accent);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ql-text-btn:hover {
+  color: var(--z02-accent-hover);
+}
+
+.ql-text-btn--danger {
+  color: var(--z02-text-muted);
+}
+
+.ql-text-btn--danger:hover {
+  color: var(--z02-text);
+}
+
+/* ── 无 JS 提示 ──────────────────────────────────────────────────────── */
+.ql-noscript {
+  margin: 0;
+  padding: 20px clamp(20px, 2vw, 28px);
+  border-top: 1px solid var(--z02-border-line);
+  font-size: var(--z02-fs-meta);
+  color: var(--z02-text-muted);
+}
+
+/* ── 底部三块说明 ────────────────────────────────────────────────────── */
+.ql-notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.ql-note {
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--z02-radius-card);
+  background: var(--z02-surface);
+  padding: 20px 22px;
+}
+
+.ql-note h3 {
+  margin: 0 0 8px;
+  font-size: var(--z02-fs-card-title);
+  font-weight: 600;
+  color: var(--z02-text);
+}
+
+.ql-note p {
+  margin: 0;
+  font-size: var(--z02-fs-copy);
+  line-height: 1.62;
+  color: var(--z02-text-muted);
+}
+
+/* ── 响应式：≤1024 降成堆叠卡片 ──────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .ql-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "product remove"
+      "price   qty";
+    gap: 14px 20px;
+    align-items: start;
+  }
+
+  .ql-row--head {
+    display: none;
+  }
+
+  .ql-cell--product { grid-area: product; }
+  .ql-cell--price   { grid-area: price; }
+  .ql-cell--qty     { grid-area: qty; }
+  .ql-cell--remove  { grid-area: remove; }
+
+  .ql-cell-label {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .ql-notes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .ql-media {
+    width: 96px;
+  }
+
+  .ql-notes {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ql-foot {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ql-foot-actions {
+    justify-content: flex-start;
+  }
+}
+
+/* ── 清空确认（2026-09-19）：就地替换 .ql-foot-actions，不再叠一层 Modal。
+   整单清空代价大所以必须确认；单条 Remove 走 Undo，不弹窗。 ── */
+.ql-confirm {
+  flex: 1 1 320px;
+  display: grid;
+  gap: 10px;
+  padding: 18px 20px;
+  border: 1px solid var(--z02-border-control);
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface);
+}
+.ql-confirm[hidden] {
+  display: none;
+}
+.ql-confirm h3 {
+  margin: 0;
+  font-size: var(--z02-fs-copy);
+  font-weight: 600;
+  color: var(--z02-text);
+}
+.ql-confirm p {
+  margin: 0;
+  font-size: var(--z02-fs-meta);
+  line-height: 1.5;
+  color: var(--z02-text-muted);
+}
+.ql-confirm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}

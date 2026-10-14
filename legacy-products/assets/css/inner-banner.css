@@ -1,0 +1,134 @@
+/* Shared Z02 inner-page banner, sourced from the approved Smart Switches page. */
+.inner-banner{
+  position:relative;
+  width:100%;
+  min-height:620px;
+  margin-left:0;
+  overflow:hidden;
+  background:var(--z02-surface-dark);
+}
+/* Inner pages no longer use percentage gutters on <main>. Every direct child
+   snaps to the shared --z02-canvas; full-bleed bands opt out via .full-bleed so
+   their background spans the viewport while their inner canvas stays centred. */
+body.has-inner-banner:not(.category-page) main{padding-right:0;padding-left:0}
+body.has-inner-banner:not(.category-page) main>:not(.full-bleed):not(.inner-banner){width:var(--z02-canvas);margin-inline:auto}
+body.has-inner-banner:not(.category-page) main>.full-bleed,
+body.has-inner-banner:not(.category-page) main>.inner-banner{width:100%;margin-inline:0}
+body.has-inner-banner:not(.category-page) .inner-banner{width:100%;margin-left:0}
+.finder-page>.inner-banner+.finder-layout{margin-top:40px}
+.inner-banner-media{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:78% 40%;
+}
+/* 洗色：白字压在照片上，成本就是这一层。
+   2026-09-18 实测（1440，按字形笔画下方的像素采样，不是按元素框）：
+     左端原值 .62/.34/.12/0 → 眉标均 4.30、H1 均 7.16、导语均 7.81（都要求 4.5，
+     H1 属大字要求 3.0），最差处 H1 2.46 / 导语 2.10 —— 照片右上那扇亮窗拖后腿。
+   现值把左半加深并延长到 80% 才归零，让文案所在的那一列在亮照片上也有余量。
+   ⚠️ 这套值是按「亮照片」调的，换品类 banner 图后要重新量一遍。 */
+.inner-banner-wash{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(23,33,43,.72) 0%,rgba(23,33,43,.52) 40%,rgba(23,33,43,.26) 62%,transparent 80%),
+    linear-gradient(180deg,rgba(23,33,43,.24) 0%,transparent 100px),
+    linear-gradient(180deg,transparent 70%,rgba(23,33,43,.2) 100%);
+}
+.inner-banner-inner{
+  position:relative;
+  z-index:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  box-sizing:border-box;
+  width:var(--z02-canvas);
+  min-height:620px;
+  margin-inline:auto;
+  padding:0;
+}
+.inner-banner-copy{max-width:620px;margin:0}
+/* 面包屑落在主视觉右下角（包子 2026-09-18 定的位置）。
+   ⚠️ 右下角正是这张照片最亮的地方 —— 实测白字对底色均 2.61:1、最亮处 1.85:1，
+      12px 小字 AA 要 4.5:1，光靠 text-shadow 不解决问题。
+   所以给它一块自带 alpha 的底衬：底衬是固定值，不依赖当前这张图的明暗，
+   以后每换一张品类 banner 都不用重调。rgba(23,33,43,.68) 压在最亮的纯白上
+   也还有 5.3:1；压在这张图的右下角实测约 9:1。
+   padding 让文字内缩，深色块的外沿正好与版心右边缘对齐。 */
+.inner-banner .cat-crumb{
+  position:absolute;
+  right:0;
+  bottom:28px;
+  margin:0;
+  padding:8px 14px;
+  border-radius:6px;
+  background:rgba(23,33,43,.68);
+  color:var(--z02-on-dark);
+  font-size:var(--z02-fs-label);
+  text-align:right;
+  text-shadow:0 1px 2px rgba(8,10,14,.55),0 4px 16px rgba(8,10,14,.4);
+}
+.inner-banner .cat-crumb a{color:inherit;text-decoration:none}
+.inner-banner .cat-crumb a:hover{color:var(--z02-on-dark)}
+.inner-banner .cat-crumb span[aria-current="page"]{color:var(--z02-on-dark)}
+.inner-banner-copy .eyebrow{
+  margin:0;
+  color:var(--z02-on-dark);
+  font-size:var(--z02-fs-label);
+  font-weight: var(--z02-fw-semibold);
+  letter-spacing:var(--z02-ls-widest);
+  text-shadow:0 1px 2px rgba(8,10,14,.5),0 6px 18px rgba(8,10,14,.35);
+}
+.inner-banner-copy h1{
+  max-width:720px;
+  margin:14px 0 0;
+  color:var(--z02-on-dark);
+  font-size:var(--z02-fs-display);
+  font-weight: var(--z02-fw-semibold);
+  letter-spacing:var(--z02-ls-heading);
+  line-height:var(--z02-lh-tight);
+  text-shadow:0 1px 2px rgba(8,10,14,.55),0 4px 18px rgba(8,10,14,.45),0 12px 32px rgba(8,10,14,.28);
+}
+.inner-banner-copy .lead{
+  max-width:520px;
+  margin:14px 0 0;
+  color:var(--z02-on-dark);
+  font-size:var(--z02-fs-copy);
+  line-height:var(--z02-lh-copy);
+  text-shadow:0 1px 2px rgba(8,10,14,.5),0 6px 18px rgba(8,10,14,.35);
+}
+/* ── 页头叠在主视觉上时的两条配套（2026-09-18 包子把页头改成全站「静止透明」，
+      原先是首页专属，现在 48 个有 banner 的页面一起用）───────────────────────
+   页头脱离正常流（position:fixed）压在 banner 上沿，白色导航文字直接坐在图片上。
+   原有的顶部洗色只有 .24，在浅色图片区域撑不住（白字对 #7f8082 仅 3.9:1，
+   正文 AA 要 4.5:1）。这里加一层够深、且只覆盖页头高度的上沿渐变：
+   最深处 .72，就算图片本身是纯白，白字也有约 6.5:1 —— 固定 alpha，
+   不依赖当前这张图的明暗，以后每换一张 banner 图都不用重调这一层。
+
+   下面那条 .inner-banner-inner 的 padding-top 是给叠图页头留的避让高度
+   （= --z02-shell-header-height）。⚠️ 它和 site-shell.css 里页头的 position:fixed
+   是一对：页头一旦回到正常流，这里必须同时撤掉，否则文案会整体往下掉。
+   banner 总高仍是 620px，不额外加高。 */
+.inner-banner-wash::before{
+  position:absolute;
+  inset:0 0 auto;
+  height:calc(var(--z02-shell-header-height) + 72px);
+  background:linear-gradient(180deg,rgba(23,33,43,.72) 0%,rgba(23,33,43,.58) 42%,rgba(23,33,43,.22) 76%,transparent 100%);
+  content:"";
+}
+/* 只作用在 PC 档（>760px）：≤760 那条 .inner-banner-inner{padding:88px 0 64px}
+   是给移动端两行页头留的更大避让，两边媒体区间互斥，不会打架。
+   移动端以后要另做样式，这里不预先替它决定。 */
+@media (min-width:761px){
+  .inner-banner-inner{padding-top:var(--z02-shell-header-height)}
+}
+
+@media (max-width:760px){
+  .inner-banner{min-height:0}
+  .inner-banner-inner{min-height:0;padding:88px 0 64px}
+  .inner-banner .cat-crumb{position:static;margin-top:28px;text-align:left}
+  .inner-banner-copy h1{font-size:var(--z02-fs-h2)}
+}

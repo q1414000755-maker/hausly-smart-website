@@ -1,0 +1,1220 @@
+{
+  "schema_version": 1,
+  "page": "cat-curtains",
+  "locale": "en",
+  "_placeholder": {
+    "active": true,
+    "render_banner": false,
+    "summary": "本文件中「Curtain Motors」三款来自 B 画册（SRC01 p15–17），规格已摘录；导轨与五金件仅有功能件清单、无型号编码与规格，编为占位条目。价格全部占位。替换真实数据时只改本文件的值，代码不需要改。",
+    "why_no_banner": "与 smart-switches.json 同一口径：包子 2026-09-17 指示「标记写在代码里，页面渲染看不到」，所以 render_banner = false。对外演示或上线前改成 true 即可渲染出原型横幅。",
+    "replace": [
+      {
+        "what": "导轨与五金件的型号编码",
+        "where": "model_groups[1..3].variants[*].sku",
+        "with": "工厂真实编码。当前 GSL-CT-* 是占位写法，data_status = placeholder。"
+      },
+      {
+        "what": "导轨与五金件的规格",
+        "where": "model_groups[1..3].variants[*].attributes",
+        "with": "真实长度 / 承重 / 材质。当前除 mounting 与 pack 外多为 source-pending。"
+      },
+      {
+        "what": "产品图",
+        "where": "model_groups[*].variants[*].image.src",
+        "with": "真实产品摄影。电机当前为 SRC01 来源预览图，导轨与五金件指向占位图。"
+      },
+      {
+        "what": "参考价",
+        "where": "model_groups[*].variants[*].price.amount",
+        "with": "真实参考价。换价时把 price.status 从 placeholder 改成 confirmed，并更新 checked_on。"
+      }
+    ]
+  },
+  "eyebrow": "PRODUCT CATALOGUE",
+  "title": "Smart Curtains",
+  "intro": "Curtain motors, tracks and the hardware that turns a window into a scene. Built for hotel guest rooms and whole-home projects, with travel memory, obstacle stop and manual operation during power failure.",
+  "price_note": "Reference price per unit. Tracks and hardware are quoted as sets.",
+  "dimensions": [
+    {
+      "key": "type",
+      "label": "Type",
+      "primary": true
+    },
+    {
+      "key": "drive",
+      "label": "Power",
+      "primary": true
+    },
+    {
+      "key": "control",
+      "label": "Control",
+      "primary": true
+    },
+    {
+      "key": "torque",
+      "label": "Torque",
+      "primary": true
+    },
+    {
+      "key": "mounting",
+      "label": "Mounting",
+      "primary": true
+    },
+    {
+      "key": "speed",
+      "label": "Speed",
+      "primary": false
+    },
+    {
+      "key": "ip",
+      "label": "Ingress Rating",
+      "primary": false
+    },
+    {
+      "key": "track",
+      "label": "Track System",
+      "primary": false
+    },
+    {
+      "key": "duty",
+      "label": "Duty Cycle",
+      "primary": false
+    },
+    {
+      "key": "pack",
+      "label": "Pack Size",
+      "primary": false
+    }
+  ],
+  "labels": {
+    "type": {
+      "motor": "Curtain motor",
+      "track": "Track system",
+      "hardware": "Track hardware",
+      "power": "Motor power & control"
+    },
+    "drive": {
+      "low-voltage-dc": "Low-voltage DC",
+      "ac-mains": "AC mains",
+      "n-a": "No drive"
+    },
+    "control": {
+      "rs485": "RS485 bus",
+      "dry-contact": "Dry contact via module",
+      "rf433": "RF 433.92 MHz",
+      "source-pending": "Source confirmation pending",
+      "n-a": "No control input"
+    },
+    "torque": {
+      "1-2nm": "1.2 Nm",
+      "2nm": "2 Nm",
+      "25nm": "25 Nm",
+      "n-a": "Not applicable"
+    },
+    "mounting": {
+      "ceiling": "Ceiling mount",
+      "side": "Side / wall mount",
+      "source-pending": "Source confirmation pending"
+    },
+    "speed": {
+      "14cm-s": "14 cm/s",
+      "rated-140": "Rated speed 140",
+      "n-a": "Not applicable"
+    },
+    "ip": {
+      "ip20": "IP20",
+      "source-pending": "Source confirmation pending"
+    },
+    "track": {
+      "standard-track": "Standard track",
+      "dual-track": "Dual-track linkage",
+      "n-a": "Not applicable",
+      "source-pending": "Source confirmation pending"
+    },
+    "duty": {
+      "s4-1min": "S4 · 1 min",
+      "source-pending": "Source confirmation pending",
+      "n-a": "Not applicable"
+    },
+    "pack": {
+      "1pcs": "Single",
+      "set": "Set"
+    }
+  },
+  "value_order": {
+    "type": [
+      "motor",
+      "track",
+      "hardware",
+      "power"
+    ],
+    "drive": [
+      "low-voltage-dc",
+      "ac-mains",
+      "n-a"
+    ],
+    "control": [
+      "rs485",
+      "dry-contact",
+      "rf433",
+      "source-pending",
+      "n-a"
+    ],
+    "torque": [
+      "1-2nm",
+      "2nm",
+      "25nm",
+      "n-a"
+    ],
+    "mounting": [
+      "ceiling",
+      "side",
+      "source-pending"
+    ],
+    "speed": [
+      "14cm-s",
+      "rated-140",
+      "n-a"
+    ],
+    "ip": [
+      "ip20",
+      "source-pending"
+    ],
+    "track": [
+      "standard-track",
+      "dual-track",
+      "source-pending",
+      "n-a"
+    ],
+    "duty": [
+      "s4-1min",
+      "source-pending",
+      "n-a"
+    ],
+    "pack": [
+      "1pcs",
+      "set"
+    ]
+  },
+  "sorts": [
+    {
+      "key": "featured",
+      "label": "Featured"
+    },
+    {
+      "key": "model-asc",
+      "label": "Model A–Z"
+    },
+    {
+      "key": "price-asc",
+      "label": "Price, low to high"
+    },
+    {
+      "key": "price-desc",
+      "label": "Price, high to low"
+    }
+  ],
+  "batch_size": 8,
+  "card": {
+    "spec_keys": [
+      "drive",
+      "torque",
+      "speed"
+    ],
+    "badge_keys": [
+      "type"
+    ],
+    "compare_limit": {
+      "min": 2,
+      "max": 4
+    },
+    "quote": {
+      "add_label": "Add to Quote",
+      "added_label": "In Quote List"
+    },
+    "detail_label": "View Product",
+    "detail_route": "product-detail-v3.html"
+  },
+  "model_groups": [
+    {
+      "model_id": "src01-smart-curtain-motors",
+      "source_name": "Smart curtain motors",
+      "name": "Smart Curtain Motors",
+      "slug": "src01-smart-curtain-motors",
+      "editorial_order": 5,
+      "summary": "Three source-backed curtain motors for hotel and smart-home installations.",
+      "data_status": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC01",
+          "source_page": 15,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC01",
+          "source_page": 16,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC01",
+          "source_page": 17,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "WEB-PUREPOINT-ID92D-L",
+          "source_url": "https://purepointsmart.com/zh/products/smart-curtains/curtain-a-a/",
+          "source_page": null,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "WEB-PUREPOINT-ID100-WF",
+          "source_url": "https://purepointsmart.com/en/products/smart-curtains/curtain-b-a/",
+          "source_page": null,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "WEB-PUREPOINT-IDS2D-WF",
+          "source_url": "https://purepointsmart.com/en/products/smart-curtains/curtain-c-a/",
+          "source_page": null,
+          "status": "source_extracted"
+        }
+      ],
+      "source_fields": {
+        "ID92D-L": {
+          "value": "12 V; 30 Hz; 1.2 Nm; 14 cm/s; S4 1 min; IP20; 280 × 60 × 84.5 mm",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 15
+        },
+        "ID100-WF": {
+          "value": "220 V; 433.92 MHz; 25 Nm; 0.85 A; -10–55 °C; rated speed 140; 365 × 120 mm drawing",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 16
+        },
+        "IDS2D-WF": {
+          "value": "100–240 V; 50/60 Hz; 2 Nm; 14 cm/s; S4 1 min; IP20",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 17
+        },
+        "web_control_and_installation": {
+          "value": "The manufacturer pages identify RS485 bus / Modbus RTU (model-dependent), RS485 or dry-contact module drive, ceiling or side mounting, and dual-track linkage for the ID92D-L, ID100-WF and IDS2D-WF curtain motor pages.",
+          "status": "source_extracted",
+          "source_id": "WEB-PUREPOINT-CURTAIN-MOTORS",
+          "source_url": "https://purepointsmart.com/en/products/scenarios/door-shading/",
+          "source_page": null
+        },
+        "commercial_terms": {
+          "value": "USD 8.8 per unit; MOQ 1 pcs",
+          "status": "confirmed",
+          "source_id": "USER-CONFIRMATION",
+          "source_page": null
+        }
+      },
+      "variants": [
+        {
+          "variant_id": "src01-curtain-id92d-l",
+          "sku": "ID92D-L",
+          "attributes": {
+            "type": [
+              "motor"
+            ],
+            "drive": [
+              "low-voltage-dc"
+            ],
+            "control": [
+              "rs485",
+              "dry-contact"
+            ],
+            "torque": [
+              "1-2nm"
+            ],
+            "mounting": [
+              "ceiling",
+              "side"
+            ],
+            "speed": [
+              "14cm-s"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "track": [
+              "dual-track"
+            ],
+            "duty": [
+              "s4-1min"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-smart-curtain-motors.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-curtain-id100-wf",
+          "sku": "ID100-WF",
+          "attributes": {
+            "type": [
+              "motor"
+            ],
+            "drive": [
+              "ac-mains"
+            ],
+            "control": [
+              "rf433"
+            ],
+            "torque": [
+              "25nm"
+            ],
+            "mounting": [
+              "ceiling",
+              "side"
+            ],
+            "speed": [
+              "rated-140"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "track": [
+              "dual-track"
+            ],
+            "duty": [
+              "source-pending"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-smart-curtain-motors.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-curtain-ids2d-wf",
+          "sku": "IDS2D-WF",
+          "attributes": {
+            "type": [
+              "motor"
+            ],
+            "drive": [
+              "ac-mains"
+            ],
+            "control": [
+              "rs485",
+              "dry-contact"
+            ],
+            "torque": [
+              "2nm"
+            ],
+            "mounting": [
+              "ceiling",
+              "side"
+            ],
+            "speed": [
+              "14cm-s"
+            ],
+            "ip": [
+              "ip20"
+            ],
+            "track": [
+              "dual-track"
+            ],
+            "duty": [
+              "s4-1min"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-smart-curtain-motors.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        }
+      ],
+      "source_image": {
+        "status": "source_preview",
+        "path": "assets/images/source-products/src01-smart-curtain-motors.jpg",
+        "source_refs": [
+          {
+            "source_id": "SRC01",
+            "source_page": 15,
+            "status": "source_extracted"
+          },
+          {
+            "source_id": "SRC01",
+            "source_page": 16,
+            "status": "source_extracted"
+          },
+          {
+            "source_id": "SRC01",
+            "source_page": 17,
+            "status": "source_extracted"
+          }
+        ]
+      }
+    },
+    {
+      "model_id": "gsl-ct-track-system",
+      "name": "Curtain Track System",
+      "slug": "gsl-ct-track-system",
+      "editorial_order": 10,
+      "summary": "Track rails with ceiling or side brackets. Electronic memory limits are set by the motor, not on site.",
+      "data_status": "placeholder",
+      "source_refs": [
+        {
+          "source_id": "SRC01",
+          "source_page": 18,
+          "status": "source_extracted"
+        }
+      ],
+      "source_fields": {
+        "note": {
+          "value": "SRC01 p18 lists the functional components only: track, ceiling-mount and side-mount brackets, connecting rails, top and bottom cover panels, rubber belt. No model codes, lengths or load ratings are given in the source.",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 18
+        },
+        "commercial_terms": {
+          "value": "USD 8.8 per unit; MOQ 1 pcs",
+          "status": "confirmed",
+          "source_id": "USER-CONFIRMATION",
+          "source_page": null
+        }
+      },
+      "variants": [
+        {
+          "variant_id": "gsl-ct-track-ceiling",
+          "sku": "GSL-CT-TRACK-CEIL",
+          "attributes": {
+            "type": [
+              "track"
+            ],
+            "drive": [
+              "n-a"
+            ],
+            "control": [
+              "n-a"
+            ],
+            "torque": [
+              "n-a"
+            ],
+            "mounting": [
+              "ceiling"
+            ],
+            "speed": [
+              "n-a"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "track": [
+              "standard-track"
+            ],
+            "duty": [
+              "n-a"
+            ],
+            "pack": [
+              "set"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ct-track-side",
+          "sku": "GSL-CT-TRACK-SIDE",
+          "attributes": {
+            "type": [
+              "track"
+            ],
+            "drive": [
+              "n-a"
+            ],
+            "control": [
+              "n-a"
+            ],
+            "torque": [
+              "n-a"
+            ],
+            "mounting": [
+              "side"
+            ],
+            "speed": [
+              "n-a"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "track": [
+              "standard-track"
+            ],
+            "duty": [
+              "n-a"
+            ],
+            "pack": [
+              "set"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-ct-track-hardware",
+      "name": "Curtain Track Hardware",
+      "slug": "gsl-ct-track-hardware",
+      "editorial_order": 20,
+      "summary": "Belts, connecting rails, carriers, hooks and rollers — the parts that keep a long track running straight and quiet.",
+      "data_status": "placeholder",
+      "source_refs": [
+        {
+          "source_id": "SRC01",
+          "source_page": 18,
+          "status": "source_extracted"
+        }
+      ],
+      "source_fields": {
+        "note": {
+          "value": "SRC01 p18 lists these as functional components: rubber belt, connecting rails, curtain arms, curtain carriers, hooks, hangers, gearbox, rollers (multiple types). No model codes or specifications are given in the source.",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 18
+        },
+        "commercial_terms": {
+          "value": "USD 8.8 per unit; MOQ 1 pcs",
+          "status": "confirmed",
+          "source_id": "USER-CONFIRMATION",
+          "source_page": null
+        }
+      },
+      "variants": [
+        {
+          "variant_id": "gsl-ct-hw-belt",
+          "sku": "GSL-CT-HW-BELT",
+          "attributes": {
+            "type": [
+              "hardware"
+            ],
+            "drive": [
+              "n-a"
+            ],
+            "control": [
+              "n-a"
+            ],
+            "torque": [
+              "n-a"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "speed": [
+              "n-a"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "track": [
+              "standard-track"
+            ],
+            "duty": [
+              "n-a"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ct-hw-connecting-rail",
+          "sku": "GSL-CT-HW-RAIL",
+          "attributes": {
+            "type": [
+              "hardware"
+            ],
+            "drive": [
+              "n-a"
+            ],
+            "control": [
+              "n-a"
+            ],
+            "torque": [
+              "n-a"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "speed": [
+              "n-a"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "track": [
+              "standard-track"
+            ],
+            "duty": [
+              "n-a"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ct-hw-carrier-set",
+          "sku": "GSL-CT-HW-CARRIER",
+          "attributes": {
+            "type": [
+              "hardware"
+            ],
+            "drive": [
+              "n-a"
+            ],
+            "control": [
+              "n-a"
+            ],
+            "torque": [
+              "n-a"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "speed": [
+              "n-a"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "track": [
+              "standard-track"
+            ],
+            "duty": [
+              "n-a"
+            ],
+            "pack": [
+              "set"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ct-hw-hook-hanger",
+          "sku": "GSL-CT-HW-HOOK",
+          "attributes": {
+            "type": [
+              "hardware"
+            ],
+            "drive": [
+              "n-a"
+            ],
+            "control": [
+              "n-a"
+            ],
+            "torque": [
+              "n-a"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "speed": [
+              "n-a"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "track": [
+              "standard-track"
+            ],
+            "duty": [
+              "n-a"
+            ],
+            "pack": [
+              "set"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ct-hw-gearbox",
+          "sku": "GSL-CT-HW-GEARBOX",
+          "attributes": {
+            "type": [
+              "hardware"
+            ],
+            "drive": [
+              "n-a"
+            ],
+            "control": [
+              "n-a"
+            ],
+            "torque": [
+              "n-a"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "speed": [
+              "n-a"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "track": [
+              "standard-track"
+            ],
+            "duty": [
+              "n-a"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ct-hw-roller-set",
+          "sku": "GSL-CT-HW-ROLLER",
+          "attributes": {
+            "type": [
+              "hardware"
+            ],
+            "drive": [
+              "n-a"
+            ],
+            "control": [
+              "n-a"
+            ],
+            "torque": [
+              "n-a"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "speed": [
+              "n-a"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "track": [
+              "standard-track"
+            ],
+            "duty": [
+              "n-a"
+            ],
+            "pack": [
+              "set"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-ct-motor-power",
+      "name": "Curtain Motor Power & Control",
+      "slug": "gsl-ct-motor-power",
+      "editorial_order": 30,
+      "summary": "Power adapters, battery packs and the pulse switch that lets a motorised track behave like a manual one.",
+      "data_status": "placeholder",
+      "source_refs": [
+        {
+          "source_id": "SRC01",
+          "source_page": 15,
+          "status": "source_extracted"
+        },
+        {
+          "source_id": "SRC01",
+          "source_page": 16,
+          "status": "source_extracted"
+        }
+      ],
+      "source_fields": {
+        "12V adapter": {
+          "value": "Switching power adapter for 12 V motor. Input 100–240 V AC, 0.5 A, 50/60 Hz. Output 16.8 V, 2 A.",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 15
+        },
+        "Lithium battery": {
+          "value": "Lithium battery 4 Ah, 14.8 V. Full charge in 4 hours. About 550 open/close cycles per charge. Charger output 12 V / 16.8 V / 25 V.",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 15
+        },
+        "Pulse manual switch": {
+          "value": "Pulse manual switch with SET button and indicator. Manual wiring up to 30 m.",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 16
+        },
+        "commercial_terms": {
+          "value": "USD 8.8 per unit; MOQ 1 pcs",
+          "status": "confirmed",
+          "source_id": "USER-CONFIRMATION",
+          "source_page": null
+        }
+      },
+      "variants": [
+        {
+          "variant_id": "gsl-ct-pwr-adapter-12v",
+          "sku": "GSL-CT-PWR-12V",
+          "attributes": {
+            "type": [
+              "power"
+            ],
+            "drive": [
+              "low-voltage-dc"
+            ],
+            "control": [
+              "n-a"
+            ],
+            "torque": [
+              "n-a"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "speed": [
+              "n-a"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "track": [
+              "n-a"
+            ],
+            "duty": [
+              "n-a"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ct-pwr-battery",
+          "sku": "GSL-CT-PWR-BATT",
+          "attributes": {
+            "type": [
+              "power"
+            ],
+            "drive": [
+              "low-voltage-dc"
+            ],
+            "control": [
+              "n-a"
+            ],
+            "torque": [
+              "n-a"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "speed": [
+              "n-a"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "track": [
+              "n-a"
+            ],
+            "duty": [
+              "n-a"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ct-pwr-charger",
+          "sku": "GSL-CT-PWR-CHG",
+          "attributes": {
+            "type": [
+              "power"
+            ],
+            "drive": [
+              "low-voltage-dc"
+            ],
+            "control": [
+              "n-a"
+            ],
+            "torque": [
+              "n-a"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "speed": [
+              "n-a"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "track": [
+              "n-a"
+            ],
+            "duty": [
+              "n-a"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-ct-pwr-pulse-switch",
+          "sku": "GSL-CT-PWR-PULSE",
+          "attributes": {
+            "type": [
+              "power"
+            ],
+            "drive": [
+              "n-a"
+            ],
+            "control": [
+              "n-a"
+            ],
+            "torque": [
+              "n-a"
+            ],
+            "mounting": [
+              "source-pending"
+            ],
+            "speed": [
+              "n-a"
+            ],
+            "ip": [
+              "source-pending"
+            ],
+            "track": [
+              "n-a"
+            ],
+            "duty": [
+              "n-a"
+            ],
+            "pack": [
+              "1pcs"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    }
+  ]
+}

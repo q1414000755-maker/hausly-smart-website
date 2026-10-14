@@ -1,0 +1,86 @@
+/* Manufacturing visual finish: restrained industrial editorial style. */
+.mfg-body{--mfg-navy:#10264d;--mfg-copy:#56677b;--mfg-line:#dde5ee}
+.mfg-section{border-bottom-color:#e6ebf2}
+.mfg-chapter{display:flex;align-items:center;gap:10px;margin:0 0 14px;color:#386791;font-size:11px;line-height:1.4;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.mfg-chapter::before{content:'';width:24px;height:2px;background:#0963c8}
+.mfg-chapter span:first-child{color:#0963c8;font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.mfg-chapter span+span{padding-left:10px;border-left:1px solid #c9d7e6}
+.mfg-heading h2{margin-bottom:10px;font-weight:600;letter-spacing:-.025em}
+.mfg-heading>p{color:#617084;line-height:1.65}
+.mfg-body h3{color:#173457}
+.mfg-parts>li::before,.mfg-steps.has-arrows>li::before,.mfg-step-title>span,.mfg-verification li>span{border-color:#a8c3df;background:#eef5fc;color:#075ab3;font-weight:650}
+.mfg-parts>li:not(:last-child)::after,.mfg-steps.has-arrows>li:not(:last-child)::after{background:#cbd9e8}
+.mfg-parts>li:hover::before,.mfg-steps.has-arrows>li:hover::before,.mfg-steps li:hover .mfg-step-title span{background:#eef5fc;color:#075ab3;border-color:#a8c3df}
+.mfg-parts h3{font-weight:600}
+.mfg-wide,.mfg-verification figure{overflow:hidden;border:1px solid #dce5ef;border-radius:6px;background:#fff}
+.mfg-wide .mfg-photo,.mfg-verification .mfg-photo{border-radius:0}
+.mfg-body figcaption{padding:14px 18px;background:#f7f9fc;border-left:0;border-top:1px solid #e3eaf3}
+.mfg-body figcaption strong{color:#173457;font-weight:600}
+.mfg-body figcaption span{color:#66778b}
+.mfg-steps .mfg-photo{border-radius:5px;border:1px solid #e5eaf0}
+.mfg-steps h3{font-weight:600}
+.mfg-section--verification{margin-top:16px;padding:36px;border:1px solid #e0e8f2;border-radius:8px;background:#f2f6fb}
+.mfg-verification{gap:36px}
+.mfg-verification>ol{padding:8px 0}
+.mfg-verification li{padding:16px 0;border-color:#dce5ef}
+.mfg-verification h3{font-size:17px;font-weight:600}
+.mfg-verification p{color:#5d6e83}
+.mfg-section--workflows{border-bottom:0;padding-bottom:36px}
+.mfg-workflows{gap:20px;align-items:stretch}
+.mfg-workflows article{background:#fff;border:1px solid #dfe7f0;border-radius:6px;overflow:hidden;box-shadow:0 3px 12px #10264d04}
+.mfg-workflows .mfg-photo{border-bottom:1px solid #e8edf4;background:#fff!important}
+.mfg-workflows h3{text-align:left;padding:0 22px;margin:20px 0 10px;font-size:17px}
+.mfg-workflows ul{padding:0 22px 22px 38px;margin:0;font-size:13px;line-height:1.8;color:#617084}
+.mfg-workflows li::marker{color:#6f94ba}
+.mfg-paths{gap:24px}
+.mfg-paths article{padding:28px;border-color:#dce5ef;border-radius:6px;background:#fff;border-top:3px solid #98aec4}
+.mfg-paths article+article{border-top-color:#0963c8;background:#f2f6fc}
+.mfg-paths h3{font-size:20px;margin-bottom:8px;letter-spacing:-.015em}
+.mfg-paths article+article h3{color:#075ab3}
+.mfg-paths p{color:#627388}
+.mfg-paths .mfg-photo{border-radius:4px;background:#fff!important}
+.mfg-paths ol{padding-top:18px;border-top:1px solid #e0e8f1;gap:16px}
+.mfg-paths li>span{border-color:#b7cce1;background:#edf4fb;color:#075ab3;font-size:10px;width:24px;height:24px}
+.mfg-explore>div:last-child{gap:22px}
+.mfg-explore a{padding:10px 10px 20px;background:#fff;border:1px solid #dfe7f0;border-radius:6px;transition:border-color .18s ease,box-shadow .18s ease}
+.mfg-explore a .mfg-photo{border-radius:4px;background:#f4f6f8!important}
+.mfg-explore h3{margin:18px 10px 8px;font-size:17px;letter-spacing:-.01em}
+.mfg-explore a p{margin:0 10px 18px;color:#627388;font-size:13px;line-height:1.65}
+.mfg-explore a b{display:flex;justify-content:space-between;align-items:center;margin: auto 10px 0;padding-top:14px;border-top:1px solid #e6edf5;font-size:13px;font-weight:600;color:#075ab3}
+.mfg-explore a b span{transition:transform .18s ease}
+.mfg-explore a:hover,.mfg-explore a:focus-visible{border-color:#6b9bcf;box-shadow:0 6px 20px #1746750b}
+.mfg-explore a:hover b{text-decoration:none}
+.mfg-explore a:hover b span{transform:translateX(3px)}
+.mfg-explore a:focus-visible{outline:2px solid #0963c8;outline-offset:3px}
+@media(max-width:1000px){.mfg-workflows h3{padding:0 16px}.mfg-workflows ul{padding-left:30px;padding-right:16px}.mfg-section--verification{padding:28px}.mfg-paths article{padding:22px}}
+@media(max-width:760px){
+ .mfg-chapter{font-size:10px;margin-bottom:12px;gap:8px;letter-spacing:.08em}
+ .mfg-chapter::before{width:16px}
+ .mfg-section--verification{padding:22px 16px;margin-top:8px}
+ .mfg-verification{gap:20px}
+ .mfg-verification>ol{padding:0}
+ .mfg-verification li{padding:14px 0}
+ .mfg-verification h3{font-size:15px}
+ .mfg-body figcaption{padding:12px 14px}
+ .mfg-workflows{gap:14px}
+ .mfg-workflows h3{font-size:15px;padding:0 14px;margin-top:16px}
+ .mfg-workflows ul{padding:0 12px 18px 26px;font-size:12px;line-height:1.7}
+ .mfg-paths article{padding:20px}
+ .mfg-paths h3{font-size:18px}
+ .mfg-explore>div:last-child{gap:14px}
+ .mfg-explore a{padding:8px 8px 16px}
+ .mfg-explore h3{font-size:14px;margin:14px 4px 8px}
+ .mfg-explore a p{font-size:12px;margin:0 4px 14px}
+ .mfg-explore a b{font-size:12px;margin-left:4px;margin-right:4px}
+}
+@media(prefers-reduced-motion:reduce){.mfg-explore a,.mfg-explore a b span{transition:none}.mfg-explore a:hover b span{transform:none}}
+
+/* Full-width section rhythm; preserve the existing content alignment. */
+#new-content.mfg-body{width:100%;max-width:none;margin:0;padding:0 0 32px}
+.mfg-body>.mfg-section{border:0;border-radius:0;margin:0;padding:80px max(40px,calc((100% - min(85%,1632px))/2));background:#fff}
+.mfg-body>.mfg-section:first-child{padding-top:72px}
+.mfg-body>.mfg-section:nth-child(2),.mfg-body>.mfg-section:nth-child(4){background:#f2f6fb}
+.mfg-body>.mfg-section--verification{border:0;border-radius:0;margin:0}
+.mfg-body>.mfg-section--workflows{padding-bottom:80px}
+.mfg-body>.mfg-section:last-child{padding-bottom:56px}
+@media(max-width:760px){#new-content.mfg-body{padding:0 0 20px}.mfg-body>.mfg-section{padding:52px 24px}.mfg-body>.mfg-section:first-child{padding-top:48px}.mfg-body>.mfg-section--workflows{padding-bottom:52px}.mfg-body>.mfg-section:last-child{padding-bottom:32px}}

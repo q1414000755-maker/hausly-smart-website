@@ -1,0 +1,260 @@
+{
+  "hero": {
+    "kicker": "TECHNICAL CUSTOMIZATION",
+    "title": "Hardware, Firmware & UI Customization",
+    "subtitle": "Define how the product needs to work — hardware changes, control logic, interface behavior and integrations.",
+    "image": "assets/images/hero-smart-switches-s02.webp",
+    "image_width": 2172,
+    "image_height": 724,
+    "breadcrumb": ["Home", "OEM & ODM", "Technical Customization"]
+  },
+  "intro": {
+    "kicker": "01 · TECHNICAL CUSTOMIZATION",
+    "title": "Define How the Product Needs to Work",
+    "copy": "Describe the required behavior, hardware changes, firmware logic or interface adjustments. Requirements are converted into a Technical Requirement Reference, initialised from the selected product platform and project requirements.",
+    "actions": [
+      { "label": "Build Technical Brief", "href": "#otx-behavior", "style": "primary" },
+      { "label": "Review Base Product", "href": "#otx-context", "style": "ghost" }
+    ],
+    "workspace": {
+      "title": "Technical Requirement Workspace",
+      "rows": [
+        ["Base Product", "Smart Wall Switch (3 Gang)", "ok"],
+        ["Hardware", "Not defined", "muted"],
+        ["Functions", "Not defined", "muted"],
+        ["Firmware", "Not defined", "muted"],
+        ["UI / Interaction", "Not defined", "muted"],
+        ["Integration", "Not defined", "muted"]
+      ]
+    },
+    "context_panel": {
+      "title": "Product Context",
+      "rows": [
+        ["Selected Product", "Not selected"],
+        ["Technical Reference", "Not selected"],
+        ["Requirement Items", "0 items"]
+      ],
+      "cta": { "label": "Start Requirement Definition", "href": "#otx-behavior" }
+    }
+  },
+  "context": {
+    "kicker": "02 · START FROM PRODUCT CONTEXT",
+    "title": "Technical Customization Starts from the Product Platform",
+    "subtitle": "Choose the product platform and technical references before defining requirements.",
+    "product_title": "Selected Product",
+    "product": {
+      "image": "assets/images/home/featured-scene-switch-render-v1.webp",
+      "name": "Smart Wall Switch (3 Gang)",
+      "rows": [
+        ["Product Family", "Smart Switch Series"],
+        ["Series", "T12 Touch Series"],
+        ["Current Configuration", "3 Gang, Wi-Fi, touch control"]
+      ],
+      "actions": [
+        { "label": "View Product", "href": "../products.html" },
+        { "label": "Change Product", "href": "product-customization.html" }
+      ]
+    },
+    "context_title": "Product Context",
+    "context_rows": [
+      { "label": "Current Control Method", "value": "Touch panel / App / Wi-Fi", "state": "verified" },
+      { "label": "Wireless Protocol", "value": "Wi-Fi 2.4GHz", "state": "verified" },
+      { "label": "Current Technical Functions", "value": "App control, touch, scheduling", "state": "verified" },
+      { "label": "Basic Control Logic", "value": "App control / timed on-off", "state": "verified" },
+      { "label": "Device Firmware", "value": "Not documented (to be confirmed)", "state": "review" },
+      { "label": "Relevant Documents", "value": "Datasheet, User Manual", "state": "info" }
+    ],
+    "verified_pill": "Verified",
+    "review_pill": "Review Required",
+    "info_pill": "Reference",
+    "note": "Verified product information defines the starting point for technical review."
+  },
+  "behavior": {
+    "kicker": "03 · DEFINE THE REQUIRED BEHAVIOR",
+    "title": "Start with What the Product Needs to Do",
+    "subtitle": "Define a behavioral sequence — not just categories. Add the action and the expected outcome.",
+    "groups": [
+      { "key": "trigger", "title": "Trigger", "icon": "assets/icons/oem-lightbulb.png", "items": ["User action", "Sensor input", "External command", "Schedule or automation", "Remote command", "Other"] },
+      { "key": "condition", "title": "Condition", "icon": "assets/icons/oem-sliders.png", "items": ["Time condition", "State condition", "Environment condition", "Mode condition", "User permission", "Other"] },
+      { "key": "action", "title": "Action", "icon": "assets/icons/oem-gear.png", "items": ["Control lighting", "HVAC control", "Curtain motor", "Door lock", "Device mode", "Other"] },
+      { "key": "feedback", "title": "Feedback", "icon": "assets/icons/support-headset.png", "items": ["Status indicator", "Display", "LED", "App notification", "Audible alert", "Other"] }
+    ],
+    "summary_title": "Functional Requirement Summary",
+    "summary_add": "Add Requirement",
+    "summary_rows": [
+      ["Trigger", "Not defined"],
+      ["Condition", "Not defined"],
+      ["Action", "Not defined"],
+      ["Feedback", "Not defined"]
+    ],
+    "defined_pill": "Defined",
+    "undefined_pill": "Not defined",
+    "review_label": "Technical Review Required",
+    "review_pill": "Yes",
+    "review_pill_off": "No",
+    "review_note": "These are non-binding requirements. Technical feasibility will be evaluated by our engineering team.",
+    "note": "Behavioral definition is the starting point for technical review."
+  },
+  "hardware": {
+    "kicker": "04 · HARDWARE REQUIREMENTS",
+    "title": "Define Hardware-Level Requirements",
+    "subtitle": "Hardware changes need to be validated. All requests will be reviewed for technical feasibility.",
+    "features": [
+      { "icon": "assets/icons/oem-chip.png", "title": "Electrical & Power", "copy": "Voltage, current and power supply changes" },
+      { "icon": "assets/icons/support-tools.png", "title": "Interface & Connections", "copy": "Ports, terminals and connector changes" },
+      { "icon": "assets/icons/company-package.png", "title": "Physical Hardware", "copy": "Form factor, materials, mounting and mechanical changes" },
+      { "icon": "assets/icons/support-document.png", "title": "Notes & References", "copy": "Additional notes, drawings or reference materials" }
+    ],
+    "references": [
+      { "key": "technical", "title": "Technical Reference", "files": ["hw-voltage-notes.pdf", "wiring-diagram.png"] },
+      { "key": "drawing", "title": "Drawing / Mechanical", "files": ["mech-dimensions.dwg", "mount-bracket.png"] },
+      { "key": "interface", "title": "Interface Document", "files": ["connector-spec.pdf"] },
+      { "key": "other", "title": "Other Reference", "files": ["custom-notes.txt"] }
+    ],
+    "upload_label": "Upload File",
+    "provided_pill": "Provided",
+    "empty_pill": "Not provided",
+    "review_title": "Hardware Review",
+    "review_rows": [
+      ["Requirement Defined", "Not defined"],
+      ["Electrical & Power", "Not defined"],
+      ["Interface & Connections", "Not defined"],
+      ["Physical Hardware", "Not defined"],
+      ["New Development", "Not required"]
+    ],
+    "note": "Technical requirement will be reviewed by our engineering team based on the selections provided.",
+    "note_files": "File uploads are for reference only. Technical feasibility will be validated by our engineering team."
+  },
+  "logic": {
+    "kicker": "05 · CONTROL LOGIC",
+    "title": "Define the Control Logic",
+    "subtitle": "Define the control behaviour between different conditions.",
+    "groups": [
+      { "key": "logic_trigger", "title": "Trigger", "icon": "assets/icons/oem-lightbulb.png", "items": ["Physical input", "Sensor input", "Remote command", "Schedule", "Automation", "Other"] },
+      { "key": "logic_rule", "title": "Logic", "icon": "assets/icons/oem-sliders.png", "items": ["Condition (If / Else)", "Sequence", "Delay", "Threshold", "Priority", "Other"] },
+      { "key": "logic_action", "title": "Action", "icon": "assets/icons/oem-gear.png", "items": ["Control load (on / off)", "Change state", "Set brightness", "Set colour temperature", "Trigger scene", "Send notification", "Device mode", "Other"] }
+    ],
+    "compare_title": "Current Behaviour vs Requested Behaviour",
+    "current_title": "Current Behaviour",
+    "current_rows": ["On / off control only", "No scheduling", "No scene support"],
+    "requested_title": "Requested Behaviour",
+    "requested_rows": ["To be defined", "To be defined", "To be defined"],
+    "summary_title": "Logic Summary",
+    "summary_rows": [
+      ["Combined Input", "Not defined"],
+      ["Firmware Modification", "To be defined"],
+      ["Control Logic Approach", "Not defined"]
+    ],
+    "save_label": "Save Logic Requirement",
+    "note": "Logic changes usually require firmware work. Feasibility will be confirmed by our engineering team."
+  },
+  "ui": {
+    "kicker": "06 · UI / INTERACTION CUSTOMIZATION",
+    "title": "Define How Users Should Interact with the Product",
+    "subtitle": "Define how users see, respond to, and operate the product.",
+    "groups": [
+      { "key": "ui_interface", "title": "Product Interface", "icon": "assets/icons/oem-chip.png", "items": ["Touch panel", "Physical keys", "LED indicator", "Display", "Buzzer", "Other"] },
+      { "key": "ui_flow", "title": "User Flow", "icon": "assets/icons/oem-sliders.png", "items": ["App control", "Local control", "Voice control", "Scene control", "Automation", "Other"] },
+      { "key": "ui_visual", "title": "Visual Requirements", "icon": "assets/icons/oem-pen.png", "items": ["Icon set style", "Colour and lighting", "Animation", "Layout and labels", "Accessibility", "Other"] }
+    ],
+    "preview_title": "UI Requirement Preview",
+    "preview_tabs": ["Home", "Room Control", "Scenes", "Settings"],
+    "preview_active": "Room Control",
+    "preview_room": "Living Room",
+    "preview_devices": [
+      { "name": "Ceiling Light", "on": true },
+      { "name": "Wall Light", "on": false },
+      { "name": "Ambient Light", "on": true }
+    ],
+    "preview_note": "Requirement preview only — not the final UI.",
+    "preview_empty": "No preview for this view yet — it follows your requirement selections.",
+    "references": [
+      { "key": "ui_ref", "title": "UI Reference", "files": ["ui-flow-notes.pdf", "firmware-note.png", "manual.pdf"] },
+      { "key": "brand_guide", "title": "Brand Guide", "files": ["brand-guideline.pdf"] }
+    ],
+    "upload_label": "Upload File",
+    "provided_pill": "Provided",
+    "empty_pill": "Not provided",
+    "note": "Interface changes are reviewed together with firmware feasibility."
+  },
+  "integration": {
+    "kicker": "07 · INTEGRATION & TECHNICAL COMMITMENTS",
+    "title": "Define the Systems the Product Needs to Work With",
+    "subtitle": "Define the ecosystems, systems and platform integrations the product needs to work with.",
+    "groups": [
+      { "key": "int_device", "title": "Device", "icon": "assets/icons/oem-cube.png", "items": ["Sensors", "Switches", "Actuators", "Controllers", "Gateways", "Other"] },
+      { "key": "int_ecosystem", "title": "Ecosystem", "icon": "assets/icons/dealers-globe-pin.png", "items": ["Apple Home", "Google Home", "Amazon Alexa", "Home Assistant", "Other"] },
+      { "key": "int_platform", "title": "Platform & System", "icon": "assets/icons/oem-chip.png", "items": ["Matter", "Tuya", "Zigbee", "Third-party cloud", "Other"] },
+      { "key": "int_app", "title": "App & Project System", "icon": "assets/icons/support-document.png", "items": ["Brand app", "White-label app", "Custom app", "Project management system", "Other"] }
+    ],
+    "target_title": "Target System",
+    "target_rows": [
+      ["Target Ecosystem", "Not defined"],
+      ["Target Platform", "Not defined"],
+      ["Regional Interface", "Region / language not defined"],
+      ["Available Documentation", "System documents not provided"]
+    ],
+    "review_title": "Integration Review",
+    "review_rows": [
+      ["Technical Feasibility", "Not defined"],
+      ["Certification Requirement", "Not defined"],
+      ["Custom Certification", "Not required"],
+      ["Project Approval", "Not started"]
+    ],
+    "save_label": "Save Integration Requirement",
+    "note": "Suggested requirements will be verified by our engineering team."
+  },
+  "brief": {
+    "kicker": "08 · REVIEW YOUR TECHNICAL CUSTOMIZATION BRIEF",
+    "title": "Review Your Technical Customization Brief",
+    "cards": [
+      { "key": "base", "title": "Base Product", "value": "Smart Wall Switch (3 Gang)", "state": "ok" },
+      { "key": "behavior", "title": "Functional Requirement", "value": "Not defined", "state": "muted" },
+      { "key": "hardware", "title": "Hardware", "value": "Not defined", "state": "muted" },
+      { "key": "logic", "title": "Firmware / Logic", "value": "Not defined", "state": "muted" },
+      { "key": "ui", "title": "UI / Interaction", "value": "Not defined", "state": "muted" },
+      { "key": "integration", "title": "Integration", "value": "Not defined", "state": "muted" }
+    ],
+    "requested_title": "Requested Customization",
+    "requested_rows": [
+      { "key": "base", "label": "Base Product", "value": "Smart Wall Switch (3 Gang)" },
+      { "key": "behavior", "label": "Functional Behaviour", "value": "Not defined" },
+      { "key": "hardware", "label": "Hardware Requirements", "value": "Not defined" },
+      { "key": "logic", "label": "Control Logic", "value": "Not defined" },
+      { "key": "ui", "label": "UI / Interaction", "value": "Not defined" },
+      { "key": "integration", "label": "Integration & Ecosystem", "value": "Not defined" }
+    ],
+    "data_title": "Requirement Data",
+    "data_rows": [
+      ["Hardware references", "Not provided"],
+      ["Control logic notes", "Not defined"],
+      ["UI references", "Not provided"],
+      ["Integration notes", "Not defined"]
+    ],
+    "status_title": "Technical Brief Status",
+    "status_rows": [
+      { "key": "behavior", "label": "Functional Requirement", "value": "Not defined" },
+      { "key": "hardware", "label": "Hardware Requirements", "value": "Not defined" },
+      { "key": "logic", "label": "Firmware / Control Logic", "value": "Not defined" },
+      { "key": "ui", "label": "UI / Interaction", "value": "Not defined" },
+      { "key": "integration", "label": "Integration & Ecosystem", "value": "Not defined" }
+    ],
+    "defined_pill": "Defined",
+    "undefined_pill": "Not defined",
+    "add_label": "Add Technical Brief",
+    "edit_label": "Edit Requirements",
+    "edit_href": "#otx-behavior",
+    "copy_note": "Technical brief copied. Paste it into your inquiry to our team — online submission is not connected yet.",
+    "add_note": "This technical brief is not a development commitment. All requirements are reviewed by engineering before any quotation."
+  },
+  "next": {
+    "kicker": "09 · CONTINUE THE NEXT PATH",
+    "title": "Continue with the Right Project Path",
+    "cards": [
+      { "icon": "assets/icons/oem-sliders.png", "title": "Product Customization", "copy": "Adjust appearance, finish and product look requirements.", "link": "Back to Product Customization", "href": "product-customization.html" },
+      { "icon": "assets/icons/oem-pen.png", "title": "Branding & Packaging", "copy": "Prepare branding, packaging and artwork requirements.", "link": "Prepare Brand Brief", "href": "branding-packaging.html" },
+      { "icon": "assets/icons/oem-cube.png", "title": "Start OEM Project", "copy": "Submit the technical brief and start your OEM project.", "link": "Continue to OEM Project", "href": "../contact.html" },
+      { "icon": "assets/icons/oem-shield.png", "title": "Add Another Product Requirement", "copy": "Define a technical brief for another product in the same project.", "link": "Add Another Product Requirement", "href": "start-project.html" }
+    ]
+  }
+}

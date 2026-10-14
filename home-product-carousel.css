@@ -1,0 +1,16 @@
+.home-products-carousel{position:relative;margin-top:24px;padding-bottom:40px}
+.home-products-carousel .home-featured-v2__grid{display:flex!important;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0!important;padding:0 0 2px}
+.home-products-carousel .home-featured-v2__grid::-webkit-scrollbar{display:none}
+.home-products-carousel .home-featured-v2__grid>article{flex:0 0 calc((100% - 80px)/6);min-width:0;scroll-snap-align:start}
+.home-products-arrow{position:absolute;z-index:2;top:40%;transform:translateY(-50%);display:grid;place-items:center;width:40px;height:40px;border:1px solid #d4deeb;border-radius:50%;background:#fff;color:#164887;font-size:30px;line-height:1;cursor:pointer;box-shadow:0 3px 12px #13325b12}
+.home-products-prev{left:-20px}.home-products-next{right:-20px}
+.home-products-arrow:disabled{opacity:.35;cursor:default}.home-products-arrow:hover:not(:disabled){background:#164887;color:white}
+.home-products-dots{position:absolute;bottom:5px;left:0;right:0;display:flex;align-items:center;justify-content:center;gap:9px}
+.home-products-dots button{width:8px;height:8px;min-width:8px;padding:0;border:0;border-radius:50%;background:#c4cedd;cursor:pointer;transition:background .2s,width .2s}
+.home-products-dots button[aria-current=true]{background:#245ab1;width:24px;border-radius:8px}
+.home-products-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.home-products-carousel button:focus-visible{outline:2px solid #245ab1;outline-offset:4px}
+@media(max-width:1100px){.home-products-carousel .home-featured-v2__grid>article{flex-basis:calc((100% - 48px)/4)}}
+@media(max-width:760px){.home-products-carousel .home-featured-v2__grid>article{flex-basis:calc((100% - 16px)/2)}.home-products-arrow{width:32px;height:32px}.home-products-prev{left:-14px}.home-products-next{right:-14px}}
+@media(max-width:420px){.home-products-carousel .home-featured-v2__grid>article{flex-basis:100%}}
+.home-products-carousel .home-featured-v2__grid>article{display:flex;flex-direction:column}.home-products-carousel .home-featured-v2__grid>article h3{min-height:2.6em}.home-products-carousel .home-featured-v2__grid>article>p{min-height:30px}.home-products-carousel .home-featured-v2__grid>article>div{margin-top:auto;padding-top:12px}

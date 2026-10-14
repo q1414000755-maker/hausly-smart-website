@@ -1,0 +1,5822 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-21",
+  "status": "draft-and-hold-only",
+  "source_index": "new-product-catalogues-source-index.json",
+  "record_count": 135,
+  "public_record_count": 0,
+  "model_collisions": [
+    [
+      "src-smart-solutions-cn-260410-cameras-locks-s1",
+      "src-smart-solutions-cn-260410-ai-products-s1",
+      "src-smart-switch-catalog-image-s1-family"
+    ]
+  ],
+  "records": [
+    {
+      "product_id": "src-smart-solutions-cn-260410-control-panels-tpl04-m1",
+      "model": "TPL04-M1",
+      "name": "TPL04-M1 Control Panel",
+      "category": "control-panels",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 5-8"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-control-panels-tpp01-z",
+      "model": "TPP01-Z",
+      "name": "TPP01-Z Control Panel",
+      "category": "control-panels",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 5-8"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-control-panels-tpl07-m1",
+      "model": "TPL07-M1",
+      "name": "TPL07-M1 Control Panel",
+      "category": "control-panels",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 5-8"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-control-panels-tpa10-m1",
+      "model": "TPA10-M1",
+      "name": "TPA10-M1 Control Panel",
+      "category": "control-panels",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 5-8"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-control-panels-tpa10-m2",
+      "model": "TPA10-M2",
+      "name": "TPA10-M2 Control Panel",
+      "category": "control-panels",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 5-8"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-control-panels-ss190",
+      "model": "SS190",
+      "name": "SS190 Control Panel",
+      "category": "control-panels",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 5-8"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-controllers-gateways-thp10-b-v2",
+      "model": "THP10-B-V2",
+      "name": "THP10-B-V2 Controller / Gateway",
+      "category": "controllers-gateways",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 9-10"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-controllers-gateways-thp10-z",
+      "model": "THP10-Z",
+      "name": "THP10-Z Controller / Gateway",
+      "category": "controllers-gateways",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 9-10"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-controllers-gateways-thp10-z-x",
+      "model": "THP10-Z-X",
+      "name": "THP10-Z-X Controller / Gateway",
+      "category": "controllers-gateways",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 9-10"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-controllers-gateways-thp12-z-v5",
+      "model": "THP12-Z-V5",
+      "name": "THP12-Z-V5 Controller / Gateway",
+      "category": "controllers-gateways",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 9-10"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sc155-wq3c",
+      "model": "SC155-WQ3C",
+      "name": "SC155-WQ3C Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sc106-wl3",
+      "model": "SC106-WL3",
+      "name": "SC106-WL3 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sc116-wz4a",
+      "model": "SC116-WZ4A",
+      "name": "SC116-WZ4A Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sc305-wbq4",
+      "model": "SC305-WBQ4",
+      "name": "SC305-WBQ4 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sc316-wba2",
+      "model": "SC316-WBA2",
+      "name": "SC316-WBA2 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sc399-wbd4",
+      "model": "SC399-WBD4",
+      "name": "SC399-WBD4 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sc216-wbu4",
+      "model": "SC216-WBU4",
+      "name": "SC216-WBU4 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sc316-wb4a",
+      "model": "SC316-WB4A",
+      "name": "SC316-WB4A Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sc296-wbd4",
+      "model": "SC296-WBD4",
+      "name": "SC296-WBD4 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sc256-ws5",
+      "model": "SC256-WS5",
+      "name": "SC256-WS5 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sc162-wcd3",
+      "model": "SC162-WCD3",
+      "name": "SC162-WCD3 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sc336-wbnp3",
+      "model": "SC336-WBNP3",
+      "name": "SC336-WBNP3 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sf254-wc2",
+      "model": "SF254-WC2",
+      "name": "SF254-WC2 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sf254-wba3a",
+      "model": "SF254-WBA3A",
+      "name": "SF254-WBA3A Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-l3660-l",
+      "model": "L3660-L",
+      "name": "L3660-L Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sc374-wbd3",
+      "model": "SC374-WBD3",
+      "name": "SC374-WBD3 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-sc437-wna4",
+      "model": "SC437-WNA4",
+      "name": "SC437-WNA4 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-l3561",
+      "model": "L3561",
+      "name": "L3561 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-s1",
+      "model": "S1",
+      "name": "S1 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-ll01-b",
+      "model": "LL01-B",
+      "name": "LL01-B Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-l3160-l",
+      "model": "L3160-L",
+      "name": "L3160-L Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-ld05-t1",
+      "model": "LD05-T1",
+      "name": "LD05-T1 Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-cameras-locks-ld05-t",
+      "model": "LD05-T",
+      "name": "LD05-T Camera / Door Lock",
+      "category": "cameras-locks",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 11-18"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-ai-products-s1",
+      "model": "S1",
+      "name": "S1 AI Product",
+      "category": "ai-products",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 19-21"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-ai-products-jx116b",
+      "model": "JX116B",
+      "name": "JX116B AI Product",
+      "category": "ai-products",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 19-21"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-ai-products-ss200-a",
+      "model": "SS200-A",
+      "name": "SS200-A AI Product",
+      "category": "ai-products",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 19-21"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-ai-products-ss200-b",
+      "model": "SS200-B",
+      "name": "SS200-B AI Product",
+      "category": "ai-products",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 19-21"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-ai-products-ss-a300",
+      "model": "SS-A300",
+      "name": "SS-A300 AI Product",
+      "category": "ai-products",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 19-21"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-sensors-hp320-w",
+      "model": "HP320-W",
+      "name": "HP320-W Sensor",
+      "category": "sensors",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 22-23"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-sensors-hp222-zt",
+      "model": "HP222-ZT",
+      "name": "HP222-ZT Sensor",
+      "category": "sensors",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 22-23"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-sensors-th210-r",
+      "model": "TH210-R",
+      "name": "TH210-R Sensor",
+      "category": "sensors",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 22-23"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-electrical-energy-tsw-t111",
+      "model": "TSW-T111",
+      "name": "TSW-T111 Electrical / Energy Product",
+      "category": "electrical-energy",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 24-27"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-electrical-energy-tsw-t211",
+      "model": "TSW-T211",
+      "name": "TSW-T211 Electrical / Energy Product",
+      "category": "electrical-energy",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 24-27"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-electrical-energy-tsw-t412",
+      "model": "TSW-T412",
+      "name": "TSW-T412 Electrical / Energy Product",
+      "category": "electrical-energy",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 24-27"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-electrical-energy-tsc2-t412",
+      "model": "TSC2-T412",
+      "name": "TSC2-T412 Electrical / Energy Product",
+      "category": "electrical-energy",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 24-27"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-electrical-energy-tsw-t6x",
+      "model": "TSW-T6X",
+      "name": "TSW-T6X Electrical / Energy Product",
+      "category": "electrical-energy",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 24-27"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-electrical-energy-sdm01-twm",
+      "model": "SDM01-TWM",
+      "name": "SDM01-TWM Electrical / Energy Product",
+      "category": "electrical-energy",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 24-27"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-electrical-energy-spm01",
+      "model": "SPM01",
+      "name": "SPM01 Electrical / Energy Product",
+      "category": "electrical-energy",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 24-27"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-electrical-energy-spm02",
+      "model": "SPM02",
+      "name": "SPM02 Electrical / Energy Product",
+      "category": "electrical-energy",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 24-27"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-electrical-energy-tsol-ms800",
+      "model": "TSOL-MS800",
+      "name": "TSOL-MS800 Electrical / Energy Product",
+      "category": "electrical-energy",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 24-27"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-electrical-energy-cme03-2bs204",
+      "model": "CME03-2BS204",
+      "name": "CME03-2BS204 Electrical / Energy Product",
+      "category": "electrical-energy",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 24-27"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-electrical-energy-cme05-2bl200",
+      "model": "CME05-2BL200",
+      "name": "CME05-2BL200 Electrical / Energy Product",
+      "category": "electrical-energy",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 24-27"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-electrical-energy-ear-ac07",
+      "model": "EAR-AC07",
+      "name": "EAR-AC07 Electrical / Energy Product",
+      "category": "electrical-energy",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 24-27"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-lighting-ty-zblc01g-ac",
+      "model": "TY-ZBLC01G-AC",
+      "name": "TY-ZBLC01G-AC Lighting Product",
+      "category": "lighting",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 28-30"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-lighting-ty-mc079d-ir-zb2",
+      "model": "TY-MC079D-IR-ZB2",
+      "name": "TY-MC079D-IR-ZB2 Lighting Product",
+      "category": "lighting",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 28-30"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-lighting-ty-mc079d-99-zb2",
+      "model": "TY-MC079D-99-ZB2",
+      "name": "TY-MC079D-99-ZB2 Lighting Product",
+      "category": "lighting",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 28-30"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-lighting-get8-1-2-18w-tybm",
+      "model": "GET8-1.2-18W-TYBM",
+      "name": "GET8-1.2-18W-TYBM Lighting Product",
+      "category": "lighting",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 28-30"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-lighting-get8-1-2-18w-tyb",
+      "model": "GET8-1.2-18W-TYB",
+      "name": "GET8-1.2-18W-TYB Lighting Product",
+      "category": "lighting",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 28-30"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-lighting-c2cl1800-860-g13-1200-1",
+      "model": "C2CL1800-860-G13-1200-1",
+      "name": "C2CL1800-860-G13-1200-1 Lighting Product",
+      "category": "lighting",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 28-30"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-lighting-c5cl1800-860-g13-1200-1",
+      "model": "C5CL1800-860-G13-1200-1",
+      "name": "C5CL1800-860-G13-1200-1 Lighting Product",
+      "category": "lighting",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 28-30"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-lighting-e2cl1800-860-g13-1200-1",
+      "model": "E2CL1800-860-G13-1200-1",
+      "name": "E2CL1800-860-G13-1200-1 Lighting Product",
+      "category": "lighting",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 28-30"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-lighting-e5cl1800-860-g13-1200-1",
+      "model": "E5CL1800-860-G13-1200-1",
+      "name": "E5CL1800-860-G13-1200-1 Lighting Product",
+      "category": "lighting",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 28-30"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-solutions-cn-260410-accessories-ttfm-53g",
+      "model": "TTFM-53G",
+      "name": "TTFM-53G Accessory",
+      "category": "accessories",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/压缩-Smart Solutions产品手册-中文-260410.pdf 31-32"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-controllers-gateways-host-gateway-module",
+      "model": "Host gateway module",
+      "name": "Host gateway module Controller / Gateway",
+      "category": "controllers-gateways",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 3-4"
+      ],
+      "source_confidence": "overview_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-controllers-gateways-8-channel-relay-module",
+      "model": "8-channel relay module",
+      "name": "8-channel relay module Controller / Gateway",
+      "category": "controllers-gateways",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 3-4"
+      ],
+      "source_confidence": "overview_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-controllers-gateways-infrared-ir2-module",
+      "model": "Infrared IR2 module",
+      "name": "Infrared IR2 module Controller / Gateway",
+      "category": "controllers-gateways",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 3-4"
+      ],
+      "source_confidence": "overview_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-controllers-gateways-0-10v-dimming-module",
+      "model": "0-10V dimming module",
+      "name": "0-10V dimming module Controller / Gateway",
+      "category": "controllers-gateways",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 3-4"
+      ],
+      "source_confidence": "overview_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-controllers-gateways-central-air-conditioning-module",
+      "model": "Central air-conditioning module",
+      "name": "Central air-conditioning module Controller / Gateway",
+      "category": "controllers-gateways",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 3-4"
+      ],
+      "source_confidence": "overview_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-controllers-gateways-2-channel-controllable-silicon-dimming-module",
+      "model": "2-channel controllable silicon dimming module",
+      "name": "2-channel controllable silicon dimming module Controller / Gateway",
+      "category": "controllers-gateways",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 3-4"
+      ],
+      "source_confidence": "overview_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-controllers-gateways-dry-contact-module",
+      "model": "Dry contact module",
+      "name": "Dry contact module Controller / Gateway",
+      "category": "controllers-gateways",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 3-4"
+      ],
+      "source_confidence": "overview_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-controllers-gateways-curtain-module",
+      "model": "Curtain module",
+      "name": "Curtain module Controller / Gateway",
+      "category": "controllers-gateways",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 3-4"
+      ],
+      "source_confidence": "overview_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-smart-switches-b5",
+      "model": "B5",
+      "name": "B5 Smart Switch",
+      "category": "smart-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 5-11"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-smart-switches-k2",
+      "model": "K2",
+      "name": "K2 Smart Switch",
+      "category": "smart-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 5-11"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-smart-switches-b6",
+      "model": "B6",
+      "name": "B6 Smart Switch",
+      "category": "smart-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 5-11"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-smart-switches-q20",
+      "model": "Q20",
+      "name": "Q20 Smart Switch",
+      "category": "smart-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 5-11"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-smart-switches-d8",
+      "model": "D8",
+      "name": "D8 Smart Switch",
+      "category": "smart-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 5-11"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-smart-switches-d5a",
+      "model": "D5A",
+      "name": "D5A Smart Switch",
+      "category": "smart-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 5-11"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-smart-switches-v8",
+      "model": "V8",
+      "name": "V8 Smart Switch",
+      "category": "smart-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 5-11"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-k01a",
+      "model": "F1-K01A",
+      "name": "F1-K01A Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-k01b",
+      "model": "F1-K01B",
+      "name": "F1-K01B Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-k02a",
+      "model": "F1-K02A",
+      "name": "F1-K02A Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-k02b",
+      "model": "F1-K02B",
+      "name": "F1-K02B Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-k03a",
+      "model": "F1-K03A",
+      "name": "F1-K03A Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-k03b",
+      "model": "F1-K03B",
+      "name": "F1-K03B Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-k04a",
+      "model": "F1-K04A",
+      "name": "F1-K04A Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-k04b",
+      "model": "F1-K04B",
+      "name": "F1-K04B Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-k05",
+      "model": "F1-K05",
+      "name": "F1-K05 Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-k06",
+      "model": "F1-K06",
+      "name": "F1-K06 Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-k08",
+      "model": "F1-K08",
+      "name": "F1-K08 Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-h101-g",
+      "model": "F1-H101-G",
+      "name": "F1-H101-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-h202-g",
+      "model": "F1-H202-G",
+      "name": "F1-H202-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-h204-g",
+      "model": "F1-H204-G",
+      "name": "F1-H204-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-h303a-g",
+      "model": "F1-H303A-G",
+      "name": "F1-H303A-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-h303b-g",
+      "model": "F1-H303B-G",
+      "name": "F1-H303B-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-h404-g",
+      "model": "F1-H404-G",
+      "name": "F1-H404-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-h306-g",
+      "model": "F1-H306-G",
+      "name": "F1-H306-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-h408-g",
+      "model": "F1-H408-G",
+      "name": "F1-H408-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-s102-g",
+      "model": "F1-S102-G",
+      "name": "F1-S102-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-s202-g",
+      "model": "F1-S202-G",
+      "name": "F1-S202-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-sl303-g",
+      "model": "F1-SL303-G",
+      "name": "F1-SL303-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-sr303-g",
+      "model": "F1-SR303-G",
+      "name": "F1-SR303-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-s303-g",
+      "model": "F1-S303-G",
+      "name": "F1-S303-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-s204-g",
+      "model": "F1-S204-G",
+      "name": "F1-S204-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-s306-g",
+      "model": "F1-S306-G",
+      "name": "F1-S306-G Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-s102-h",
+      "model": "F1-S102-H",
+      "name": "F1-S102-H Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-s202-h",
+      "model": "F1-S202-H",
+      "name": "F1-S202-H Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-sl303-h",
+      "model": "F1-SL303-H",
+      "name": "F1-SL303-H Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-sr303-h",
+      "model": "F1-SR303-H",
+      "name": "F1-SR303-H Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-s303-h",
+      "model": "F1-S303-H",
+      "name": "F1-S303-H Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-s204-h",
+      "model": "F1-S204-H",
+      "name": "F1-S204-H Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-mechanical-switches-f1-s306-h",
+      "model": "F1-S306-H",
+      "name": "F1-S306-H Mechanical Switch",
+      "category": "mechanical-switches",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 12"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-curtain-motors-id92d-l",
+      "model": "ID92D-L",
+      "name": "ID92D-L Curtain Motor",
+      "category": "curtain-motors",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 15-17"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-curtain-motors-id100-wf",
+      "model": "ID100-WF",
+      "name": "ID100-WF Curtain Motor",
+      "category": "curtain-motors",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 15-17"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-curtain-motors-ids2d-wf",
+      "model": "IDS2D-WF",
+      "name": "IDS2D-WF Curtain Motor",
+      "category": "curtain-motors",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 15-17"
+      ],
+      "source_confidence": "catalogue_confirmed",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-sensors-5-8ghz-motion-sensor-switch",
+      "model": "5.8GHz motion sensor switch",
+      "name": "5.8GHz motion sensor switch Sensor",
+      "category": "sensors",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 19"
+      ],
+      "source_confidence": "overview_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-sensors-embedded-infrared-sensor",
+      "model": "embedded infrared sensor",
+      "name": "embedded infrared sensor Sensor",
+      "category": "sensors",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 19"
+      ],
+      "source_confidence": "overview_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-purepoint-smart-hotel-sensors-dry-contact-sensor",
+      "model": "dry contact sensor",
+      "name": "dry contact sensor Sensor",
+      "category": "sensors",
+      "status": "draft",
+      "publication_status": "hold",
+      "product_granularity": "model_candidate",
+      "source_refs": [
+        "产品资料/Purepoint Smart.pdf 19"
+      ],
+      "source_confidence": "overview_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "sku",
+        "moq",
+        "hero_image",
+        "datasheet",
+        "manual",
+        "wiring_diagram"
+      ],
+      "gate_reasons": [
+        "candidate requires Product Master diff",
+        "no public route until ownership and evidence gate pass"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-t12-family",
+      "model": "T12",
+      "name": "T12 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 1-3"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-a15-family",
+      "model": "A15",
+      "name": "A15 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 4-6"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-a16-family",
+      "model": "A16",
+      "name": "A16 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 7-9"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-t20-family",
+      "model": "T20",
+      "name": "T20 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 10-12"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-y10-family",
+      "model": "Y10",
+      "name": "Y10 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 13-16"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-t80-family",
+      "model": "T80",
+      "name": "T80 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 17-19"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-t90-family",
+      "model": "T90",
+      "name": "T90 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 20-22"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-unlabelled-mixed-collection-family",
+      "model": "unlabelled mixed collection",
+      "name": "unlabelled mixed collection catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 23-25"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-t10-family",
+      "model": "T10",
+      "name": "T10 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 26-28"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-t50-family",
+      "model": "T50",
+      "name": "T50 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 29-32"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-t70-family",
+      "model": "T70",
+      "name": "T70 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 35-36"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-s1-family",
+      "model": "S1",
+      "name": "S1 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 39-41"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-s2-family",
+      "model": "S2",
+      "name": "S2 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 42-45"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-s3-family",
+      "model": "S3",
+      "name": "S3 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 46-49"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-s5-family",
+      "model": "S5",
+      "name": "S5 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 50-53"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-a8-family",
+      "model": "A8",
+      "name": "A8 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 54-57"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-a6-family",
+      "model": "A6",
+      "name": "A6 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 58-61"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    },
+    {
+      "product_id": "src-smart-switch-catalog-image-s8-family",
+      "model": "S8",
+      "name": "S8 catalogue family candidate",
+      "category": "unresolved-smart-low-voltage",
+      "status": "hold",
+      "publication_status": "hold",
+      "product_granularity": "family_review_required",
+      "source_refs": [
+        "产品资料/Smart Switch catalog.pdf 62-63"
+      ],
+      "source_confidence": "visual_family_only",
+      "route": null,
+      "commercial": {
+        "reference_price_usd": 8.8,
+        "reference_price_status": "test-confirmed-only",
+        "sku": null,
+        "moq": null
+      },
+      "display_fallback": "-",
+      "media": {
+        "hero": null,
+        "placeholder_policy": "purpose-labelled-placeholder"
+      },
+      "technical": {},
+      "documents": {
+        "datasheet": null,
+        "manual": null,
+        "wiring_diagram": null
+      },
+      "missing_fields": [
+        "model_code_transcription",
+        "category_owner",
+        "sku",
+        "moq",
+        "hero_image"
+      ],
+      "gate_reasons": [
+        "image-only catalogue",
+        "overlaps existing Low-Voltage family data",
+        "family is not automatically a public product"
+      ]
+    }
+  ]
+}

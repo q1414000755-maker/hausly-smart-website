@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "catalogue_id": "mechanical-switches",
+  "source_status": "source-backed values only; source-pending is excluded from public facets",
+  "axis_keys": ["series", "gang", "function", "mechanism", "material", "finish"],
+  "dimensions": [
+    {"key": "series", "label": "Series", "primary": true},
+    {"key": "gang", "label": "Gang", "primary": true},
+    {"key": "function", "label": "Function", "primary": true},
+    {"key": "mechanism", "label": "Mechanism", "primary": true},
+    {"key": "material", "label": "Material", "primary": false},
+    {"key": "finish", "label": "Color & Finish", "primary": false}
+  ],
+  "labels": {
+    "function": {"switch": "Mechanical switch", "emergency-call": "Emergency call switch", "doorbell": "Doorbell", "door-lock": "Door lock switch", "curtain": "Curtain switch"},
+    "mechanism": {"single-control": "Single control"},
+    "gang": {"1": "1 gang", "2": "2 gang", "3": "3 gang", "4": "4 gang"},
+    "series": {"s3": "S3", "s2": "S2", "f1": "F1", "s5": "S5", "a8": "A8", "a6": "A6", "s8": "S8", "a15": "A15", "a16": "A16", "y10": "Y10", "t10": "T10", "t50": "T50", "t70": "T70"},
+    "finish": {"champagne-gold": "Champagne Gold"}
+  },
+  "value_order": {
+    "series": ["s3", "s2", "f1", "s5", "a8", "a6", "s8", "a15", "a16", "y10", "t10", "t50", "t70"],
+    "gang": ["1", "2", "3", "4"],
+    "function": ["switch", "emergency-call", "doorbell", "door-lock", "curtain"],
+    "mechanism": ["single-control"],
+    "finish": ["champagne-gold"]
+  },
+  "products": {
+    "src03-s3-mechanical": {"model": "S3", "route_model_id": "src03-s3-mechanical", "axes": {"series": ["s3"], "gang": ["1", "2", "3", "4"], "function": ["switch", "emergency-call"]}},
+    "src03-s2-mechanical": {"model": "S2", "route_model_id": "src03-s2-mechanical", "axes": {"series": ["s2"], "gang": ["1", "2", "3", "4"], "function": ["switch", "emergency-call"]}},
+    "src01-f1-mechanical": {"model": "F1", "route_model_id": "src01-f1-mechanical", "axes": {"series": ["f1"], "gang": ["1", "2", "3", "4"], "function": ["switch", "doorbell", "door-lock", "curtain"], "mechanism": ["single-control"], "finish": ["champagne-gold"]}},
+    "src03-s5-mechanical": {"model": "S5", "route_model_id": "src03-s5-mechanical", "axes": {"series": ["s5"], "gang": ["1", "2", "3", "4"], "function": ["switch", "emergency-call"]}},
+    "src03-a8-mechanical": {"model": "A8", "route_model_id": "src03-a8-mechanical", "axes": {"series": ["a8"], "gang": ["1", "2", "3", "4"], "function": ["switch", "emergency-call"]}},
+    "src03-a6-mechanical": {"model": "A6", "route_model_id": "src03-a6-mechanical", "axes": {"series": ["a6"], "gang": ["1", "2", "3", "4"], "function": ["switch", "emergency-call"]}},
+    "src03-s8-mechanical": {"model": "S8", "route_model_id": "src03-s8-mechanical", "axes": {"series": ["s8"], "gang": ["1", "2", "3", "4"], "function": ["switch", "emergency-call"]}},
+    "src03-a15-mechanical": {"model": "A15", "route_model_id": "src03-a15-mechanical", "axes": {"series": ["a15"], "gang": ["1", "2", "3", "4"], "function": ["switch", "emergency-call"]}},
+    "src03-a16-mechanical": {"model": "A16", "route_model_id": "src03-a16-mechanical", "axes": {"series": ["a16"], "gang": ["1", "2", "3", "4"], "function": ["switch", "emergency-call"]}},
+    "src03-y10-mechanical": {"model": "Y10", "route_model_id": "src03-y10-mechanical", "axes": {"series": ["y10"], "gang": ["1", "2", "3"], "function": ["switch", "emergency-call"]}},
+    "src03-t10-mechanical": {"model": "T10", "route_model_id": "src03-t10-mechanical", "axes": {"series": ["t10"], "gang": ["1", "2", "3", "4"], "function": ["switch", "emergency-call"]}},
+    "src03-t50-mechanical": {"model": "T50", "route_model_id": "src03-t50-mechanical", "axes": {"series": ["t50"], "gang": ["1", "2", "3", "4"], "function": ["switch", "emergency-call"]}},
+    "src03-t70-mechanical": {"model": "T70", "route_model_id": "src03-t70-mechanical", "axes": {"series": ["t70"], "gang": ["1", "2", "3", "4"], "function": ["switch", "emergency-call"]}}
+  }
+}

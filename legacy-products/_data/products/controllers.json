@@ -1,0 +1,1645 @@
+{
+  "schema_version": 1,
+  "page": "cat-controllers",
+  "locale": "en",
+  "_placeholder": {
+    "active": true,
+    "render_banner": false,
+    "summary": "本文件全部为占位数据，用于把页面结构与交互跑通。替换真实数据时只改本文件的值，代码不需要改。",
+    "why_no_banner": "与 smart-switches.json 同一口径：包子 2026-09-17 指示「标记写在代码里，页面渲染看不到」，所以 render_banner = false。对外演示或上线前改成 true 即可渲染出原型横幅。",
+    "replace": [
+      {
+        "what": "产品图",
+        "where": "model_groups[*].variants[*].image.src",
+        "with": "真实产品摄影。当前全部指向 assets/images/placeholders/product-*.svg。"
+      },
+      {
+        "what": "参考价",
+        "where": "model_groups[*].variants[*].price.amount",
+        "with": "真实参考价。换价时把 price.status 从 placeholder 改成 confirmed，并更新 checked_on。"
+      },
+      {
+        "what": "型号与 SKU",
+        "where": "model_groups[*].model_id 与 variants[*].sku",
+        "with": "真实型号编码与 SKU。当前 GSL-* 这类是行业通用写法，不是真实编码。"
+      }
+    ]
+  },
+  "eyebrow": "PRODUCT CATALOGUE",
+  "title": "Controllers & Gateways",
+  "intro": "The units that make the rest of the range work: protocol gateways, hubs, repeaters and dry-contact modules, each with its device capacity and uplink stated.",
+  "price_note": "Reference price per unit. Gateway prices do not include subscription services — there are none.",
+  "dimensions": [
+    {
+      "key": "function",
+      "label": "Device Role",
+      "primary": true
+    },
+    {
+      "key": "protocol",
+      "label": "Device Protocol",
+      "primary": true
+    },
+    {
+      "key": "capacity",
+      "label": "Device Capacity",
+      "primary": true
+    },
+    {
+      "key": "uplink",
+      "label": "Uplink",
+      "primary": true
+    },
+    {
+      "key": "power",
+      "label": "Power Supply",
+      "primary": true
+    },
+    {
+      "key": "mounting",
+      "label": "Mounting",
+      "primary": false
+    },
+    {
+      "key": "integration",
+      "label": "Platform",
+      "primary": false
+    },
+    {
+      "key": "voice",
+      "label": "Voice Assistant",
+      "primary": false
+    },
+    {
+      "key": "redundancy",
+      "label": "Local Control",
+      "primary": false
+    }
+  ],
+  "labels": {
+    "function": {
+      "gateway": "Gateway",
+      "hub": "Hub",
+      "bridge": "Protocol bridge",
+      "repeater": "Repeater",
+      "module": "Control module"
+    },
+    "protocol": {
+      "zigbee": "Zigbee",
+      "matter": "Matter",
+      "ble": "Bluetooth mesh",
+      "rs485": "RS485 bus"
+    },
+    "capacity": {
+      "32": "Up to 32 devices",
+      "64": "Up to 64 devices",
+      "128": "Up to 128 devices",
+      "256": "Up to 256 devices",
+      "source-pending": "Source confirmation pending"
+    },
+    "uplink": {
+      "ethernet": "Ethernet",
+      "wifi": "Wi-Fi",
+      "4g": "4G cellular",
+      "source-pending": "Source confirmation pending"
+    },
+    "power": {
+      "usb-c": "USB-C",
+      "poe": "PoE",
+      "dc12": "DC 12 V",
+      "ac220": "AC 220–240 V",
+      "source-pending": "Source confirmation pending"
+    },
+    "mounting": {
+      "desktop": "Desktop",
+      "wall": "Wall",
+      "din-rail": "DIN rail"
+    },
+    "integration": {
+      "gsl": "Hauslysmart App",
+      "rs485-host": "RS485 host",
+      "mqtt": "MQTT",
+      "knx-compatible": "KNX / third-party compatible"
+    },
+    "voice": {
+      "none": "None",
+      "alexa": "Amazon Alexa",
+      "both": "Alexa and Google",
+      "source-pending": "Source confirmation pending"
+    },
+    "redundancy": {
+      "local": "Runs without cloud",
+      "cloud": "Cloud assisted",
+      "source-pending": "Source confirmation pending"
+    }
+  },
+  "value_order": {
+    "function": [
+      "gateway",
+      "hub",
+      "bridge",
+      "repeater",
+      "module"
+    ],
+    "protocol": [
+      "zigbee",
+      "matter",
+      "ble",
+      "rs485"
+    ],
+    "capacity": [
+      "32",
+      "64",
+      "128",
+      "256",
+      "source-pending"
+    ],
+    "uplink": [
+      "ethernet",
+      "wifi",
+      "4g",
+      "source-pending"
+    ],
+    "power": [
+      "usb-c",
+      "poe",
+      "dc12",
+      "ac220",
+      "source-pending"
+    ],
+    "mounting": [
+      "desktop",
+      "wall",
+      "din-rail"
+    ],
+    "integration": [
+      "gsl",
+      "rs485-host",
+      "mqtt",
+      "knx-compatible"
+    ],
+    "voice": [
+      "none",
+      "alexa",
+      "both",
+      "source-pending"
+    ],
+    "redundancy": [
+      "local",
+      "cloud",
+      "source-pending"
+    ]
+  },
+  "sorts": [
+    {
+      "key": "featured",
+      "label": "Featured"
+    },
+    {
+      "key": "model-asc",
+      "label": "Model A–Z"
+    },
+    {
+      "key": "price-asc",
+      "label": "Price, low to high"
+    },
+    {
+      "key": "price-desc",
+      "label": "Price, high to low"
+    }
+  ],
+  "batch_size": 8,
+  "card": {
+    "spec_keys": [
+      "capacity",
+      "uplink",
+      "power"
+    ],
+    "badge_keys": [
+      "protocol"
+    ],
+    "compare_limit": {
+      "min": 2,
+      "max": 4
+    },
+    "quote": {
+      "add_label": "Add to Quote",
+      "added_label": "In Quote List"
+    },
+    "detail_label": "View Product",
+    "detail_route": "product-detail-v3.html"
+  },
+  "model_groups": [
+    {
+      "model_id": "src01-host-gateway",
+      "source_name": "Host gateway",
+      "name": "Host Gateway",
+      "slug": "src01-host-gateway",
+      "editorial_order": 5,
+      "summary": "Source-backed DIN-rail host gateway with RS485, TCP/IP and Wi-Fi; final model code remains pending.",
+      "data_status": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC01",
+          "source_page": 3,
+          "status": "source_extracted"
+        }
+      ],
+      "source_fields": {
+        "power_supply": {
+          "value": "AC 220 V ±10 V, 50 Hz; ≤500 mA",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 3
+        },
+        "communication": {
+          "value": "RS485, TCP/IP and Wi-Fi",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 3
+        },
+        "dry_inputs": {
+          "value": "13",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 3
+        },
+        "led_outputs": {
+          "value": "13",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 3
+        },
+        "lighting_circuits": {
+          "value": "29",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 3
+        },
+        "dimensions": {
+          "value": "252 × 88 × 65 mm",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 3
+        },
+        "installation": {
+          "value": "Standard DIN installation",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 3
+        },
+        "commercial_terms": {
+          "value": "USD 8.8 per unit; MOQ 1 pcs",
+          "status": "confirmed",
+          "source_id": "USER-CONFIRMATION",
+          "source_page": null
+        }
+      },
+      "variants": [
+        {
+          "variant_id": "src01-host-gateway-ac220",
+          "sku": "Host gateway — code pending",
+          "attributes": {
+            "function": [
+              "gateway"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "capacity": [
+              "source-pending"
+            ],
+            "uplink": [
+              "ethernet",
+              "wifi"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "mounting": [
+              "din-rail"
+            ],
+            "integration": [
+              "rs485-host"
+            ],
+            "voice": [
+              "source-pending"
+            ],
+            "redundancy": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-host-gateway.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        }
+      ],
+      "source_image": {
+        "status": "source_preview",
+        "path": "assets/images/source-products/src01-host-gateway.jpg",
+        "source_refs": [
+          {
+            "source_id": "SRC01",
+            "source_page": 3,
+            "status": "source_extracted"
+          }
+        ]
+      }
+    },
+    {
+      "model_id": "src01-controller-modules",
+      "source_name": "Smart controller modules",
+      "name": "DIN-Rail Smart Controller Modules",
+      "slug": "src01-controller-modules",
+      "editorial_order": 6,
+      "summary": "Source-backed RS485 DIN-rail controller modules; individual manufacturer codes remain pending.",
+      "data_status": "source_extracted",
+      "source_refs": [
+        {
+          "source_id": "SRC01",
+          "source_page": 4,
+          "status": "source_extracted"
+        }
+      ],
+      "source_fields": {
+        "communication": {
+          "value": "RS485",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 4
+        },
+        "installation": {
+          "value": "Standard DIN-rail installation",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 4
+        },
+        "compatibility": {
+          "value": "KNX systems and third-party devices, where stated",
+          "status": "source_extracted",
+          "source_id": "SRC01",
+          "source_page": 4
+        },
+        "commercial_terms": {
+          "value": "USD 8.8 per unit; MOQ 1 pcs",
+          "status": "confirmed",
+          "source_id": "USER-CONFIRMATION",
+          "source_page": null
+        }
+      },
+      "variants": [
+        {
+          "variant_id": "src01-module-8relay",
+          "sku": "8-channel relay module — code pending",
+          "attributes": {
+            "function": [
+              "module"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "capacity": [
+              "source-pending"
+            ],
+            "uplink": [
+              "source-pending"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "mounting": [
+              "din-rail"
+            ],
+            "integration": [
+              "knx-compatible"
+            ],
+            "voice": [
+              "source-pending"
+            ],
+            "redundancy": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-controller-modules.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-module-0-10v",
+          "sku": "0–10 V dimming module — code pending",
+          "attributes": {
+            "function": [
+              "module"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "capacity": [
+              "source-pending"
+            ],
+            "uplink": [
+              "source-pending"
+            ],
+            "power": [
+              "source-pending"
+            ],
+            "mounting": [
+              "din-rail"
+            ],
+            "integration": [
+              "knx-compatible"
+            ],
+            "voice": [
+              "source-pending"
+            ],
+            "redundancy": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-controller-modules.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-module-ir2",
+          "sku": "Infrared IR2 module — code pending",
+          "attributes": {
+            "function": [
+              "module"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "capacity": [
+              "source-pending"
+            ],
+            "uplink": [
+              "source-pending"
+            ],
+            "power": [
+              "dc12"
+            ],
+            "mounting": [
+              "din-rail"
+            ],
+            "integration": [
+              "knx-compatible"
+            ],
+            "voice": [
+              "source-pending"
+            ],
+            "redundancy": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-controller-modules.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-module-hvac",
+          "sku": "Central air-conditioning module — code pending",
+          "attributes": {
+            "function": [
+              "module"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "capacity": [
+              "source-pending"
+            ],
+            "uplink": [
+              "source-pending"
+            ],
+            "power": [
+              "dc12"
+            ],
+            "mounting": [
+              "din-rail"
+            ],
+            "integration": [
+              "knx-compatible"
+            ],
+            "voice": [
+              "source-pending"
+            ],
+            "redundancy": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-controller-modules.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-module-silicon-dimmer",
+          "sku": "2-channel controllable-silicon dimming module — code pending",
+          "attributes": {
+            "function": [
+              "module"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "capacity": [
+              "source-pending"
+            ],
+            "uplink": [
+              "source-pending"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "mounting": [
+              "din-rail"
+            ],
+            "integration": [
+              "knx-compatible"
+            ],
+            "voice": [
+              "source-pending"
+            ],
+            "redundancy": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-controller-modules.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-module-dry-contact",
+          "sku": "Dry-contact module — code pending",
+          "attributes": {
+            "function": [
+              "module"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "capacity": [
+              "source-pending"
+            ],
+            "uplink": [
+              "source-pending"
+            ],
+            "power": [
+              "dc12"
+            ],
+            "mounting": [
+              "din-rail"
+            ],
+            "integration": [
+              "knx-compatible"
+            ],
+            "voice": [
+              "source-pending"
+            ],
+            "redundancy": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-controller-modules.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-module-dc-brushless-hvac",
+          "sku": "DC brushless air-conditioning module — code pending",
+          "attributes": {
+            "function": [
+              "module"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "capacity": [
+              "source-pending"
+            ],
+            "uplink": [
+              "source-pending"
+            ],
+            "power": [
+              "source-pending"
+            ],
+            "mounting": [
+              "din-rail"
+            ],
+            "integration": [
+              "knx-compatible"
+            ],
+            "voice": [
+              "source-pending"
+            ],
+            "redundancy": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-controller-modules.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        },
+        {
+          "variant_id": "src01-module-curtain",
+          "sku": "Curtain module — code pending",
+          "attributes": {
+            "function": [
+              "module"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "capacity": [
+              "source-pending"
+            ],
+            "uplink": [
+              "source-pending"
+            ],
+            "power": [
+              "source-pending"
+            ],
+            "mounting": [
+              "din-rail"
+            ],
+            "integration": [
+              "knx-compatible"
+            ],
+            "voice": [
+              "source-pending"
+            ],
+            "redundancy": [
+              "source-pending"
+            ]
+          },
+          "image": {
+            "src": "assets/images/source-products/src01-controller-modules.jpg",
+            "view": "front",
+            "verification": "source_preview"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "published"
+        }
+      ],
+      "source_image": {
+        "status": "source_preview",
+        "path": "assets/images/source-products/src01-controller-modules.jpg",
+        "source_refs": [
+          {
+            "source_id": "SRC01",
+            "source_page": 4,
+            "status": "source_extracted"
+          }
+        ]
+      }
+    },
+    {
+      "model_id": "gsl-gw1",
+      "name": "Zigbee Gateway",
+      "slug": "gsl-gw1",
+      "editorial_order": 10,
+      "summary": "Zigbee 3.0 gateway that binds switches, sensors and curtain motors to one app.",
+      "variants": [
+        {
+          "variant_id": "gsl-gw1-zigbee-dc12-desktop",
+          "sku": "GSL-GW1-ZIGBEE-DC12-DESKTOP",
+          "attributes": {
+            "function": [
+              "gateway"
+            ],
+            "capacity": [
+              "64"
+            ],
+            "uplink": [
+              "ethernet"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "voice": [
+              "both"
+            ],
+            "redundancy": [
+              "local"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "dc12"
+            ],
+            "mounting": [
+              "desktop"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-gw1-zigbee-poe-wall",
+          "sku": "GSL-GW1-ZIGBEE-POE-WALL",
+          "attributes": {
+            "function": [
+              "gateway"
+            ],
+            "capacity": [
+              "64"
+            ],
+            "uplink": [
+              "ethernet"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "voice": [
+              "both"
+            ],
+            "redundancy": [
+              "local"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "poe"
+            ],
+            "mounting": [
+              "wall"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-gw2",
+      "name": "Matter Hub",
+      "slug": "gsl-gw2",
+      "editorial_order": 20,
+      "summary": "Matter controller and Thread border router for mixed-brand installs.",
+      "variants": [
+        {
+          "variant_id": "gsl-gw2-matter-poe-desktop",
+          "sku": "GSL-GW2-MATTER-POE-DESKTOP",
+          "attributes": {
+            "function": [
+              "hub"
+            ],
+            "capacity": [
+              "128"
+            ],
+            "uplink": [
+              "ethernet"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "voice": [
+              "both"
+            ],
+            "redundancy": [
+              "local"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "power": [
+              "poe"
+            ],
+            "mounting": [
+              "desktop"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-gw2-matter-usb-c-desktop",
+          "sku": "GSL-GW2-MATTER-USBC-DESKTOP",
+          "attributes": {
+            "function": [
+              "hub"
+            ],
+            "capacity": [
+              "128"
+            ],
+            "uplink": [
+              "ethernet"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "voice": [
+              "both"
+            ],
+            "redundancy": [
+              "local"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "power": [
+              "usb-c"
+            ],
+            "mounting": [
+              "desktop"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-gw3",
+      "name": "Bluetooth Mesh Gateway",
+      "slug": "gsl-gw3",
+      "editorial_order": 30,
+      "summary": "BLE mesh gateway for hotel floors where every room runs on its own mesh.",
+      "variants": [
+        {
+          "variant_id": "gsl-gw3-ble-usb-c-desktop",
+          "sku": "GSL-GW3-BLE-USBC-DESKTOP",
+          "attributes": {
+            "function": [
+              "gateway"
+            ],
+            "capacity": [
+              "32"
+            ],
+            "uplink": [
+              "wifi"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "voice": [
+              "alexa"
+            ],
+            "redundancy": [
+              "local"
+            ],
+            "protocol": [
+              "ble"
+            ],
+            "power": [
+              "usb-c"
+            ],
+            "mounting": [
+              "desktop"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-gw3-ble-dc12-wall",
+          "sku": "GSL-GW3-BLE-DC12-WALL",
+          "attributes": {
+            "function": [
+              "gateway"
+            ],
+            "capacity": [
+              "32"
+            ],
+            "uplink": [
+              "wifi"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "voice": [
+              "alexa"
+            ],
+            "redundancy": [
+              "local"
+            ],
+            "protocol": [
+              "ble"
+            ],
+            "power": [
+              "dc12"
+            ],
+            "mounting": [
+              "wall"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-gw4",
+      "name": "RS485 to IP Bridge",
+      "slug": "gsl-gw4",
+      "editorial_order": 40,
+      "summary": "Bridges an RS485 host bus onto IP for BMS and PMS integration.",
+      "variants": [
+        {
+          "variant_id": "gsl-gw4-rs485-dc12-din-rail",
+          "sku": "GSL-GW4-RS485-DC12-DINRAIL",
+          "attributes": {
+            "function": [
+              "bridge"
+            ],
+            "capacity": [
+              "256"
+            ],
+            "uplink": [
+              "ethernet"
+            ],
+            "integration": [
+              "rs485-host"
+            ],
+            "voice": [
+              "none"
+            ],
+            "redundancy": [
+              "local"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "power": [
+              "dc12"
+            ],
+            "mounting": [
+              "din-rail"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-gw4-rs485-poe-din-rail",
+          "sku": "GSL-GW4-RS485-POE-DINRAIL",
+          "attributes": {
+            "function": [
+              "bridge"
+            ],
+            "capacity": [
+              "256"
+            ],
+            "uplink": [
+              "ethernet"
+            ],
+            "integration": [
+              "rs485-host"
+            ],
+            "voice": [
+              "none"
+            ],
+            "redundancy": [
+              "local"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "power": [
+              "poe"
+            ],
+            "mounting": [
+              "din-rail"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-gw5",
+      "name": "Zigbee Repeater",
+      "slug": "gsl-gw5",
+      "editorial_order": 50,
+      "summary": "Mains-powered repeater that extends mesh coverage across large floors.",
+      "variants": [
+        {
+          "variant_id": "gsl-gw5-zigbee-usb-c-desktop",
+          "sku": "GSL-GW5-ZIGBEE-USBC-DESKTOP",
+          "attributes": {
+            "function": [
+              "repeater"
+            ],
+            "capacity": [
+              "32"
+            ],
+            "uplink": [
+              "wifi"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "voice": [
+              "none"
+            ],
+            "redundancy": [
+              "local"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "usb-c"
+            ],
+            "mounting": [
+              "desktop"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-gw5-zigbee-ac220-wall",
+          "sku": "GSL-GW5-ZIGBEE-AC220-WALL",
+          "attributes": {
+            "function": [
+              "repeater"
+            ],
+            "capacity": [
+              "32"
+            ],
+            "uplink": [
+              "wifi"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "voice": [
+              "none"
+            ],
+            "redundancy": [
+              "local"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "ac220"
+            ],
+            "mounting": [
+              "wall"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-gw6",
+      "name": "Dry Contact Control Module",
+      "slug": "gsl-gw6",
+      "editorial_order": 60,
+      "summary": "Six-channel dry contact module for garage doors, pumps and third-party equipment.",
+      "variants": [
+        {
+          "variant_id": "gsl-gw6-zigbee-dc12-din-rail",
+          "sku": "GSL-GW6-ZIGBEE-DC12-DINRAIL",
+          "attributes": {
+            "function": [
+              "module"
+            ],
+            "capacity": [
+              "32"
+            ],
+            "uplink": [
+              "wifi"
+            ],
+            "integration": [
+              "gsl",
+              "mqtt"
+            ],
+            "voice": [
+              "both"
+            ],
+            "redundancy": [
+              "local"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "dc12"
+            ],
+            "mounting": [
+              "din-rail"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-gw6-ble-dc12-din-rail",
+          "sku": "GSL-GW6-BLE-DC12-DINRAIL",
+          "attributes": {
+            "function": [
+              "module"
+            ],
+            "capacity": [
+              "32"
+            ],
+            "uplink": [
+              "wifi"
+            ],
+            "integration": [
+              "gsl",
+              "mqtt"
+            ],
+            "voice": [
+              "both"
+            ],
+            "redundancy": [
+              "local"
+            ],
+            "protocol": [
+              "ble"
+            ],
+            "power": [
+              "dc12"
+            ],
+            "mounting": [
+              "din-rail"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-gw7",
+      "name": "Multi-Protocol Hub",
+      "slug": "gsl-gw7",
+      "editorial_order": 70,
+      "summary": "One hub for Zigbee, BLE mesh and RS485 with local automations and no cloud lock-in.",
+      "variants": [
+        {
+          "variant_id": "gsl-gw7-zigbee-poe-din-rail",
+          "sku": "GSL-GW7-ZIGBEE-POE-DINRAIL",
+          "attributes": {
+            "function": [
+              "hub"
+            ],
+            "capacity": [
+              "256"
+            ],
+            "uplink": [
+              "ethernet"
+            ],
+            "integration": [
+              "gsl",
+              "mqtt"
+            ],
+            "voice": [
+              "both"
+            ],
+            "redundancy": [
+              "local"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "poe"
+            ],
+            "mounting": [
+              "din-rail"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-gw7-matter-poe-wall",
+          "sku": "GSL-GW7-MATTER-POE-WALL",
+          "attributes": {
+            "function": [
+              "hub"
+            ],
+            "capacity": [
+              "256"
+            ],
+            "uplink": [
+              "ethernet"
+            ],
+            "integration": [
+              "gsl",
+              "mqtt"
+            ],
+            "voice": [
+              "both"
+            ],
+            "redundancy": [
+              "local"
+            ],
+            "protocol": [
+              "matter"
+            ],
+            "power": [
+              "poe"
+            ],
+            "mounting": [
+              "wall"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    },
+    {
+      "model_id": "gsl-gw8",
+      "name": "4G Backup Gateway",
+      "slug": "gsl-gw8",
+      "editorial_order": 80,
+      "summary": "Cellular uplink for sites where the LAN cannot be relied on.",
+      "variants": [
+        {
+          "variant_id": "gsl-gw8-zigbee-dc12-din-rail",
+          "sku": "GSL-GW8-ZIGBEE-DC12-DINRAIL",
+          "attributes": {
+            "function": [
+              "gateway"
+            ],
+            "capacity": [
+              "128"
+            ],
+            "uplink": [
+              "4g"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "voice": [
+              "none"
+            ],
+            "redundancy": [
+              "cloud"
+            ],
+            "protocol": [
+              "zigbee"
+            ],
+            "power": [
+              "dc12"
+            ],
+            "mounting": [
+              "din-rail"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        },
+        {
+          "variant_id": "gsl-gw8-rs485-dc12-din-rail",
+          "sku": "GSL-GW8-RS485-DC12-DINRAIL",
+          "attributes": {
+            "function": [
+              "gateway"
+            ],
+            "capacity": [
+              "128"
+            ],
+            "uplink": [
+              "4g"
+            ],
+            "integration": [
+              "gsl"
+            ],
+            "voice": [
+              "none"
+            ],
+            "redundancy": [
+              "cloud"
+            ],
+            "protocol": [
+              "rs485"
+            ],
+            "power": [
+              "dc12"
+            ],
+            "mounting": [
+              "din-rail"
+            ]
+          },
+          "image": {
+            "src": "assets/images/placeholders/product-module-d.svg",
+            "view": "front",
+            "verification": "placeholder"
+          },
+          "price": {
+            "amount": 8.8,
+            "currency": "USD",
+            "unit": "unit",
+            "quantity_basis": null,
+            "moq": 1,
+            "status": "confirmed",
+            "checked_on": "2026-09-20"
+          },
+          "publication_status": "draft"
+        }
+      ]
+    }
+  ]
+}

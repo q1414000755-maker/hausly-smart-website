@@ -1,0 +1,13 @@
+.server-private/
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+*.bak
+*.zip
+.DS_Store
+Thumbs.db
+设计稿/
+设计规划/
+artifacts/

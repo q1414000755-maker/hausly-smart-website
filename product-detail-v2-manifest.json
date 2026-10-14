@@ -1,0 +1,375 @@
+{
+  "version": 2,
+  "localOnly": true,
+  "pages": [
+    {
+      "path": "/products/a15-006-mechanical-switch/index.html",
+      "model": "mech-a15-006"
+    },
+    {
+      "path": "/products/a16-007-mechanical-switch/index.html",
+      "model": "mech-a16-007"
+    },
+    {
+      "path": "/products/a6-009-mechanical-switch/index.html",
+      "model": "mech-a6-009"
+    },
+    {
+      "path": "/products/a6-010-socket/index.html",
+      "model": "socket-src03-a6-socket-010"
+    },
+    {
+      "path": "/products/a6-011-socket/index.html",
+      "model": "socket-src03-a6-socket-011"
+    },
+    {
+      "path": "/products/a6-012-socket/index.html",
+      "model": "socket-src03-a6-socket-012"
+    },
+    {
+      "path": "/products/a6-013-socket/index.html",
+      "model": "socket-src03-a6-socket-013"
+    },
+    {
+      "path": "/products/a6-014-socket/index.html",
+      "model": "socket-src03-a6-socket-014"
+    },
+    {
+      "path": "/products/a6-015-socket/index.html",
+      "model": "socket-src03-a6-socket-015"
+    },
+    {
+      "path": "/products/a6-016-socket/index.html",
+      "model": "socket-src03-a6-socket-016"
+    },
+    {
+      "path": "/products/a8-008-mechanical-switch/index.html",
+      "model": "mech-a8-008"
+    },
+    {
+      "path": "/products/a8-010-socket/index.html",
+      "model": "socket-src03-a8-socket-010"
+    },
+    {
+      "path": "/products/a8-011-socket/index.html",
+      "model": "socket-src03-a8-socket-011"
+    },
+    {
+      "path": "/products/a8-012-socket/index.html",
+      "model": "socket-src03-a8-socket-012"
+    },
+    {
+      "path": "/products/a8-013-socket/index.html",
+      "model": "socket-src03-a8-socket-013"
+    },
+    {
+      "path": "/products/a8-014-socket/index.html",
+      "model": "socket-src03-a8-socket-014"
+    },
+    {
+      "path": "/products/a8-015-socket/index.html",
+      "model": "socket-src03-a8-socket-015"
+    },
+    {
+      "path": "/products/a8-016-socket/index.html",
+      "model": "socket-src03-a8-socket-016"
+    },
+    {
+      "path": "/products/m10-smart-switch/index.html",
+      "model": "src03-m10-glass"
+    },
+    {
+      "path": "/products/m12-s-smart-switch/index.html",
+      "model": "src03-m12s"
+    },
+    {
+      "path": "/products/m12-smart-switch/index.html",
+      "model": "src03-m12"
+    },
+    {
+      "path": "/products/m6-smart-switch/index.html",
+      "model": "src03-m6"
+    },
+    {
+      "path": "/products/m6s-smart-switch/index.html",
+      "model": "src03-m6s"
+    },
+    {
+      "path": "/products/m8-smart-switch/index.html",
+      "model": "src03-m8"
+    },
+    {
+      "path": "/products/m9-smart-switch/index.html",
+      "model": "src03-m9"
+    },
+    {
+      "path": "/products/s2-006-mechanical-switch/index.html",
+      "model": "mech-s2-006"
+    },
+    {
+      "path": "/products/s2-010-socket/index.html",
+      "model": "socket-src03-s2-socket-010"
+    },
+    {
+      "path": "/products/s2-011-socket/index.html",
+      "model": "socket-src03-s2-socket-011"
+    },
+    {
+      "path": "/products/s2-012-socket/index.html",
+      "model": "socket-src03-s2-socket-012"
+    },
+    {
+      "path": "/products/s2-013-socket/index.html",
+      "model": "socket-src03-s2-socket-013"
+    },
+    {
+      "path": "/products/s2-014-socket/index.html",
+      "model": "socket-src03-s2-socket-014"
+    },
+    {
+      "path": "/products/s2-015-socket/index.html",
+      "model": "socket-src03-s2-socket-015"
+    },
+    {
+      "path": "/products/s2-016-socket/index.html",
+      "model": "socket-src03-s2-socket-016"
+    },
+    {
+      "path": "/products/s3-005-mechanical-switch/index.html",
+      "model": "mech-s3-005"
+    },
+    {
+      "path": "/products/s3-010-socket/index.html",
+      "model": "socket-src03-s3-socket-010"
+    },
+    {
+      "path": "/products/s3-011-socket/index.html",
+      "model": "socket-src03-s3-socket-011"
+    },
+    {
+      "path": "/products/s3-012-socket/index.html",
+      "model": "socket-src03-s3-socket-012"
+    },
+    {
+      "path": "/products/s3-013-socket/index.html",
+      "model": "socket-src03-s3-socket-013"
+    },
+    {
+      "path": "/products/s3-014-socket/index.html",
+      "model": "socket-src03-s3-socket-014"
+    },
+    {
+      "path": "/products/s3-015-socket/index.html",
+      "model": "socket-src03-s3-socket-015"
+    },
+    {
+      "path": "/products/s3-016-socket/index.html",
+      "model": "socket-src03-s3-socket-016"
+    },
+    {
+      "path": "/products/s5-007-mechanical-switch/index.html",
+      "model": "mech-s5-007"
+    },
+    {
+      "path": "/products/s5-010-socket/index.html",
+      "model": "socket-src03-s5-socket-010"
+    },
+    {
+      "path": "/products/s5-011-socket/index.html",
+      "model": "socket-src03-s5-socket-011"
+    },
+    {
+      "path": "/products/s5-012-socket/index.html",
+      "model": "socket-src03-s5-socket-012"
+    },
+    {
+      "path": "/products/s5-013-socket/index.html",
+      "model": "socket-src03-s5-socket-013"
+    },
+    {
+      "path": "/products/s5-014-socket/index.html",
+      "model": "socket-src03-s5-socket-014"
+    },
+    {
+      "path": "/products/s5-015-socket/index.html",
+      "model": "socket-src03-s5-socket-015"
+    },
+    {
+      "path": "/products/s5-016-socket/index.html",
+      "model": "socket-src03-s5-socket-016"
+    },
+    {
+      "path": "/products/s8-005-mechanical-switch/index.html",
+      "model": "mech-s8-005"
+    },
+    {
+      "path": "/products/s8-010-socket/index.html",
+      "model": "socket-src03-s8-socket-010"
+    },
+    {
+      "path": "/products/s8-011-socket/index.html",
+      "model": "socket-src03-s8-socket-011"
+    },
+    {
+      "path": "/products/s8-012-socket/index.html",
+      "model": "socket-src03-s8-socket-012"
+    },
+    {
+      "path": "/products/s8-013-socket/index.html",
+      "model": "socket-src03-s8-socket-013"
+    },
+    {
+      "path": "/products/s8-014-socket/index.html",
+      "model": "socket-src03-s8-socket-014"
+    },
+    {
+      "path": "/products/s8-015-socket/index.html",
+      "model": "socket-src03-s8-socket-015"
+    },
+    {
+      "path": "/products/s8-016-socket/index.html",
+      "model": "socket-src03-s8-socket-016"
+    },
+    {
+      "path": "/products/s8-smart-switch/index.html",
+      "model": "src03-s8-smart"
+    },
+    {
+      "path": "/products/src01-controller-modules/index.html",
+      "model": "src01-controller-modules"
+    },
+    {
+      "path": "/products/src01-host-gateway/index.html",
+      "model": "src01-host-gateway"
+    },
+    {
+      "path": "/products/src01-hotel-door-locks/index.html",
+      "model": "src01-hotel-door-locks"
+    },
+    {
+      "path": "/products/src01-hotel-door-signage/index.html",
+      "model": "src01-hotel-door-signage"
+    },
+    {
+      "path": "/products/src01-smart-curtain-motors/index.html",
+      "model": "src01-smart-curtain-motors"
+    },
+    {
+      "path": "/products/src03-door-window-sensor/index.html",
+      "model": "src03-door-window-sensor"
+    },
+    {
+      "path": "/products/src03-half-screen-thermostat/index.html",
+      "model": "src03-half-screen-thermostat"
+    },
+    {
+      "path": "/products/src03-human-body-sensor/index.html",
+      "model": "src03-human-body-sensor"
+    },
+    {
+      "path": "/products/src03-intelligent-temperature-controller/index.html",
+      "model": "src03-intelligent-temperature-controller"
+    },
+    {
+      "path": "/products/src03-knob-screen/index.html",
+      "model": "src03-knob-screen"
+    },
+    {
+      "path": "/products/src03-m10-glass/index.html",
+      "model": "src03-m10-glass"
+    },
+    {
+      "path": "/products/src03-m12/index.html",
+      "model": "src03-m12"
+    },
+    {
+      "path": "/products/src03-m12s/index.html",
+      "model": "src03-m12s"
+    },
+    {
+      "path": "/products/src03-m6/index.html",
+      "model": "src03-m6"
+    },
+    {
+      "path": "/products/src03-m6s/index.html",
+      "model": "src03-m6s"
+    },
+    {
+      "path": "/products/src03-m8/index.html",
+      "model": "src03-m8"
+    },
+    {
+      "path": "/products/src03-m9/index.html",
+      "model": "src03-m9"
+    },
+    {
+      "path": "/products/src03-s8-smart/index.html",
+      "model": "src03-s8-smart"
+    },
+    {
+      "path": "/products/src03-z5/index.html",
+      "model": "src03-z5"
+    },
+    {
+      "path": "/products/src03-z6/index.html",
+      "model": "src03-z6"
+    },
+    {
+      "path": "/products/src03-z7/index.html",
+      "model": "src03-z7"
+    },
+    {
+      "path": "/products/t10-011-mechanical-switch/index.html",
+      "model": "mech-t10-011"
+    },
+    {
+      "path": "/products/t12-015-socket/index.html",
+      "model": "socket-src03-t12-socket-015"
+    },
+    {
+      "path": "/products/t12-016-socket/index.html",
+      "model": "socket-src03-t12-socket-016"
+    },
+    {
+      "path": "/products/t12-017-socket/index.html",
+      "model": "socket-src03-t12-socket-017"
+    },
+    {
+      "path": "/products/t12-018-socket/index.html",
+      "model": "socket-src03-t12-socket-018"
+    },
+    {
+      "path": "/products/t12-019-socket/index.html",
+      "model": "socket-src03-t12-socket-019"
+    },
+    {
+      "path": "/products/t12-020-socket/index.html",
+      "model": "socket-src03-t12-socket-020"
+    },
+    {
+      "path": "/products/t12-021-socket/index.html",
+      "model": "socket-src03-t12-socket-021"
+    },
+    {
+      "path": "/products/t12-022-socket/index.html",
+      "model": "socket-src03-t12-socket-022"
+    },
+    {
+      "path": "/products/y10-013-mechanical-switch/index.html",
+      "model": "mech-y10-013"
+    },
+    {
+      "path": "/products/z5-smart-switch/index.html",
+      "model": "src03-z5"
+    },
+    {
+      "path": "/products/z6-smart-switch/index.html",
+      "model": "src03-z6"
+    },
+    {
+      "path": "/products/z7-smart-switch/index.html",
+      "model": "src03-z7"
+    }
+  ],
+  "backup": ".server-private/pdp-v2-originals"
+}

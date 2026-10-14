@@ -1,0 +1,658 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Z02 产品列表页（PLP）样式 —— 顶部横向筛选 + 全宽产品网格
+   ═══════════════════════════════════════════════════════════════════════════
+   适用范围：body.category-page has-inner-banner（由 _registry/build.mjs 的 PLP 模板加上的）。
+   category-page 让本页退出 inner-banner 那三条版心/避让规则，版心由本文件声明；
+   has-inner-banner 让那 620px 主视觉与右下角面包屑生效。两个 class 都要留。
+
+   取值纪律：不写裸色值 / 裸字号 —— 全部走 site-shell.css 的 --z02-* token。
+   唯一的例外是版式数值（宽度、间距、圆角、控件高），它们不是「设计变量」而是
+   本页的排版参数，写在文件顶部一处，改版只动那一块。
+
+   不做移动端（包子 2026-09-17 硬规则）。≤1180 的处理属于 PC 笔记本，保留。
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.category-page {
+  /* 产品分类页不沿用内页的瓷白底色，目录与产品卡之间统一为纯白。 */
+  background: var(--z02-surface);
+  /* ── 版式参数（本页私有，不出圈到其他页面）── */
+  /* 桌面端统一 4 列；窄屏仍由下面断点接管。
+     参考：1920→5列(310) / 1680→4(342) / 1440→4(291) / 1280→3(349)。 */
+  --cat-card-min: 0px;
+  --cat-grid-gap-col: 18px;
+  --cat-grid-gap-row: 22px;
+  --cat-radius: 8px;
+  --cat-control-h: 44px;      /* 控件最小高度。筛选、排序、按钮统一，别各自设 */
+  --cat-badge-bg: var(--z02-surface-product);
+}
+
+/* 目录网格区域必须显式铺白：不能仅依赖 body 的底色，避免主内容或 section
+   在后续布局规则中形成浅灰的独立绘制层。 */
+.category-page #main-content,
+.category-page .cat-catalogue {
+  background: var(--z02-surface);
+}
+
+/* 本页有若干元素用 hidden 属性切换可见性。只要给它们写了 display，
+   就会盖掉浏览器默认的 [hidden]{display:none}（作者样式优先于 UA 样式）。
+   统一在这里按 (0,2,0) 兜住，省得逐个元素补一条。 */
+.category-page [hidden] { display: none; }
+
+/* 视觉隐藏但保留给读屏。page-base.css 里没有这个工具类。 */
+.cat-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── 原型数据横幅（_placeholder.render_banner 打开时才渲染）────────────── */
+.cat-prototype {
+  margin: 0;
+  padding: 12px 0;
+  background: var(--z02-surface-selected);
+  color: var(--z02-text);
+  font-size: var(--z02-fs-meta);
+  text-align: center;
+}
+.cat-prototype strong { font-weight: var(--z02-fw-semibold); }
+
+/* ═══ 标题带 ═══════════════════════════════════════════════════════════════
+   2026-09-18 包子定：标题区改用带图 banner —— 形态与 48 个占位页一致，
+   面包屑落在右下角。原来的紧凑标题带（面包屑 + H1 一列、导语一列，整条
+   实测 123px）已整块删除，改由 inner-banner.css 的 .inner-banner 承担。
+   本页 body 现在同时带 category-page 与 has-inner-banner：
+     · has-inner-banner → 620px 主视觉、.inner-banner-inner 版心、
+       .inner-banner .cat-crumb 的右下角定位，全是现成的，不在这里复写。
+     · category-page    → 仍退出 inner-banner 那三条版心规则，本文件自己声明版心。
+   ⚠️ 代价（包子知悉后仍选的方案）：首张产品卡从 y=334 掉到 y=831，
+      1440×900 视口（可用高约 810）首屏看不到任何产品。 */
+
+/* ═══ 工具条（吸顶 + 接管页头） ═════════════════════════════════════════════
+   包子 2026-09-18 的规则：筛选条吸到视口顶端时，白色页头让位 ——
+   所以这里 top:0（跟页头同一个位置），z-index 比页头高，
+   再由 site-shell.js 在「筛选条到底了」的时候给 body 挂 .bar-takeover 把页头滑走。
+   data-shell-bar 就是这个接管的钩子（见 site-shell.js 的滚动处理器）。 */
+.cat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  /* 筛选条与上方主视觉之间的呼吸（包子 2026-09-18：上方间距 +1rem）。
+     用 padding 而不是 margin：工具条自己是白底 full-bleed，
+     换成 margin 会在照片与白条之间露出一条页面底色的缝。
+     sticky 吸顶时这 16px 白底会留在视口顶端，是预期的效果。 */
+  padding-top: 16px;
+  background: var(--z02-surface);
+  border-bottom: 1px solid var(--z02-border-line);
+}
+.cat-toolbar-inner,
+.cat-resultbar {
+  display: flex;
+  align-items: center;
+  width: var(--z02-canvas);
+  margin-inline: auto;
+}
+.cat-toolbar-inner { gap: 12px; min-height: 60px; position: relative; }
+.cat-search { display: flex; flex: 0 1 280px; min-width: 190px; }
+.cat-search input { width: 100%; min-height: var(--cat-control-h); padding: 0 14px; border: 1px solid var(--z02-border-line); border-radius: var(--cat-radius); background: var(--z02-surface); color: var(--z02-text); font: inherit; font-size: var(--z02-fs-action); }
+.cat-search input::placeholder { color: var(--z02-text-faint); }
+.cat-search input:focus-visible { outline: 2px solid var(--z02-accent); outline-offset: 2px; }
+/* ↑ position:relative 现在只服务 ≤1359 那条兜底（见文件末尾）：那一档
+   .cat-facet-more 退回 static，宽面板的包含块就上移到这一层（= 版心），
+   right:0 于是对齐版心右缘，宽度再大也不会越过版心左缘。
+   ≥1360 的主档不靠它 —— 面板挂在按钮自己身上。 */
+.cat-resultbar {
+  gap: 16px;
+  /* 包子 2026-09-18：结果栏高度 48 → 72px。
+     它跟上面的筛选条共用 .cat-toolbar 的白底，所以视觉上是同一条工具条变高了。 */
+  min-height: 72px;
+  border-top: 1px solid var(--z02-border-line);
+}
+
+/* ── 筛选入口 ── */
+.cat-facets {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+.cat-facet { position: relative; }
+.cat-facet-summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--cat-control-h);
+  padding: 0 14px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--cat-radius);
+  background: var(--z02-surface);
+  color: var(--z02-text);
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-regular);
+  cursor: pointer;
+  list-style: none;
+  white-space: nowrap;
+}
+.cat-facet-summary::-webkit-details-marker { display: none; }
+.cat-facet-summary::after {
+  width: 6px;
+  height: 6px;
+  margin-left: 2px;
+  border-right: 1.5px solid var(--z02-text-muted);
+  border-bottom: 1.5px solid var(--z02-text-muted);
+  transform: translateY(-2px) rotate(45deg);
+  content: "";
+}
+.cat-facet[open] > .cat-facet-summary {
+  border-color: var(--z02-border-control);
+  background: var(--z02-surface-selected);
+}
+.cat-facet[open] > .cat-facet-summary::after {
+  transform: translateY(2px) rotate(-135deg);
+}
+.cat-facet-summary:hover { border-color: var(--z02-border-control); }
+.cat-facet-summary:focus-visible,
+.cat-clear:focus-visible,
+.cat-quote:focus-visible,
+.cat-detail-link:focus-visible,
+.cat-chip:focus-visible {
+  outline: 2px solid var(--z02-accent);
+  outline-offset: 2px;
+}
+/* 已选项计数：筛选中时显示，避免收起状态下看不出选了什么 */
+.cat-facet-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--z02-accent);
+  color: var(--z02-on-dark);
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-medium);
+}
+
+.cat-facet-panel {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 1;
+  min-width: 252px;
+  max-height: 340px;
+  overflow: auto;
+  padding: 14px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--cat-radius);
+  background: var(--z02-surface);
+}
+/* ── 「More Filters」宽面板：挂在按钮上，左右与按钮居中对齐 ──────────────────
+   包子 2026-09-18：面板要跟 More Filters 这个选项左右居中。
+   之前的做法是把包含块上移到 .cat-toolbar-inner（版心）再 right:0 —— 那样面板
+   贴版心右缘，1440 时碰巧接近居中（面板中心 902 vs 按钮中心 853），1920 就完全跑
+   偏（面板中心 1346 vs 按钮中心 889，偏右 457px），看着就是「全甩到右边去了」。
+   现在挂回按钮自己：left:50% + translateX(-50%) → 面板中心恒等于按钮中心。
+   实测（默认态 / 带 2 个已选 chip 的筛选态）面板中心与按钮中心差 ≤1px，
+   左右都落在版心内：1440 → 423~1283（版心 108~1332）、1920 → 459~1319（版心 144~1776）。
+   ⚠️ 只在 ≥1360 成立。更窄时 860px 的面板会顶到视口边，所以 ≤1359 那条兜底
+   （见文件末尾的窄档媒体查询）把它退回「贴版心右缘」的老行为。 */
+.cat-facet-more { position: relative; }
+.cat-facet-more .cat-facet-panel {
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  /* 100% 现在是「按钮高度 44」而不是「工具条高度 60」，所以 +6 要补成 +14，
+     面板上沿才停在原来那条线（筛选排下沿 + 14）。 */
+  top: calc(100% + 14px);
+}
+/* 「More Filters」装的是非主维度（电压/负载/生态/墙盒），共 4 组。
+   4 列一行放完 —— 3 列会把最后一组挤到第二行留两个空位，也不好看。 */
+.cat-facet-panel-wide {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px 24px;
+  min-width: 860px;
+  max-height: 460px;
+}
+.cat-facet-group {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.cat-facet-legend {
+  padding: 0 0 8px;
+  color: var(--z02-text-faint);
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-medium);
+  letter-spacing: var(--z02-ls-kicker);
+  text-transform: uppercase;
+}
+.cat-opt-list {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ── 单个选项 ── */
+.cat-opt,
+.cat-compare {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 36px;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-meta);
+  cursor: pointer;
+}
+.cat-opt:hover { color: var(--z02-accent); }
+.cat-opt.is-unavailable,
+.cat-opt.is-unavailable:hover {
+  color: var(--z02-text-faint);
+  cursor: not-allowed;
+}
+.cat-opt.is-unavailable .cat-opt-box,
+.cat-opt.is-unavailable .cat-opt-num { opacity: .55; }
+.cat-opt input,
+.cat-compare input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  opacity: 0;
+}
+.cat-opt-box {
+  position: relative;
+  flex: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--z02-border-control);
+  border-radius: 4px;
+  background: var(--z02-surface);
+}
+.cat-opt input:checked + .cat-opt-box,
+.cat-compare input:checked + .cat-opt-box {
+  border-color: var(--z02-accent);
+  background: var(--z02-accent);
+}
+.cat-opt input:checked + .cat-opt-box::after,
+.cat-compare input:checked + .cat-opt-box::after {
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--z02-on-dark);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  content: "";
+}
+.cat-opt input:focus-visible + .cat-opt-box,
+.cat-compare input:focus-visible + .cat-opt-box {
+  outline: 2px solid var(--z02-accent);
+  outline-offset: 2px;
+}
+.cat-opt-text { min-width: 0; }
+.cat-opt-num {
+  margin-left: auto;
+  color: var(--z02-text-faint);
+  font-size: var(--z02-fs-label);
+}
+
+/* ── 结果栏 ── */
+.cat-count {
+  margin: 0;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-meta);
+  white-space: nowrap;
+}
+.cat-chips {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: 999px;
+  background: var(--z02-surface-selected);
+  color: var(--z02-text);
+  font-family: inherit;
+  font-size: var(--z02-fs-label);
+  cursor: pointer;
+}
+.cat-chip:hover { border-color: var(--z02-border-control); }
+.cat-chip-x { color: var(--z02-text-muted); font-size: var(--z02-fs-meta); line-height: 1; }
+.cat-quote-count,
+.cat-compare-hint {
+  margin: 0;
+  color: var(--z02-accent);
+  font-size: var(--z02-fs-meta);
+  white-space: nowrap;
+}
+.cat-compare-hint { color: var(--z02-text-muted); }
+.cat-sort { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+.cat-sort-label {
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-meta);
+  white-space: nowrap;
+}
+.cat-sort-select {
+  /* 包子 2026-09-18：压缩「Featured」四周的内边距。
+     这里**有意偏离**顶部 --cat-control-h:44px 那条「控件高度统一」——
+     筛选入口留在 44px（同一排的功能入口，有 verify-plp.cjs 断言守着），
+     排序是结果栏里的单个小控件，44px 在 48px 的结果栏里撑成一块砖；
+     压到 36px 后文字上下的空白从约 12px 收到约 8px。
+     右侧 26px 是留给原生下拉箭头的位（原 30px 太阔）。 */
+  min-height: 36px;
+  padding: 0 26px 0 10px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--cat-radius);
+  background: var(--z02-surface);
+  color: var(--z02-text);
+  font-family: inherit;
+  font-size: var(--z02-fs-action);
+  cursor: pointer;
+}
+.cat-sort-select:hover { border-color: var(--z02-border-control); }
+.cat-sort-select:focus-visible { outline: 2px solid var(--z02-accent); outline-offset: 2px; }
+
+.cat-clear {
+  flex: none;
+  min-height: var(--cat-control-h);
+  padding: 0 16px;
+  border: 1px solid var(--z02-border-control);
+  border-radius: var(--cat-radius);
+  background: var(--z02-surface);
+  color: var(--z02-text);
+  font-family: inherit;
+  font-size: var(--z02-fs-action);
+  cursor: pointer;
+}
+.cat-clear:hover:not(:disabled) { border-color: var(--z02-text-muted); }
+.cat-clear:disabled { opacity: .45; cursor: default; }
+
+/* ═══ 产品网格 ════════════════════════════════════════════════════════════
+   列数不写断点：auto-fill + minmax 让 5/4/3 列自己落位。
+   1920→5(310px) 1680→4(342) 1440→4(291) 1280→3(349)，卡片永远落在 288–350。 */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--cat-card-min), 1fr));
+  /* 不能让卡片共用边框。明确写出两个方向的间距，避免变量解析或后来
+     的单值 gap 覆盖后，让整行卡片看成一张连续表格。 */
+  column-gap: 20px;
+  row-gap: 24px;
+  width: var(--z02-canvas);
+  margin: 24px auto 0;
+}
+.cat-catalogue { padding-bottom: var(--z02-space-section-y); }
+.cat-global-compare { position: fixed; right: 24px; bottom: 24px; z-index: 80; display: flex; align-items: center; gap: 12px; padding: 14px; border: 1px solid var(--z02-border-line); background: var(--z02-surface); box-shadow: 0 12px 28px rgba(16,34,51,.18); color: var(--z02-text); font-size: var(--z02-fs-action); }
+.cat-global-compare button { border: 0; background: transparent; color: var(--z02-text-muted); font: inherit; cursor: pointer; }
+.cat-global-compare a { padding: 9px 12px; background: var(--z02-accent); color: var(--z02-on-dark); text-decoration: none; }
+
+/* 已确认的产品分类页桌面基线：4 列产品卡。其余断点仍由下方的共用响应式规则处理。 */
+@media (min-width: 1180px) {
+  .category-page .cat-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .category-page .cat-card-body { padding: 17px; }
+}
+
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--cat-radius);
+  background: var(--z02-surface);
+}
+.cat-card:hover { border-color: var(--z02-border-control); }
+.cat-card-media {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-bottom: 1px solid var(--z02-border-line);
+  background: var(--z02-surface-product);
+}
+.cat-card-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cat-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 4px 9px;
+  border-radius: 6px;
+  background: var(--cat-badge-bg);
+  color: var(--cat-badge-ink, var(--z02-text-muted));
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-medium);
+  letter-spacing: var(--z02-ls-caps);
+}
+/* 协议角标：底色 + 文字色成对取自 site-shell.css 的 --z02-badge-<协议>-bg/-ink
+   （平台品牌色，2026-09-18 包子拍板从极浅中性底改过来）。每对都实算过对比度，
+   数字记在 token 那边的注释里；改色值前先重算，别只看色板好不好看。 */
+.cat-badge-protocol-wifi { --cat-badge-bg: var(--z02-badge-wifi-bg); --cat-badge-ink: var(--z02-badge-wifi-ink); }
+.cat-badge-protocol-zigbee { --cat-badge-bg: var(--z02-badge-zigbee-bg); --cat-badge-ink: var(--z02-badge-zigbee-ink); }
+.cat-badge-protocol-matter { --cat-badge-bg: var(--z02-badge-matter-bg); --cat-badge-ink: var(--z02-badge-matter-ink); }
+.cat-badge-protocol-bluetooth { --cat-badge-bg: var(--z02-badge-bluetooth-bg); --cat-badge-ink: var(--z02-badge-bluetooth-ink); }
+
+.cat-card-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+}
+.cat-card-name {
+  margin: 0;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-card-title);
+  font-weight: var(--z02-fw-medium);
+  letter-spacing: var(--z02-ls-component-title);
+  line-height: var(--z02-lh-card-title);
+}
+.cat-card-name a { color: inherit; text-decoration: none; }
+.cat-card-name a:hover { color: var(--z02-accent); }
+.cat-card--pending { border-style: dashed; background: var(--z02-surface); }
+.cat-card-media--pending {
+  display: grid;
+  min-height: 220px;
+  place-items: center;
+  border-bottom: 1px dashed var(--z02-border-line);
+  background: linear-gradient(135deg, var(--z02-surface) 0%, var(--z02-surface-selected) 100%);
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-meta);
+  text-align: center;
+}
+.cat-card-media--pending span { max-width: 13rem; }
+.cat-card-spec {
+  margin: 0;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-meta);
+  line-height: var(--z02-lh-copy);
+}
+
+/* 价格区推到卡片底部，一行上多个卡片的价格就对齐了 */
+.cat-card-buy {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--z02-border-line);
+}
+.cat-card-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-lead);
+  font-weight: var(--z02-fw-medium);
+}
+.cat-price-unit {
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-regular);
+}
+/* MOQ 那一排：包子 2026-09-18 把 Compare 从卡底移到这一排与 MOQ 并排。
+   两边字号都取 --z02-fs-supporting —— 并排之后不一致会很明显，
+   所以改字号只改 token，别在这一处单独写。
+   terms 缺值时 data-terms 带 hidden，Compare 由 space-between 顶到右侧。 */
+.cat-card-terms-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 4px;
+}
+.cat-card-terms {
+  min-width: 0;
+  margin: 0;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-supporting);
+}
+.cat-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+.cat-quote {
+  flex: 1 1 auto;
+  min-height: var(--cat-control-h);
+  padding: 0 14px;
+  border: 1px solid var(--z02-accent);
+  border-radius: var(--cat-radius);
+  background: var(--z02-accent);
+  color: var(--z02-on-dark);
+  font-family: inherit;
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-medium);
+  cursor: pointer;
+}
+.cat-quote:hover { background: var(--z02-accent-hover); border-color: var(--z02-accent-hover); }
+.cat-quote[aria-pressed="true"] {
+  background: var(--z02-surface-selected);
+  border-color: var(--z02-accent);
+  color: var(--z02-accent);
+}
+.cat-detail-link {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--cat-control-h);
+  color: var(--z02-accent);
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-medium);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.cat-detail-link:hover { text-decoration: underline; }
+/* 与 MOQ 同排（包子 2026-09-18），不再是独立一行：
+   行距交给 .cat-card-terms-row，上外边距去掉；min-height 24 保住点击目标
+   （WCAG 2.5.8 的最小值），不要再往下压。 */
+.cat-compare {
+  flex: none;
+  min-height: 24px;
+  margin: 0;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-supporting);
+}
+
+/* ═══ 空结果 ══════════════════════════════════════════════════════════════ */
+.cat-empty {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  width: var(--z02-canvas);
+  margin: 32px auto 0;
+  padding: 40px 24px;
+  border: 1px dashed var(--z02-border-line);
+  border-radius: 12px;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-meta);
+  text-align: center;
+}
+.cat-empty strong {
+  color: var(--z02-text);
+  font-size: var(--z02-fs-h4);
+  font-weight: var(--z02-fw-medium);
+}
+.cat-clear-inline { margin-top: 8px; }
+
+/* 品类介绍段（.cat-guide）2026-09-18 已整体删除：包子看过实际效果后说
+   「这些说明全部删除不要」。当时为渲染注册表 purpose/slots 加的模板分支
+   （build.mjs 的 plpGuide）与这里的样式一并撤掉；purpose 仍用作 meta description，
+   slots 留在注册表里做内部记录，不再渲染。 */
+
+/* ═══ 分页已删（包子 2026-09-18）════════════════════════════════════════════
+   原来这里有一组 .cat-pager / .cat-page / .cat-page-list 的样式（真链接翻页）。
+   现在产品全部渲染、由 category.js 分批露脸，没有翻页控件，所以整块删掉。
+   卡片本身不需要新样式：藏起来用的是 hidden 属性，靠上面 .category-page [hidden]。 */
+
+/* ── ≤1359 兜底：More Filters 面板退回「贴版心右缘」────────────────────────
+   860px 的面板在 ≥1360 能居中挂在按钮上且不碰视口边；再窄就不行
+   （1280 时理想居中位置会把面板右缘顶到 1271，离视口只剩 9px，出现纵向滚动条
+   就会横滑）。这一档本来就是「横滑兜底」档，不追求形态，只保证不出事：
+   包含块退回版心 + right:0，宽度再大也不会越过版心左缘。 */
+@media (max-width:1359px) {
+  .cat-facet-more { position: static; }
+  .cat-facet-more .cat-facet-panel {
+    left: auto;
+    right: 0;
+    transform: none;
+    top: calc(100% + 6px);
+  }
+}
+
+/* ── 窄 PC 档（≤1180）──────────────────────────────────────────────────────
+   列数已由 auto-fill 处理。原来这里还有一条收窄标题带右列的 ≤1679 规则，
+   标题带整块删掉后它随之删除 —— 顶栏这块在 PC 档目前不需要任何调整。 */
+@media (max-width:1180px) {
+  .cat-toolbar-inner { flex-wrap: wrap; padding-block: 10px; }
+  .cat-clear { margin-left: auto; }
+}
+
+/* ── ≤760 不在本项目范围内（只做 PC）。只保「不许炸」。 ─────────────────── */
+@media (max-width:760px) {
+  .cat-toolbar { position: static; }
+  .cat-facet-panel,
+  .cat-facet-panel-wide {
+    position: static;
+    min-width: 0;
+    max-height: none;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .cat-resultbar { flex-wrap: wrap; height: auto; padding-block: 10px; }
+  .cat-sort { margin-left: 0; }
+  .cat-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cat-card,
+  .cat-quote,
+  .cat-clear,
+  .cat-facet-summary { transition: none; }
+}

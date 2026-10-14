@@ -1,0 +1,39 @@
+{
+  "stage": "09-02",
+  "status": "pass_data_modeling",
+  "publication_status": "hold",
+  "catalogue": "Low-Voltage & Data Panels",
+  "source_master": "site/_data/source-catalogues/low-voltage-data-panel-product-master.json",
+  "source_matrix": "site/_data/source-catalogues/low-voltage-data-panel-option-matrix.json",
+  "counts": {
+    "source_family_collections": 15,
+    "candidate_products": 233,
+    "variant_groups": 0,
+    "public_routes": 0,
+    "published_candidates": 0
+  },
+  "schema": {
+    "axes": [
+      "interface_type",
+      "module",
+      "port",
+      "signal",
+      "function",
+      "standard",
+      "power",
+      "mounting",
+      "material",
+      "finish",
+      "color"
+    ],
+    "excluded_smart_switch_axes": ["protocol", "platform"]
+  },
+  "commercial_policy": {
+    "reference_price": "test_only",
+    "moq": "test_only",
+    "production_publication": false
+  },
+  "source_anomalies_retained": ["A15-0363", "A16-0363"],
+  "next_stage": "09-03 source enrichment and model-boundary confirmation",
+  "oss_published": false
+}

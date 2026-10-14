@@ -1,0 +1,703 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   OEM「Start an OEM Project」页 —— 本页专属组件（设计稿 06-v2.png，2026-09-20）
+   通用原语（band / 版心 / 按钮 / 药丸 / 标题 / 导语）在 assets/css/oem-flow.css；
+   本文件只放 ose- 前缀的部件。字号/行高/字距/字重/文字色一律走 --z02-* token。
+   版式与 04/05 页不同：设计稿的右栏贯穿全页，所以正文是「一层面板栈 + 一列右栏」，
+   不再按分段铺 full-bleed band。
+
+   ⚠️ 状态色：设计稿的「Complete / ✓」是绿色，而 token 层只有
+   --z02-warn(#e8a723) 与 --z02-danger(#c62b33)，**没有 success 绿**。
+   oem-flow.css 的 .osp-pill--warn 已有「状态色在本层裸写收编」的先例，
+   这里同样把三个绿值集中成页面级变量，只在声明处出现一次；
+   若要进 token 层，把这三个值搬去 site-shell.css 即可，本文件只改引用名。
+   ═══════════════════════════════════════════════════════════════════════ */
+:root {
+  --ose-success-ink: #1f7a3f;   /* 完成态文字  白底 4.9:1 */
+  --ose-success-bg: #eaf5ee;    /* 完成态浅底 */
+  --ose-success-mark: #2e9e4f;  /* 完成态圆标 / 对勾填充 */
+  --ose-success-line: #bfe0cb;  /* 完成态描边 */
+  --ose-warn-ink: #a96a12;      /* 待办态文字（与 .osp-pill--warn 同值 —— --z02-warn 是填充色，明令不作正文色） */
+  --ose-accent-line: #c7daf6;   /* 蓝字蓝框次级按钮的浅蓝描边 */
+}
+
+/* ── 两栏骨架：正文面板栈 + 右栏 ─────────────────────────────── */
+.ose-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
+  gap: 20px;
+  align-items: start;
+}
+.ose-main { display: grid; gap: 14px; min-width: 0; }
+.ose-rail { display: grid; gap: 14px; align-content: start; min-width: 0; }
+
+/* ── 面板 + 行内段头 ─────────────────────────────────────────── */
+.ose-panel {
+  box-sizing: border-box;
+  padding: 18px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--z02-radius-card);
+  background: var(--z02-surface);
+  min-width: 0;
+}
+.ose-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--z02-border-line);
+}
+/* 2026-09-20：.ose-num 随段头编号删除一并撤掉（段头不再显示 01–08 数字标）。 */
+.ose-title {
+  flex: 0 0 auto;
+  margin: 0;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-panel-title);
+  /* 2026-09-20：原为 --z02-lh-subhead(31.2)，与 .osp-title 的 --z02-lh-panel-title(30)
+     同角色差 1.2px。面板题档统一 30。 */
+  line-height: var(--z02-lh-panel-title);
+  letter-spacing: var(--z02-ls-component-title);
+  font-weight: var(--z02-fw-semibold);
+}
+.ose-sub {
+  flex: 1 1 220px;
+  margin: 0;
+  color: var(--z02-text-muted);
+  /* 2026-09-20：原为 --z02-fs-action(15)+lh-card-title。这句是段头说明（成句正文），
+     不是控件；别的页同角色走 .osp-subtitle = --z02-fs-copy(17)+lh-subhead。 */
+  font-size: var(--z02-fs-copy);
+  line-height: var(--z02-lh-subhead);
+}
+.ose-head-action { flex: 0 0 auto; margin-left: auto; align-self: center; }
+
+/* ── 01 首屏段 ───────────────────────────────────────────────── */
+.ose-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.02fr);
+  gap: 24px;
+  align-items: center;
+}
+.ose-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 10px;
+  color: var(--z02-accent);
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-semibold);
+  letter-spacing: var(--z02-ls-wider);
+  text-transform: uppercase;
+}
+.ose-tag {
+  padding: 4px 9px;
+  border-radius: var(--z02-radius-pill);
+  background: var(--z02-surface-selected);
+  color: var(--z02-accent);
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-medium);
+  /* 2026-09-20：族内药丸档一律不加字距（基准 .osp-pill）。这里必须**显式盖掉** ——
+     它嵌在 .ose-kicker 里，父级有 --z02-ls-wider(1.92px)，不写就会继承成加宽字距。 */
+  letter-spacing: var(--z02-ls-none);
+  text-transform: none;
+}
+.ose-h1 {
+  margin: 0;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-feature-title);
+  line-height: var(--z02-lh-panel-title);
+  /* 2026-09-20：原为 --z02-ls-heading(-0.03em=-0.95px)，与区头大题 .osp-title--xl 的
+     --z02-ls-component-title(-0.02em=-0.63px) 同角色差 0.3px。大题档统一 -0.02em。 */
+  letter-spacing: var(--z02-ls-component-title);
+  font-weight: var(--z02-fw-semibold);
+}
+.ose-intro-copy .osp-actions { margin-top: 20px; }
+.ose-intro-media {
+  height: 100%;
+  max-height: 292px;
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface-product);
+  overflow: hidden;
+}
+.ose-intro-media img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ── 02 起始方式：单选卡 ─────────────────────────────────────── */
+/* 设计稿的卡内是两列：左列图标（圆角方块），右列标题 + 说明；底部整行是
+   「小圆点单选 + 撑满的次级按钮」。所以用 34px/1fr 的网格复刻，不要竖着堆。 */
+.ose-opts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.ose-opt {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  column-gap: 10px;
+  row-gap: 4px;
+  align-content: start;
+  padding: 12px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface);
+  min-width: 0;
+  cursor: pointer;
+}
+.ose-opt.is-on {
+  border-color: var(--z02-accent);
+  box-shadow: inset 0 0 0 1px var(--z02-accent);
+  background: var(--z02-surface-selected);
+}
+.ose-opt > strong {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  color: var(--z02-text);
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-semibold);
+  line-height: var(--z02-lh-card-title);
+}
+.ose-opt > p { grid-column: 2; grid-row: 2; margin: 0; color: var(--z02-text-muted); font-size: var(--z02-fs-copy); line-height: var(--z02-lh-copy); }
+.ose-opt-foot {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  column-gap: 10px;
+  align-items: center;
+  margin-top: 8px;
+}
+.ose-opt-foot .osp-btn { width: 100%; }
+.ose-radio {
+  position: relative;
+  justify-self: start;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 1.5px solid var(--z02-border-control);
+  border-radius: var(--z02-radius-round);
+  background: var(--z02-surface);
+  cursor: pointer;
+}
+.ose-opt.is-on .ose-radio { border-color: var(--z02-accent); background: var(--z02-accent); }
+.ose-opt.is-on .ose-radio::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: var(--z02-radius-round);
+  background: #fff;
+}
+.ose-opt-icon {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface);
+  border: 1px solid var(--z02-border-line);
+}
+.ose-opt.is-on .ose-opt-icon { background: var(--z02-surface-selected); border-color: transparent; }
+.ose-opt-icon img { width: 18px; height: 18px; object-fit: contain; }
+/* 设计稿里这一族的按钮是「蓝字蓝框」，不是中性 ghost —— 页面级覆盖，不动共享层。 */
+.ose-opt .osp-btn,
+.ose-contact-box .osp-btn {
+  background: var(--z02-surface);
+  color: var(--z02-accent);
+  border-color: var(--ose-accent-line);
+}
+.ose-opt .osp-btn:hover,
+.ose-contact-box .osp-btn:hover {
+  background: var(--z02-surface-selected);
+  color: var(--z02-accent-hover);
+  border-color: var(--z02-accent);
+}
+
+/* ── 03 产品与数量表 ─────────────────────────────────────────── */
+.ose-table-wrap { overflow-x: auto; }
+.ose-table { width: 100%; min-width: 720px; border-collapse: collapse; }
+.ose-table th {
+  padding: 0 10px 8px;
+  border-bottom: 1px solid var(--z02-border-line);
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-medium);
+  text-align: left;
+  white-space: nowrap;
+}
+.ose-table th:first-child, .ose-table td:first-child { width: 34px; padding-left: 0; }
+.ose-table th:nth-child(5) { width: 132px; }
+.ose-table th:last-child, .ose-table td:last-child { text-align: right; }
+.ose-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--z02-border-line);
+  vertical-align: top;
+  font-size: var(--z02-fs-label);
+  color: var(--z02-text-muted);
+}
+.ose-table tr:last-child td { border-bottom: 0; }
+.ose-td-n { color: var(--z02-text-muted); }
+.ose-td-product { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 10px; align-items: start; }
+.ose-td-product strong { display: block; color: var(--z02-text); font-size: var(--z02-fs-action); font-weight: var(--z02-fw-semibold); }
+.ose-td-product em { display: block; margin-top: 2px; color: var(--z02-text-faint); font-size: var(--z02-fs-label); font-style: normal; }
+.ose-thumb {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface-product);
+  overflow: hidden;
+}
+.ose-thumb img { width: 100%; height: 100%; object-fit: contain; }
+.ose-td-model { color: var(--z02-text); }
+.ose-td-specs ul { margin: 0; padding: 0; list-style: none; }
+.ose-td-specs li { margin-bottom: 3px; }
+.ose-td-qty { white-space: nowrap; }
+.ose-qty { display: inline-flex; align-items: center; gap: 7px; }
+.ose-qty input {
+  box-sizing: border-box;
+  width: 72px;
+  height: 36px;
+  padding: 0 9px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface);
+  color: var(--z02-text);
+  font-family: var(--font);
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-medium);
+  text-align: right;
+}
+.ose-qty span { color: var(--z02-text-muted); }
+.ose-td-actions { white-space: nowrap; }
+.ose-td-actions a { color: var(--z02-accent); text-decoration: none; }
+.ose-td-actions a:hover { text-decoration: underline; }
+.ose-remove {
+  margin-left: 12px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--z02-danger);
+  font-family: var(--font);
+  font-size: var(--z02-fs-label);
+  cursor: pointer;
+}
+.ose-remove:hover { text-decoration: underline; }
+
+/* ── 04 定制摘要 ─────────────────────────────────────────────── */
+.ose-cust-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.ose-cust {
+  box-sizing: border-box;
+  padding: 14px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface);
+  min-width: 0;
+}
+.ose-cust-head {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 6px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--z02-border-line);
+}
+.ose-cust-head .ose-thumb { width: 36px; height: 36px; }
+.ose-cust-head strong { color: var(--z02-text); font-size: var(--z02-fs-action); font-weight: var(--z02-fw-semibold); }
+.ose-check-row {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr) minmax(0, 58%);
+  gap: 9px;
+  align-items: center;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--z02-border-line);
+  cursor: pointer;
+}
+.ose-check-row input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  border: 1px solid var(--z02-border-control);
+  border-radius: 3px;
+  background: var(--z02-surface);
+  cursor: pointer;
+}
+.ose-check-row input:checked { border-color: var(--z02-accent); background: var(--z02-accent); }
+.ose-check-row input:checked::after {
+  content: "✓";
+  display: block;
+  color: #fff;
+  font-size: var(--z02-fs-glyph);
+  line-height: 1;
+  text-align: center;
+}
+.ose-check-row > span { color: var(--z02-text); font-size: var(--z02-fs-label); }
+.ose-check-row > em { color: var(--z02-text-faint); font-size: var(--z02-fs-label); font-style: normal; text-align: right; }
+.ose-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--z02-accent);
+  font-size: var(--z02-fs-action);
+  font-weight: var(--z02-fw-medium);
+  text-decoration: none;
+}
+.ose-link:hover { text-decoration: underline; }
+
+/* ── 05 技术简报 / 品牌包 ────────────────────────────────────── */
+.ose-brief-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.ose-brief {
+  box-sizing: border-box;
+  padding: 14px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface);
+  min-width: 0;
+}
+.ose-brief-head {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 6px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--z02-border-line);
+}
+.ose-brief-head strong { color: var(--z02-text); font-size: var(--z02-fs-action); font-weight: var(--z02-fw-semibold); }
+.ose-mini-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface-selected);
+}
+.ose-mini-icon img { width: 15px; height: 15px; object-fit: contain; }
+.ose-kv {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--z02-border-line);
+}
+.ose-kv:last-of-type { border-bottom: 0; }
+.ose-kv > span { color: var(--z02-text-muted); font-size: var(--z02-fs-label); }
+.ose-kv > em { color: var(--z02-text-faint); font-size: var(--z02-fs-label); font-style: normal; text-align: right; }
+.ose-upload { width: 100%; margin-top: 12px; justify-content: center; }
+.ose-file { margin: 7px 0 0; color: var(--z02-accent); font-size: var(--z02-fs-label); word-break: break-all; }
+
+/* ── 06 / 07 表单 ────────────────────────────────────────────── */
+.ose-fields { display: grid; gap: 12px; }
+.ose-field-row { display: grid; grid-template-columns: repeat(var(--ose-cols, 4), minmax(0, 1fr)); gap: 12px; }
+.ose-field { display: grid; gap: 5px; min-width: 0; }
+.ose-field > span { color: var(--z02-text-muted); font-size: var(--z02-fs-label); }
+.ose-field input,
+.ose-field select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface);
+  color: var(--z02-text);
+  font-family: var(--font);
+  font-size: var(--z02-fs-label);
+}
+.ose-field input::placeholder { color: var(--z02-text-faint); }
+
+/* ── 08 复核 ─────────────────────────────────────────────────── */
+.ose-ready-box {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid var(--ose-success-line);
+  border-radius: var(--z02-radius-control);
+  background: var(--ose-success-bg);
+}
+.ose-ready-badge {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--z02-radius-round);
+  background: var(--ose-success-mark);
+  color: #fff;
+  font-size: var(--z02-fs-label);
+  line-height: 1;
+}
+.ose-ready-copy strong { display: block; color: var(--ose-success-ink); font-size: var(--z02-fs-action); font-weight: var(--z02-fw-semibold); }
+.ose-ready-copy em { display: block; margin-top: 2px; color: var(--z02-text-muted); font-size: var(--z02-fs-label); font-style: normal; }
+
+/* ── 09 提交与状态 ───────────────────────────────────────────── */
+.ose-steps {
+  display: grid;
+  grid-template-columns: auto minmax(18px, 1fr) auto minmax(18px, 1fr) auto minmax(18px, 1fr) auto;
+  align-items: start;
+  gap: 4px;
+}
+.ose-step { display: grid; gap: 7px; }
+.ose-step-dot {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: var(--z02-radius-round);
+  background: var(--z02-accent);
+  color: #fff;
+  font-size: var(--z02-fs-label);
+  font-weight: var(--z02-fw-semibold);
+}
+.ose-step-copy strong { display: block; color: var(--z02-accent); font-size: var(--z02-fs-label); font-weight: var(--z02-fw-semibold); }
+.ose-step-copy em { display: block; margin-top: 2px; color: var(--z02-text-muted); font-size: var(--z02-fs-label); font-style: normal; }
+.ose-step:last-child .ose-step-copy strong::after { content: " ›"; color: var(--z02-text-faint); font-weight: var(--z02-fw-regular); }
+.ose-step-line { height: 1px; margin-top: 13px; border-top: 1px dashed var(--z02-border-line); }
+.ose-submit-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+.ose-submit-note {
+  flex: 1 1 320px;
+  margin: 0;
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-card-title);
+}
+.ose-submit-note strong { color: var(--z02-text); font-weight: var(--z02-fw-medium); }
+
+/* ── 右栏零件 ────────────────────────────────────────────────── */
+.ose-card {
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid var(--z02-border-line);
+  border-radius: var(--z02-radius-card);
+  background: var(--z02-surface);
+  min-width: 0;
+}
+.ose-card-head {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--z02-border-line);
+}
+/* 2026-09-20：补 line-height。右栏卡题是卡题档，基准 = .osp-card-title 的
+   --z02-lh-card-title(26)；此前只给了字号 → 运行时行高退回 normal。 */
+.ose-card-head strong { color: var(--z02-text); font-size: var(--z02-fs-card-title); line-height: var(--z02-lh-card-title); font-weight: var(--z02-fw-semibold); }
+.ose-card-head .osp-pill { margin-left: auto; }
+.ose-card > .osp-btn--wide { margin-top: 14px; }
+
+/* ── Banner 摘要卡（2026-09-20 包子：OEM Project Summary 从右栏移到 banner 图上）──
+   浮在 .inner-banner-inner（版心容器，本身 position:relative）右上，
+   right:0 与版心右缘对齐。垂直方向在 banner 内上下居中（2026-09-20 二次拍板：
+   卡上下的留白等高），用 top:50% + translateY(-50%) —— 卡高随内容自动变化
+   也仍然居中，不依赖固定高度。内容高由 inner 的 padding-top（页头避让）往下推，
+   与文案列同一容器，互不干扰。
+   右栏因此少了这张卡，但数据绑定不变：oem-start.js 全部走
+   [data-sum-key] / [data-copy-summary] 全局选择器，与卡片位置无关。 */
+.ose-banner-card {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 2;
+  width: 360px;
+  transform: translateY(-50%);
+  box-shadow: 0 18px 44px rgba(8, 10, 14, .3);
+}
+/* 窄档退化为 banner 内普通块（版心 85% 装不下 620px 文案列 + 360px 卡）。 */
+@media (max-width: 1180px) {
+  .ose-banner-card { position: static; width: 100%; margin-top: 18px; }
+}
+
+.ose-ready {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr) auto;
+  gap: 9px;
+  align-items: center;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--z02-border-line);
+}
+.ose-ready:last-child { border-bottom: 0; }
+.ose-ready-mark {
+  display: grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--z02-border-control);
+  border-radius: 4px;   /* 待办态是方框；完成态才变圆（见下） */
+  background: var(--z02-surface);
+  color: #fff;
+  font-size: var(--z02-fs-glyph);
+  line-height: 1;
+}
+.ose-ready[data-state="done"] .ose-ready-mark {
+  border-color: var(--ose-success-mark);
+  border-radius: var(--z02-radius-round);
+  background: var(--ose-success-mark);
+}
+.ose-ready[data-state="done"] .ose-ready-mark::after { content: "✓"; }
+.ose-ready-label { color: var(--z02-text-muted); font-size: var(--z02-fs-label); }
+.ose-ready-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--ose-warn-ink);
+  font-size: var(--z02-fs-label);
+  white-space: nowrap;
+}
+.ose-ready-dot { width: 7px; height: 7px; border-radius: var(--z02-radius-round); background: var(--z02-warn); }
+.ose-ready[data-state="done"] .ose-ready-state { color: var(--ose-success-ink); }
+/* 完成态的点是「绿底白勾」，比待办态大一档，勾才看得见 */
+.ose-ready[data-state="done"] .ose-ready-dot {
+  display: grid;
+  place-items: center;
+  width: 11px;
+  height: 11px;
+  background: var(--ose-success-mark);
+  color: #fff;
+  font-size: var(--z02-fs-glyph);
+  line-height: 1;
+}
+.ose-ready[data-state="done"] .ose-ready-dot::after { content: "✓"; }
+
+.ose-contact-box {
+  padding: 14px 12px;
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface-page);
+  text-align: center;
+}
+.ose-contact-top { margin: 0; color: var(--z02-text-faint); font-size: var(--z02-fs-label); }
+.ose-contact-main { margin: 4px 0 12px; color: var(--z02-text-muted); font-size: var(--z02-fs-label); line-height: var(--z02-lh-copy); }
+.ose-contact-box .osp-btn--wide { margin-top: 0; }
+
+.ose-note {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  border-radius: var(--z02-radius-control);
+  background: var(--z02-surface-selected);
+  color: var(--z02-text);
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-copy);
+}
+/* ⚠️ 只有带图标的那种才要两列；默认单列，否则纯文字 note 会被塞进 16px 窄列。 */
+.ose-note--glyph { grid-template-columns: 16px minmax(0, 1fr); }
+.ose-note--plain { grid-template-columns: minmax(0, 1fr); }
+.ose-note strong { font-weight: var(--z02-fw-semibold); }
+.ose-note--flush { margin: 0; }
+.ose-note--wide { margin: 12px 0 0; }
+.ose-note--ok { background: var(--ose-success-bg); color: var(--ose-success-ink); }
+.ose-note-glyph {
+  display: grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  margin-top: 1px;
+  border-radius: var(--z02-radius-round);
+  background: var(--z02-accent);
+  color: #fff;
+  font-size: var(--z02-fs-glyph);
+  font-style: normal;
+  font-weight: var(--z02-fw-semibold);
+  line-height: 1;
+}
+.ose-note[hidden] { display: none; }
+
+.ose-res {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) auto;
+  gap: 9px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--z02-border-line);
+  color: var(--z02-accent);
+  font-size: var(--z02-fs-label);
+  text-decoration: none;
+}
+.ose-res:last-child { border-bottom: 0; }
+.ose-res:hover span:nth-child(2) { text-decoration: underline; }
+.ose-res-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background: var(--z02-surface-selected);
+}
+.ose-res-icon::before {
+  content: "";
+  position: absolute;
+  inset: 6px 7px;
+  border: 1.5px solid var(--z02-accent);
+  border-radius: 2px;
+}
+.ose-res-arrow { color: var(--z02-text-faint); }
+
+.ose-why { margin: 0; padding: 0; list-style: none; }
+.ose-why li {
+  display: grid;
+  grid-template-columns: 15px minmax(0, 1fr);
+  gap: 9px;
+  align-items: center;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--z02-border-line);
+  color: var(--z02-text-muted);
+  font-size: var(--z02-fs-label);
+  line-height: var(--z02-lh-card-title);
+}
+.ose-why li:last-child { border-bottom: 0; }
+.ose-why li::before {
+  content: "✓";
+  display: grid;
+  place-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: var(--z02-radius-round);
+  background: var(--ose-success-mark);
+  color: #fff;
+  font-size: var(--z02-fs-glyph);
+  line-height: 1;
+}
+
+.ose-cta {
+  box-sizing: border-box;
+  padding: 20px 18px;
+  border-radius: var(--z02-radius-card);
+  background: var(--z02-surface-dark);
+}
+.ose-cta h2 {
+  margin: 0;
+  color: var(--z02-on-dark);
+  font-size: var(--z02-fs-panel-title);
+  /* 2026-09-20：原为 --z02-lh-subhead(31.2)。面板题档统一 --z02-lh-panel-title(30)，
+     与 .ose-title / .osp-title 一致。 */
+  line-height: var(--z02-lh-panel-title);
+  letter-spacing: var(--z02-ls-component-title);
+  font-weight: var(--z02-fw-semibold);
+}
+.ose-cta p { margin: 10px 0 0; color: var(--z02-on-dark-muted); font-size: var(--z02-fs-copy); line-height: var(--z02-lh-copy); }
+.ose-cta .osp-btn { margin-top: 16px; }
+
+/* ── 断点：设计稿正文区比版心宽，只照搬列数不照搬像素 ────────── */
+@media (max-width: 1280px) {
+  .ose-layout { grid-template-columns: minmax(0, 1fr); }
+  .ose-opts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ose-steps { grid-template-columns: auto minmax(12px, 1fr) auto minmax(12px, 1fr) auto minmax(12px, 1fr) auto; }
+}
+@media (max-width: 900px) {
+  .ose-cust-grid, .ose-brief-grid { grid-template-columns: minmax(0, 1fr); }
+  .ose-field-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ose-steps { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .ose-step-line { display: none; }
+  .ose-ready-box { grid-template-columns: 30px minmax(0, 1fr); }
+  .ose-ready-box .osp-btn { grid-column: 2; justify-self: start; }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.1",
+  "description": "Canonical attribute vocabulary for the shared product registry. Legacy product files remain compatible until their category is migrated.",
+  "shared": {
+    "protocol": {
+      "label": "Protocol",
+      "values": ["wifi", "zigbee", "matter", "bluetooth", "bluetooth-mesh", "knx", "rs485", "rf433", "dry-contact", "none", "source-pending"]
+    },
+    "material": {
+      "label": "Material",
+      "values": ["pc", "glass", "aluminum", "copper", "steel", "zinc-alloy", "source-pending"]
+    },
+    "finish": {
+      "label": "Color & Finish",
+      "values": ["white", "black", "gold", "silver", "gray", "glass-white", "glass-black", "source-pending"]
+    },
+    "voltage": {
+      "label": "Voltage",
+      "values": ["universal", "110-120", "220-240", "250v", "12v", "24v", "source-pending"]
+    },
+    "gang": {
+      "label": "Gang",
+      "values": ["1", "2", "3", "4", "6", "source-pending"]
+    }
+  },
+  "category_specific": {
+    "smart-switches": {
+      "keys": ["function", "operation", "app", "load", "mounting"]
+    },
+    "controllers": {
+      "keys": ["role", "ports", "power", "mounting"]
+    },
+    "sensors": {
+      "keys": ["detection", "sensing_range", "power", "mounting"]
+    },
+    "smart-door-locks": {
+      "keys": ["credentials", "door_type", "power", "finish"]
+    },
+    "curtains": {
+      "keys": ["role", "drive", "mounting", "power", "control"]
+    },
+    "low-voltage-data-panels": {
+      "keys": ["type", "ports", "function", "power", "mounting"]
+    },
+    "mechanical-switches": {
+      "keys": ["function", "mechanism", "series", "load", "mounting"]
+    }
+  },
+  "strict_model_groups": ["src03-m6"],
+  "model_groups": {
+    "src03-m6": {
+      "allowed_keys": ["function", "protocol", "operation", "gang", "app", "finish", "voltage", "load", "mounting"],
+      "values": {
+        "function": ["on-off", "scene"],
+        "protocol": ["zigbee", "bluetooth-mesh"],
+        "operation": ["mechanical"],
+        "gang": ["1", "2", "3", "4", "4-2-scene"],
+        "app": ["xiaodu", "xiaomi", "tuya", "tmall"],
+        "finish": ["m6-premium-gray", "m6-skin-gray", "m6-skin-silver", "m6-skin-white", "m6-skin-black", "m6-skin-gold", "m6-cream-gold"],
+        "voltage": ["250v"],
+        "load": ["source-pending"],
+        "mounting": ["eu86"]
+      }
+    }
+  },
+  "overrides": {
+    "spec_keys": ["rated_load", "rated_voltage", "panel_material", "weight", "dimensions", "wiring", "load", "material"],
+    "asset_keys": ["primary_image", "gallery", "wiring_diagram", "dimension_drawing", "datasheet"]
+  }
+}
