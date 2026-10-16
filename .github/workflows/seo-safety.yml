@@ -1,0 +1,20 @@
+name: SEO safety checks
+on:
+  pull_request:
+  push:
+    branches:
+      - chore/seo-geo-safe-indexing-20261017
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate SEO script and page whitelist
+        run: node --test tests/seo-safety.test.cjs
+      - name: Validate sitemap against indexable allowlist
+        run: node scripts/seo-review.cjs --sitemap-check
