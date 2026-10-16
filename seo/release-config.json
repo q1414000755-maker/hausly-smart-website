@@ -1,0 +1,13 @@
+{
+  "canonicalOrigin": "https://www.hauslysmart.com",
+  "approvedIndexRoutes": [
+    "/products.html"
+  ],
+  "approvedProductModels": [],
+  "approvedOfferModels": [],
+  "notes": [
+    "Review each page and product against actual source data before allowing indexing or Product JSON-LD.",
+    "Never treat an illustrative price or placeholder image as approved commercial information.",
+    "Verify production domain redirects, site origin and live HTTP status before release."
+  ]
+}
