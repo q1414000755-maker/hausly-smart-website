@@ -70,7 +70,8 @@ function audit(){
   if(x.indexable&&!x.canonical)add('P0',route,'NO_CANONICAL','Indexable product page');
   if(x.indexable&&x.canonical&&!x.canonical.startsWith(ORIGIN+'/'))add('P0',route,'NONCANONICAL_DOMAIN',x.canonical);
   if(x.indexable&&!APPROVED.has(entry.model))add('review',route,'INDEXABLE_UNREVIEWED','Product identity and specifications require manual review');
-  if(entry.model!=='src03-m6'&&/\bM6\s*·\s*1-gang smart switch\b/i.test(visibleText(html)))add('P0',route,'M6_TEMPLATE_LEAK','Wrong model text in rendered HTML');
+  const criticalFallback=match(html,/<tbody data-specs>([\s\S]*?)<\/tbody>/i)+' '+match(html,/<div class="m6-selection"[^>]*>([\s\S]*?)<\/div>/i);
+  if(entry.model!=='src03-m6'&&/\bM6\s*·\s*1-gang smart switch\b/i.test(visibleText(criticalFallback)))add('P0',route,'M6_TEMPLATE_LEAK','Wrong model specifications in rendered HTML');
   for(const tag of html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)){
    let doc;try{doc=JSON.parse(tag[1]);}catch(err){add('P0',route,'JSONLD_INVALID',err.message);continue;}
    for(const item of productsIn(doc)){

@@ -1,5 +1,7 @@
 const fs=require('fs'),path=require('path'),vm=require('vm');
 const root=__dirname,context={window:{}};
+const {sanitizeProductSchema}=require('./scripts/seo-review.cjs');
+const {canonicalOrigin}=require('./seo/release-config.json');
 vm.runInNewContext(fs.readFileSync(path.join(root,'assets/js/quote-catalog.js'),'utf8'),context);
 const catalog=context.window.Z02_CATALOG;
 const entries=[];
@@ -28,11 +30,22 @@ for(const e of entries){
  let head=source.slice(0,source.indexOf('</head>')).replace(/<script\b(?![^>]*application\/ld\+json)[\s\S]*?<\/script>/g,'').replace(/<link[^>]+href="[^"]*(?:product-detail|quote-drawer)[^"]*"[^>]*>/g,'');
  // Never imply stock from a reference-price record.
  head=head.replace(/,"availability":"https:\/\/schema.org\/InStock"/g,'');
+ head=head.replace(/https:\/\/hauslysmart\.com(?=\/)/g,canonicalOrigin);
  const runtime=m6?'<script defer src="/product-detail-v2-m6-data.js"></script><script defer src="/product-detail-v2-m6.js"></script>':'<script defer src="/product-detail-v2.js"></script>';
  head=head.replace(/<base\b[^>]*>/g,'');head+=newAssets+runtime+'</head>';
  let body=fs.readFileSync(templatePath,'utf8').replace('<main id="main-content" class="m6-content">',`<main id="main-content" class="m6-content" data-product-model="${e.model}" data-pdp-model="${e.model}" data-detail-version="2">`).replace('<nav class="m6-section-nav"','<nav data-shell-bar class="m6-section-nav"').replaceAll('/m6-preview-request.html','/request-a-quote.html').replaceAll('/m6-design-preview.html?','/products/m6-smart-switch/index.html?');
  if(!m6){
   body=body.replace(/<div class="m6-config">[\s\S]*?<\/div>\s*<div class="m6-selection"/,'<div class="m6-config" data-v2-config></div><div class="m6-selection"');
+  // Server-render no other model's M6 configuration, specs, pricing or installation facts.
+  body=body.replace(/<strong data-selection>[^<]*<\/strong>/,'<strong data-selection>Confirm configuration</strong>')
+    .replace(/<small data-sku>[^<]*<\/small>/,'<small data-sku>'+esc(model.sku||model.name)+'</small>')
+    .replace(/<tbody data-specs>[\s\S]*?<\/tbody>/,'<tbody data-specs><tr><th scope="row">Model</th><td>'+esc(model.sku||model.name)+'</td></tr><tr><th scope="row">Technical specifications</th><td>Confirm for selected configuration</td></tr></tbody>')
+    .replace(/(<strong data-price>)[^<]+/,'$1Price on request')
+    .replace(/(<strong data-mobile-price>)[^<]+/,'$1Price on request')
+    .replace(/(<dd data-inquiry-price>)[^<]+/,'$1Price on request')
+    .replace(/(<span class="m6-price-moq" data-moq>)[^<]+/,'$1MOQ to be confirmed')
+    .replaceAll('data-inquiry-selection>1 gang / Skin-feel PC / Premium gray','data-inquiry-selection>Confirm configuration');
+
   body=body.replace(/<div class="m6-thumb-carousel">[\s\S]*?<\/div><\/div>\s*<div class="m6-hero-copy">/,`<div class="m6-thumb-carousel"><button class="m6-thumb-arrow m6-thumb-prev" type="button" disabled aria-label="Previous product images">‹</button><div class="m6-thumbs" style="--thumb-total-gap:48px" role="group" aria-label="Product views"><button type="button" aria-pressed="true" data-catalog-thumb><img src="/${esc(model.image)}" alt="${esc(model.name)}"><span>Product family</span></button></div><button class="m6-thumb-arrow m6-thumb-next" type="button" disabled aria-label="Next product images">›</button></div></div><div class="m6-hero-copy">`);
   body=body.replaceAll('M6 Smart Switch',esc(model.name)).replaceAll('M6 smart switch series',esc(model.family)).replaceAll('M6 Series',esc(model.series||model.name)).replaceAll('M6 <small>Smart Switch</small>',esc(model.series||model.name)+' <small>'+esc(model.family)+'</small>').replaceAll('M6 family · product reference',esc(model.name)+' · product reference').replaceAll('M6 product family front panels',esc(model.name)).replaceAll('M6 mechanical smart switches in gray, gold and white',esc(model.name));
   body=body.replace(/<p class="m6-intro">[\s\S]*?<\/p>/,'<p class="m6-intro">'+esc(model.family)+' · configuration for your project.</p>').replace(/<p class="m6-hero-description">[\s\S]*?<\/p>/,'<p class="m6-hero-description">Review available models, finishes and confirmed product information.</p>');
@@ -49,6 +62,7 @@ for(const e of entries){
  }
  const drawer=source.match(/<!-- qd:start -->[\s\S]*?<!-- qd:end -->/)?.[0]||'';
  let output=head+'<body id="top" class="m6-preview-page product-page"><a class="new-skip" href="#main-content">Skip to content</a>'+header+body+drawer+footer+'</body></html>';
+ output=sanitizeProductSchema(output,e.model).html;
  output=output.replace(/(src|href)="([^"#][^"]*)"/g,(full,attr,ref)=>{if(/^(?:\/|https?:|data:|mailto:|tel:)/.test(ref))return full;const normalized=ref.replace(/^(?:(?:\.\.\/)|(?:\.\/))+/,'');if(fs.existsSync(path.join(root,normalized.split(/[?#]/)[0])))return attr+'="/'+normalized+'"';return full;});
  fs.writeFileSync(e.file,output);count++;
 }
