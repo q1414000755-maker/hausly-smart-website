@@ -10,11 +10,14 @@ const attr=(tag,name)=>{const m=tag.match(new RegExp('\\b'+name+'\\s*=\\s*(?:"([
 const meta=(html,name)=>(html.match(/<meta\b[^>]*>/gi)||[]).find(t=>attr(t,'name').toLowerCase()===name)||'';
 const canonical=html=>{const t=(html.match(/<link\b[^>]*>/gi)||[]).find(x=>attr(x,'rel').toLowerCase().split(/\s+/).includes('canonical'));return t?attr(t,'href'):'';};
 function inspect(html){
- const main=match(html,/<main\b[^>]*>([\s\S]*?)<\/main>/i)||html;
- const robots=attr(meta(html,'robots'),'content').toLowerCase();
- return {title:clean(match(html,/<title[^>]*>([\s\S]*?)<\/title>/i)),description:attr(meta(html,'description'),'content'),
+ // Generated documents contain fake <main> fragments inside build-guide comments.
+ // Strip non-DOM text before finding the real main and heading hierarchy.
+ const markup=html.replace(/<!--[\s\S]*?-->/g,' ').replace(/<script\b[\s\S]*?<\/script>/gi,' ').replace(/<style\b[\s\S]*?<\/style>/gi,' ');
+ const main=match(markup,/<main\b[^>]*>([\s\S]*?)<\/main>/i)||markup;
+ const robots=attr(meta(markup,'robots'),'content').toLowerCase();
+ return {title:clean(match(markup,/<title[^>]*>([\s\S]*?)<\/title>/i)),description:attr(meta(markup,'description'),'content'),
    h1s:[...main.matchAll(/<h1\b[^>]*>([\s\S]*?)<\/h1>/gi)].map(x=>clean(x[1])),
-   robots,canonical:canonical(html),indexable:!/\bnoindex\b/.test(robots)};
+   robots,canonical:canonical(markup),indexable:!/\bnoindex\b/.test(robots)};
 }
 function productsIn(obj){
  const items=Array.isArray(obj)?obj:obj&&Array.isArray(obj['@graph'])?obj['@graph']:[obj];
