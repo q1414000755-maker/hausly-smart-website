@@ -18,3 +18,8 @@ test('sitemap only includes manually approved canonical pages',()=>{
  const xml=sitemap();assert.match(xml,/https:\/\/www\.hauslysmart\.com\/products\.html/);
  assert.doesNotMatch(xml,/<loc>.*\/products\/src03-m12s\//);
 });
+
+test('generated comments cannot shadow the real page main and H1',()=>{
+ const html='<!doctype html><!-- build notes: <main> and </main> are anchor examples --><html><head><title>Example</title><meta name="description" content="Description"></head><body><main><h1>Mechanical Switches</h1></main></body></html>';
+ assert.deepEqual(inspect(html).h1s,['Mechanical Switches']);
+});
