@@ -18,3 +18,10 @@ jobs:
         run: node --test tests/seo-safety.test.cjs
       - name: Validate sitemap against indexable allowlist
         run: node scripts/seo-review.cjs --sitemap-check
+      - name: Syntax-check runtime and audit scripts
+        run: |
+          node --check build-product-detail-v2.cjs
+          node --check scripts/seo-review.cjs
+          node --check scripts/seo-live-check.cjs
+      - name: Record source audit debt (non-blocking, not live site)
+        run: node scripts/seo-review.cjs
